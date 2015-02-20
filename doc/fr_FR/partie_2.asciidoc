@@ -1,11 +1,11 @@
 .Aparté
-********************************************************************************
+----
 Dans cette partie nous allons entrer dans les détails, découpé chaque popover, 
 et fournir toutes les informations pour utiliser toutes les possiblités du 
 plugin
-********************************************************************************
+-----
 
-===== Popover du Menu
+==== Popover du Menu
 image::../images/popovemenu1.png[]
 Le titre de ce popover indique les dimensions de la *barre de menu*
 
@@ -16,10 +16,10 @@ menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'
 image::../images/popovemenu3.png[]
 Ce selecteur va permettre de définir la taille de la *barre de menu*
 .Tips
-********************************************************************************
+----
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur
-********************************************************************************
+----
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la 
