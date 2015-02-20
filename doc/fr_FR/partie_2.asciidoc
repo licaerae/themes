@@ -1,7 +1,7 @@
 .Aparté
-****
+==========================
 Dans cette partie nous allons entrer dans les détails, découpé chaque popover, et fournir toutes les informations pour utiliser toutes les possiblités du plugin
-****
+==========================
 
 ==== Popover du Menu
 image::../images/popovemenu1.png[]
