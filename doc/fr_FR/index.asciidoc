@@ -8,10 +8,10 @@ mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer l
 mode Design soit le placement des widgets
 
 .Attention
-********************************************************************************
+---------
 le plugin ne va pas créer le mode design tout seul, il faut avant de commencer 
 avoir une idée de ce que l'on veut faire
-********************************************************************************
+---------
 
 '''
 === Création d'un thème Facile
