@@ -1,4 +1,4 @@
 # themes
 Plugin pour Jeedom
 
-[Read more words!](docs/fr_FR/index.asciidoc)
+[Read more words!](doc/fr_FR/index.asciidoc)
