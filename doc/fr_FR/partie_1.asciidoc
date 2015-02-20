@@ -1,1 +1,2 @@
-Nous allons commencer par créer un thème, cliquer sur image::../images/ajout.png[]
+Nous allons commencer par créer un thème, cliquer sur 
+image::../images/ajout.png[]
