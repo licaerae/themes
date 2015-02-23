@@ -22,6 +22,8 @@ Nous avons ici un bouton et une entrée texte qui correspond au titre de la *bar
 
 
 image::../images/popovemenu5.png[]
+Valider ou non l'affichage de la barre d'état
+
 
 image::../images/popovemenu6.png[]
 
