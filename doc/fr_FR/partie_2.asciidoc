@@ -13,7 +13,6 @@ Ce selecteur va permettre de définir la taille de la *barre de menu*
 
 TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur.
-
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
 image::../images/popovemenu4.png[]
@@ -26,8 +25,10 @@ image::../images/popovemenu6.png[]
 Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires
 
 image::../images/popovemenu7.png[]
-Configuration des paramètres de Dimensions, Fonts et images de fonds voir <<Dimensions>>
+Configuration des paramètres de Dimensions, Fonts et image de fond voir <<Dimensions>>
 
 image::../images/popovemenu8.png[]
+Configuration des paramètres des Boutons, des Menus ou des Ongles voir  <<Boutons>>
 
 image::../images/popovemenu9.png[]
+Configuration du style CSS voir <<Style>>
