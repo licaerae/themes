@@ -26,6 +26,7 @@ Valider ou non l'affichage de la barre d'état
 
 
 image::../images/popovemenu6.png[]
+Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires
 
 image::../images/popovemenu7.png[]
 
