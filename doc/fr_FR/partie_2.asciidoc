@@ -5,25 +5,22 @@ Dans cette partie nous allons entrer dans les détails, découpé chaque popover
 image::../images/popovemenu1.png[]
 Le titre de ce popover indique les dimensions de la *barre de menu*
 
-
 image::../images/popovemenu2.png[]
 Ce selecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'
 
-
 image::../images/popovemenu3.png[]
 Ce selecteur va permettre de définir la taille de la *barre de menu*
-TIP:
-En mode 'Haut' et 'Bas' cela correspond à la Hauteur.\n
-en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
+TIP:
+En mode 'Haut' et 'Bas' cela correspond à la Hauteur.
+
+en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré
 
-
 image::../images/popovemenu5.png[]
 Valider ou non l'affichage de la barre d'état
-
 
 image::../images/popovemenu6.png[]
 Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires
