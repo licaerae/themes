@@ -1,14 +1,12 @@
 == Thèmes
+Plugin servant à creer des thèmes à partir de la librairie Bootstrap
 
 === Description
-Plugin servant à creer des thèmes à partir de la librairie BootStrap
-Jeedom nous offre un mode Design qui permet de creer un mode de vue très libre, 
-mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure 
-compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets
+Jeedom nous offre un mode Design qui permet de creer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets
 
 .Attention
 ----
-le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire
+le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvable sur le forum officiel de Jeedom qui peuvent donner une idée des possibilité du mode Design
 ----
 
 '''
