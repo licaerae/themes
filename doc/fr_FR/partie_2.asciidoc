@@ -32,3 +32,9 @@ Configuration des paramètres des Boutons, des Menus ou des Ongles voir  <<Bouto
 
 image::../images/popovemenu9.png[]
 Configuration du style CSS voir <<Style>>
+
+[Dimensions]
+
+[Boutons]
+
+[Style]
