@@ -11,16 +11,16 @@ le plugin ne va pas créer le mode design tout seul, il faut avant de commencer 
 
 '''
 === Création d'un thème Facile
-include::partie_1.asciidoc[]
+include:partie_1.asciidoc[]
 
 '''
 === Options avancées
-include::partie_2.asciidoc[]
+include:partie_2.asciidoc[]
 
 '''
 === FAQ
-include::faq.asciidoc[]
+include:faq.asciidoc[]
 
 '''
 === Changelog
-include::changelog.asciidoc[]
+include:changelog.asciidoc[]
