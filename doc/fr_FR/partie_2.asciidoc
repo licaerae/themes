@@ -19,7 +19,6 @@ En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
 +
-+
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré
