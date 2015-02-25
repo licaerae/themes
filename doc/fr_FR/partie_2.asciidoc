@@ -68,7 +68,7 @@ Permet de définir les dimensions de la page principale
 
 TIP:
 Les valeurs par défaut correspond à une tablette horizontale +
-[red]#Attention:# Ne pas confondre page(ou fenêtre) princiale et cadre principal
+[red]#Attention:# Ne pas confondre page(ou fenêtre) principale et cadre principal
 
 +
 
@@ -81,7 +81,7 @@ image::../images/dimpopover4.png[]
 L'id du plan de la page principale du mode Design
 
 TIP:
-En mode read-only par défaut, passer en <<modeExpert,mode expert>>pour le modifier.
+En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier.
 
 +
  
@@ -89,16 +89,16 @@ image::../images/dimpopover5.png[]
 L'id du plan du cadre principal du mode Design
 
 TIP:
-En mode read-only par défaut, passer en <<modeExpert,mode expert>>pour le modifier.
+En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier.
 
 +
 
  
 image::../images/dimpopover6.png[]
-Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Selection* pour en effacer une, il suffit juste en selectionner une dans le selecteur pour qu'elle soit appliquer à la page principale
+Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Selection* pour en effacer une, le selecteur défini celle qui sera appliqué à la page principale
 
 TIP:
-Selut les fonts du tyepe *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées
+Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées
 
 +
  
@@ -165,10 +165,19 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>
 ==== Popover de Style
 
 image::../images/stylepopover1.png[]
+La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond si elle est cocher sinon les couleurs du profil Jeedom seront utilisées
+ +
+ +
 
 image::../images/stylepopover2.png[]
+Définit la configuration des bordures pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires
+ +
+ +
 
 image::../images/stylepopover3.png[]
+Définit la configuration de l'ombre pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires
+ +
+ +
 
 image::../images/stylepopover4.png[]
 Valider permet de revenir au <<popover-du-menu,popover Menu>>
