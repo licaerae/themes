@@ -39,12 +39,12 @@ Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages s
  +
 
 image::../images/popovemenu7.png[]
-Configuration des paramètres de Dimensions, Fonts et image de fond voir xref::Dimensions[]
+Configuration des paramètres de Dimensions, Fonts et image de fond voir <<dimensions>>
  +
  +
 
 image::../images/popovemenu8.png[]
-Configuration des paramètres des Boutons, des Menus ou des Ongles voir  <<Boutons>>
+Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<boutons>>
  +
  +
 
@@ -53,11 +53,8 @@ Configuration du style CSS voir <<Style>>
  +
  +
 
-anchor::Dimensions[]
-==== Popover de Dimensions
+[[dimensions]]==== Popover de Dimensions
 
-ancho::Boutons[]
-==== Popover de Boutons
+[[boutons]]==== Popover de Boutons
 
-anchor::Style[]
-==== Popover de Style
+[[style]]==== Popover de Style
