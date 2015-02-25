@@ -1,5 +1,5 @@
 Dans cette partie nous allons entrer dans les détails, découpé chaque popover, et fournir toutes les informations pour utiliser toutes les possiblités du plugin
-
+[[menu]]
 ==== Popover du Menu
 image::../images/popovemenu1.png[]
 Le titre de ce popover indique les dimensions de la *barre de menu*
@@ -12,25 +12,24 @@ Ce selecteur va permettre de définir de quel coté va être disposé la *barre 
  +
 
 image::../images/popovemenu3.png[]
+
+Ce selecteur va permettre de définir la taille de la *barre de menu*
+
 TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
+ +
 
-Ce selecteur va permettre de définir la taille de la *barre de menu*
- +
- +
- 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré
  +
  +
- 
+
 image::../images/popovemenu5.png[]
+Valider ou non l'affichage de la barre d'état
+
 TIP:
 La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de developpement).
-
-Valider ou non l'affichage de la barre d'état
- +
  +
  
 image::../images/popovemenu6.png[]
@@ -58,18 +57,42 @@ Configuration du style CSS voir <<styles,Popover de Style>>
 ==== Popover de Dimensions
 
 image::../images/dimpopover1.png[]
+Le titre de ce popover fournit les dimensions du cadre principal
 
 image::../images/dimpopover2.png[]
+Permet de définir les dimensions de la page principale
+
+TIP:
+Les valeurs par défaut correspond à une tablette horizontale +
+(red]#Attention:# Ne pas confondre page(ou fenêtre) princiale et cadre principal
+ +
 
 image::../images/dimpopover3.png[]
+Permet de définir l'image de fonds, les images proviennent de la catégorie par défaut du <<gestImages,Gestionnaire d'images>>
 
 image::../images/dimpopover4.png[]
+L'id du plan de la page principale du mode Design
 
+TIP:
+En mode read-only par défaut, passer en <<modeExpert,mode expert>>
+ +
+ 
 image::../images/dimpopover5.png[]
+L'id du plan du cadre principal du mode Design
 
+TIP:
+En mode read-only par défaut, passer en <<modeExpert,mode expert>>
+ +
+ 
 image::../images/dimpopover6.png[]
+Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Selection* pour en effacer une, il suffit juste en selectionner une dans le selecteur pour qu'elle soit appliquer à la page principale
+
+TIP:
+Selut les fonts du tyepe *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées
+ +
 
 image::../images/dimpopover7.png[]
+Valider permet de revenir au <<Menu,popover Menu>>
 
 [[boutons]] +
 
