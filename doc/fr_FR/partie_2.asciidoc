@@ -4,7 +4,11 @@ Dans cette partie nous allons entrer dans les détails, découpé chaque popover
 image::../images/popovemenu1.png[]
 Le titre de ce popover indique les dimensions de la *barre de menu*
  +
- 
+ +
+ +
+ +
+ +
+
 image::../images/popovemenu2.png[]
 Ce selecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'
  +
