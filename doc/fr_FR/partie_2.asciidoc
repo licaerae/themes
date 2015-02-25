@@ -5,12 +5,10 @@ image::../images/popovemenu1.png[]
 Le titre de ce popover indique les dimensions de la *barre de menu*
  +
  +
- +
- +
- +
 
 image::../images/popovemenu2.png[]
 Ce selecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'
+ +
  +
 
 image::../images/popovemenu3.png[]
@@ -20,13 +18,16 @@ TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
  +
+ +
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré
  +
+ +
 
 image::../images/popovemenu5.png[]
 Valider ou non l'affichage de la barre d'état
+ +
  +
 
 image::../images/popovemenu6.png[]
@@ -36,13 +37,16 @@ Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages s
 image::../images/popovemenu7.png[]
 Configuration des paramètres de Dimensions, Fonts et image de fond voir <<Dimensions>>
  +
+ +
 
 image::../images/popovemenu8.png[]
 Configuration des paramètres des Boutons, des Menus ou des Ongles voir  <<Boutons>>
  +
+ +
 
 image::../images/popovemenu9.png[]
 Configuration du style CSS voir <<Style>>
+ +
  +
 
 [Dimensions]
