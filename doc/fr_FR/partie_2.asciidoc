@@ -57,11 +57,27 @@ Configuration du style CSS voir <<styles,Popover de Style>>
 
 ==== Popover de Dimensions
 
+image::../images/dimpopover1.png[]
+
+image::../images/dimpopover2.png[]
+
+image::../images/dimpopover3.png[]
+
+image::../images/dimpopover4.png[]
+
+image::../images/dimpopover5.png[]
+
+image::../images/dimpopover6.png[]
+
+image::../images/dimpopover7.png[]
+
 [[boutons]] +
 
 ==== Popover de Boutons
 
 image::../images/boutonpopover1.png[]
+
+image::../images/boutonpopover2.png[]
 
 image::../images/boutonpopover3.png[]
 
@@ -69,15 +85,23 @@ image::../images/boutonpopover4.png[]
 
 image::../images/boutonpopover5.png[]
 
-image::../images/boutonpopover2.png[]
-
 image::../images/boutonpopover6.png[]
 
 image::../images/boutonpopover7.png[]
 
 image::../images/boutonpopover8.png[]
 
+image::../images/boutonpopover9.png[]
 
 [[styles]] +
 
 ==== Popover de Style
+
+image::../images/stylepopover1.png[]
+
+image::../images/stylepopover2.png[]
+
+image::../images/stylepopover3.png[]
+
+image::../images/stylepopover4.png[]
+
