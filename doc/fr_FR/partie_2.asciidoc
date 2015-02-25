@@ -18,6 +18,7 @@ TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
+. 
 +
 
 image::../images/popovemenu4.png[]
