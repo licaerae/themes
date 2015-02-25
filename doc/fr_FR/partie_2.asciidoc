@@ -28,7 +28,7 @@ image::../images/popovemenu5.png[]
 Valider ou non l'affichage de la barre d'état
 
 TIP:
-La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans version future de pouvoir controler l'état de certain virtuel (en cours de developpement).
+La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir controler l'état de certains virtuels (en cours de developpement).
 
 
 image::../images/popovemenu6.png[]
