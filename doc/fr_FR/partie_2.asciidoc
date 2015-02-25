@@ -32,6 +32,7 @@ La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#bread
 Valider ou non l'affichage de la barre d'état
  +
  +
+ 
 image::../images/popovemenu6.png[]
 Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires
  +
@@ -41,6 +42,7 @@ image::../images/popovemenu7.png[]
 Configuration des paramètres de Dimensions, Fonts et image de fond voir <<dimensions, Popover de Dimensions>>
  +
  +
+ 
 image::../images/popovemenu8.png[]
 Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<boutons,Popover de Boutons>>
  +
