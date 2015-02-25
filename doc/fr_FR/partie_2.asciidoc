@@ -63,13 +63,13 @@ Configuration du style CSS voir <<styles,Popover de Style>>
 
 image::../images/boutonpopover1.png[]
 
-image::../images/boutonpopover2.png[]
-
 image::../images/boutonpopover3.png[]
 
 image::../images/boutonpopover4.png[]
 
 image::../images/boutonpopover5.png[]
+
+image::../images/boutonpopover2.png[]
 
 image::../images/boutonpopover6.png[]
 
