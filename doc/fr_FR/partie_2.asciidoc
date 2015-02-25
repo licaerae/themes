@@ -12,47 +12,40 @@ Ce selecteur va permettre de définir de quel coté va être disposé la *barre 
  +
 
 image::../images/popovemenu3.png[]
-Ce selecteur va permettre de définir la taille de la *barre de menu*
-
 TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
-
-
+Ce selecteur va permettre de définir la taille de la *barre de menu*
+ +
+ +
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré
  +
  +
-
 image::../images/popovemenu5.png[]
-Valider ou non l'affichage de la barre d'état
-
 TIP:
 La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir controler l'état de certains virtuels (en cours de developpement).
 
-
- 
+Valider ou non l'affichage de la barre d'état
+ +
+ +
 image::../images/popovemenu6.png[]
 Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires
  +
  +
-
 image::../images/popovemenu7.png[]
 Configuration des paramètres de Dimensions, Fonts et image de fond voir <<dimensions, Popover de Dimensions>>
  +
  +
-
 image::../images/popovemenu8.png[]
 Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<boutons,Popover de Boutons>>
  +
  +
-
 image::../images/popovemenu9.png[]
 Configuration du style CSS voir <<styles,Popover de Style>>
  +
  +
-
 [[dimensions]] +
 
 ==== Popover de Dimensions
