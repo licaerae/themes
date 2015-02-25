@@ -53,8 +53,11 @@ Configuration du style CSS voir <<Style>>
  +
  +
 
-[[dimensions]]==== Popover de Dimensions
+[[dimensions]] +
+==== Popover de Dimensions
 
-[[boutons]]==== Popover de Boutons
+[[boutons]] +
+==== Popover de Boutons
 
-[[style]]==== Popover de Style
+[[style]] +
+==== Popover de Style
