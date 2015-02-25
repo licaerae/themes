@@ -14,6 +14,8 @@ Ce selecteur va permettre de définir de quel coté va être disposé la *barre 
 image::../images/popovemenu3.png[]
 Ce selecteur va permettre de définir la taille de la *barre de menu*
 
++
++
 ---
 TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
