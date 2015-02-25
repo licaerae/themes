@@ -18,6 +18,8 @@ TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
++
+...
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré
@@ -26,8 +28,10 @@ Nous avons ici un bouton et une entrée texte qui correspond au titre de la *bar
 
 image::../images/popovemenu5.png[]
 Valider ou non l'affichage de la barre d'état
- +
- +
+
+TIP:
+La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans version future de pouvoir controler l'état de certain virtuel (en cours de developpement).
+
 
 image::../images/popovemenu6.png[]
 Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires
@@ -49,8 +53,11 @@ Configuration du style CSS voir <<Style>>
  +
  +
 
-[Dimensions]
+[[Dimensions]]
+==== Popover de Dimensions
 
-[Boutons]
+[[Boutons]]
+==== Popover de Boutons
 
-[Style]
+[[Style]]
+==== Popover de Style
