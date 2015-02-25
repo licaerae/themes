@@ -1,12 +1,17 @@
 == Thèmes
-Plugin servant à creer des thèmes à partir de la librairie Bootstrap
+Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
 
 === Description
-*_Jeedom_*(TM) nous offre un mode Design qui permet de creer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets.
+*_Jeedom_*(TM) nous offre un mode Design qui permet de creer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets. +
 Au fur et à mesure du développement sont venu ce gréffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complétement indépendantes pour d'autres plugin ou fonctionnalité de *_Jeedom_*(TM)
 
 * Le gestionnaires d'images
 * Les boutons Personnalisés
+
+.Débutants
+====
+Le Plugin est orienté pour être pris en main le plus simplement possible, il n'y a aucun besoin de connaître toutes les options du plugin pour l'utiliser, la configuration par défaut suffit pour une utilisation sur tablette. Il suffit de créer un thème de rajouter des boutons pour qu'il soit tout de suite utilisable.
+
 
 D'autres modules pourront être implémenter selon les besoins de la communauté
 
