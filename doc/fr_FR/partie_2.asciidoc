@@ -40,7 +40,7 @@ Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages s
  +
 
 image::../images/popovemenu7.png[]
-Configuration des paramètres de Dimensions, Fonts et image de fond voir <<Dimensions>>
+Configuration des paramètres de Dimensions, Fonts et image de fond voir xref::Dimensions[]
  +
  +
 
