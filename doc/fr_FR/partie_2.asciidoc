@@ -92,7 +92,7 @@ Selut les fonts du tyepe *TrueType*(.ttf) et *Web Open Font*(.woff) sont accept√
  +
 
 image::../images/dimpopover7.png[]
-Valider permet de revenir au <<Popover-du-Menu,popover Menu>>
+Valider permet de revenir au <<popover-du-menu,popover Menu>>
 
 [[boutons]] +
 
