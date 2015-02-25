@@ -39,17 +39,17 @@ Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages s
  +
 
 image::../images/popovemenu7.png[]
-Configuration des paramètres de Dimensions, Fonts et image de fond voir <<dimensions>>
+Configuration des paramètres de Dimensions, Fonts et image de fond voir <<dimensions, Popover de Dimensions>>
  +
  +
 
 image::../images/popovemenu8.png[]
-Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<boutons>>
+Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<boutons, Popover de Boutons>>
  +
  +
 
 image::../images/popovemenu9.png[]
-Configuration du style CSS voir <<Style>>
+Configuration du style CSS voir <<style, Popover de Style>>
  +
  +
 
