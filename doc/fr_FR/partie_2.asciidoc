@@ -20,7 +20,6 @@ En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
 
 +
-+
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré +
@@ -33,7 +32,6 @@ Valider ou non l'affichage de la barre d'état
 TIP:
 La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de developpement).
 
-+
 +
  
 image::../images/popovemenu6.png[]
@@ -73,7 +71,6 @@ Les valeurs par défaut correspond à une tablette horizontale +
 [red]#Attention:# Ne pas confondre page(ou fenêtre) princiale et cadre principal
 
 +
-+
 
 image::../images/dimpopover3.png[]
 Permet de définir l'image de fonds, les images proviennent de la catégorie par défaut du <<gestImages,Gestionnaire d'images>>
@@ -87,7 +84,6 @@ TIP:
 En mode read-only par défaut, passer en <<modeExpert,mode expert>>pour le modifier.
 
 +
-+
  
 image::../images/dimpopover5.png[]
 L'id du plan du cadre principal du mode Design
@@ -95,7 +91,6 @@ L'id du plan du cadre principal du mode Design
 TIP:
 En mode read-only par défaut, passer en <<modeExpert,mode expert>>pour le modifier.
 
-+
 +
 
  
@@ -105,7 +100,6 @@ Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une,
 TIP:
 Selut les fonts du tyepe *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées
 
-+
 +
  
 image::../images/dimpopover7.png[]
