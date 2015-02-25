@@ -17,7 +17,7 @@ Ce selecteur va permettre de définir la taille de la *barre de menu*
 TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
-
+ +
  +
  +
 
