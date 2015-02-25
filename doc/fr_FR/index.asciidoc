@@ -25,7 +25,11 @@ include::partie_1.asciidoc[Création d'un thème Facile]
 
 '''
 === Options avancées
-include::partie_2.asciidoc[]
+include::partie_2.asciidoc[Options avancées]
+
+'''
+=== Modules additionnels
+include::partie_3.asciidoc[]
 
 '''
 === FAQ
