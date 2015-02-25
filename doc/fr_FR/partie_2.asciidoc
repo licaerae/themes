@@ -115,9 +115,8 @@ image::../images/boutonpopover1.png[]
 Permet de choisir le type d'affichage 
 
 * Boutons: link:http://getbootstrap.com/css/#buttons["Classique"].
-* Onglets: voir link:http://getbootstrap.com/css/#nav-tabs["Nav Tabs"] .
-* Onglets: voir link:http://getbootstrap.com/css/#nav-pills["Nav Pills"] .
- +
+* Onglets: voir link:http://getbootstrap.com/css/#nav-tabs["Nav Tabs"].
+* Onglets: voir link:http://getbootstrap.com/css/#nav-pills["Nav Pills"]. +
  +
   
 image::../images/boutonpopover2.png[]
@@ -132,8 +131,8 @@ image::../images/boutonpopover3.png[]
 La couleur du bouton Home.
 
 image::../images/boutonpopover4.png[]
-Passe en mode justifié(1) pour les Onglets et Menus. +
-(1) les boutons prendrons toute la taille de la *barre de menu*.
+Passe en mode justifié~(1)~ pour les Onglets et Menus. +
+~(1) les boutons prendrons toute la taille de la *barre de menu*.~
  +
  +
 
