@@ -131,7 +131,7 @@ image::../images/boutonpopover3.png[]
 La couleur du bouton Home.
 
 image::../images/boutonpopover4.png[]
-Passe en mode justifié~(1)~ pour les Onglets et Menus. +
+Passe en mode justifié^(1)^ pour les Onglets et Menus. +
 ~(1) les boutons prendrons toute la taille de la *barre de menu*.~
  +
  +
