@@ -73,9 +73,9 @@ image::../images/boutonpopover5.png[]
 
 image::../images/boutonpopover6.png[]
 
-image::../images/boutonpopover8.png[]
+image::../images/boutonpopover7.png[]
 
-image::../images/boutonpopover9.png[]
+image::../images/boutonpopover8.png[]
 
 
 [[styles]] +
