@@ -60,5 +60,17 @@ Le plugin devait s'arrêter à la création de la page principale, des pages sec
 
 image::../images/secondaires.png[]
 
-Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bouton *Ajouter* est grisé puisque nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identiques sauf que vous pouvez créer autant de cadre que vous voulez. 
+Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bouton *Ajouter* est grisé puisque nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identiques sauf que vous pouvez créer autant de cadre que vous voulez. +
+Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un role à part. +
+Pour la suite du projet nous allons établir les différents modules dans chaque piéce :
+
+* Salon: 1 capteur de présence, 1 lumière, 1 thermostat, Surveillance réseau
+* cuisine: 1 capteur de présence, 1 lumière
+* Chambre: 1 capteur de présence, 1 lumière, 1 thermostat
+
+===== Salon
+Si vous cliquez sur la fenêtre un popover pour la configuration du cadre apparaît:
+
+image::../images/popovercadre.png[]
+
 
