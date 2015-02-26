@@ -30,4 +30,8 @@ Voici le résultat: +
 image::../images/démo1.png[]
 
 ==== Design et Bootstrap
-Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:../images/bdesign.png[] et image:../images/bbootstrap.png[]
+Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:../images/bdesign.png[] et image:../images/bbootstrap.png[] +
+
+===== Design
+Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principale. A chaque fois que vous charger un thème le plugin vérifié que les pages sont créer, si toutes les pages existent le bouton sera grisé.
+
