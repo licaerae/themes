@@ -140,7 +140,7 @@ permet de re-classer les boutons dans l'ordre que l'on veut. +
 Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications. +
  +
 
-
+image::../images/boutonpopover9.png[]
 Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
  +
 
