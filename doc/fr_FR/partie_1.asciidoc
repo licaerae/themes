@@ -24,6 +24,6 @@ Maintenant que nos boutons sont créés, nous allons appliquez un style pour un 
 Sauvegadez votre thème maintenant. +
 
 Voici le résultat:
-image::../images/demo1.png[]
+image::../images/demo1.png[] +
 le fichier du thème qu'il est possible d'importer voir <<importexport,Importer/Exporter>> :
 link:../images/demo.thm[Demo]
