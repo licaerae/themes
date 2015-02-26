@@ -25,7 +25,7 @@ Sauvegadez votre thème maintenant. +
 
 Voici le résultat: +
 
-image::../images/demo1.png[]
+image::../images/démo1.png[]
 
 le fichier du thème qu'il est possible d'importer voir <<importexport,Importer/Exporter>> :
 link:../images/demo.thm[Demo]
