@@ -1,4 +1,4 @@
-Dans cette partie nous allons entrer dans les détails, découpé chaque popover, et fournir toutes les informations pour utiliser toutes les possiblités du plugin
+Dans cette partie nous allons entrer dans les détails, découpé chaque popover, et fournir toutes les informations pour utiliser toutes les possibilités du plugin
 
 ==== Popover du Menu
 image::../images/popovemenu1.png[]
@@ -6,11 +6,11 @@ Le titre de ce popover indique les dimensions de la *barre de menu*. +
  +
  
 image::../images/popovemenu2.png[]
-Ce selecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'. +
+Ce sélecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'. +
 
 image::../images/popovemenu3.png[]
 
-Ce selecteur va permettre de définir la taille de la *barre de menu*.
+Ce sélecteur va permettre de définir la taille de la *barre de menu*.
 
 TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
@@ -25,7 +25,7 @@ image::../images/popovemenu5.png[]
 Valider ou non l'affichage de la barre d'état. +
 
 TIP:
-La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de developpement). +
+La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de développement). +
  +
 
 image::../images/popovemenu6.png[]
@@ -79,7 +79,7 @@ En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modi
  +
 
 image::../images/dimpopover6.png[]
-Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Selection* pour en effacer une, le selecteur défini celle qui sera appliqué à la page principale. +
+Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Sélection* pour en effacer une, le sélecteur défini celle qui sera appliqué à la page principale. +
 
 TIP:
 Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées. +
@@ -136,7 +136,7 @@ Le premier bouton permet d'<<ajoutBouton,ajouter un bouton>>, le suivant d'édit
  +
 
 image::../images/boutonpopover8.png[]
-permet de re-classer les boutons dans l'ordre que l'on veut. +
+permet de reclasser les boutons dans l'ordre que l'on veut. +
 Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications. +
  +
 
@@ -148,8 +148,8 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
 
 ===== Ajout/Edition d'un Bouton
 image:../images/creabouton.png[] image:../images/editbouton.png[]
-Indiqué le *Nom* du bouton, choississez sa *Couleur* +
-Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[] pour en rajouter une, le bouton image:../images/trash.png[] permet d'éffacer l'entrée. +
+Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
+Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[] pour en rajouter une, le bouton image:../images/trash.png[] permet d’effacer l'entrée. +
 
 TIP:
 Les IDs des plan sont en mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier. +
