@@ -1,4 +1,6 @@
-Pour apréender le plugin nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. +
+==== Création
+
+Pour appréhender le plugin nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. +
 Pour commencer nous allons définir la nature de notre projet :
 
 * Nous adopterons le format Tablette horizontale (paramètres par défaut).
@@ -21,9 +23,11 @@ Maintenant que nos boutons sont créés, nous allons appliquez un style pour un 
 * Bordure : *Taille*: +5+, *Rayon*: +5+, *Style*: +groove+, *Couleur*: +Bleu+
 * Ombre : *Taille*: +10+, +10+, +10+, *Couleur*: +Bleu Clair+
 
-Sauvegadez votre thème maintenant. +
+Sauvegardez votre thème maintenant. +
 
 Voici le résultat: +
 
 image::../images/démo1.png[]
 
+==== Design et Bootstrap
+Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:../images/bdesign.png[] et image:../images/bbootstrap.png[]
