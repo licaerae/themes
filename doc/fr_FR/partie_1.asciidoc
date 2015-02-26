@@ -60,5 +60,5 @@ Le plugin devait s'arrêter à la création de la page principale, des pages sec
 
 image::../images/secondaires.png[]
 
-Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bouton *Ajouter* est grisé puisque nous sommes en configuration _mono-cadre_, la configuration _multi-cadres_ est identiques sauf que vous pouvez créer autant de cadre que vous voulez. 
+Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bouton *Ajouter* est grisé puisque nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identiques sauf que vous pouvez créer autant de cadre que vous voulez. 
 
