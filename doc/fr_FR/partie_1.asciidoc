@@ -27,5 +27,5 @@ Voici le résultat: +
 
 image::../images/démo1.png[]
 
-le fichier du thème qu'il est possible d'importer voir <<importexport,Importer/Exporter>> :
-link:../images/demo.thm[Demo]
+//le fichier du thème qu'il est possible d'importer voir <<importexport,Importer/Exporter>> :
+//link:../images/demo.thm[Demo]
