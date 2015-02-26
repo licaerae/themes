@@ -5,9 +5,9 @@ Pour commencer nous allons définir la nature de notre projet :
 * La barre de menu sera situé en 'Haut' (paramètres par défaut).
 * Barre d'état apparente (paramètres par défaut).
 * Les entrées de la barre de menu seront des Boutons (paramètres par défaut).
-* Le design comportera 3 Pièces composé comme suis: RdC (Salon, Cuisine), Chambre
-* Mono-cadre
-* On configura un style avec une bordure et une ombre pour un rendu visuel
+* Le design comportera 3 Pièces composé comme suis: RdC (Salon, Cuisine), Chambre.
+* Mono-cadre (paramètres par défaut).
+* On configura un style avec une bordure et une ombre pour un rendu visuel.
 
 Nous allons commencer par créer un thème, cliquer sur: image:../images/ajout.png[] +
 Changeons le titre pour un message de bienvenue, remplacez dans le premier popover +Menu+ par +Bienvenue dans Notre Espace Domotique+. +
@@ -27,5 +27,3 @@ Voici le résultat: +
 
 image::../images/démo1.png[]
 
-//le fichier du thème qu'il est possible d'importer voir <<importexport,Importer/Exporter>> :
-//link:../images/demo.thm[Demo]
