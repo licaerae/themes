@@ -4,12 +4,9 @@ Dans cette partie nous allons entrer dans les détails, découpé chaque popover
 image::../images/popovemenu1.png[]
 Le titre de ce popover indique les dimensions de la *barre de menu*. +
  +
- +
-
+ 
 image::../images/popovemenu2.png[]
-Ce selecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'.
- +
- +
+Ce selecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'. +
 
 image::../images/popovemenu3.png[]
 
@@ -17,41 +14,34 @@ Ce selecteur va permettre de définir la taille de la *barre de menu*.
 
 TIP:
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
-en mode 'Gauche' et 'Droite' cela correspond à la Largeur.
-
-+
+en mode 'Gauche' et 'Droite' cela correspond à la Largeur. +
+ +
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré. +
  +
- +
 
 image::../images/popovemenu5.png[]
-Valider ou non l'affichage de la barre d'état.
+Valider ou non l'affichage de la barre d'état. +
 
 TIP:
-La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de developpement).
+La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de developpement). +
+ +
 
-+
- 
 image::../images/popovemenu6.png[]
-Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires.
+Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires. +
  +
- +
- 
+
 image:../images/popovemenu7.png[]
-Configuration des paramètres de Dimensions, Fonts et image de fond voir <<dimensions, Popover de Dimensions>>.
- +
+Configuration des paramètres de Dimensions, Fonts et image de fond voir <<dimensions, Popover de Dimensions>>. +
  +
  
 image:../images/popovemenu8.png[]
-Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<boutons,Popover de Boutons>>.
- +
+Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<boutons,Popover de Boutons>>. +
  +
  
 image:../images/popovemenu9.png[]
-Configuration du style CSS voir <<styles,Popover de Style>>.
- +
+Configuration du style CSS voir <<styles,Popover de Style>>. +
  +
  
 [[dimensions]] +
@@ -59,34 +49,30 @@ Configuration du style CSS voir <<styles,Popover de Style>>.
 ==== Popover de Dimensions
 
 image::../images/dimpopover1.png[]
-Le titre de ce popover fournit les dimensions du cadre principal.
- +
+Le titre de ce popover fournit les dimensions du cadre principal. +
  +
  
 image::../images/dimpopover2.png[]
-Permet de définir les dimensions de la page principale.
+Permet de définir les dimensions de la page principale. +
 
 TIP:
 Les valeurs par défaut correspond à une tablette horizontale. +
-[red]#Attention:# Ne pas confondre page(ou fenêtre) principale et cadre principal.
-
-+
+[red]#Attention:# Ne pas confondre page(ou fenêtre) principale et cadre principal. +
+ +
 
 image::../images/dimpopover3.png[]
-Permet de définir l'image de fond, les images proviennent de la catégorie par défaut du <<gestImages,Gestionnaire d'images>>.
- +
+Permet de définir l'image de fond, les images proviennent de la catégorie par défaut du <<gestImages,Gestionnaire d'images>>. +
  +
 
 image::../images/dimpopover4.png[]
-L'id du plan de la page principale du mode Design.
+L'id du plan de la page principale du mode Design. +
 
 TIP:
-En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier.
-
-+
+En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier. +
+ +
  
 image::../images/dimpopover5.png[]
-L'id du plan du cadre principal du mode Design.
+L'id du plan du cadre principal du mode Design. +
 
 TIP:
 En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier. +
@@ -100,8 +86,7 @@ Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptée
  +
  
 image::../images/dimpopover7.png[]
-Valider permet de revenir au <<popover-du-menu,popover Menu>>.
- +
+Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
  +
 
 [[boutons]] +
@@ -109,7 +94,7 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>.
 ==== Popover de Boutons
 
 image::../images/boutonpopover1.png[]
-Permet de choisir le type d'affichage 
+Permet de choisir le type d'affichage +
 
 * Boutons: link:http://getbootstrap.com/css/#buttons["Classique"].
 * Onglets: voir link:http://getbootstrap.com/css/#nav-tabs["Nav Tabs"].
@@ -117,50 +102,46 @@ Permet de choisir le type d'affichage
  +
   
 image::../images/boutonpopover2.png[]
-La taille des boutons.
+La taille des boutons. +
 ____
-Ne s'applique pas aux Onglets ou Menus.
+Ne s'applique pas aux Onglets ou Menus. +
 ____
-+
 + 
  
 image::../images/boutonpopover3.png[]
-La couleur du bouton Home.
+La couleur du bouton Home. +
+ +
 
 image::../images/boutonpopover4.png[]
 Passe en mode justifié^(1)^ pour les Onglets et Menus. +
-~(1) les boutons prendrons toute la taille de la *barre de menu*.~
- +
+~(1) les boutons prendrons toute la taille de la *barre de menu*.~ +
  +
 
 image::../images/boutonpopover5.png[]
-Permet d'utiliser le format groupé pour les boutons.
+Permet d'utiliser le format groupé pour les boutons. +
 
 ____
-Ne s'applique pas aux Onglets ou Menus.
+Ne s'applique pas aux Onglets ou Menus. +
 ____
 
-image::../images/menugroupé.png[]
- +
+image::../images/menugroupé.png[] 
  +
 
 image::../images/boutonpopover6.png[]
 Permet de décaler les boutons sur la *barre de menu*. +
  +
- +
 
 image::../images/boutonpopover7.png[]
-Le premier bouton permet d'<<ajoutBouton,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur.
+Le premier bouton permet d'<<ajoutBouton,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur. +
+ +
 
 image::../images/boutonpopover8.png[]
 permet de re-classer les boutons dans l'ordre que l'on veut. +
 Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications. +
  +
- +
 
 
-Valider permet de revenir au <<popover-du-menu,popover Menu>>.
- +
+Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
  +
 
 [[ajoutBouton]] +
@@ -171,31 +152,26 @@ Indiqué le *Nom* du bouton, choississez sa *Couleur* +
 Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[] pour en rajouter une, le bouton image:../images/trash.png[] permet d'éffacer l'entrée. +
 
 TIP:
-Les IDs des plan sont en mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier.
-
-+
-
+Les IDs des plan sont en mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier. +
+ +
+ 
 [[styles]] +
 
 ==== Popover de Style
 
 image::../images/stylepopover1.png[]
-La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond si elle est cocher sinon les couleurs du profil Jeedom seront utilisées.
- +
+La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond si elle est cocher sinon les couleurs du profil Jeedom seront utilisées. +
  +
 
 image::../images/stylepopover2.png[]
-Définit la configuration des bordures pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires.
- +
+Définit la configuration des bordures pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires. +
  +
 
 image::../images/stylepopover3.png[]
-Définit la configuration de l'ombre pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires.
- +
+Définit la configuration de l'ombre pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires. +
  +
 
 image::../images/stylepopover4.png[]
-Valider permet de revenir au <<popover-du-menu,popover Menu>>.
- +
+Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
  +
 
