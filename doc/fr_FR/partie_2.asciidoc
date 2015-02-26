@@ -93,9 +93,8 @@ En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modi
 
 +
 
- 
 image::../images/dimpopover6.png[]
-Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Selection* pour en effacer une, le selecteur défini celle qui sera appliqué à la page principale.
+Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Selection* pour en effacer une, le selecteur défini celle qui sera appliqué à la page principale. +
 
 TIP:
 Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées.
@@ -144,8 +143,8 @@ Ne s'applique pas aux Onglets ou Menus.
 ____
 
 image::../images/menugroupé.png[]
-+
-+ 
+ +
+ +
 
 image::../images/boutonpopover6.png[]
 Permet de décaler les boutons sur la *barre de menu*. +
@@ -159,7 +158,7 @@ Le premier bouton permet d'<<ajoutBouton,ajouter un bouton>>, le suivant d'édit
 image::../images/boutonpopover8.png[]
 permet de re-classer les boutons dans l'ordre que l'on veut.
 
-image::../images/boutonpopover9.png[]
+
 Valider permet de revenir au <<popover-du-menu,popover Menu>>.
  +
  +
@@ -168,6 +167,8 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>.
 
 ===== Ajout/Edition d'un Bouton
 image:../images/creabouton.png[] image:../images/editbouton.png[]
+Indiqué le *Nom* du bouton, choississez sa *Couleur* +
+Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[] pour en rajouter une, le bouton image:../images/trash.png[] permet d'éffacer l'entrée. +
 
 [[styles]] +
 
