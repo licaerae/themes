@@ -53,6 +53,6 @@ Arrivez à cette étape toutes les pages doivent être créées, ce bouton va pe
 
 image::../images/bootstrapok.png[]
 
-TIP: si la page de la fênetre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour combler ce problème.
+TIP: si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour combler ce problème.
 
 
