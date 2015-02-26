@@ -89,17 +89,15 @@ image::../images/dimpopover5.png[]
 L'id du plan du cadre principal du mode Design.
 
 TIP:
-En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier.
-
-+
+En mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier. +
+ +
 
 image::../images/dimpopover6.png[]
 Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Selection* pour en effacer une, le selecteur défini celle qui sera appliqué à la page principale. +
 
 TIP:
-Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées.
-
-+
+Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées. +
+ +
  
 image::../images/dimpopover7.png[]
 Valider permet de revenir au <<popover-du-menu,popover Menu>>.
@@ -148,7 +146,6 @@ image::../images/menugroupé.png[]
 
 image::../images/boutonpopover6.png[]
 Permet de décaler les boutons sur la *barre de menu*. +
-Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications.
  +
  +
 
@@ -156,7 +153,10 @@ image::../images/boutonpopover7.png[]
 Le premier bouton permet d'<<ajoutBouton,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur.
 
 image::../images/boutonpopover8.png[]
-permet de re-classer les boutons dans l'ordre que l'on veut.
+permet de re-classer les boutons dans l'ordre que l'on veut. +
+Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications. +
+ +
+ +
 
 
 Valider permet de revenir au <<popover-du-menu,popover Menu>>.
