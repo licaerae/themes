@@ -170,6 +170,11 @@ image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choississez sa *Couleur* +
 Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[] pour en rajouter une, le bouton image:../images/trash.png[] permet d'éffacer l'entrée. +
 
+TIP:
+Les IDs des plan sont en mode read-only par défaut, passer en <<modeExpert,mode expert>> pour le modifier.
+
++
+
 [[styles]] +
 
 ==== Popover de Style
