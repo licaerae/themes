@@ -69,11 +69,26 @@ Pour la suite du projet nous allons établir les différents modules dans chaque
 * cuisine: 1 capteur de présence, 1 lumière
 * Chambre: 1 capteur de présence, 1 lumière, 1 thermostat
 
-===== Salon
-Si vous cliquez sur la fenêtre un popover pour la configuration du cadre apparaît:
+===== Les pieces
+Commençons par sélectionner +Salon+ dans le sélecteur *Pages* 
+Si vous cliquez sur le cadre un popover pour la configuration du cadre apparaît: +
 
 image::../images/popovercadre.png[]
-Changeons +Titre+ par +Salon+
+
+Changeons +Titre+ par +Salon+, et selectionnons l'image télechargé avec le selecteur *Image* +
 Pour le fonctionnement complet de ce popover voir <<popover-du-cadre,Popover du Cadre>>
+
+Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. +
+Répetons ces étapes pour les deux autres pièces. +
+
+TIP: Vou pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegarder, pour faire des test ou autre. +
+
+Voici le résultat final:+
+
+image::../images/salondemo.png[]
+image::../images/cuisinedemo.png[]
+image::../images/chambredemo.png[]
+
+A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
 
 
