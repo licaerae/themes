@@ -138,9 +138,12 @@ Passe en mode justifié^(1)^ pour les Onglets et Menus. +
 
 image::../images/boutonpopover5.png[]
 Permet d'utiliser le format groupé pour les boutons.
+
 ____
 Ne s'applique pas aux Onglets ou Menus.
 ____
+
+image::../menugroupé.png[]
 +
 + 
 
