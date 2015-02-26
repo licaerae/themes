@@ -46,7 +46,7 @@ Voici le résultat du thème que nous développons: +
 
 image::../images/designok.png[]
 Vous pouvez constatez que le plugin crée une page supplémentaire, appelez +Général+ elle correspond à la page secondaire du bouton *home* qui est la page de présentation de votre mode Design. +
-Pensez à sauvegarder votre projet. +
+*Pensez à sauvegarder votre projet.* +
 
 ===== Bootstrap
 Arrivez à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecté le code dans la page principale pour pouvoir gérer toute votre Design, après toutes modifications il suffira de cliquez sur ce bouton pour mettre à jour la fenêtre principale. +
