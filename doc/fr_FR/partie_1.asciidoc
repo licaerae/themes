@@ -1,2 +1,11 @@
-Nous allons commencer par créer un thème, cliquer sur: 
-image:../images/ajout.png[]
+Pour apréender le plugin nous allons développer dans une partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. +
+Pour commencer nous allons définir la nature de notre projet :
+
+* Nous adopterons le format Tablette horizontale (paramètres par défaut).
+* La barre de menu sera situé en 'Haut' (paramètres par défaut).
+* Barre d'état apparente (paramètres par défaut).
+* les entrées de la barre de menu seront des Boutons (paramètres par défaut).
+* Le design comportera 3 Pièces composé comme suis: RdC (Salon, Cuisine), Chambre
+
+
+Nous allons commencer par créer un thème, cliquer sur: image:../images/ajout.png[]
