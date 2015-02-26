@@ -143,7 +143,7 @@ ____
 Ne s'applique pas aux Onglets ou Menus.
 ____
 
-image::../menugroupé.png[]
+image::../images/menugroupé.png[]
 +
 + 
 
