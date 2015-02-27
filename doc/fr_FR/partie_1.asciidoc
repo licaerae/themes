@@ -70,7 +70,7 @@ Pour la suite du projet nous allons établir les différents modules dans chaque
 * Chambre: 1 capteur de présence, 1 lumière, 1 thermostat
 
 ===== Les pieces
-Commençons par sélectionner +Salon+ dans le sélecteur *Pages* 
+Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
 Si vous cliquez sur le cadre un popover pour la configuration du cadre apparaît: +
 
 image::../images/popovercadre.png[]
