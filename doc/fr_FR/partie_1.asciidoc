@@ -13,7 +13,7 @@ Pour commencer nous allons définir la nature de notre projet :
 
 Nous allons commencer par créer un thème, cliquer sur: image:../images/ajout.png[] +
 Changeons le titre pour un message de bienvenue, remplacez dans le premier popover +Menu+ par +Bienvenue dans Notre Espace Domotique+. +
-Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<ajoutedition-dun-bouton,boutons>> et le <<popover-du-style,style>>. +
+Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<partie_2.asciidoc#ajoutedition-dun-bouton,boutons>> et le <<partie_2.asciidoc#popover-du-style,style>>. +
 Cliquez sur *Boutons* et appuyez sur image:../images/plus.png[] pour créer un nouveau bouton. +
 Notre premier bouton est un sous-menu, entrez +RdC+ dans le champs *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrée, cliquez sur image:../images/plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé. +
 Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
@@ -91,6 +91,7 @@ image::../images/chambredemo.png[]
 
 A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
+video::6T9feK6wF1A[démo]
 
 ===== Page Home
 Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement une image de votre maison en 3D, elle reste libre à votre imagination. +
