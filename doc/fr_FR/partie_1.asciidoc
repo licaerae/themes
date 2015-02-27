@@ -53,7 +53,7 @@ Arrivez à cette étape toutes les pages doivent être créées, ce bouton va pe
 
 image::../images/bootstrapok.png[]
 
-TIP: si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour combler ce problème.
+TIP: si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
 
 ==== Gestion des Pages Secondaires
 Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
