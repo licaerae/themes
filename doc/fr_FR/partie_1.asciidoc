@@ -83,7 +83,7 @@ Répetons ces étapes pour les deux autres pièces. +
 
 TIP: Vou pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegarder, pour faire des test ou autre. +
 
-Voici le résultat final:+
+Voici le résultat final: +
 
 image::../images/salondemo.png[]
 image::../images/cuisinedemo.png[]
@@ -91,5 +91,17 @@ image::../images/chambredemo.png[]
 
 A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
+
+===== Page Home
+Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement une image de votre maison en 3D, elle reste libre à votre imagination. +
+Dans notre cas nous allons mettre divers information qui donnera ceci :
+
+image::../images/generaldemo.png[]
+
+===== Les lignes SVG
+Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrai de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. +
+A partir du <<popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
+
+image::../images/popoversvg.png[]
 
 
