@@ -93,8 +93,8 @@ A ce stade comme va vous le montrer la vidéo suivante votre Design est fonction
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
 
 ===== Page Home
-Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement une image de votre maison en 3D, elle reste libre à votre imagination. +
-Dans notre cas nous allons mettre divers information qui donnera ceci :
+Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement afficher une image de votre maison en 3D, elle reste libre à votre imagination. +
+Dans notre cas nous allons mettre divers informations :
 
 image::../images/generaldemo.png[]
 
