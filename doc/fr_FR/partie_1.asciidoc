@@ -13,7 +13,7 @@ Pour commencer nous allons définir la nature de notre projet :
 
 Nous allons commencer par créer un thème, cliquer sur: image:../images/ajout.png[] +
 Changeons le titre pour un message de bienvenue, remplacez dans le premier popover +Menu+ par +Bienvenue dans Notre Espace Domotique+. +
-Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<partie_2.adoc#ajoutedition-dun-bouton,boutons>> et le <<partie_2.adoc#popover-du-style,style>>. +
+Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<partie_2.asciidoc#ajoutedition-dun-bouton,boutons>> et le <<partie_2.asciidoc#popover-du-style,style>>. +
 Cliquez sur *Boutons* et appuyez sur image:../images/plus.png[] pour créer un nouveau bouton. +
 Notre premier bouton est un sous-menu, entrez +RdC+ dans le champs *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrée, cliquez sur image:../images/plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé. +
 Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
@@ -76,7 +76,7 @@ Si vous cliquez sur le cadre un popover pour la configuration du cadre apparaît
 image::../images/popovercadre.png[]
 
 Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargé avec le sélecteur *Image* +
-Pour le fonctionnement complet de ce popover voir <<popover-du-cadre,Popover du Cadre>>
+Pour le fonctionnement complet de ce popover voir <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>
 
 Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. +
 Répetons ces étapes pour les deux autres pièces. +
@@ -92,8 +92,6 @@ image::../images/chambredemo.png[]
 A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
 
-video::6T9feK6wF1A[youtube]
-
 ===== Page Home
 Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement une image de votre maison en 3D, elle reste libre à votre imagination. +
 Dans notre cas nous allons mettre divers information qui donnera ceci :
@@ -102,7 +100,7 @@ image::../images/generaldemo.png[]
 
 ===== Les lignes SVG
 Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrai de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. +
-A partir du <<popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
+A partir du <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
 
 image::../images/popoversvg.png[]
 
