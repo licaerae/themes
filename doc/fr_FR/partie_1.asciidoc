@@ -91,7 +91,8 @@ image::../images/chambredemo.png[]
 
 A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
-video::6T9feK6wF1A[démo]
+
+video::6T9feK6wF1A[youtube]
 
 ===== Page Home
 Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement une image de votre maison en 3D, elle reste libre à votre imagination. +
