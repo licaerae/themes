@@ -56,14 +56,14 @@ image::../images/bootstrapok.png[]
 TIP: si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour combler ce problème.
 
 ==== Gestion des Pages Secondaires
-Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en controler le fonctionnement. +
+Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
 Les images qui serviront aux pages secondaires seront rajouté avec le Gestionnaire d'images, pour notre thème elle seront au format de notre cadre principale et seront créer à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] +
 
 image::../images/secondaires.png[]
 
 Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bouton *Ajouter* est grisé puisque nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identiques sauf que vous pouvez créer autant de cadre que vous voulez. +
-Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un role à part. +
-Pour la suite du projet nous allons établir les différents modules dans chaque piéce :
+Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un rôle à part. +
+Pour la suite du projet nous allons établir les différents modules dans chaque pièce :
 
 * Salon: 1 capteur de présence, 1 lumière, 1 thermostat, Surveillance réseau
 * cuisine: 1 capteur de présence, 1 lumière
@@ -75,7 +75,7 @@ Si vous cliquez sur le cadre un popover pour la configuration du cadre apparaît
 
 image::../images/popovercadre.png[]
 
-Changeons +Titre+ par +Salon+, et selectionnons l'image télechargé avec le selecteur *Image* +
+Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargé avec le sélecteur *Image* +
 Pour le fonctionnement complet de ce popover voir <<popover-du-cadre,Popover du Cadre>>
 
 Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. +
@@ -104,4 +104,7 @@ A partir du <<popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/p
 
 image::../images/popoversvg.png[]
 
-
+Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composé de quatre parties, un petit rectangle appelé +Début+, une ligne appelé +1er partie+, une ligne appelé +2eme partie+ et un dernier rectangle appelé +Fin+. +
+Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[] en haut à droite du popover permet d'effacer la ligne SVG. +
+Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. +
+le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom
