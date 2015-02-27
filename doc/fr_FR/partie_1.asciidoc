@@ -100,7 +100,7 @@ image::../images/generaldemo.png[]
 
 ===== Les lignes SVG
 Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrai de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. +
-A partir du <<popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
+A partir du <<popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
 
 image::../images/popoversvg.png[]
 
