@@ -1,3 +1,16 @@
+.*V0.9.10.4*
+Corrections Mineures
+Mise à jour de la Doc
+
+.*V0.9.10.3*
+Fenêtre principale en readonly
+read/write en mode expert
+corrections mineures
+
+.*V0.9.10.2*
+Corrections mineures
+Doc en cours
+
 .*V0.9.10.1*
 Mise à zéro du scroll sur appuie de home
 Modification du choix des boutons ( boutons, onglets, menus)
