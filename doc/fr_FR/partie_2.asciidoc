@@ -1,5 +1,6 @@
 Dans cette partie nous allons entrer dans les détails, découpé chaque popover, et fournir toutes les informations pour utiliser toutes les possibilités du plugin
 
+'''
 ==== Popover du Menu
 image::../images/popovemenu1.png[]
 Le titre de ce popover indique les dimensions de la *barre de menu*. +
@@ -46,6 +47,7 @@ Configuration du style CSS voir <<styles,Popover de Style>>. +
  
 [[dimensions]] +
 
+'''
 ==== Popover de Dimensions
 
 image::../images/dimpopover1.png[]
@@ -91,6 +93,7 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
 
 [[boutons]] +
 
+'''
 ==== Popover de Boutons
 
 image::../images/boutonpopover1.png[]
@@ -146,6 +149,7 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
 
 [[ajoutBouton]] +
 
+'''
 ===== Ajout/Edition d'un Bouton
 image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
@@ -157,6 +161,7 @@ Les IDs des plan sont en mode read-only par défaut, passer en <<modeExpert,mode
  
 [[styles]] +
 
+'''
 ==== Popover de Style
 
 image::../images/stylepopover1.png[]
