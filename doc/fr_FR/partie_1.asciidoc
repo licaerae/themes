@@ -1,4 +1,4 @@
-...
+'''
 ==== Création
 
 Pour appréhender le plugin nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. +
@@ -30,11 +30,11 @@ Voici le résultat: +
 
 image::../images/démo1.png[]
 
-...
+'''
 ==== Design et Bootstrap
 Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:../images/bdesign.png[] et image:../images/bbootstrap.png[] +
 
-...
+'''
 ===== Design
 Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous charger un thème le plugin vérifié que les pages sont créer, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement il suffit de modifier la taille de la fenêtre principale. Le bouton est dégrisé aussi dés qu'on rajoute un bouton.
 
@@ -51,7 +51,7 @@ image::../images/designok.png[]
 Vous pouvez constatez que le plugin crée une page supplémentaire, appelez +Général+ elle correspond à la page secondaire du bouton *home* qui est la page de présentation de votre mode Design. +
 *Pensez à sauvegarder votre projet.* +
 
-...
+'''
 ===== Bootstrap
 Arrivez à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecté le code dans la page principale pour pouvoir gérer tout votre Design, après toutes modifications il suffira de cliquez sur ce bouton pour mettre à jour la fenêtre principale. +
 
@@ -59,7 +59,7 @@ image::../images/bootstrapok.png[]
 
 TIP: si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
 
-...
+'''
 ==== Gestion des Pages Secondaires
 Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
 Les images qui serviront aux pages secondaires seront rajoutées avec le Gestionnaire d'images, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] +
@@ -74,7 +74,7 @@ Pour la suite du projet, nous allons établir les différents modules dans chaqu
 * cuisine: 1 capteur de présence, 1 lumière
 * Chambre: 1 capteur de présence, 1 lumière, 1 thermostat
 
-...
+'''
 ===== Les pièces
 Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
 Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaît: +
@@ -98,14 +98,14 @@ image::../images/chambredemo.png[]
 A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
 
-...
+'''
 ===== Page Home
 Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement afficher une image de votre maison en 3D, elle reste libre à votre imagination. +
 Dans notre cas nous allons mettre divers informations :
 
 image::../images/generaldemo.png[]
 
-...
+'''
 ===== Les lignes SVG
 Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. +
 A partir du <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
