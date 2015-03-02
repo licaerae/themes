@@ -69,7 +69,7 @@ image::../images/bootstrapok.png[]
 .Astuce
 --
 Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
- --
+--
 
 '''
 ==== Gestion des Pages Secondaires
