@@ -192,17 +192,52 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
 ==== Popover des Cadres
 
 image::../images/cadrepopover1.png[]
+Titre du cadre donnant les dimmensions du cadre. +
+image:../images/cadrelock.png[options="responsive"] permet de vérouiller/dévérouiller le cadre
+image:../images/cadretrash.png[options="responsive"] Permet de supprimer le cadre
 
 image::../images/cadrepopover2.png[]
+Nous avons ici un bouton et une entrée texte qui correspond au titre du cadre, le bouton permet de faire apparaître/disparaître le texte configuré. +
 
 image::../images/cadrepopover3.png[]
+Permet de définir la couleur utiliser pour le cadre, par défaut le selecteur est grisé, la couleur de la fenêtre principale est utilisée.
 
 image::../images/cadrepopover4.png[]
+Permet de choisir une des Fonts disponible. Voir <<popover-de-dimensions,Dimensions>>.
 
 image::../images/cadrepopover5.png[]
+Permet de choisir une image de fond. Voir <<partie_3.asciidoc#gestionnaire-dimages,Gestionnaire D'Images>>.
 
 image::../images/cadrepopover6.png[]
+Permet de définir le niveau de profondeur du cadre celon les niveaux du mode Design
+
+[alert,warning]
+.Warning
+--
+En théorie il doit rester à -1, implémenter pour des options avancées futures.
+--
 
 image::../images/cadrepopover7.png[]
+Le premier bouton permet d'ajouter un ligne SVG, le deuxième permet d'éditer la ligne SVG sélectionner dans le selecteur.
 
+[alert,success]
+.Astuce
+--
+Lorsque une ligne SVG est sélectionnée, elle clignote.
+--
+
+'''
 ==== mode Expert
+Pou éviter de nombreuse fausse manipulation, certain paramètres sont en lecture seule, mais il peut arriver que dans certaine situation on est besoin de les modifier manuellement. De plus le mode expert permet d'acceder à de nouvelles fonctionnalités. Une fois le mode expert validé vous pourrez modifier tous les IDs de plan. +
+
+image::../images/importer.png[]
+Ces deux boutons comme leur nom l'indique permettent d'importer/exporter des thèmes. Pour l'instant cela ne fonctionne que pour la page principale, l'exportation des pages secondaires sera implémentée dans une version ultérieure,  Vous remarquerez l'extension _thm_, elle correspond à une page principale.
+
+image::../images/raz.png[]
+Ce bouton est à utiliser avec précaution, il va vider la page sélectionnée de tout contenu. Il est utile dans certain cas de pouvoir réinitialiser une page.
+
+[alert,danger]
+.Important
+--
+Toutes les données de la page seront éffacées.
+--
