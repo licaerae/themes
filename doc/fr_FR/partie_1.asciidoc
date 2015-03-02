@@ -1,8 +1,7 @@
 '''
 ==== Création
 
-Pour appréhender le plugin nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. +
-Pour commencer, nous allons définir la nature de notre projet :
+Pour appréhender le plugin nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. Pour commencer, nous allons définir la nature de notre projet :
 
 * Nous adopterons le format Tablette horizontale (paramètres par défaut).
 * La barre de menu sera située en 'Haut' (paramètres par défaut).
@@ -89,11 +88,9 @@ Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaî
 
 image::../images/popovercadre.png[]
 
-Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le sélecteur *Image* +
-Pour le fonctionnement complet de ce popover voir <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>
+Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le sélecteur *Image*.Pour le fonctionnement complet de ce popover voir <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>
 
-Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. +
-Répetons ces étapes pour les deux autres pièces. +
+Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. Répetons ces étapes pour les deux autres pièces. +
 
 [alert,success]
 .Astuce
@@ -112,22 +109,18 @@ link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
 
 '''
 ===== Page Home
-Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement afficher une image de votre maison en 3D, elle reste libre à votre imagination. +
-Dans notre cas nous allons mettre divers informations :
+Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement afficher une image de votre maison en 3D, elle reste libre à votre imagination. Dans notre cas nous allons mettre divers informations :
 
 image::../images/generaldemo.png[]
 
 '''
 ===== Les lignes SVG
-Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. +
-A partir du <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[options="responsive"] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
+Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. A partir du <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[options="responsive"] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
 
 image::../images/popoversvg.png[]
 
 Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composée de quatre parties, un petit rectangle appelé +Début+, une ligne appelée +1er partie+, une ligne appelée +2eme partie+ et un dernier rectangle appelé +Fin+. +
-Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[options="responsive"] en haut à droite du popover permet d'effacer la ligne SVG. +
-Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. +
-le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom. +
+Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[options="responsive"] en haut à droite du popover permet d'effacer la ligne SVG. Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. Le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom. +
 
 [alert,success]
 .Astuce
@@ -143,9 +136,7 @@ Il suffit de faire la même chose pour les autres pièces. +
 
 '''
 ==== Conclusion
-Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil Jeedom pour y accéder directement. +
-Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implementer l'affichage automatique de la page 'Home'. +
-Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
+Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil Jeedom pour y accéder directement. Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implementer l'affichage automatique de la page 'Home'. Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
 
 [alert,success]
 .Astuce
