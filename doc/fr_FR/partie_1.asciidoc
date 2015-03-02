@@ -122,3 +122,15 @@ TIP: Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
 Voici ce que la donne dans la +Cuisine+
 
 image::../images/cuisinesvg.png[]
+
+Il suffit de faire la même chose pour les autres pièces. +
+
+'''
+==== Conclusion
+Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil Jeedom pour y accéder directement. +
+Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implementer l'affichage automatique de la page 'Home'. +
+Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
+
+TIP: Il est possible de créer des profils `invité', il suffit au niveau du profil Jeedom de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires. +
+
+
