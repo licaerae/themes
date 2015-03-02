@@ -179,4 +179,23 @@ Définit la configuration de l'ombre pour la *barre de menu* le cadre principale
 image::../images/stylepopover4.png[]
 Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
  +
+ 
+ '''
+==== Popover des Cadres
+
+image::../images/cadrepopover1.png[]
+
+image::../images/cadrepopover2.png[]
+
+image::../images/cadrepopover3.png[]
+
+image::../images/cadrepopover4.png[]
+
+image::../images/cadrepopover5.png[]
+
+image::../images/cadrepopover6.png[]
+
+image::../images/cadrepopover7.png[]
+
+
 
