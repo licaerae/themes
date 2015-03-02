@@ -1,5 +1,6 @@
 '''
 ==== Gestionnaire d'Images
+[paradef-literal]
 Lors de nos pérégrinations sur le mode Design, l'astuce utilisé pour utiliser des images est de creer un widget vide et de s'en servir pour déposer les images utilisés. Pour ce plugin, il fallait un moyen pour importer des images. Plutôt que de gérer les images thème par thème, j'ai opté pour implémenter un gestionnaire d'images que l'on pourra utiliser avec tout les plugins de Jeedom.
 
 image::../images/gestionnaire.png[]
