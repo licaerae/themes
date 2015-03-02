@@ -12,8 +12,8 @@ Pour commencer, nous allons définir la nature de notre projet :
 * Mono-cadre (paramètres par défaut).
 * On configura un style avec une bordure et une ombre pour un rendu visuel.
 
-Nous allons commencer par créer un thème, cliquer sur: image:../images/ajout.png[].Changeons le titre pour un message de bienvenue, remplacez dans le premier popover +Menu+ par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<partie_2.asciidoc#ajoutedition-dun-bouton,boutons>> et le <<partie_2.asciidoc#popover-du-style,style>>. +
-Cliquez sur *Boutons* et appuyez sur image:../images/plus.png[] pour créer un nouveau bouton. Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:../images/plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé. Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
+Nous allons commencer par créer un thème, cliquer sur: image:../images/ajout.png[options="responsive"].Changeons le titre pour un message de bienvenue, remplacez dans le premier popover +Menu+ par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<partie_2.asciidoc#ajoutedition-dun-bouton,boutons>> et le <<partie_2.asciidoc#popover-du-style,style>>. +
+Cliquez sur *Boutons* et appuyez sur image:../images/plus.png[options="responsive"] pour créer un nouveau bouton. Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:../images/plus.png[options="responsive"] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé. Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
 
 Maintenant que nos boutons sont créés, nous allons appliquer un style pour un meilleur rendu visuel, ici chacun fait ce qu'il veut, pour notre démo j'ai choist les paramètres ainsi :
 
@@ -28,7 +28,7 @@ image::../images/démo1.png[]
 
 '''
 ==== Design et Bootstrap
-Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:../images/bdesign.png[] et image:../images/bbootstrap.png[] +
+Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:../images/bdesign.png[options="responsive"] et image:../images/bbootstrap.png[options="responsive"] +
 
 '''
 ===== Design
@@ -120,12 +120,12 @@ image::../images/generaldemo.png[]
 '''
 ===== Les lignes SVG
 Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. +
-A partir du <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
+A partir du <<partie_2.asciidoc#popover-du-cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[options="responsive"] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
 
 image::../images/popoversvg.png[]
 
 Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composée de quatre parties, un petit rectangle appelé +Début+, une ligne appelée +1er partie+, une ligne appelée +2eme partie+ et un dernier rectangle appelé +Fin+. +
-Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[] en haut à droite du popover permet d'effacer la ligne SVG. +
+Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[options="responsive"] en haut à droite du popover permet d'effacer la ligne SVG. +
 Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. +
 le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom. +
 
