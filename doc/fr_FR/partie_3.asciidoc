@@ -7,7 +7,7 @@ Cliquez sur le bouton ci-dessus pour accéder au gestionnaires d'images.
 
 image::../images/gestionnaire2.png[]
 Le gestionnaire permet de gerer des catégories, celle par défaut est utiisé par le plugin, seul les images importées dans cette categorie seront accessible dans les thèmes. Pour créer une nouvelle catégorie cliquez sur image:../images/gestionnaire3.png[options="responsive"]. +
-Pour importer une image cliquez sur image::../images/gestionnaire4.png[options="responsive"], elle sera importé dans la catégorie sélectionné. +
+Pour importer une image cliquez sur image:../images/gestionnaire4.png[options="responsive"], elle sera importé dans la catégorie sélectionné. +
 
 image::../images/gestionnaire5.png[]
 Une fois l'image importé, image:../images/cadretrash.png[options="responsive"] permet de la supprimer, image::../images/gestionnaire6.png[options="responsive"] ouvrira une boite dialogue donnant les inos suivantes :
