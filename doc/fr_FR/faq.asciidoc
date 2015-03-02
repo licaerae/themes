@@ -1,6 +1,3 @@
-<<<<<<< HEAD
 [qanda]
-=======
-[qanda]
-
->>>>>>> origin/master
+Je ne comprends pas l'utilité de ce plugin::
+    Lisez la documentation.
