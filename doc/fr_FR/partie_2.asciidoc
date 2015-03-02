@@ -193,8 +193,8 @@ Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
 
 image::../images/cadrepopover1.png[]
 Titre du cadre donnant les dimmensions du cadre. +
-image:../images/cadrelock.png[options="responsive"] permet de vérouiller/dévérouiller le cadre
-image:../images/cadretrash.png[options="responsive"] Permet de supprimer le cadre
+image:../images/cadrelock.png[options="responsive"] permet de vérouiller/dévérouiller le cadre. +
+image:../images/cadretrash.png[options="responsive"] Permet de supprimer le cadre. +
 
 image::../images/cadrepopover2.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre du cadre, le bouton permet de faire apparaître/disparaître le texte configuré. +
@@ -231,10 +231,10 @@ Lorsque une ligne SVG est sélectionnée, elle clignote.
 Pou éviter de nombreuse fausse manipulation, certain paramètres sont en lecture seule, mais il peut arriver que dans certaine situation on est besoin de les modifier manuellement. De plus le mode expert permet d'acceder à de nouvelles fonctionnalités. Une fois le mode expert validé vous pourrez modifier tous les IDs de plan. +
 
 image::../images/importer.png[]
-Ces deux boutons comme leur nom l'indique permettent d'importer/exporter des thèmes. Pour l'instant cela ne fonctionne que pour la page principale, l'exportation des pages secondaires sera implémentée dans une version ultérieure,  Vous remarquerez l'extension _thm_, elle correspond à une page principale.
+Ces deux boutons comme leur nom l'indique permettent d'importer/exporter des thèmes. Pour l'instant cela ne fonctionne que pour la page principale, l'exportation des pages secondaires sera implémentée dans une version ultérieure,  Vous remarquerez l'extension _thm_, elle correspond à une page principale. +
 
 image::../images/raz.png[]
-Ce bouton est à utiliser avec précaution, il va vider la page sélectionnée de tout contenu. Il est utile dans certain cas de pouvoir réinitialiser une page.
+Ce bouton est à utiliser avec précaution, il va vider la page sélectionnée de tout contenu. Il est utile dans certain cas de pouvoir réinitialiser une page. +
 
 [alert,danger]
 .Important
