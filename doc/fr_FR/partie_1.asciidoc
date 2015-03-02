@@ -43,8 +43,11 @@ image::../images/plannotok.png[]
 
 IMPORTANT: Lors de la première utilisation, le plugin récupère les IDs des pages pour mettre à jour le thème, il faut absolument sauvegarder pour ne pas perdre les données. +
 
-[icon="http://powerman.name/doc/images/icons/tip.png"]
-TIP: Si le bouton est dégrisé c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages.
+[alert,success]
+.Astuce
+--
+Si le bouton est dégrisé c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages.
+--
 
 Voici le résultat du thème que nous développons: +
 
@@ -58,7 +61,11 @@ Arrivez à cette étape toutes les pages doivent être créées, ce bouton va pe
 
 image::../images/bootstrapok.png[]
 
-TIP: si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
+[alert,success]
+.Astuce
+--
+Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
+ --
 
 '''
 ==== Gestion des Pages Secondaires
@@ -88,7 +95,11 @@ Pour le fonctionnement complet de ce popover voir <<partie_2.asciidoc#popover-du
 Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. +
 Répetons ces étapes pour les deux autres pièces. +
 
-TIP: Vou pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegarder, pour faire des test ou autre. +
+[alert,success]
+.Astuce
+--
+Vous pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegarder, pour faire des test ou autre.
+--
 
 Voici le résultat final: +
 
@@ -132,6 +143,10 @@ Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le r
 Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implementer l'affichage automatique de la page 'Home'. +
 Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
 
-TIP: Il est possible de créer des profils 'invité', il suffit au niveau du profil Jeedom de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires. +
+[alert,success]
+.Astuce
+--
+Il est possible de créer des profils 'invité', il suffit au niveau du profil Jeedom de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires.
+--
 
 
