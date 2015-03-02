@@ -10,11 +10,11 @@ Le gestionnaire permet de gerer des catégories, celle par défaut est utiisé p
 Pour importer une image cliquez sur image:../images/gestionnaire4.png[options="responsive"], elle sera importé dans la catégorie sélectionné. +
 
 image::../images/gestionnaire5.png[]
-Une fois l'image importé, image:../images/cadretrash.png[options="responsive"] permet de la supprimer, image::../images/gestionnaire6.png[options="responsive"] ouvrira une boite dialogue donnant les inos suivantes :
+Une fois l'image importé, image:../images/cadretrash.png[options="responsive"] permet de la supprimer, image:../images/gestionnaire6.png[options="responsive"] ouvrira une boite dialogue donnant les inos suivantes :
 
-* URL: Construit pour être utiliser comme lien locale Jeedom à utilise dans une balise directement par exemple un balise +<img>+.
-* CSS : construit pour être copier coller dans une classe +CSS+ ou un attribut style, pour mettre au choix dans un widget, un design voir sur le +custom.css+.
-* HTTP ; pour utilisation sur un site externe, par exemple un site déporté ou autres, c'est le moins utile s'il porte à confusion je le supprimerais, par contre dans ce cas le /jeedom doit être rajouter manuellement.
+* *URL*: Construit pour être utiliser comme lien locale Jeedom à utilise dans une balise directement par exemple un balise +<img>+.
+* *CSS* : construit pour être copier coller dans une classe +CSS+ ou un attribut style, pour mettre au choix dans un widget, un design voir sur le +custom.css+.
+* *HTTP* ; pour utilisation sur un site externe, par exemple un site déporté ou autres, c'est le moins utile s'il porte à confusion je le supprimerais, par contre dans ce cas le /jeedom doit être rajouter manuellement.
 
 '''
 ==== Boutons Personnalisées
