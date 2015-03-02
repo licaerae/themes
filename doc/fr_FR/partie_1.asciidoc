@@ -41,7 +41,11 @@ Ce bouton va permettre de créer les pages du mode Design, la page principale au
 image::../images/planok.png[]
 image::../images/plannotok.png[]
 
-IMPORTANT: Lors de la première utilisation, le plugin récupère les IDs des pages pour mettre à jour le thème, il faut absolument sauvegarder pour ne pas perdre les données. +
+[alert,danger]
+.Important
+--
+Lors de la première utilisation, le plugin récupère les IDs des pages pour mettre à jour le thème, il faut absolument sauvegarder pour ne pas perdre les données.
+--
 
 [alert,success]
 .Astuce
@@ -129,7 +133,11 @@ Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:..
 Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. +
 le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom. +
 
-TIP: Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10. +
+[alert,success]
+.Astuce
+--
+Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
+--
 
 Voici ce que la donne dans la +Cuisine+
 
