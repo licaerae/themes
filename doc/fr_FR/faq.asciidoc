@@ -1,1 +1,2 @@
 [qanda]
+>>>>>>> origin/master
