@@ -49,7 +49,7 @@ Voici le résultat du thème que nous développons: +
 
 image::../images/designok.png[]
 Vous pouvez constatez que le plugin crée une page supplémentaire, appelez +Général+ elle correspond à la page secondaire du bouton *home* qui est la page de présentation de votre mode Design. +
-*Pensez à sauvegarder votre projet.* +
+[label label-danger]#Important# *Pensez à sauvegarder votre projet.* +
 
 '''
 ===== Bootstrap
