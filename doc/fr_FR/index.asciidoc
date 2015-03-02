@@ -1,3 +1,5 @@
+:iconsfont: font-awesome
+
 == Thèmes
 Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
 
