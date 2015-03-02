@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 [qanda]
+=======
+[qanda]
+
 >>>>>>> origin/master
