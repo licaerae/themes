@@ -16,6 +16,8 @@ Une fois l'image importé, image:../images/cadretrash.png[options="responsive"] 
 * *CSS* : construit pour être copier coller dans une classe +CSS+ ou un attribut style, pour mettre au choix dans un widget, un design voir sur le +custom.css+.
 * *HTTP* ; pour utilisation sur un site externe, par exemple un site déporté ou autres, c'est le moins utile s'il porte à confusion je le supprimerais, par contre dans ce cas le /jeedom doit être rajouter manuellement.
 
+D'autres fonctionnalits seront rajoutées, la première qui sera implémentée sera la création de widget de type *other.action*.
+
 '''
 ==== Boutons Personnalisées
 Rn cours de développement
