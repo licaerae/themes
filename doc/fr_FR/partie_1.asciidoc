@@ -100,9 +100,9 @@ Vous pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegar
 
 Voici le résultat final: +
 
-image::../images/salondemo.png[]
-image::../images/cuisinedemo.png[]
-image::../images/chambredemo.png[]
+image::../images/salondemo.jpg[]
+image::../images/cuisinedemo.jpg[]
+image::../images/chambredemo.jpg[]
 
 A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
@@ -130,7 +130,7 @@ Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
 
 Voici ce que la donne dans la +Cuisine+
 
-image::../images/cuisinesvg.png[]
+image::../images/cuisinesvg.jpg[]
 
 Il suffit de faire la même chose pour les autres pièces. +
 
