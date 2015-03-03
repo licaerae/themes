@@ -52,12 +52,11 @@ Vous pouvez constatez que le plugin crée une page supplémentaire, appelez +Gé
 '''
 ===== Bootstrap
 Arrivez à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecté le code dans la page principale pour pouvoir gérer tout votre Design, après toutes modifications il suffira de cliquez sur ce bouton pour mettre à jour la fenêtre principale. +
-
 image::../images/bootstrapok.png[]
+{nbsp} +
 [icon="../images/tip.png"]
 [TIP]
 Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
-{nbsp} +
 
 '''
 ==== Gestion des Pages Secondaires
