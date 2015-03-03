@@ -212,7 +212,7 @@ Permet de choisir une des Fonts disponible. Voir <<popover_de_dimensions,Dimensi
 {nbsp} +
 
 image::../images/cadrepopover5.png[]
-Permet de choisir une image de fond. Voir <<gestionnaire_dimages,Gestionnaire D'Images>>. +
+Permet de choisir une image de fond. Voir <<gestionnaire_d_8217_images,Gestionnaire d'images>>. +
 {nbsp} +
 
 image::../images/cadrepopover6.png[]
