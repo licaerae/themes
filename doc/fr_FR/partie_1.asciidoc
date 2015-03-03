@@ -24,7 +24,7 @@ Sauvegardez votre thème maintenant. +
 Voici le résultat: +
 
 image::../images/démo1.png[]
-
+(nbsp) +
 
 '''
 ==== Design et Bootstrap
@@ -45,7 +45,6 @@ Lors de la première utilisation, le plugin récupère les IDs des pages pour me
 [icon="../images/tip.png"]
 [TIP]
 Si le bouton est dégrisé c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages.
-(nbsp) +
 
 Voici le résultat du thème que nous développons: +
 
