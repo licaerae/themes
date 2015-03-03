@@ -1,4 +1,7 @@
 :icons:
+<style:default-style style:family="paragraph">
+  <style:paragraph-properties fo:text-align="justify"
+</style:default-style>
 
 == Thèmes
 Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
