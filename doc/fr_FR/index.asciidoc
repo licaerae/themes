@@ -1,9 +1,5 @@
 :icons:
-
-[paradef-*]
-<style:default-style style:family="paragraph">
-  <style:paragraph-properties fo:text-align="justify"
-</style:default-style>
+:stylesheet:../images/doc.css
 
 == Thèmes
 Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
