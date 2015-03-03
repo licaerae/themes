@@ -73,7 +73,7 @@ Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliq
 '''
 ==== Gestion des Pages Secondaires
 Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
-Les images qui serviront aux pages secondaires seront rajoutées avec le Gestionnaire d'images, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] +
+Les images qui serviront aux pages secondaires seront rajoutées avec le <<gestionnaire_d_8217_images,Gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] +
 
 image::../images/secondaires.png[]
 {nbsp} +
