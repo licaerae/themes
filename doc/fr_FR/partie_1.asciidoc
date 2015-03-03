@@ -38,17 +38,13 @@ image::../images/planok.png[]
 image::../images/plannotok.png[]
 
 
-[alert,danger]
-.Important
---
+[icon="../images/important.png"]
+[IMPORTANT]
 Lors de la première utilisation, le plugin récupère les IDs des pages pour mettre à jour le thème, il faut absolument sauvegarder pour ne pas perdre les données.
---
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Si le bouton est dégrisé c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages.
---
 
 Voici le résultat du thème que nous développons: +
 
@@ -63,11 +59,9 @@ Arrivez à cette étape toutes les pages doivent être créées, ce bouton va pe
 image::../images/bootstrapok.png[]
 
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
---
 
 '''
 ==== Gestion des Pages Secondaires
@@ -97,11 +91,9 @@ Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le 
 
 Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. Répetons ces étapes pour les deux autres pièces. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Vous pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegarder, pour faire des test ou autre.
---
 
 Voici le résultat final: +
 
@@ -128,16 +120,13 @@ image::../images/popoversvg.png[]
 Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composée de quatre parties, un petit rectangle appelé +Début+, une ligne appelée +1er partie+, une ligne appelée +2eme partie+ et un dernier rectangle appelé +Fin+. +
 Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[options="responsive"] en haut à droite du popover permet d'effacer la ligne SVG. Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. Le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
---
 
 Voici ce que la donne dans la +Cuisine+
 
 image::../images/cuisinesvg.jpg[]
-
 
 Il suffit de faire la même chose pour les autres pièces. +
 
@@ -145,10 +134,8 @@ Il suffit de faire la même chose pour les autres pièces. +
 ==== Conclusion
 Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil Jeedom pour y accéder directement. Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implémenter l'affichage automatique de la page 'Home'. Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Il est possible de créer des profils 'invité', il suffit au niveau du profil Jeedom de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires.
---
 
 
