@@ -1,11 +1,11 @@
 :icons:
+[paradef-literal]
 
 == Thèmes
 Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
 
 === Description
 
-[paradef-literal]
 *_Jeedom_*(TM) nous offre un mode Design qui permet de creer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principale ou sera afficher la "pièce" demandé, une barre d'état optionnelle +
 Au fur et à mesure du développement sont venu ce gréffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complétement indépendantes pour d'autres plugin ou fonctionnalité de *_Jeedom_*(TM)
 
