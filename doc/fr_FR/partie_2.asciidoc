@@ -17,6 +17,7 @@ Ce sélecteur va permettre de définir la taille de la *barre de menu*.
 [TIP]
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur. +
+
 {nbsp} +
 
 image::../images/popovemenu4.png[]
@@ -29,6 +30,7 @@ Valider ou non l'affichage de la barre d'état. +
 [icon="../images/tip.png"]
 [TIP]
 La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de développement). +
+
 {nbsp} +
 
 image::../images/popovemenu6.png[]
@@ -61,6 +63,7 @@ Permet de définir les dimensions de la page principale. +
 [TIP]
 Les valeurs par défaut correspond à une tablette horizontale. +
 [label label-danger]#Attention:# Ne pas confondre page(ou fenêtre) principale et cadre principal. +
+
 {nbsp} +
 
 image::../images/dimpopover3.png[]
@@ -73,6 +76,7 @@ L'id du plan de la page principale du mode Design. +
 [icon="../images/tip.png"]
 [TIP]
 En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le modifier. +
+
 {nbsp} +
 
 image::../images/dimpopover5.png[]
@@ -81,6 +85,7 @@ L'id du plan du cadre principal du mode Design. +
 [icon="../images/tip.png"]
 [TIP]
 En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le modifier. +
+
 {nbsp} +
 
 image::../images/dimpopover6.png[]
@@ -89,6 +94,7 @@ Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une,
 [icon="../images/tip.png"]
 [TIP]
 Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées. +
+
 {nbsp} +
 
 image::../images/dimpopover7.png[]
@@ -112,6 +118,7 @@ La taille des boutons. +
 [icon="../images/warning.png"]
 [WARNING]
 Ne s'applique pas aux Onglets ou Menus. 
+
 {nbsp} +
  
 image::../images/boutonpopover3.png[]
@@ -129,6 +136,7 @@ Permet d'utiliser le format groupé pour les boutons. +
 [icon="../images/warning.png"]
 [WARNING]
 Ne s'applique pas aux Onglets ou Menus. +
+
 {nbsp} +
 
 image::../images/menugroupé.png[] 
@@ -160,6 +168,7 @@ Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur l
 [icon="../images/tip.png"]
 [TIP]
 Les IDs des plan sont en mode read-only par défaut, passer en <<mode-expert,mode expert>> pour le modifier.
+
 {nbsp} +
 
 '''
@@ -212,6 +221,7 @@ Permet de définir le niveau de profondeur du cadre celons les niveaux du mode D
 [icon="../images/tip.png"]
 [TIP]
 En théorie il doit rester à -1, implémenter pour des options avancées futures.
+
 {nbsp} +
 
 image::../images/cadrepopover7.png[]
@@ -220,6 +230,7 @@ Le premier bouton permet d'ajouter un ligne SVG, le deuxième permet d'éditer l
 [icon="../images/tip.png"]
 [TIP]
 Lorsque une ligne SVG est sélectionnée, elle clignote.
+
 {nbsp} +
 
 '''
