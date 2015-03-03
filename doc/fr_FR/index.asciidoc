@@ -1,4 +1,6 @@
 :icons:
+
+[paradef-*]
 <style:default-style style:family="paragraph">
   <style:paragraph-properties fo:text-align="justify"
 </style:default-style>
