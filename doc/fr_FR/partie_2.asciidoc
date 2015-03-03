@@ -159,8 +159,8 @@ Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 {nbsp} +
 
 '''
+[[ajoutedition]]
 ===== Ajout/Edition d'un Bouton
-
 image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
 Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[] pour en rajouter une, le bouton image:../images/trash.png[] permet d’effacer l'entrée. +
