@@ -149,7 +149,7 @@ Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 
 image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
-Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[options="responsive"] pour en rajouter une, le bouton image:../images/trash.png[options="responsive"] permet d’effacer l'entrée. +
+Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[] pour en rajouter une, le bouton image:../images/trash.png[] permet d’effacer l'entrée. +
 
 [icon="../images/tip.png"]
 [TIP]
@@ -178,8 +178,8 @@ Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 
 image::../images/cadrepopover1.png[]
 Titre du cadre donnant les dimmensions du cadre. +
-image:../images/cadrelock.png[options="responsive"] permet de vérouiller/dévérouiller le cadre. +
-image:../images/cadretrash.png[options="responsive"] Permet de supprimer le cadre. +
+image:../images/cadrelock.png[] permet de vérouiller/dévérouiller le cadre. +
+image:../images/cadretrash.png[] Permet de supprimer le cadre. +
 
 image::../images/cadrepopover2.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre du cadre, le bouton permet de faire apparaître/disparaître le texte configuré. +
