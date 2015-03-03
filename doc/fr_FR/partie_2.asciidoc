@@ -151,7 +151,7 @@ Le premier bouton permet d'<<ajoutedition_dun_bouton,ajouter un bouton>>, le sui
 {nbsp} +
 
 image::../images/boutonpopover8.png[]
-permet de reclasser les boutons dans l'ordre que l'on veut. Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications.
+permet de reclasser les boutons dans l'ordre que l'on veut. Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications. +
 {nbsp} +
 
 image::../images/boutonpopover9.png[]
@@ -179,11 +179,11 @@ La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond
 {nbsp} +
 
 image::../images/stylepopover2.png[]
-Définit la configuration des bordures pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires.  +
+Définit la configuration des bordures pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires. +
 {nbsp} +
 
 image::../images/stylepopover3.png[]
-Définit la configuration de l'ombre pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires.
+Définit la configuration de l'ombre pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires. +
 {nbsp} +
 
 image::../images/stylepopover4.png[]
@@ -204,19 +204,19 @@ Nous avons ici un bouton et une entrée texte qui correspond au titre du cadre, 
 {nbsp} +
 
 image::../images/cadrepopover3.png[]
-Permet de définir la couleur utiliser pour le cadre, par défaut le selecteur est grisé, la couleur de la fenêtre principale est utilisée.
+Permet de définir la couleur utiliser pour le cadre, par défaut le selecteur est grisé, la couleur de la fenêtre principale est utilisée. +
 {nbsp} +
 
 image::../images/cadrepopover4.png[]
-Permet de choisir une des Fonts disponible. Voir <<popover_de_dimensions,Dimensions>>.
+Permet de choisir une des Fonts disponible. Voir <<popover_de_dimensions,Dimensions>>. +
 {nbsp} +
 
 image::../images/cadrepopover5.png[]
-Permet de choisir une image de fond. Voir <<gestionnaire_dimages,Gestionnaire D'Images>>.
+Permet de choisir une image de fond. Voir <<gestionnaire_dimages,Gestionnaire D'Images>>. +
 {nbsp} +
 
 image::../images/cadrepopover6.png[]
-Permet de définir le niveau de profondeur du cadre celons les niveaux du mode Design
+Permet de définir le niveau de profondeur du cadre celons les niveaux du mode Design +
 
 [icon="../images/tip.png"]
 [TIP]
