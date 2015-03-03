@@ -13,12 +13,10 @@ Ce sélecteur va permettre de définir de quel coté va être disposé la *barre
 image::../images/popovemenu3.png[]
 Ce sélecteur va permettre de définir la taille de la *barre de menu*.
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 En mode 'Haut' et 'Bas' cela correspond à la Hauteur. +
 en mode 'Gauche' et 'Droite' cela correspond à la Largeur. +
---
 
 image::../images/popovemenu4.png[]
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré. +
@@ -27,11 +25,9 @@ Nous avons ici un bouton et une entrée texte qui correspond au titre de la *bar
 image::../images/popovemenu5.png[]
 Valider ou non l'affichage de la barre d'état. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#breadcrumbs["breadcrumb"] pour le moment, elle permettra dans une version future de pouvoir visualiser l'état de certains virtuels (en cours de développement). +
---
 
 image::../images/popovemenu6.png[]
 Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires. +
@@ -59,12 +55,11 @@ Le titre de ce popover fournit les dimensions du cadre principal. +
 image::../images/dimpopover2.png[]
 Permet de définir les dimensions de la page principale. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Les valeurs par défaut correspond à une tablette horizontale. +
-[red]#Attention:# Ne pas confondre page(ou fenêtre) principale et cadre principal. +
---
+[label label-danger]#Attention:# Ne pas confondre page(ou fenêtre) principale et cadre principal. +
+
 
 image::../images/dimpopover3.png[]
 Permet de définir l'image de fond, les images proviennent de la catégorie par défaut du <<partie_3.asciidoc#gestImages,Gestionnaire d'images>>. +
@@ -73,30 +68,24 @@ Permet de définir l'image de fond, les images proviennent de la catégorie par 
 image::../images/dimpopover4.png[]
 L'id du plan de la page principale du mode Design. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le modifier. +
---
- 
+
 image::../images/dimpopover5.png[]
 L'id du plan du cadre principal du mode Design. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le modifier. +
---
 
 image::../images/dimpopover6.png[]
 Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Sélection* pour en effacer une, le sélecteur défini celle qui sera appliqué à la page principale. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptées. +
---
- 
+
 image::../images/dimpopover7.png[]
 Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
  +
@@ -115,12 +104,10 @@ Permet de choisir le type d'affichage +
 image::../images/boutonpopover2.png[]
 La taille des boutons. +
 
-[alert,warning]
-.Warning
---
+[icon="../images/warning.png"]
+[WARNING]
 Ne s'applique pas aux Onglets ou Menus. 
---
- 
+
  
 image::../images/boutonpopover3.png[]
 La couleur du bouton Home. +
@@ -134,11 +121,9 @@ Passe en mode justifié^(1)^ pour les Onglets et Menus. +
 image::../images/boutonpopover5.png[]
 Permet d'utiliser le format groupé pour les boutons. +
 
-[alert,warning]
-.Warning
---
+[icon="../images/warning.png"]
+[WARNING]
 Ne s'applique pas aux Onglets ou Menus. +
---
 
 image::../images/menugroupé.png[] 
 
@@ -166,12 +151,10 @@ image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
 Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[options="responsive"] pour en rajouter une, le bouton image:../images/trash.png[options="responsive"] permet d’effacer l'entrée. +
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Les IDs des plan sont en mode read-only par défaut, passer en <<mode-expert,mode expert>> pour le modifier.
---
- 
+
 '''
 ==== Popover de Style
 
@@ -213,20 +196,16 @@ Permet de choisir une image de fond. Voir <<gestionnaire_dimages,Gestionnaire D'
 image::../images/cadrepopover6.png[]
 Permet de définir le niveau de profondeur du cadre celons les niveaux du mode Design
 
-[alert,warning]
-.Warning
---
+[icon="../images/tip.png"]
+[TIP]
 En théorie il doit rester à -1, implémenter pour des options avancées futures.
---
 
 image::../images/cadrepopover7.png[]
 Le premier bouton permet d'ajouter un ligne SVG, le deuxième permet d'éditer la ligne SVG sélectionner dans le sélecteur.
 
-[alert,success]
-.Astuce
---
+[icon="../images/tip.png"]
+[TIP]
 Lorsque une ligne SVG est sélectionnée, elle clignote.
---
 
 '''
 ==== mode Expert
@@ -238,8 +217,6 @@ Ces deux boutons comme leur nom l'indique permettent d'importer/exporter des th�
 image::../images/raz.png[]
 Ce bouton est à utiliser avec précaution, il va vider la page sélectionnée de tout contenu. Il est utile dans certain cas de pouvoir réinitialiser une page. +
 
-[alert,danger]
-.Important
---
+[icon="../images/important.png"]
+[IMPORTANT]
 Toutes les données de la page seront effacées.
---
