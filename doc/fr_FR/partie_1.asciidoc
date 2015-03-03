@@ -45,6 +45,7 @@ Lors de la première utilisation, le plugin récupère les IDs des pages pour me
 [icon="../images/tip.png"]
 [TIP]
 Si le bouton est dégrisé c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages.
+
 {nbsp} +
 
 Voici le résultat du thème que nous développons: +
@@ -66,6 +67,7 @@ image::../images/bootstrapok.png[]
 [icon="../images/tip.png"]
 [TIP]
 Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
+
 {nbsp} +
 
 '''
@@ -98,6 +100,7 @@ Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jou
 [icon="../images/tip.png"]
 [TIP]
 Vous pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegarder, pour faire des test ou autre.
+
 {nbsp} +
 
 Voici le résultat final: +
@@ -130,6 +133,7 @@ Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:..
 [icon="../images/tip.png"]
 [TIP]
 Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
+
 {nbsp} +
 
 Voici ce que la donne dans la +Cuisine+
@@ -147,4 +151,4 @@ Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le r
 [TIP]
 Il est possible de créer des profils 'invité', il suffit au niveau du profil Jeedom de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires.
 
-
+{nbsp} +
