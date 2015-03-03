@@ -38,15 +38,15 @@ Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages s
  +
 
 image:../images/popovemenu7.png[]
-Configuration des paramètres de Dimensions, Fonts et image de fond voir <<popover-de-dimensions, Popover de Dimensions>>. +
+Configuration des paramètres de Dimensions, Fonts et image de fond voir <<popover_de_dimensions, Popover de Dimensions>>. +
  +
  
 image:../images/popovemenu8.png[]
-Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<popover-de-boutons,Popover de Boutons>>. +
+Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<popover_de_boutons,Popover de Boutons>>. +
  +
  
 image:../images/popovemenu9.png[]
-Configuration du style CSS voir <<popover-de-style,Popover de Style>>. +
+Configuration du style CSS voir <<popover_de_style,Popover de Style>>. +
  +
  
 '''
@@ -76,7 +76,7 @@ L'id du plan de la page principale du mode Design. +
 [alert,success]
 .Astuce
 --
-En mode read-only par défaut, passer en <<mode-expert,mode expert>> pour le modifier. +
+En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le modifier. +
 --
  
 image::../images/dimpopover5.png[]
@@ -85,7 +85,7 @@ L'id du plan du cadre principal du mode Design. +
 [alert,success]
 .Astuce
 --
-En mode read-only par défaut, passer en <<mode-expert,mode expert>> pour le modifier. +
+En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le modifier. +
 --
 
 image::../images/dimpopover6.png[]
@@ -98,7 +98,7 @@ Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptée
 --
  
 image::../images/dimpopover7.png[]
-Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
+Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
  +
 
 '''
@@ -147,7 +147,7 @@ Permet de décaler les boutons sur la *barre de menu*. +
  +
 
 image::../images/boutonpopover7.png[]
-Le premier bouton permet d'<<ajoutedition-dun-bouton,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur. +
+Le premier bouton permet d'<<ajoutedition_dun_bouton,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur. +
  +
 
 image::../images/boutonpopover8.png[]
@@ -155,7 +155,7 @@ permet de reclasser les boutons dans l'ordre que l'on veut. Il suffit de cliquer
  +
 
 image::../images/boutonpopover9.png[]
-Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
+Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
  +
 
 '''
@@ -186,7 +186,7 @@ Définit la configuration de l'ombre pour la *barre de menu* le cadre principale
  +
 
 image::../images/stylepopover4.png[]
-Valider permet de revenir au <<popover-du-menu,popover Menu>>. +
+Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 
 '''
 ==== Popover des Cadres
@@ -203,10 +203,10 @@ image::../images/cadrepopover3.png[]
 Permet de définir la couleur utiliser pour le cadre, par défaut le selecteur est grisé, la couleur de la fenêtre principale est utilisée.
 
 image::../images/cadrepopover4.png[]
-Permet de choisir une des Fonts disponible. Voir <<popover-de-dimensions,Dimensions>>.
+Permet de choisir une des Fonts disponible. Voir <<popover_de_dimensions,Dimensions>>.
 
 image::../images/cadrepopover5.png[]
-Permet de choisir une image de fond. Voir <<partie_3.asciidoc#gestionnaire-dimages,Gestionnaire D'Images>>.
+Permet de choisir une image de fond. Voir <<gestionnaire_dimages,Gestionnaire D'Images>>.
 
 image::../images/cadrepopover6.png[]
 Permet de définir le niveau de profondeur du cadre celons les niveaux du mode Design
