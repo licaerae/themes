@@ -115,12 +115,12 @@ Permet de choisir le type d'affichage +
 image::../images/boutonpopover2.png[]
 La taille des boutons. +
 
-[alert,Warning]
+[alert,warning]
 .Warning
 --
 Ne s'applique pas aux Onglets ou Menus. 
 --
-+ 
+ 
  
 image::../images/boutonpopover3.png[]
 La couleur du bouton Home. +
@@ -134,13 +134,14 @@ Passe en mode justifié^(1)^ pour les Onglets et Menus. +
 image::../images/boutonpopover5.png[]
 Permet d'utiliser le format groupé pour les boutons. +
 
-[alert,success]
+[alert,warning]
 .Warning
 --
 Ne s'applique pas aux Onglets ou Menus. +
 --
+
 image::../images/menugroupé.png[] 
- +
+
 
 image::../images/boutonpopover6.png[]
 Permet de décaler les boutons sur la *barre de menu*. +
@@ -160,6 +161,7 @@ Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 
 '''
 ===== Ajout/Edition d'un Bouton
+
 image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
 Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:../images/plus.png[options="responsive"] pour en rajouter une, le bouton image:../images/trash.png[options="responsive"] permet d’effacer l'entrée. +
