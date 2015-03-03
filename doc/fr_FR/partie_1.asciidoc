@@ -24,7 +24,7 @@ Sauvegardez votre thème maintenant. +
 Voici le résultat: +
 
 image::../images/démo1.png[]
- +
+
 
 '''
 ==== Design et Bootstrap
@@ -36,7 +36,7 @@ Ce bouton va permettre de créer les pages du mode Design, la page principale au
 
 image::../images/planok.png[]
 image::../images/plannotok.png[]
- +
+
 
 [alert,danger]
 .Important
@@ -61,7 +61,7 @@ Vous pouvez constatez que le plugin crée une page supplémentaire, appelez +Gé
 Arrivez à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecté le code dans la page principale pour pouvoir gérer tout votre Design, après toutes modifications il suffira de cliquez sur ce bouton pour mettre à jour la fenêtre principale. +
 
 image::../images/bootstrapok.png[]
- +
+
 
 [alert,success]
 .Astuce
@@ -75,7 +75,7 @@ Le plugin devait s'arrêter à la création de la page principale, des pages sec
 Les images qui serviront aux pages secondaires seront rajoutées avec le Gestionnaire d'images, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] +
 
 image::../images/secondaires.png[]
- +
+
 
 Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bouton *Ajouter* est grisé puisque nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identique sauf que vous pouvez créer autant de cadre que vous voulez. +
 Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un rôle à part. +
@@ -91,7 +91,7 @@ Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
 Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaît: +
 
 image::../images/popovercadre.png[]
- +
+
 
 Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le sélecteur *Image*.Pour le fonctionnement complet de ce popover voir <<popover_du_cadre,Popover du Cadre>>
 
@@ -123,7 +123,7 @@ image::../images/generaldemo.png[]
 Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. A partir du <<popover_du_cadre,Popover du Cadre>>, cliquez sur image:../images/plusb.png[options="responsive"] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
 
 image::../images/popoversvg.png[]
- +
+
  
 Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composée de quatre parties, un petit rectangle appelé +Début+, une ligne appelée +1er partie+, une ligne appelée +2eme partie+ et un dernier rectangle appelé +Fin+. +
 Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[options="responsive"] en haut à droite du popover permet d'effacer la ligne SVG. Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. Le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom. +
@@ -137,7 +137,7 @@ Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
 Voici ce que la donne dans la +Cuisine+
 
 image::../images/cuisinesvg.jpg[]
- +
+
 
 Il suffit de faire la même chose pour les autres pièces. +
 
