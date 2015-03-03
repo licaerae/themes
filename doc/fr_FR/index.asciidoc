@@ -12,14 +12,13 @@ Au fur et à mesure du développement sont venu ce gréffer plusieurs autres mod
 
 D'autres modules pourront être implémenter selon les besoins de la communauté
 
-TIP:
+[icon="../images/tip.png"]
+[TIP]
 Le Plugin est orienté pour être pris en main le plus simplement possible, il n'y a aucun besoin de connaître toutes les options pour l'utiliser, la configuration par défaut suffit pour une utilisation sur tablette. Il suffit de créer un thème de rajouter des boutons pour qu'il soit tout de suite utilisable.
 
-[alert,danger]
-.Attention
---
+[icon="../images/important.png"]
+[IMPORTANT]
 le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvable sur le forum officiel de Jeedom qui peuvent donner une idée des possibilité du mode Design
---
 
 '''
 === Création d'un thème Facile
