@@ -24,7 +24,7 @@ Sauvegardez votre thème maintenant. +
 Voici le résultat: +
 
 image::../images/démo1.png[]
-(nbsp) +
+{nbsp} +
 
 '''
 ==== Design et Bootstrap
