@@ -147,7 +147,7 @@ Permet de décaler les boutons sur la *barre de menu*. +
 {nbsp} +
 
 image::../images/boutonpopover7.png[]
-Le premier bouton permet d'<<ajoutedition_dun_bouton,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur. +
+Le premier bouton permet d'<<ajoutedition,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur. +
 {nbsp} +
 
 image::../images/boutonpopover8.png[]
