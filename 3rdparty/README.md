@@ -1,2 +1,3 @@
+J'utilise la librairie Snap.svg pour la création des lignes SVG
 
-link:http://snapsvg.io/
+voir: link:http://snapsvg.io/
