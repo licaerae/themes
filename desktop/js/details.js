@@ -115,6 +115,40 @@ $('#bsColorHome').on('change', function () {
     $('#bsHomeButton').addClass($('#bsColorHome').val());
 });
 
+$("#bsHardSaveYes").click(function () {
+    var page = $('#bsPageSelect').val();
+    if (page === "0") {
+        resetPlan(myTheme.myCadre);
+    }
+    else {
+        resetPlan(page);
+    }
+});
+
+$("#bsIsEnableYes").click(function () {
+    if ($('#bsIsEnableYes').hasClass('btn-success'))
+        return;
+    bsIsEnableYes();
+});
+
+$("#bsIsEnableNo").click(function () {
+    if ($('#bsIsEnableNo').hasClass('btn-success'))
+        return;
+    bsIsEnableNo();
+});
+
+$("#bsIsVisibleYes").click(function () {
+    if ($('#bsIsVisibleYes').hasClass('btn-success'))
+        return;
+    bsIsVisibleYes();
+});
+
+$("#bsIsVisibleNo").click(function () {
+    if ($('#bsIsVisibleNo').hasClass('btn-success'))
+        return;
+    bsIsVisibleNo();
+});
+
 $("#bsGroupYes").click(function () {
     if ($('#bsGroupYes').hasClass('btn-success'))
         return;
@@ -162,6 +196,8 @@ $("input[name*='bsBorderShadow']").change(function () {
 });
 
 $('#bsMyCadre').on('change', function () {
+    if(!initThemes)
+        return;
     myTheme.myCadre = $('#bsMyCadre').val();
 });
 
@@ -213,6 +249,34 @@ function bsStateNo() {
     $('#bsStateYes').removeClass('btn-success');
     $('#bsStateNo').addClass('btn-success');
     $("input[name='bsStateYes']").val('0');
+}
+
+function bsIsEnableYes() {
+    $('#bsIsEnableNo').removeClass('btn-success');
+    $('#bsIsEnableYes').addClass('btn-success');
+    $('input[data-l1key="isEnable"]').val('1');
+    $('input[data-l1key="isEnable"]').prop('checked', true);
+}
+
+function bsIsEnableNo() {
+    $('#bsIsEnableYes').removeClass('btn-success');
+    $('#bsIsEnableNo').addClass('btn-success');
+    $('input[data-l1key="isEnable"]').val('0');
+    $('input[data-l1key="isEnable"]').prop('checked', false);
+}
+
+function bsIsVisibleYes() {
+    $('#bsIsVisibleNo').removeClass('btn-success');
+    $('#bsIsVisibleYes').addClass('btn-success');
+    $('input[data-l1key="isVisible"]').val('1');
+    $('input[data-l1key="isVisible"]').prop('checked', true);
+}
+
+function bsIsVisibleNo() {
+    $('#bsIsVisibleYes').removeClass('btn-success');
+    $('#bsIsVisibleNo').addClass('btn-success');
+    $('input[data-l1key="isVisible"]').val('0');
+    $('input[data-l1key="isVisible"]').prop('checked', false);
 }
 
 function bsGroupYes() {
@@ -274,13 +338,18 @@ function bsStyleCadreNo() {
 function bsBorderWindow() {
     var str = "";
     str = (($('#bsBorderWindow').val() !== "") ? $('#bsBorderWindow').val() + 'px ' : "0px ") + $('#bsBorderBold').val() + ' ' + $('#bsBorderColor').val();
+    var border = parseInt($('#bsBorderWindow').val());
+    if( border !== 0 && $('#bsBorderBold').val() !== 'none') {
+        border = border > 10 ? 0 : 10 - border;
+        $('#myBootstrapState').css({'padding':  border + 'px'});
+    }
     $('#myBootstrapMenu').css('border', str);
     if ($("#bsStyleCadreYes").hasClass('btn-success'))
         $('#myBootstrapWindow').css('border', str);
     $('#myBootstrapState').css('border', str);
 }
 
-function bsBorderRadius() {
+function bsBorderRadius() { 
     var str = ($('#bsBorderRadius').val() !== "") ? $('#bsBorderRadius').val() + 'px' : "0px";
     $('#myBootstrapMenu').css('border-radius', str);
     if ($("#bsStyleCadreYes").hasClass('btn-success'))
@@ -349,19 +418,24 @@ function bsIsStyle() {
 
 function bsExpert() {
     if ($('#bsExpert').hasClass('btn-success')) {
-        if(whichView !== 'menuPopover')
-            $('*').popover('destroy');        
         $('#bsExpert').removeClass('btn-success');
         $('#bsMyCadre').prop('readonly', true);
         $('#bsMyGeneral').prop('readonly', true);
+        $("#bsPopReadOnlyView").hide();
+        $("#bsHardSaveView").hide();
         $('#bsMenuThemesDetails').hide();
+        $('#bsMenuThemesExport').hide();
+        $('#bsMenuImportButton').hide();
         bsMenuThemesApercu();
     }
     else {
+        $("#bsPopReadOnlyView").show();
         $('#bsMenuThemesDetails').show();
+        $('#bsMenuThemesExport').show();
+        $('#bsMenuImportButton').show();
+        $("#bsHardSaveView").show();
         $('#bsExpert').addClass('btn-success');
         $('#bsMyCadre').prop('readonly', false);
         $('#bsMyGeneral').prop('readonly', false);
     }
 }
-

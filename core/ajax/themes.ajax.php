@@ -139,8 +139,8 @@ try {
         if (!in_array($extension, array('.png','.jpg'))) {
             throw new Exception('Seul les images sont accepté (autorisé .jpg .png) : ' . $extension);
         }
-        if (filesize($_FILES['images']['tmp_name']) > 1000000) {
-            throw new Exception(__('Le fichier est trop gros (maximum 1mo)', __FILE__));
+        if (filesize($_FILES['images']['tmp_name']) > 8000000) {
+            throw new Exception(__('Le fichier est trop gros (maximum 8mo)', __FILE__));
         }
         if (!move_uploaded_file($_FILES['images']['tmp_name'], $uploaddir . '/' . $_FILES['images']['name'])) {
             throw new Exception(__('Impossible de déplacer le fichier temporaire', __FILE__));
@@ -176,6 +176,20 @@ try {
             throw new Exception(__('Impossible d\'uploader le fichier (limite du serveur web ?)', __FILE__));
         }
         ajax::success();
+    }
+
+    if (init('action') == 'themeImport') {
+       if (!isset($_FILES['themes'])) {
+            throw new Exception(__('Aucun fichier trouvé. Vérifié parametre PHP (post size limit)', __FILE__));
+        }
+        $extension = strtolower(strrchr($_FILES['themes']['name'], '.'));
+        if (!in_array($extension, array('.thm'))) {
+            throw new Exception('Seul les fichiers thèmes sont accepté (autorisé .thm) : ' . $extension);
+        }
+        if (filesize($_FILES['themes']['tmp_name']) > 500000) {
+            throw new Exception(__('Le fichier est trop gros (maximum 500Ko)', __FILE__));
+        }
+        ajax::success(file_get_contents($_FILES['themes']['tmp_name']));
     }
 
     throw new Exception(__('Aucune methode correspondante à : ', __FILE__) . init('action'));

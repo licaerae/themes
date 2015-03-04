@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 
+/*$('#testConfigure').on('click', function () {
+    $('#md_modal').dialog({title: "{{Configuration commande}}"});
+    $('#md_modal').load('index.php?v=d&plugin=themes&modal=modal.themes&eqLogic_id=' + $('.li_eqLogic.active').attr('data-eqLogic_id')).dialog('open');
+});*/
+
 function rgb2hex(rgb) {
     rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
     return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
@@ -16,6 +21,9 @@ function hex(x) {
 function createHtmlItem() {
     var html = "", cadreDefault = "", kids;
     var menu = parseInt($('#bsMainMenu').val());
+    html += '<script>\n';
+    html += 'displayFrame("#myBootstrapWindow",#idSecondaire#0);\n';
+    html += '</script>\n\n';
     html += '<div class="" style="width:$bsWidthMainWindowpx;height:$bsHeightMainWindowpx;">\n\n';
     html += '<style>\n';
     if ($('#bsListFonts').val() !== "0") {
@@ -32,33 +40,18 @@ function createHtmlItem() {
     html += '</style>\n\n';
     html += '<script>\n';
     if ($('#menuBarOverflow').width() < $('#menuBar').width()) {
+         var scroll = 'tscrollTop';
+        if (menu < 2)
+            scroll = 'scrollLeft';
         html += 'var step = 50;\n';
         html += 'var scrolling = false;\n\n';
-        html += "$('#scrollBeginButton').on('click', function(event) {\n";
-        html += '\t$("#menuBarOverflow").animate({\n';
-        if (menu < 2) {
-            html += '\t\tscrollLeft: "-=" + step + "px"\n';
-        }
-        else {
-            html += '\t\tscrollTop: "-=" + step + "px"\n';
-        }
-        html += '\t});\n';
-        html += '}).on("mouseover", function(event) {\n';
+        html += "$('#scrollBeginButton').on('mouseover', function(event) {\n";
         html += '\tscrolling = true;\n';
         html += '\tscrollContent("left");\n';
         html += '}).on("mouseout", function(event) {\n';
         html += '\tscrolling = false;\n';
         html += '});\n\n';
-        html += "$('#scrollEndButton').on('click', function(event) {\n";
-        html += '\t$("#menuBarOverflow").animate({\n';
-        if (menu < 2) {
-            html += '\t\tscrollLeft: "+=" + step + "px"\n';
-        }
-        else {
-            html += '\t\tscrollTop: "+=" + step + "px"\n';
-        }
-        html += '\t});\n';
-        html += '}).on("mouseover", function(event) {\n';
+        html += "$('#scrollEndButton').on('mouseover', function(event) {\n";
         html += '\tscrolling = true;\n';
         html += '\tscrollContent("right");\n';
         html += '}).on("mouseout", function(event) {\n';
@@ -67,12 +60,7 @@ function createHtmlItem() {
         html += 'function scrollContent(direction) {\n';
         html += '\tvar amount = (direction === "left" ? "-=3px" : "+=3px");\n';
         html += '\t$("#menuBarOverflow").animate({\n';
-        if (menu < 2) {
-            html += '\t\tscrollLeft: amount\n';
-        }
-        else {
-            html += '\t\tscrollTop: amount\n';
-        }
+        html += '\t\t' + scroll + ': amount\n';
         html += '\t}, 1, function () {\n';
         html += '\t\tif (scrolling) {\n';
         html += '\t\t\tscrollContent(direction);\n';
@@ -80,8 +68,29 @@ function createHtmlItem() {
         html += '\t});\n';
         html += '}\n\n';
     }
-    html += '//displayFrame("#myBootstrapWindow",#idSecondaire#0);\n';
-    html += "$('$myFrameMenu').on('click',function(){\n";
+    html += "$('.myBsButton').on('click',function(){\n";
+    html += "\tframeHeader_id = $(this).data('planid');\n";
+    if ($('#menuBarOverflow').width() < $('#menuBar').width()) {
+        html += "\tif(frameHeader_id === #idSecondaire#0)\n";
+        html += '\t\t$("#menuBarOverflow").animate({ ' + scroll + ': 0 });\n';
+    }
+    html += "\tdisplayFrame('#myBootstrapWindow',frameHeader_id);\n";
+    if ($('#bsStateYes').hasClass('btn-success')) {
+        html += "\t$('#myBreadcrumbs').empty();\n";
+        html += "\tvar temp = updateBread(frameHeader_id,$(this).text());\n";
+        html += "\t$('#myBreadcrumbs').append(temp);\n";
+    }
+    html += "});\n\n";
+    html += "$('.myBsNavTab').on('click',function(){\n";
+    html += "\tframeHeader_id = $(this).data('planid');\n";
+    html += "\tdisplayFrame('#myBootstrapWindow',frameHeader_id);\n";
+    if ($('#bsStateYes').hasClass('btn-success')) {
+        html += "\t$('#myBreadcrumbs').empty();\n";
+        html += "\tvar temp = updateBread(frameHeader_id,$(this).text());\n";
+        html += "\t$('#myBreadcrumbs').append(temp);\n";
+    }
+    html += "});\n\n";
+    html += "$('.myBsNavPill').on('click',function(){\n";
     html += "\tframeHeader_id = $(this).data('planid');\n";
     html += "\tdisplayFrame('#myBootstrapWindow',frameHeader_id);\n";
     if ($('#bsStateYes').hasClass('btn-success')) {
@@ -139,31 +148,20 @@ function createHtmlItem() {
     html = html.replace("$bsWidthMainWindow", $('#bsWidthMainWindow').val());
     html = html.replace("$bsHeightMainWindow", $('#bsHeightMainWindow').val());
     html = html.replace("$bsCadre", cadreDefault);
+    bsWindow.find('#div_frameMenu').css({'margin-top': '20px'});
     bsWindow.find('#myBootstrapMenu').css({'color': '', 'background-color': '', 'border': '', 'border-radius': '', 'box-shadow': ''});
     bsWindow.find('#myBootstrapState').css({'color': '', 'background-color': '', 'border': '', 'border-radius': '', 'box-shadow': ''});
-    bsWindow.find('#myBootstrapWindow').css({'color': '', 'background-color': '', 'border': '', 'border-radius': '', 'box-shadow': ''});
+    bsWindow.find('#myBootstrapWindow').css({'color': '', 'border-radius': '', 'box-shadow': ''});
+    if (image === "0")
+        bsWindow.find('#myBootstrapWindow').css({'background-color': '', 'border': ''});
+    else
+        bsWindow.find('#myBootstrapWindow').css({'background-color': 'transparent', 'border': 'none'});
     bsWindow.find('#myBootstrapWindow').removeClass('well');
     bsWindow.find('.popover').remove();
     if ($('#bsStyleCadreYes').hasClass('btn-success') === false)
         bsWindow.find('#myBootstrapWindow').addClass('BSWINDOW');
     else
         bsWindow.find('#myBootstrapWindow').css('margin-bottom', '20px');
-    if (bsWindow.find('.myBsButton').length !== 0) {
-        kids = bsWindow.find(".myBsButton");
-        html = html.replace("$myFrameMenu", '.myBsButton');
-    }
-    if (bsWindow.find('.myBsNavTab').length !== 0) {
-        kids = bsWindow.find(".myBsNavTab");
-        html = html.replace("$myFrameMenu", '.myBsNavTab');
-    }
-    if (bsWindow.find('.myBsNavPill').length !== 0) {
-        kids = bsWindow.find(".myBsNavPill");
-        html = html.replace("$myFrameMenu", '.myBsNavPill');
-    }
-    kids.each(function (index) {
-        if ($(this).attr('data-planid') === 'X')
-            $(this).attr('data-planid', '#idSecondaire#' + index);
-    });
     html = html.replace("$bsWindow", bsWindow.html());
     html = html.replace('no-repeat;', 'no-repeat; background-size: 100% 100%;');
     html = html.replace(/well/g, "well default");
@@ -174,6 +172,10 @@ function createHtmlItem() {
 }
 
 function createPlanThemes(id, idDrop, name, sizeX, sizeY) {
+    var readOnly = false;
+    if (id === -1)
+        readOnly = $('input[name="bsReadOnlyYes"]').val() === '1' ? true : false;
+        
     jeedom.plan.saveHeader({
         planHeader: {
             name: name,
@@ -184,7 +186,8 @@ function createPlanThemes(id, idDrop, name, sizeX, sizeY) {
                 mobileProportion: "1",
                 noReturnFullScreen: "1",
                 responsiveMode: "0",
-                tabletteProportion: "1"
+                tabletteProportion: "1",
+                readOnly: readOnly
             }
         },
         error: function (error) {
@@ -207,9 +210,13 @@ function createPlanThemes(id, idDrop, name, sizeX, sizeY) {
 }
 
 function updatePlanThemes(id, idDrop, name, sizeX, sizeY) {
+    
+    var readOnly = false;
     var planId;
-    if (id === -1)
+    if (id === -1) {
         planId = myTheme.myCadre;
+        readOnly = $('input[name="bsReadOnlyYes"]').val() === '1' ? true : false;
+    }
     else if (idDrop === -1)
         planId = myTheme.globalPlanId[id];
     else
@@ -225,7 +232,8 @@ function updatePlanThemes(id, idDrop, name, sizeX, sizeY) {
                 mobileProportion: "1",
                 noReturnFullScreen: "1",
                 responsiveMode: "0",
-                tabletteProportion: "1"
+                tabletteProportion: "1",
+                readOnly: readOnly
             }
         },
         error: function (error) {
@@ -257,6 +265,8 @@ function isPlanThemes() {
                 for (var nbHeader = 0; nbHeader < data.length; nbHeader++) {
                     ids[nbHeader] = data[nbHeader].id;
                 }
+                if(isNaN(parseInt(myTheme.myCadre)))
+                    myTheme.myCadre = '';
                 if (ids.indexOf(myTheme.myCadre) === -1) {
                     notify('Check-Up des Plans', 'Plan de la fenêtre principale manquant', 'error');
                     myTheme.myCadre = "";
@@ -266,11 +276,12 @@ function isPlanThemes() {
                 for (var nbPlan = 0; nbPlan < myTheme.myButtons.length; nbPlan++) {
                     if (myTheme.myDropdowns[nbPlan].length !== 0) {
                         for (var drops = 0; drops < myTheme.myDropdowns[nbPlan].length; drops++) {
+                            if(isNaN(parseInt(myTheme.globalPlanId[nbPlan][drops])))
+                                myTheme.globalPlanId[nbPlan][drops] = '';
                             if (ids.indexOf(myTheme.globalPlanId[nbPlan][drops]) === -1) {
                                 notify('Check-Up des Plans', 'Plan ' + myTheme.myDropdowns[nbPlan][drops] + ' du sous menu ' + myTheme.myButtons[nbPlan] + ' manquant', 'error');
                                 myTheme.globalPlanId[nbPlan][drops] = "";
                                 $('#bsDesignButton').prop('disabled', false);
-                                $('#bsMyPlanId').val(JSON.stringify(myTheme.globalPlanId));
                             }
                             else {
                                 secondaryPages.add(myTheme.globalPlanId[nbPlan][drops], myTheme.myDropdowns[nbPlan][drops]);
@@ -279,11 +290,12 @@ function isPlanThemes() {
                         }
                     }
                     else {
+                        if (isNaN(parseInt(myTheme.globalPlanId[nbPlan])))
+                            myTheme.globalPlanId[nbPlan] = '';
                         if (ids.indexOf(myTheme.globalPlanId[nbPlan]) === -1) {
                             notify('Check-Up des Plans', 'Plan ' + myTheme.myButtons[nbPlan] + ' manquant', 'error');
                             myTheme.globalPlanId[nbPlan] = "";
                             $('#bsDesignButton').prop('disabled', false);
-                            $('#bsMyPlanId').val(JSON.stringify(myTheme.globalPlanId));
                         }
                         else {
                             options += '<option data-plan="' + nbPlan + '" data-drop="-1" value="' + myTheme.globalPlanId[nbPlan] + '">' + myTheme.myButtons[nbPlan] + '</option>';
@@ -298,9 +310,36 @@ function isPlanThemes() {
                 myTheme.globalPlanId = '[]';
                 $('#bsDesignButton').prop('disabled', false);
             }
+            $('#bsMyGeneral').val(myTheme.globalPlanId[0]);
             $('#bsPageSelect').empty();
             $('#bsPageSelect').html(options);
             $('#bsPageSelect').val("0");
+        }
+    });
+}
+
+function resetPlan(id) {
+    bootbox.confirm('{{Etes-vous sûr de vouloir réinitialiser ce plan , toutes les données vont être éffacées}} ?', function (result) {
+        if (result) {
+            jeedom.plan.byPlanHeader({
+                id: id,
+                error: function (error) {
+                    $('#div_alert').showAlert({message: error.message, level: 'danger'});
+                },
+                success: function (objects) {
+                    for (var index in objects) {
+                        jeedom.plan.remove({
+                            id: objects[index].plan.id,
+                            error: function (error) {
+                                $('#div_alert').showAlert({message: error.message, level: 'danger'});
+                            },
+                            success: function (data) {
+                                console.log(data);
+                            }
+                        });
+                    }
+                }
+            });
         }
     });
 }
@@ -312,8 +351,8 @@ function createFirstPlan() {
             $('#div_alert').showAlert({message: error.message, level: 'danger'});
         },
         success: function (objects) {
-            if (whichView !== 'menuPopover')
-                $('*').popover('destroy');
+            $('*').popover('destroy');
+            whichView = '';
             var html = createHtmlItem();
             var idSecondaire = 1;
             html = html.replace(/#idSecondaire#0/gi, myTheme.globalPlanId[0]);
@@ -360,11 +399,10 @@ function createFirstPlan() {
                 plans: plans,
                 error: function (error) {
                     $('#div_alert').showAlert({message: error.message, level: 'danger'});
-                    bsMenuThemesApercu();
                 },
                 success: function () {
                     notify('Création Boostrap', 'insertion du code Bootstrap dans la page principale N° ' + myTheme.myCadre, 'success');
-                    bsMenuThemesApercu();
+                    setTimeout("bsMenuThemesApercu()", 1000);
                 }
             });
         }
@@ -378,35 +416,17 @@ function createPagePlan(id) {
             $('#div_alert').showAlert({message: error.message, level: 'danger'});
         },
         success: function (objects) {
-            if (whichView !== 'menuPopover')
-                $('*').popover('destroy');
+            $('*').popover('destroy');
+            whichView = '';
             var myBsWindow = $('#myBsWindow').clone();
             var myCadre = myBsWindow.find("div[name*='myCadre']");
-            myCadre.each(function (index) {
+            myCadre.each(function () {
                 $(this).find('div').remove();
-                var newPosLeft, newPosTop;
-                if ($('#bsStyleCadreNo').hasClass("btn-success")) {
-                    var top = $('#myBsWindow').find("div[name*='myCadre']").eq(index).position().top;
-                    var left = $('#myBsWindow').find("div[name*='myCadre']").eq(index).position().left;
-                    newPosLeft = left - $('#myCadreWindow').position().left - 16;
-                    newPosTop = top - $('#myCadreWindow').position().top - 1;
-                }
-                else {
-                    newPosLeft = 0;
-                    newPosTop = 0;
-                }
-                if (top !== "") {
-                    $(this).css('top', newPosTop);
-                }
-                if (left !== "") {
-                    $(this).css('left', newPosLeft);
-                }
             });
             myBsWindow.find('#myCadreWindow').removeClass("container-fluid well");
             myBsWindow.find('#myCadreWindow').css('position', 'absolute');
             myBsWindow.find('#myCadreWindow').css('margin-left', '');
             myBsWindow.find("div[name*='myCadre']").removeClass("ui-resizable ui-resizable-resizing ui-draggable ui-draggable-dragging ui-draggable-handle");
-            //myBsWindow.find('h4').css('font-family', 'myFontTheme, Helvetica, Arial, sans-serif');
             var changed = false, plan = {};
             var plans = [];
             plan.position = {};
@@ -421,29 +441,27 @@ function createPagePlan(id) {
             plan.display.width = $('#bsWidthWindow').val();
             plan.position.top = 0;
             plan.position.left = 0;
-            for (var index in objects) {
-                if (objects[index].plan.link_id === "9999") {
-                    plan.css = objects[index].plan.css;
-                    plan.css['z-index'] = $('#bsPageLevel').val();
-                    plan.css['zoom'] = '1';
-                    plan.id = objects[index].plan.id;
-                    //plan.position = objects[index].plan.position;
-                    objects[index].plan = plan;
-                    changed = true;
+                for (var index in objects) {
+                    if (objects[index].plan.link_id === "9999") {
+                        plan.css = objects[index].plan.css;
+                        plan.css['z-index'] = $('#bsPageLevel').val();
+                        plan.css['zoom'] = '1';
+                        plan.id = objects[index].plan.id;
+                        objects[index].plan = plan;
+                        changed = true;
+                    }
+                    plans.push(objects[index].plan);
                 }
-                plans.push(objects[index].plan);
-            }
             if (!changed)
                 plans.push(plan);
             jeedom.plan.save({
                 plans: plans,
                 error: function (error) {
                     $('#div_alert').showAlert({message: error.message, level: 'danger'});
-                    bsMenuThemesApercu();
                 },
                 success: function () {
                     notify('Création Boostrap', 'insertion du code Bootstrap dans la page secondaire  N° ' + id, 'success');
-                    bsMenuThemesApercu();
+                    setTimeout("bsMenuThemesApercu()",1000);
                 }
             });
         }
@@ -584,6 +602,31 @@ function removeButton(id) {
     myTheme.myColors = tempMyColors;
 }
 
+function widthItemMenu(idButton) {
+    var menuBar;
+    switch ($('#bsStyleButton').val()) {
+        case '0':
+            menuBar = $('#menuBar').find('.buttonItems');
+            break;
+        case '1':
+            menuBar = $('#menuBar').find('.navTabsItems');
+            break;
+        case '2':
+            menuBar = $('#menuBar').find('.navPillsItems');
+            break;
+    }
+    switch ($('#bsMainMenu').val()) {
+        case '0':
+        case '1':
+            return menuBar.eq(parseInt(idButton - 1)).outerWidth(true);
+            break;
+        case '2':
+        case '3':
+            return menuBar.eq(parseInt(idButton - 1)).outerHeight(true);
+            break;
+    }
+}
+
 function addItemMenu(html) {
     var menuBar;
     switch ($('#bsStyleButton').val()) {
@@ -678,13 +721,21 @@ function createMenuBar() {
         return;
     switch ($('#bsStyleButton').val()) {
         case '0':
+            bsBorderWindow();
+            bsBorderRadius();
+            bsBorderShadow();
             createMenuBarButtons();
+            $('#myBootstrapMenu').addClass('well');
             break;
         case '1':
             createMenuBarNavs(false);
             break;
         case '2':
+            bsBorderWindow();
+            bsBorderRadius();
+            bsBorderShadow();
             createMenuBarNavs(true);
+            $('#myBootstrapMenu').addClass('well');
             break;
 
     }
@@ -704,6 +755,7 @@ function createMenuBarButtons() {
             for (var index = 1; index < myTheme.myButtons.length; index++) {
                 widthMenuBar += addItemMenu(createItemButtons(index, myTheme.myButtons[index], myTheme.myColors[index], myTheme.myDropdowns[index], myTheme.globalPlanId[index]));
             }
+            unsetTabsBarMenu($('#bsHomeButton').outerHeight(true));
             updateHighLowMenu(widthMenuBar, home);
             if ($('#bsMainMenu').val() === '0')
                 $('#bsMenuView').prependTo('#bsTop');
@@ -721,6 +773,7 @@ function createMenuBarButtons() {
             for (var index = 1; index < myTheme.myButtons.length; index++) {
                 heightMenuBar += addItemMenu(createItemButtons(index, myTheme.myButtons[index], myTheme.myColors[index], myTheme.myDropdowns[index], myTheme.globalPlanId[index]));
             }
+            unsetTabsBarMenu($('#bsHomeButton').outerHeight(true));
             updateLeftRightMenu(heightMenuBar, home);
             break;
     }
@@ -730,6 +783,10 @@ function createMenuBarNavs(pills) {
     $('#menuBar').empty();
     switch ($('#bsMainMenu').val()) {
         case '0':
+            if(!pills) {
+                $('#bsWidthButton').val('');
+                $('#bsPopWidthButton').val('');                
+            }
             if ($('#bsViewMenuYes').hasClass('btn-success'))
                 $('#myBootstrapMenu > h4').show();
             var justified = $('#bsJustifiedYes').hasClass('btn-success') ? ' nav-justified' : '';
@@ -740,11 +797,25 @@ function createMenuBarNavs(pills) {
             for (var index = 1; index < myTheme.myButtons.length; index++) {
                 widthMenuBar += addItemMenu(createItemTabsPills(index, myTheme.myButtons[index], myTheme.myColors[index], myTheme.myDropdowns[index], myTheme.globalPlanId[index], pills));
             }
+            if (!pills)
+                setTabsBarMenu();
+            else
+                unsetTabsBarMenu($('#menuBarItems').outerHeight(true));            
             updateHighLowMenu(widthMenuBar, home);
+            var widthMenuBarTemp = 0;
+            for (var index = 1; index < myTheme.myButtons.length; index++) {
+                widthMenuBarTemp += widthItemMenu(index);
+            }
+            if(widthMenuBarTemp > widthMenuBar)
+                createMenuBar();
+            if (!pills) {
+                $('#myBootstrapMenu').removeClass('well');
+                $('#myBootstrapMenu').css({'border': '', 'border-radius': '', 'box-shadow': ''});
+            }
             $('#bsMenuView').prependTo('#bsTop');
             break;
         case '1':
-            if ($('#bsViewMenuYes').hasClass('btn-success'))
+           if ($('#bsViewMenuYes').hasClass('btn-success'))
                 $('#myBootstrapMenu > h4').show();
             var justified = $('#bsJustifiedYes').hasClass('btn-success') ? ' nav-justified' : '';
             var group = '<ul class="nav nav-pills' + justified + '" id="menuBarItems"></ul>';
@@ -754,7 +825,14 @@ function createMenuBarNavs(pills) {
             for (var index = 1; index < myTheme.myButtons.length; index++) {
                 widthMenuBar += addItemMenu(createItemTabsPills(index, myTheme.myButtons[index], myTheme.myColors[index], myTheme.myDropdowns[index], myTheme.globalPlanId[index], true));
             }
+            unsetTabsBarMenu($('#menuBarItems').outerHeight(true));            
             updateHighLowMenu(widthMenuBar, home);
+            var widthMenuBarTemp = 0;
+            for (var index = 1; index < myTheme.myButtons.length; index++) {
+                widthMenuBarTemp += widthItemMenu(index);
+            }
+            if(widthMenuBarTemp > widthMenuBar)
+                createMenuBar();
             $('#bsMenuView').appendTo('#bsTop');
             break;
         case '2':
@@ -771,47 +849,34 @@ function createMenuBarNavs(pills) {
             $('#menuBarItems').find('.navPillsItems').each(function () {
                 $(this).find('a:eq(0)').addClass('text-center');
             });
+            unsetTabsBarMenu($('#menuBarItems').outerHeight(true));            
             updateLeftRightMenu(heightMenuBar, home);
             break;
     }
 }
 
-function setTabsBarMenu() { // à garder ??????????????????????????????
-    var calHeightWindow = parseInt($('#bsHeightMainWindow').val());
-    calHeightWindow = calHeightWindow - 107;
-    calHeightWindow -= ($("#bsStateYes").hasClass('btn-success')) ? 85 : 0;
-    $('#myBootstrapMenu').removeClass('well');
-    $('#myBootstrapMenu').outerHeight('87px');
-    $('#myBootstrapWindow').outerHeight(calHeightWindow + 'px');
-    $('#bsHeightWindow').val(calHeightWindow);
-    $('#bsHeightMainMenu').prop('readonly', true);
-    //$('#bsMainMenu').prop('disabled', true);
-    $('#myBootstrapMenu').css('color', '');
-    $('#myBootstrapMenu').css('background-color', '');
-    $('#myBootstrapMenu').css('border', '');
-    $('#myBootstrapMenu').css('border-radius', '');
-    $('#myBootstrapMenu').css('box-shadow', '');
+function setTabsBarMenu() {
+    var height =  $('#menuBarItems').outerHeight(true) + 9;
+    if ($('#myBootstrapMenu').children('h4').is(":visible"))
+        height += $('#myBootstrapMenu').children('h4').outerHeight(true);
+    $('#bsHeightMainMenu').val(height);
+    $('#bsPopbsHeightMainMenu').val(height);    
 }
 
-function unsetTabsBarMenu() { // à garder ??????????????????????????????
+function unsetTabsBarMenu(height) {
     if ($('#myBootstrapMenu').hasClass('well')) {
         return;
     }
-    var str = "";
-    var calHeightWindow = parseInt($('#bsHeightMainWindow').val());
-    var calHeightMenu = (parseInt($('#bsMainMenu').val()) < 2) ? parseInt($('#bsHeightMainMenu').val()) + 20 : 20;
-    calHeightWindow = calHeightWindow - calHeightMenu;
-    calHeightWindow -= ($("#bsStateYes").hasClass('btn-success')) ? 85 : 0;
-    $('#bsHeightMainMenu').prop('readonly', false);
-    //$('#bsMainMenu').prop('disabled', false);
-    $('#myBootstrapMenu').addClass('well');
-    createMenuBar();
-    //changeMenuStyle($('#bsMainMenu').val());
-    bsColorWindow();
-    bsBorderWindow();
-    bsBorderRadius();
-    bsBorderShadow();
-    bsBgColorWindow();
+    height =  height + 20;
+    if($('#bsBorderBold').val() !== 'none') {
+        height += $('#bsBorderWindow').val() * 2;
+    }
+    if ($('#myBootstrapMenu').children('h4').is(":visible"))
+        height += $('#myBootstrapMenu').children('h4').outerHeight(true);
+    if ($('#bsHeightMainMenu').val() < height) {
+        $('#bsHeightMainMenu').val(height);
+        $('#bsPopbsHeightMainMenu').val(height);
+    }
 }
 
 function updateHighLowMenu(widthMenuBar, home) {
@@ -821,7 +886,7 @@ function updateHighLowMenu(widthMenuBar, home) {
     $('#myBootstrapMenu').css('margin-left', '15px');
     $('#myBootstrapWindow').css('margin-left', '15px');
     calHeightWindow = calHeightWindow - calHeightMenu - 20;
-    calHeightWindow -= ($("#bsStateYes").hasClass('btn-success')) ? 65 : 0;
+    calHeightWindow -= ($("#bsStateYes").hasClass('btn-success')) ? 75 : 0;
     $('#myBootstrapMenu').removeClass('pull-right');
     $('#myBootstrapWindow').removeClass('pull-right');
     $('#bsMenuView').removeClass();
@@ -885,7 +950,7 @@ function updateLeftRightMenu(heightMenuBar, home) {
     var calHeightMenu = parseInt($('#bsHeightMainMenu').val());
     var calHeightWindow = parseInt($('#bsHeightMainWindow').val());
     calHeightWindow = calHeightWindow - 20;
-    calHeightWindow -= ($("#bsStateYes").hasClass('btn-success')) ? 45 : 0;
+    calHeightWindow -= ($("#bsStateYes").hasClass('btn-success')) ? 55 : 0;
     $('#bsTop').outerWidth(calWidthWindow + 'px');
     calWidthWindow = calWidthWindow - calHeightMenu - 30;
     $('#myBootstrapMenu').css('margin-left', '0px');
@@ -930,7 +995,6 @@ function updateLeftRightMenu(heightMenuBar, home) {
         $('#scrollEndButton').parent().hide();
         var scrollTop = $('#bsHomeButton').outerHeight() + 10;
         $('#scrollBeginButton').parent().css({'height': scrollTop + 'px'});
-        //height = height - scrollTop;
         $('#menuBarOverflow').css({'height': heightMenuBar + 'px', 'width': '300px'});
         $('#menuBar').css({'position': 'absolute', 'height': heightMenuBar + 'px', 'width': (parseInt($('#bsHeightMainMenu').val()) - 30) + 'px'});
         $('#scrollBeginButton').prop('disabled', true);
@@ -961,13 +1025,30 @@ function updateLeftRightMenu(heightMenuBar, home) {
 }
 
 // **************    Menu     *****************
+function initPopover() {
+    if (whichView !== 'menuPopover' && whichView !== '') {
+        switch(whichView) {
+            case 'buttonPopover':
+            case 'stylePopover':
+            case 'dimPopover':
+            $('#div_frameMenu').popover('destroy');
+            break;
+            case 'sortButton':
+            $('#menuBar').sortable('destroy');
+            $('#myBootstrapMenu').popover('destroy');
+            break;
+            case 'buttonBar':
+            $('#myBootstrapMenu').popover('destroy');
+            break;
+        }
+    }
+}
 
 $('#bsMenuThemesDetails').on('click', function () {
     bsMenuThemesDetails();
 });
 function bsMenuThemesDetails() {
-    if (whichView !== 'menuPopover')
-        $('*').popover('destroy');
+    initPopover();
     $('#bsPageSelect').val("0");
     $('#bsDuplicateView').hide();
     $('.bsCadreFields').prop('disabled', true);
@@ -982,6 +1063,7 @@ $('#bsMenuThemesApercu').on('click', function () {
     bsMenuThemesApercu();
 });
 function bsMenuThemesApercu() {
+    initPopover();
     $('#bsPageSelect').val("0");
     $('#bsDuplicateView').hide();
     $('.bsCadreFields').prop('disabled', true);
@@ -990,13 +1072,11 @@ function bsMenuThemesApercu() {
     $('.eqLogicButtonsView').hide();
     $('#bsMenuThemesDetailsView').hide();
     $('#bsMenuThemesApercuView').show();
-    if (whichView !== 'menuPopover')
-        menuPopover();
+    menuPopover();
 }
 
 $('#bsImageDisplay').on('click', function () {
-    if (whichView !== 'menuPopover')
-        $('*').popover('destroy');
+    initPopover();
     $('#bsPageSelect').val("0");
     $('#bsDuplicateView').hide();
     $('.bsCadreFields').prop('disabled', true);
@@ -1016,8 +1096,7 @@ $('#bsImageDisplay').on('click', function () {
 });
 
 $('#bsButtonsDisplay').on('click', function () {
-    if (whichView !== 'menuPopover')
-        $('*').popover('destroy');
+    initPopover();
     $('#bsPageSelect').val("0");
     $('#bsDuplicateView').hide();
     $('.bsCadreFields').prop('disabled', true);
@@ -1039,9 +1118,7 @@ $('#bsPageSelect').on('change', function () {
         bsMenuThemesApercu();
     }
     else {
-        if (whichView !== 'menuPopover')
-            $('*').popover('destroy');
-        //secondaryPages.update(page,$('#bsPageSelect').val());
+        $('*').popover('destroy');
         var kids = $('#bsPageSelect').find('option');
         var options = '';
         for (var index = 1; index < kids.length; index++) {
@@ -1069,6 +1146,7 @@ $('#bsPageSelect').on('change', function () {
         $('#bsDuplicateView').show();
         $('#bsWindowView').append(bsWindow);
         $('#myCadreWindow').empty();
+        $('#myCadreWindow').css({'position': 'relative'});
         var pageSelect = secondaryPages.search(page);
         if ($('#bsStyleCadreNo').hasClass("btn-success")) {
             if (pageSelect) {
@@ -1095,7 +1173,7 @@ $('#bsPageSelect').on('change', function () {
                     var width = $('<div>').html(pageSelect.cadres[0].cadre).children().eq(0).width();
                     if (height !== $('#myCadreWindow').innerHeight() || width !== $('#myCadreWindow').innerWidth()) {
                         secondaryPages.resetCadres(page);
-                        notify('Pages Secondaires', 'Cradre unique erroné, correction effectué', 'warning');
+                        notify('Pages Secondaires', 'Cadre unique erroné, correction effectué', 'warning');
                     }
                     else {
                         $('#myCadreWindow').prepend(pageSelect.cadres[0].cadre);
@@ -1104,6 +1182,10 @@ $('#bsPageSelect').on('change', function () {
                         for (var index in pageSelect.svg)
                             createSvg(pageSelect.svg[index].id, pageSelect.svg[index].cadre, pageSelect.svg[index].svg);
                         cadrePopover(pageSelect.cadres[0].id);
+                        $('#bsMenuThemesApercuView').hide();
+                        $('.eqLogicImageView').hide();
+                        $('.eqLogicButtonsView').hide();
+                        $('#bsMenuThemesDetailsView').hide();
                         $('#bsSecondaireView').show();
                         return;
                     }
@@ -1119,3 +1201,79 @@ $('#bsPageSelect').on('change', function () {
     }
 });
 
+$('#bsMenuThemesExport').on('click', function () {
+    var specificCapatibilities = {};
+    var page = $('#bsPageSelect').val();
+    if (page === "0") {
+        var spec = $('.eqLogic').getValues('.eqLogicAttr');
+        specificCapatibilities.configuration = spec[0].configuration;
+        specificCapatibilities.bsMyCadre = myTheme.myCadre;
+        specificCapatibilities.bsMyButton = JSON.stringify(myTheme.myButtons);
+        specificCapatibilities.bsMyColor = JSON.stringify(myTheme.myColors);
+        specificCapatibilities.bsMyDropdown = JSON.stringify(myTheme.myDropdowns);
+        specificCapatibilities.bsMyPlanId = JSON.stringify(myTheme.globalPlanId);
+        var csvString = encodeURI(JSON.stringify(specificCapatibilities));
+        $('#bsFileExport').attr('href', 'data:attachment/csv,' + csvString);
+        $('#bsFileExport').attr('download', spec[0].name + '_' + spec[0].id + '.thm');
+        var a = document.getElementById("bsFileExport");
+        a.click();
+    }
+    else {
+        bootbox.alert("En Cours de Développement, selectionnez la page principale", function () {
+        });
+    }
+});
+
+$('#bsMenuThemesImport').fileupload({
+    dataType: 'json',
+    done: function (e, data) {
+        if (data.result.state !== 'ok') {
+            $('#div_alert').showAlert({message: data.result.result, level: 'danger'});
+            return;
+        }
+        var file = data.files[0].name.split('.');
+        if (file[1] === "thm") {
+            bsMenuThemesApercu();
+            var csvString = decodeURI(data.result.result);
+            var specificCapatibilities = {};
+            csvString = JSON.parse(csvString);
+            specificCapatibilities.configuration = csvString.configuration;
+            $('.eqLogic').setValues(specificCapatibilities, '.eqLogicAttr');
+            myTheme.myCadre = csvString.bsMyCadre;
+            myTheme.myButtons = JSON.parse(csvString.bsMyButton);
+            myTheme.myColors = JSON.parse(csvString.bsMyColor);
+            myTheme.myDropdowns = JSON.parse(csvString.bsMyDropdown);
+            myTheme.globalPlanId = JSON.parse(csvString.bsMyPlanId);
+            isPlanThemes();
+            updateListFonts(csvString.configuration.bsListFonts);
+            updateListImages(csvString.configuration.bsImageMainWindow);
+            $('#bsOffsetButton').bootstrapSlider('setValue', parseInt(csvString.configuration.bsOffsetButton));
+            $('.bsCadreFields').prop('disabled', true);
+            $('#bsExpert').removeClass('btn-success');
+            $('#bsMyCadre').prop('readonly', true);
+            $('#bsMyGeneral').prop('readonly', true);
+            if (csvString.configuration.isStyle !== '0')
+                $('#myBootstrapMenu > h4').addClass("text-center").css({'color': csvString.configuration.bsColorWindow, 'border-bottom': '1px solid ' + csvString.configuration.bsColorWindow}).text(csvString.configuration.bsMainMenuText);
+            else
+                $('#myBootstrapMenu > h4').addClass("text-center").css({'border-bottom': '1px solid'}).text(csvString.configuration.bsMainMenuText);
+            if (myTheme.myCadre === "")
+                $('#bsBootStrapButton').prop('disabled', true);
+            else
+                $('#bsBootStrapButton').prop('disabled', false);
+            (csvString.configuration.bsViewMenuYes === "1") ? bsViewMenuYes() : bsViewMenuNo();
+            (csvString.configuration.bsJustifiedYes === "1") ? bsJustifiedYes() : bsJustifiedNo();
+            (csvString.configuration.bsStateYes === "1") ? bsStateYes() : bsStateNo();
+            (csvString.configuration.bsGroupYes === "1") ? bsGroupYes() : bsGroupNo();
+            (csvString.configuration.bsStyleCadreYes === "1") ? bsStyleCadreYes() : bsStyleCadreNo();
+            if (csvString.configuration.isStyle === "1")
+                bsIsStyle();
+            bsColorWindow();
+            bsBorderWindow();
+            bsBorderRadius();
+            bsBorderShadow();
+            $('#bsMenuThemesDetails').hide();
+            createMenuBar();
+            notify('Import d\'un Thème', 'Thème importé avec succès', 'success');
+        }
+    }
+});

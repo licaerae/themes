@@ -24,28 +24,68 @@ function addCmdToTable(_cmd) {
 }
 
 function saveEqLogic(_data) {
-    if(whichView !== 'menuPopover')
-        $('*').popover('destroy');
-    $('#bsMyButton').val(JSON.stringify(myTheme.myButtons));
-    $('#bsMyColor').val(JSON.stringify(myTheme.myColors));
-    $('#bsMyDropdown').val(JSON.stringify(myTheme.myDropdowns));
-    $('#bsMyPlanId').val(JSON.stringify(myTheme.globalPlanId));
-    $('#bsMySecondaryPages').val(secondaryPages.json());
-    $('#bsMyCadre').val(myTheme.myCadre);
+    initPopover();
     $('#bsMyCadreView').show();
     $('#bsMyGeneralView').show();
-    _data.configuration.bsMyButton = JSON.stringify(myTheme.myButtons);
-    _data.configuration.bsMyColor = JSON.stringify(myTheme.myColors);
-    _data.configuration.bsMyDropdown = JSON.stringify(myTheme.myDropdowns);
-    _data.configuration.bsMyPlanId = JSON.stringify(myTheme.globalPlanId);
+    _data.configuration.bsMySecondaryPages = '';
+    _data.configuration.bsMyButton = '';
+    _data.configuration.bsMyColor = '';
+    _data.configuration.bsMyDropdown = '';
+    _data.configuration.bsMyPlanId = '';
     _data.configuration.bsMyCadre = myTheme.myCadre;
-    _data.configuration.bsMySecondaryPages = secondaryPages.json();
+    _data.specificCapatibilities = init(_data.specificCapatibilities,{});
+    _data.specificCapatibilities.bsMySecondaryPages = secondaryPages.json();
+    _data.specificCapatibilities.bsMyButton = JSON.stringify(myTheme.myButtons);
+    _data.specificCapatibilities.bsMyColor = JSON.stringify(myTheme.myColors);
+    _data.specificCapatibilities.bsMyDropdown = JSON.stringify(myTheme.myDropdowns);
+    _data.specificCapatibilities.bsMyPlanId = JSON.stringify(myTheme.globalPlanId);
     return _data;
 }
 
 function prePrintEqLogic() {
     $('#div_alert').hide();
     initThemes = false;
+    $('input[name="bsReadOnlyYes"]').val('1');
+}
+
+function convertOldConfig( _data ) {
+    _data.specificCapatibilities = init(_data.specificCapatibilities,{});
+    _data.configuration.bsMySecondaryPages = init(_data.configuration.bsMySecondaryPages);
+    _data.configuration.bsMyButton = init(_data.configuration.bsMyButton);
+    _data.configuration.bsMyColor = init(_data.configuration.bsMyColor);
+    _data.configuration.bsMyDropdown = init(_data.configuration.bsMyDropdown);
+    _data.configuration.bsMyPlanId = init(_data.configuration.bsMyPlanId, "[]");
+   if (_data.configuration.bsMySecondaryPages !== "") {
+        _data.specificCapatibilities.bsMySecondaryPages = _data.configuration.bsMySecondaryPages;
+        _data.configuration.bsMySecondaryPages = "";
+    }
+    else
+        _data.specificCapatibilities.bsMySecondaryPages = init(_data.specificCapatibilities.bsMySecondaryPages);
+   if (_data.configuration.bsMyColor !== "") {
+        _data.specificCapatibilities.bsMyColor = _data.configuration.bsMyColor;
+        _data.configuration.bsMyColor = "";
+    }
+    else
+        _data.specificCapatibilities.bsMyColor = init(_data.specificCapatibilities.bsMyColor);
+   if (_data.configuration.bsMyButton !== "") {
+        _data.specificCapatibilities.bsMyButton = _data.configuration.bsMyButton;
+        _data.configuration.bsMyButton = "";
+    }
+    else
+        _data.specificCapatibilities.bsMyButton = init(_data.specificCapatibilities.bsMyButton);
+   if (_data.configuration.bsMyDropdown !== "") {
+        _data.specificCapatibilities.bsMyDropdown = _data.configuration.bsMyDropdown;
+        _data.configuration.bsMyDropdown = "";
+    }
+    else
+        _data.specificCapatibilities.bsMyDropdown = init(_data.specificCapatibilities.bsMyDropdown);
+   if (_data.configuration.bsMyPlanId !== "[]") {
+        _data.specificCapatibilities.bsMyPlanId = _data.configuration.bsMyPlanId;
+        _data.configuration.bsMyPlanId = "";
+    }
+    else
+        _data.specificCapatibilities.bsMyPlanId = init(_data.specificCapatibilities.bsMyPlanId,'[]');
+    return _data;
 }
 
 function printEqLogic(_data) {
@@ -60,6 +100,7 @@ function printEqLogic(_data) {
         }
     });
     bsMenuThemesApercu();
+    modifyWithoutSave = false;
     _data.configuration.bsImageMainWindow = init(_data.configuration.bsImageMainWindow, "0");
     updateListImages(_data.configuration.bsImageMainWindow);
     updateListCategories("");
@@ -79,9 +120,11 @@ function printEqLogic(_data) {
     _data.configuration.bsBgColorWindow = init(_data.configuration.bsBgColorWindow, "#e8e8e8");
     _data.configuration.bsColorWindow = init(_data.configuration.bsColorWindow, "#333");
     _data.configuration.bsWidthButton = init(_data.configuration.bsWidthButton, "");
-    _data.configuration.bsMyButton = init(_data.configuration.bsMyButton);
     _data.configuration.bsStyleButton = init(_data.configuration.bsStyleButton, "0");
-    if (_data.configuration.bsMyButton === "") {
+    _data.configuration.bsMyCadre = init(_data.configuration.bsMyCadre);
+    _data = convertOldConfig(_data);
+    
+    if (_data.specificCapatibilities.bsMyButton === "") {
         $('#bsWidthMainWindow').val(_data.configuration.bsWidthMainWindow);
         $('#bsHeightMainWindow').val(_data.configuration.bsHeightMainWindow);
         $('#bsWidthWindow').val(_data.configuration.bsWidthWindow);
@@ -94,7 +137,7 @@ function printEqLogic(_data) {
         $('#bsMyGeneralView').hide();
     }
     else {
-        myTheme.myButtons = JSON.parse(_data.configuration.bsMyButton);
+        myTheme.myButtons = JSON.parse(_data.specificCapatibilities.bsMyButton);
         $('#bsMyCadreView').show();
         $('#bsMyGeneralView').show();
     }
@@ -106,26 +149,23 @@ function printEqLogic(_data) {
     $('#bsExpert').removeClass('btn-success');
     $('#bsMyCadre').prop('readonly', true);
     $('#bsMyGeneral').prop('readonly', true);
-    _data.configuration.bsMySecondaryPages = init(_data.configuration.bsMySecondaryPages);
-    _data.configuration.bsMyColor = init(_data.configuration.bsMyColor);
-    if (_data.configuration.bsMyColor !== "") {
-        myTheme.myColors = JSON.parse(_data.configuration.bsMyColor);
+    
+    if (_data.specificCapatibilities.bsMyColor !== "") {
+        myTheme.myColors = JSON.parse(_data.specificCapatibilities.bsMyColor);
     }
-    _data.configuration.bsMyDropdown = init(_data.configuration.bsMyDropdown);
-    if (_data.configuration.bsMyDropdown !== "") {
-        myTheme.myDropdowns = JSON.parse(_data.configuration.bsMyDropdown);
+    if (_data.specificCapatibilities.bsMyDropdown !== "") {
+        myTheme.myDropdowns = JSON.parse(_data.specificCapatibilities.bsMyDropdown);
     }
-    _data.configuration.bsMyPlanId = init(_data.configuration.bsMyPlanId, "[]");
-    _data.configuration.bsMyCadre = init(_data.configuration.bsMyCadre);
-    if (_data.configuration.bsMyPlanId !== "[]" || _data.configuration.bsMyCadre !== "") {
+    if (_data.specificCapatibilities.bsMyPlanId !== "[]" || _data.configuration.bsMyCadre !== "") {
         myTheme.myCadre = _data.configuration.bsMyCadre;
-        myTheme.globalPlanId = JSON.parse(_data.configuration.bsMyPlanId);
-        if (isset(myTheme.globalPlanId[0])) {
-            $('#bsMyGeneral').val(myTheme.globalPlanId[0]);
-        }
+        myTheme.globalPlanId = JSON.parse(_data.specificCapatibilities.bsMyPlanId);
+        if(!is_array(myTheme.globalPlanId))
+            myTheme.globalPlanId = [];
+        myTheme.globalPlanId[0] = init(myTheme.globalPlanId[0]);
     }
-    if (_data.configuration.bsMySecondaryPages !== "") {
-        secondaryPages.parse(_data.configuration.bsMySecondaryPages);
+    if (_data.specificCapatibilities.bsMySecondaryPages !== "") {
+        secondaryPages.parse(_data.specificCapatibilities.bsMySecondaryPages);
+        //_data.specificCapatibilities.bsMySecondaryPages = "";
     }
     isPlanThemes();
     _data.configuration.isStyle = init(_data.configuration.isStyle, '0');
@@ -149,7 +189,12 @@ function printEqLogic(_data) {
     (_data.configuration.bsStyleCadreYes === "1") ? bsStyleCadreYes() : bsStyleCadreNo();
     if (_data.configuration.isStyle === "1")
         bsIsStyle();
+    (init(_data.isVisible,'0') === "1") ? bsIsVisibleYes() : bsIsVisibleNo();
+    (init(_data.isEnable,'0') === "1") ? bsIsEnableYes() : bsIsEnableNo();
     $('#bsMenuThemesDetails').hide();
+    $('#bsMenuThemesExport').hide();
+    $('#bsMenuImportButton').hide();
+    $("#bsHardSaveView").hide();
     bsColorWindow();
     bsBorderWindow();
     bsBorderRadius();
@@ -162,7 +207,7 @@ function printEqLogic(_data) {
 }
 
 $('.eqLogicAction[data-action=themeRemove]').on('click', function () {
-    if ($('.li_eqLogic.active').attr('data-eqLogic_id') != undefined) {
+    if ($('.li_eqLogic.active').attr('data-eqLogic_id') !== undefined) {
         bootbox.confirm('{{Etes-vous sûr de vouloir supprimer le Thèmes , tous les plans liés seront aussi éffacés}} ' + eqType + ' <b>' + $('.li_eqLogic.active a:first').text() + '</b> ?', function (result) {
             if (result) {
                 
@@ -243,13 +288,16 @@ $('#bsDesignButton').on('click', function () {
 $('#bsMenuThemesApercuView').on('change', 'select#bsPopMainMenu', function () {
     $('#bsMainMenu').val($(this).val());
     $("#bsPopoverMenu").popover('hide');
+    modifyWithoutSave = true;
     createMenuBar();
 });
 $('#bsMenuThemesApercuView').on('change', 'input#bsPopHeightMainMenu', function () {
     $('#bsHeightMainMenu').val($(this).val());
+    modifyWithoutSave = true;
     createMenuBar();
 });
 $('#bsMenuThemesApercuView').on('change', 'input#bsPopMainMenuText', function () {
+    modifyWithoutSave = true;
     $('#bsMainMenuText').val($(this).val());
     $('#myBootstrapMenu > h4').text($(this).val());
 });
@@ -292,6 +340,26 @@ $('#bsMenuThemesApercuView').on('click', "button#bsPopStyleCadreNo", function ()
     bsStyleCadreNo();
 });
 
+$('#bsMenuThemesApercuView').on('click', "button#bsPopReadOnlyYes", function () {
+    if ($('#bsPopReadOnlyYes').hasClass('btn-success'))
+        return;
+    $('#bsPopReadOnlyNo').removeClass('btn-success');
+    $('#bsPopReadOnlyYes').addClass('btn-success');
+    $('input[name="bsReadOnlyYes"]').val('1');
+});
+$('#bsMenuThemesApercuView').on('click', "button#bsPopReadOnlyNo", function () {
+    if ($('#bsPopReadOnlyNo').hasClass('btn-success'))
+        return;
+    bootbox.confirm("Etes-vous sur de vouloir supprimer la protection sur votre page principale empéchant toute mauvaise manipulation, attention ce paramètre n'est pas sauvegardé", function (result) {
+        if (result) {
+            $('#bsPopReadOnlyYes').removeClass('btn-success');
+            $('#bsPopReadOnlyNo').addClass('btn-success');
+            $("#bsDesignButton").prop('disabled', false);
+            $('input[name="bsReadOnlyYes"]').val('0');
+        }
+    });
+});
+
 $('#bsMenuThemesApercuView').on('shown.bs.popover', '#bsPopoverMenu', function () {
     $("strong[name='bsMenuDetails']").text('Menu - L:' + $("#myBootstrapMenu").css('width') + ' - H:' + $("#myBootstrapMenu").css('height'));
     $('#bsPopMainMenu').val($('#bsMainMenu').val());
@@ -332,6 +400,24 @@ $('#bsMenuThemesApercuView').on('shown.bs.popover', '#bsPopoverMenu', function (
         $('#bsPopStyleCadreYes').removeClass('btn-success');
         $('#bsPopStyleCadreNo').addClass('btn-success');
     }
+    if ($('input[name="bsReadOnlyYes"]').val() === "1") {
+        $('#bsPopReadOnlyNo').removeClass('btn-success');
+        $('#bsPopReadOnlyYes').addClass('btn-success');
+    }
+    else {
+        $('#bsPopReadOnlyYes').removeClass('btn-success');
+        $('#bsPopReadOnlyNo').addClass('btn-success');
+        $("#bsDesignButton").prop('disabled', false);
+    }
+    if($('#bsStyleButton').val() === '1') {
+        $("#bsPopMainMenu").prop('disabled', true);
+    }
+    else
+        $("#bsPopMainMenu").prop('disabled', false);
+    if ($('#bsExpert').hasClass('btn-success')) 
+        $("#bsPopReadOnlyView").show();
+    else
+        $("#bsPopReadOnlyView").hide();
 });
 
 function menuPopover() {
@@ -368,23 +454,19 @@ function menuPopover() {
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
                 '<label class="col-sm-6 control-label" for="bsPopStateYes">Barre d\'état</label>' +
-                '<div class="col-sm-6 control-group">' +
-                '<div class="control-group">' +
-                '<div class="pull-right btn-group form-button" data-toggle="buttons">' +
+                '<div class="col-sm-6">' +
+                '<div class="btn-group" data-toggle="buttons">' +
                 '<button class="btn btn-xs ' + bsStateYes + '" type="button" id="bsPopStateYes" autocomplete="off">Oui</button>' +
                 '<button class="btn btn-xs ' + bsStateNo + '" type="button" id="bsPopStateNo" autocomplete="off">Non</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
-                '</div>' +
                 '<div class="form-group form-group-sm">' +
                 '<label class="col-sm-6 control-label" for="bsPopStyleCadreYes">Cadre Unique</label>' +
-                '<div class="col-sm-6 control-group">' +
-                '<div class="control-group">' +
-                '<div class="pull-right btn-group form-button" data-toggle="buttons">' +
+                '<div class="col-sm-6">' +
+                '<div class="btn-group" data-toggle="buttons">' +
                 '<button class="btn btn-xs ' + bsStyleCadreYes + '" type="button" id="bsPopStyleCadreYes" autocomplete="off">Oui</button>' +
                 '<button class="btn btn-xs ' + bsStyleCadreNo + '" type="button" id="bsPopStyleCadreNo" autocomplete="off">Non</button>' +
-                '</div>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -397,6 +479,15 @@ function menuPopover() {
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
                 '<button type="button" class="btn btn-block btn-info " id="bsPopStyle" title="Configuration des Couleurs, Bordures et Ombres"><i class="fa fa-star-o"></i> Style</button>' +
                 '</div></div>' +
+                '<div class="form-group form-group-sm" id="bsPopReadOnlyView" style="display:none">' +
+                '<label class="col-sm-6 control-label" for="bsPopReadOnlyYes">Read Only</label>' +
+                '<div class="col-sm-6">' +
+                '<div class="btn-group" data-toggle="buttons">' +
+                '<button class="btn btn-xs btn-success" type="button" id="bsPopReadOnlyYes" autocomplete="off">Oui</button>' +
+                '<button class="btn btn-xs" type="button" id="bsPopReadOnlyNo" autocomplete="off">Non</button>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
                 '',
         placement: 'left',
         viewport: "#bsMenuThemesApercuView"
@@ -627,15 +718,17 @@ function initBsMenuView() {
     var options = '';
     $('#bsPopButtonIdSelect').empty();
     for (var index = 1; index < myTheme.myButtons.length; index++) {
-        options += '<option value="' + myTheme.globalPlanId[index] + '" data-index="' + index + '" data-indexdrop="-1">' + myTheme.myButtons[index] + '</option>';
+        options += '<option value="' + index + '">' + myTheme.myButtons[index] + '</option>';
     }
     $('#bsPopButtonIdSelect').html(options);
     if (myTheme.myButtons.length < 2) {
         $('#bsPopButtonId').prop('disabled', true);
+        $('#bsPopSortbsMenu').prop('disabled', true);
         $('#bsPopButtonIdSelect').prop('disabled', true);
     }
     else {
-        $('#bsPopButtonIdSelect').val(myTheme.globalPlanId[1]);
+        $('#bsPopButtonIdSelect').val('1');
+        $('#bsPopSortbsMenu').prop('disabled', false);
         $('#bsPopButtonId').prop('disabled', false);
         $('#bsPopButtonIdSelect').prop('disabled', false);
         
@@ -664,8 +757,8 @@ function buttonPopover() {
                 '<div class="col-sm-8">' +
                 '<select class="form-control" value="' + $('#bsStyleButton').val() + '" id="bsPopStyleButton">' +
                 '<option value="0">Boutons</option>' +
-                '<option value="1" id="isNavTabs">Nav Tabs</option>' +
-                '<option value="2">Nav Pills</option>' +
+                '<option value="1" id="isNavTabs">Onglets</option>' +
+                '<option value="2">Menus</option>' +
                 '</select>' +
                 '</div>' +
                 '</div>' +
@@ -693,25 +786,21 @@ function buttonPopover() {
                 '</select>' +
                 '</div>' +
                 '</div>' +
-                '<div class="form-group form-group-sm">' +
+                '<div class="form-group form-group-sm" style="display:none">' +
                 '<label class="col-sm-4 control-label" for="bsPopJustifiedYes">Justifié</label>' +
-                '<div class="col-sm-8 control-group">' +
-                '<div class="control-group">' +
-                '<div class="pull-right btn-group form-button" data-toggle="buttons">' +
+                '<div class="col-sm-8">' +
+                '<div class="btn-group" data-toggle="buttons">' +
                 '<button class="btn btn-xs ' + bsJustifiedYes + '" type="button" id="bsPopJustifiedYes" autocomplete="off">Oui</button>' +
                 '<button class="btn btn-xs ' + bsJustifiedNo + '" type="button" id="bsPopJustifiedNo" autocomplete="off">Non</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
-                '</div>' +
                 '<div class="form-group form-group-sm">' +
                 '<label class="col-sm-4 control-label" for="bsPopGroupYes">Groupés</label>' +
-                '<div class="col-sm-8 control-group">' +
-                '<div class="control-group">' +
-                '<div class="pull-right btn-group form-button" data-toggle="buttons">' +
+                '<div class="col-sm-8">' +
+                '<div class="btn-group" data-toggle="buttons">' +
                 '<button class="btn btn-xs ' + bsGroupYes + '" type="button" id="bsPopGroupYes" autocomplete="off">Oui</button>' +
                 '<button class="btn btn-xs ' + bsGroupNo + '" type="button" id="bsPopGroupNo" autocomplete="off">Non</button>' +
-                '</div>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -938,12 +1027,12 @@ $('#bsMenuThemesApercuView').on('change', 'input#bsPopHeightMainWindow', functio
 });
 $('#bsMenuThemesApercuView').on('change', 'input#bsPopMyCadre', function () {
     $('#bsMyCadre').val($('#bsPopMyCadre').val());
-    myTheme.MyCadre = $('#bPopsMyCadre').val();
+    myTheme.myCadre = $('#bsPopMyCadre').val();
 });
 
 $('#bsMenuThemesApercuView').on('change', 'input#bsPopMyGeneral', function () {
     $('#bsMyGeneral').val($('#bsPopMyGeneral').val());
-    myTheme.globalPlanId[0] = $('#PopbsMyGeneral').val();
+    myTheme.globalPlanId[0] = $('#bsPopMyGeneral').val();
     myTheme.myButtons[0] = 'Général';
     myTheme.myDropdowns[0] = '';
     myTheme.myColors[0] = $('#bsColorHome').val();
@@ -1071,7 +1160,7 @@ function dimPopover() {
                 '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">Font(s)</strong>' +
                 '<div class="form-group form-group-sm">' +
                 '<div class="col-sm-6">' +
-                '<button class="form-control btn btn-sm btn-danger" type="button " id="bsPopDelFont" title="Supprimer la Font">' +
+                '<button type="button" class="form-control btn btn-sm btn-danger" id="bsPopDelFont" title="Supprimer la Font">' +
                 '<i class="fa fa-trash-o"></i> Selection' +
                 '</button>' +
                 '</div>' +
@@ -1109,15 +1198,12 @@ $('#bsMenuThemesApercuView').on('click', 'button#bsPopValidSortButton', function
     var style = $('#bsStyleButton').val();
     switch (style) {
         case '0':
-            //$('#menuBar').find(".buttonItems").eq(0).removeClass('ui-state-disabled');
             kids = $('#menuBar').find(".buttonItems");
             break;
         case '1':
-            //$('#menuBar').find(".navTabsItems").eq(0).removeClass('ui-state-disabled');
             kids = $('#menuBar').find(".navTabsItems");
             break;
         case '2':
-            //$('#menuBar').find(".navPillsItems").eq(0).removeClass('ui-state-disabled');
             kids = $('#menuBar').find(".navPillsItems");
             break;
     }
@@ -1180,18 +1266,6 @@ $('#bsMenuThemesApercuView').on('click', 'button#bsPopValidSortButton', function
     buttonPopover();
 });
 $('#bsMenuThemesApercuView').on('click', 'button#bsPopExitSortButton', function () {
-/*    var style = $('#bsStyleButton').val();
-    switch (style) {
-        case '0':
-            $('#menuBar').find(".buttonItems").eq(0).removeClass('ui-state-disabled');
-            break;
-        case '1':
-            $('#menuBar').find(".navTabsItems").eq(0).removeClass('ui-state-disabled');
-            break;
-        case '2':
-            $('#menuBar').find(".navPillsItems").eq(0).removeClass('ui-state-disabled');
-            break;
-    }*/
     $('#menuBar').sortable('destroy');
     $('#myBootstrapMenu').popover('destroy');
     createMenuBar();
@@ -1214,15 +1288,12 @@ function sortButton() {
     var items = '> *';
     switch (style) {
         case '0':
-            //$('#menuBar').find(".buttonItems").eq(0).addClass('ui-state-disabled');
             items = $('#menuBar').find(".buttonItems");
             break;
         case '1':
-            //$('#menuBar').find(".navTabsItems").eq(0).addClass('ui-state-disabled');
             items = $('#menuBar').find(".navTabsItems");
             break;
         case '2':
-            //$('#menuBar').find(".navPillsItems").eq(0).addClass('ui-state-disabled');
             items = $('#menuBar').find(".navPillsItems");
             break;
     }
@@ -1255,7 +1326,7 @@ function sortButton() {
 // **************    Popover Edition Bouton     *****************
 
 $('#bsMenuThemesApercuView').on('click', 'button#bsPopButtonId', function () {
-    var index = $('#bsPopButtonIdSelect').find(':selected').data('index');
+    var index = $('#bsPopButtonIdSelect').find(':selected').val();
     $('#div_frameMenu').popover('destroy');
     buttonBar(index);
 });
@@ -1442,7 +1513,7 @@ function addPopTextDrop(textDrop, planId) {
     if ($('#bsExpert').hasClass('btn-success'))
         readonly = "";
     var addTextDrop = '<input type="text" class="form-control" id="bsPopListDropdown' + $('#addPopTextDropdown').children().length + '" value= "' + textDrop + '" placeholder="Nom..."/>';
-    var addPlanId = '<input type="text" class="form-control" ' + readonly + ' id="bsPopListPlanId' + $('#addPopTextPlanId').children().length + '" value= "' + init(planId) + '" placeholder="Plan..."/>';
+    var addPlanId = '<input type="number" class="form-control" ' + readonly + ' id="bsPopListPlanId' + $('#addPopTextPlanId').children().length + '" value= "' + init(planId) + '" placeholder="Plan..."/>';
     var addDel = '<button type="button" class="form-control btn btn-sm btn-danger  bsPopListDel" data-bspoplistdel="' + $('#addPopTextPlanId').children().length + '" title="Supprimer l\'éntrée"><i class="fa fa-trash-o"></i></button>';
     $('#addPopTextDropdown').append(addTextDrop);
     $('#addPopTextPlanId').append(addPlanId);
@@ -1459,7 +1530,6 @@ function buttonBar(index) {
     };
     var style = $('#bsStyleButton').val();
     var button;
-    sortButtonShow = false;
     switch (style) {
         case '0':
             button = $('#menuBar').find(".buttonItems").eq(index);
@@ -1613,7 +1683,7 @@ function AddTextDrop(textDrop, planId) {
     if ($('#bsExpert').hasClass('btn-success'))
         readonly = "";
     var addTextDrop = '<input type="text" class="form-control" id="bsListDropdown" value= "' + textDrop + '" placeholder="Nom..."/>';
-    var addPlanId = '<input type="text" class="form-control" ' + readonly + ' id="bsListPlanId" value= "' + init(planId) + '" placeholder="Plan..."/>';
+    var addPlanId = '<input type="number" class="form-control" ' + readonly + ' id="bsListPlanId" value= "' + init(planId) + '" placeholder="Plan..."/>';
     var addDel = '<button type="button" class="form-control btn btn-sm btn-danger  bsListDel" data-bslistdel="' + $('#addTextPlanId').children().length + '" title="Supprimer l\'éntrée"><i class="fa fa-trash-o"></i></button>';
     addTextDrop = addTextDrop.replace('bsListDropdown', 'bsListDropdown' + ($('#addTextDropdown').children().length));
     addPlanId = addPlanId.replace('bsListPlanId', 'bsListPlanId' + ($('#addTextPlanId').children().length));
@@ -2103,7 +2173,7 @@ function changeFontFace() {
 }
 
 function addFontFace(filename,id) {
-    if (filename === null)
+    if (filename === null || filename === undefined)
         return "";
     var fontface = "";
     filename = filename.split('.');
@@ -2272,4 +2342,3 @@ function scrollContent(direction) {
         });
     }
 }
-

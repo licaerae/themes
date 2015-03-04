@@ -208,9 +208,14 @@ $eqLogics = eqLogic::byType('themes');
                 <div class="container-fluid">
                     <div class="well col-sm-12">
                         <div class="well col-sm-2">
-                            <!--button type="button" class="btn btn-block btn-primary" hidden id="bsMenuThemesImages"><i class="fa fa-picture-o"></i> {{Images}}</button-->
-                            <button type="button" class="btn btn-block btn-primary" id="bsMenuThemesApercu"><i class="fa fa-refresh"></i> {{Aperçu}}</button>
+                             <span class="btn btn-block btn-warning" id="bsMenuImportButton" style="display :none" >
+                                <i class="fa fa-download"></i>
+                                <span> {{Importer...}}</span>
+                                <input class="form-control" type="file" id="bsMenuThemesImport" style="cursor : pointer; opacity: 0; position: absolute; top: 20px; right: 0;" name="themes" data-url="plugins/themes/core/ajax/themes.ajax.php?action=themeImport"/>
+                            </span>
+                            <button type="button" class="btn btn-block btn-warning" style="display :none" id="bsMenuThemesExport"><i class="fa fa-upload"></i> {{Exporter...}}</button>
                             <button type="button" class="btn btn-block btn-primary" style="display :none" id="bsMenuThemesDetails"><i class="fa fa-search"></i> {{Détails}}</button>
+                            <button type="button" class="btn btn-block btn-primary" id="bsMenuThemesApercu"><i class="fa fa-refresh"></i> {{Aperçu}}</button>
                             <button type="button" class="btn btn-block btn-info" disabled id="bsStepByStepButton"><i class="fa fa-smile-o"></i> {{Pas à Pas}}</button>
                             <button type="button" class="btn btn-block btn-danger" id="bsDesignButton"><i class="fa fa-thumb-tack"></i> {{Design}}</button>
                             <button type="button" class="btn btn-block btn-danger" id="bsBootStrapButton"><i class="fa fa-magic"></i> {{BootStrap}}</button>
@@ -304,22 +309,34 @@ $eqLogics = eqLogic::byType('themes');
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-4 control-label" for="bsExpert">Expert</label>
-                                        <div class="col-sm-2 control-group">
-                                            <div class="control-group">
-                                                <div class="pull-right btn-group form-button" data-toggle="buttons">
-                                                    <button class="pull-left btn btn-xs" type="button" id="bsExpert" autocomplete="off">Oui</button>
-                                                </div>
+                                        <label class="col-sm-2 control-label" for="bsIsEnableYes">{{Activer}}</label>
+                                        <div class="col-sm-4">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <button class="btn btn-sm btn-success" type="button" id="bsIsEnableYes" autocomplete="off">Oui</button>
+                                                <button class="btn btn-sm" type="button" id="bsIsEnableNo" autocomplete="off">Non</button>
+                                            </div>
+                                            <input type="checkbox" hidden class="eqLogicAttr" data-l1key="isEnable" size="16" checked/>
+                                        </div>
+                                        <label class="col-sm-2 control-label" for="bsIsVisibleYes">{{Visible}}</label>
+                                        <div class="col-sm-4">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <button class="btn btn-sm btn-success" type="button" id="bsIsVisibleYes" autocomplete="off">Oui</button>
+                                                <button class="btn btn-sm" type="button" id="bsIsVisibleNo" autocomplete="off">Non</button>
+                                            </div>
+                                            <input type="checkbox" hidden class="eqLogicAttr" data-l1key="isVisible" checked/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="bsExpert">Expert</label>
+                                        <div class="col-sm-4">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <button class="btn btn-sm" type="button" id="bsExpert" autocomplete="off">Oui</button>
                                             </div>
                                         </div>
-                                        <label class="col-sm-2 control-label" >{{Activer}}</label>
-                                        <div class="col-sm-1">
-                                            <input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" size="16" checked/>
-                                        </div>
-                                        <label class="col-sm-2 control-label" >{{Visible}}</label>
-                                        <div class="col-sm-1">
-                                            <input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>
-                                        </div>
+                                        <div id="bsHardSaveView" style="display:none">
+                                            <div class="col-sm-6">
+                                                <button class="col-sm-12 btn btn-sm btn-danger" type="button" id="bsHardSaveYes" autocomplete="off">RaZ de Page</button>
+                                            </div> 
                                     </div>
                                 </div> 
                             </div>
@@ -353,7 +370,7 @@ $eqLogics = eqLogic::byType('themes');
                         </div>
                 </div>
                 <div class="container-fluid" id="bsMenuThemesApercuView" style="overflow-x: auto">
-                    <div class="col-sm-2" style="min-width:250px">
+                    <div class="col-sm-2" style="min-width:275px">
                     </div>
                     <div class="col-sm-8 noPaddingLeft" id="bsPopoverMenu">
                         <div id="div_frameMenu" class="" style="padding:0;width: 1024px;height: 768px">
@@ -381,7 +398,7 @@ $eqLogics = eqLogic::byType('themes');
                                 </div>
                             </div>
                             <div class="row" id="bsState">
-                                <div class="well" id="myBootstrapState" style="padding: 1px;margin-left: 15px;margin-bottom: 0;width: 1024px;height: 45px">
+                                <div class="well" id="myBootstrapState" style="padding: 5px;margin-left: 15px;margin-bottom: 0;width: 1024px;height: 55px">
                                     <ol id="myBreadcrumbs" class="pull-left breadcrumb" style="font-size:12px">
                                         <li class="active">Home</li>
                                     </ol>
@@ -404,7 +421,6 @@ $eqLogics = eqLogic::byType('themes');
                                 <div class="panel-body">
                                     <div class="col-sm-4">
                                         <div class="panel panel-primary">
-                                            <!-- Default panel contents -->
                                             <div class="panel-heading"><h6>Détail de la Fenêtre principale</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
@@ -449,10 +465,19 @@ $eqLogics = eqLogic::byType('themes');
                                                         <input class="form-control" type="file" id="bsMyFont" name="fonts" data-url="plugins/themes/core/ajax/themes.ajax.php?action=fontUpload"/>
                                                     </div>
                                                 </div>
+                                                <div class="form-group" id="bsReadOnlyView" style="display:none">
+                                                    <label class="col-sm-6 control-label" for="bsReadOnlyYes">Read Only</label>
+                                                    <div class="col-sm-6">
+                                                            <div class="btn-group form-button" data-toggle="buttons">
+                                                                <button class="btn btn-xs btn-success" type="button" id="bsReadOnlyYes" autocomplete="off">Oui</button>
+                                                                <button class="btn btn-xs" type="button" id="bsReadOnlyNo" autocomplete="off">Non</button>
+                                                            </div>
+                                                            <input name="bsReadOnlyYes" hidden value="1"/>
+                                                    </div>
+                                                </div>
                                             </div> 
                                         </div>
                                         <div class="panel panel-primary">
-                                            <!-- Default panel contents -->
                                             <div class="panel-heading"><h6>Détails du Cadre principal</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
@@ -614,7 +639,6 @@ $eqLogics = eqLogic::byType('themes');
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="panel panel-success">
-                                            <!-- Default panel contents -->
                                             <div class="panel-heading">
                                                 <h6>Style
                                                     <div class="pull-right col-sm-1">
@@ -677,7 +701,6 @@ $eqLogics = eqLogic::byType('themes');
                                             </div> 
                                         </div>
                                         <div class="panel panel-success">
-                                            <!-- Default panel contents -->
                                             <div class="panel-heading"><h6>Ombre</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
@@ -714,7 +737,6 @@ $eqLogics = eqLogic::byType('themes');
                                 <div class="panel-body">
                                     <div class="col-sm-12">
                                         <div class="panel panel-warning">
-                                            <!-- Default panel contents -->
                                             <div class="panel-heading"><h6>Gestion des Boutons, onglets ou Menus</h6></div>
                                             <div class="panel-body">
                                                 <div class="well col-sm-2">
@@ -766,9 +788,6 @@ $eqLogics = eqLogic::byType('themes');
                                                             <div class="pull-left" style="width: 40px;border-left: 1px groove;margin: 0;padding-left: 5px;">
                                                                 <button type="button" id="scrollEndButtonModel" class="pull-left btn  btn-primary"><i class="fa fa-chevron-right"></i></button>
                                                             </div>
-
-
-                                                            <!--div class="btn-group"><button type="button" class="pull-left btn btn-sm btn-primary myBsButton" data-planid="X"><i class="icon maison-house109"></i></button></div-->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -782,11 +801,6 @@ $eqLogics = eqLogic::byType('themes');
                     </div>
                 </div>
             </fieldset> 
-            <input class="eqLogicAttr" hidden id="bsMyButton" data-l1key="configuration" data-l2key="bsMyButton"/>
-            <input class="eqLogicAttr" hidden id="bsMyColor" data-l1key="configuration" data-l2key="bsMyColor"/>
-            <input class="eqLogicAttr" hidden id="bsMyDropdown" data-l1key="configuration" data-l2key="bsMyDropdown"/>
-            <input class="eqLogicAttr" hidden id="bsMyPlanId" data-l1key="configuration" data-l2key="bsMyPlanId"/>
-            <input class="eqLogicAttr" hidden id="bsMySecondaryPages" data-l1key="configuration" data-l2key="bsMySecondaryPages"/>
             <select  hidden id="bsPageImage"></select>
             <fieldset>
                 <div class="form-actions">
@@ -930,12 +944,35 @@ $eqLogics = eqLogic::byType('themes');
                 </div>
             </div>
             <div class="modal-footer">
-                <!--button type="button" class="btn btn-success" id="modalDelCancel">Annuler</button-->
             </div>
         </div>
     </div>
 </div>
-
+<div class="modal fade" id="modalImportButton" tabindex="-1" role="dialog" aria-labelledby="modalInfoButton" aria-hidden="true">
+    <div class="modal-dialog" style="width:650px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Lien de l'images</h4>
+            </div>
+            <div class="modal-body">
+                <div class="well col-sm-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="bsImport">Import</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="bsImport"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="modalImportCancel">Annuler</button>
+                <button type="button" class="btn btn-success" id="modalImportSave">Valider</button>
+            </div>
+        </div>
+    </div>
+</div>
+<a id="bsFileExport" href="" style="display: none" target="_blank"></a>
 <?php
 include_file('desktop', 'globals', 'js', 'themes');
 include_file('desktop', 'fonctions', 'js', 'themes');
