@@ -1,100 +1,101 @@
 .*V0.9.10.5*
-Remise à Zéro d'une page en mode Expert +
-Mise à jour de la Doc +
+Reset a page on Expert mode
+Update Doc
 
 .*V0.9.10.4*
-Corrections Mineures +
-Mise à jour de la Doc +
+Minor corrections 
+Update Doc
 
 .*V0.9.10.3*
-Fenêtre principale en readonly +
-read/write en mode expert +
-corrections mineures +
+Main window readonly 
+read / write in expert mode 
+minor corrections
 
 .*V0.9.10.2*
-Corrections mineures +
-Doc en cours +
+Minor corrections 
+Doc current
 
 .*V0.9.10.1*
-Mise à zéro du scroll sur appuie de home +
-Modification du choix des boutons ( boutons, onglets, menus) +
-Mise en forme du format onglet pour être réaliste +
-Correction de bugs +
+Changing the selection buttons (buttons, tabs, menus) 
+Formatting tab format to be realistic 
+Bug Fixes
 
 .*V0.9.10.0*
-Modifications de la gestions des données +
-Check de l’intégrité des données +
-Import/export de thèmes +
+Changes the data managements 
+Check the integrity of the data 
+import / export themes
 
 .*V0.9921*
-Mise à jour de la documentation +
+Updated documentation
 
 .*V0.992*
-Placement du bouton home pour être toujours apparent +
+Placing the home button to be always apparent
 
 .*V0.991*
-Corrections de divers bugs +
-Ajout du verrouillage des cadres +
+Fixes various bugs 
+Added lock frames
 
 .*V0.99*
-Disparition des boutons dans la partie des Détails +
-Refonte du code pour la gestion de la barre de menu +
-Gestion de l'overflow sur la barre de menu +
-Corrections mineurs +
+Disappearance of buttons in the details of the 
+overhaul of the code to manage the menu bar 
+the Managing overflow on the menu bar 
+minor corrections
 
 .*V0.981*
-Couleur sur le titre des cadres +
-Font sur les cadres +
-Correction de bugs mineurs +
+Color on the under the framework 
+Font on frames 
+Fixed minor bugs
 
 .*V0.98*
-Ajout des catégories sur le gestionnaire d'images +
-Correction de bugs +
+Adding categories on the image manager 
+Bug Fixes
 
 .*V0.971*
-Correction du mono-cadre Stylisé est devenu cadre Unique +
-Possibilité de dupliquer une page secondaire +
+Fixed frame-mono Stylized became part Unique 
+Ability to duplicate a secondary page
 
 .*V0.97*
-Correction de nombreux bug +
-Le bouton Bootstrap est complètement opérationnel plus de décalage +
-Stabilisation du code +
-Amélioration de l'interface +
+Fixed many bugs 
+Bootstrap button is fully operational more than offset 
+Stabilization Code 
+Improved interface
 
 .*V0.962*
-Crrections de bugs +
+Crrections bugs
 
 .*V0.961*
-Correction de bugs mineures +
+Fixed minor bugs
 
 .*V0.96*
-Configuration de la page principale à partir de l'aperçu +
-Corrections de bugs +
+Configuration of the main page from the preview 
+Bug Fixes
 
 .*V0.95*
-Gestions des pages secondaires +
+Management of secondary pages
 
 .*V0.925*
-Modification du titre "menu" +
-Placement des boutons +
+Changing the title "menu" 
+buttons Placement
 
 .*V0.924*
-Correction de bugs sur les boutons +
+Fixed bugs on buttons
 
 .*V0.923*
-Font utilisé visible dans l'aperçu +
+Used are visible in the preview
 
 .*V0.921*
-Correction de bugs mineur +
+Fixed minor bugs
 
 .*V0.92*
-Correction de bugs +
-Implémentation des Fonts et des liens d'image(beta) +
+Fixed bugs 
+Implementing Fonts and image links (beta)
 
 .*V0.91*
-Correction de bug mineur +
+Fixed minor bug
 
 .*V0.9*
-Version Bêta, +
-Attention en cours de test, Tout les modules ne sont pas validé, +
-plusieurs pages de design peuvent être crées Bien suivre le forum pour se tenir au courant de la progression du plugin +
+Beta, 
+under test Attention All modules are not validated, 
+several design pages can be created sure to follow the forum to keep abreast of the progress of the plugin
+
+
