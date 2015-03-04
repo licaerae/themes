@@ -158,10 +158,8 @@ image::../images/boutonpopover9.png[]
 Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 {nbsp} +
 
-'''
-
 anchor:ajoutedition[]
-
+'''
 ===== Ajout/Edition d'un Bouton
 image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
@@ -169,7 +167,7 @@ Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur l
 
 [icon="../images/tip.png"]
 [TIP]
-Les IDs des plan sont en mode read-only par défaut, passer en <<mode-expert,mode expert>> pour le modifier.
+Les IDs des plan sont en mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le modifier.
 
 {nbsp} +
 
