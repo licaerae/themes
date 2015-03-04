@@ -159,7 +159,9 @@ Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 {nbsp} +
 
 '''
+
 anchor:ajoutedition[]
+
 ===== Ajout/Edition d'un Bouton
 image:../images/creabouton.png[] image:../images/editbouton.png[]
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
