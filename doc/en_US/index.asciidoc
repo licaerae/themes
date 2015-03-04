@@ -2,14 +2,14 @@
 :imagesdir: ../images
 
 == Thèmes
-Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
+Plugin for creating themes for the Design mode from the library Bootstrap
 
 === Description
 
-*_Jeedom_*(TM) nous offre un mode Design qui permet de creer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principale ou sera afficher la "pièce" demandé, une barre d'état optionnelle +
-Au fur et à mesure du développement sont venu ce gréffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complétement indépendantes pour d'autres plugin ou fonctionnalité de *_Jeedom_*(TM)
+*_Jeedom_*(TM) Design ™ offers a mode that allows to create a free mode of view, but is not affordable for anyone, the purpose of the plugin is to create the template of your design mode, so that the only actions to do in Design view is the placement of widgets. The template includes a menu bar for selecting the "room" that we want to see in main frame, a main frame  will display the "room" asked and optional tray. +
+As with the development came this are grafted several other modules that complement the plugin, but can be used as completely independent way for other plugin or functionality *_Jeedom_*(TM).
 
-. Le gestionnaires d'images
+. Le gestionnaire d'images
 . Les boutons Personnalisés
 
 D'autres modules pourront être implémenter selon les besoins de la communauté
