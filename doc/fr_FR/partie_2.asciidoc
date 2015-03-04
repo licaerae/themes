@@ -67,7 +67,7 @@ Les valeurs par défaut correspond à une tablette horizontale. +
 {nbsp} +
 
 image::../images/dimpopover3.png[]
-Permet de définir l'image de fond, les images proviennent de la catégorie par défaut du <<partie_3.asciidoc#gestImages,Gestionnaire d'images>>. +
+Permet de définir l'image de fond, les images proviennent de la catégorie par défaut du <<gestionnaire_d_8217_images,Gestionnaire d'images>>. +
 {nbsp} +
 
 image::../images/dimpopover4.png[]
