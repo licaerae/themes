@@ -128,7 +128,7 @@ image::../images/popoversvg.png[]
 {nbsp} +
 
 Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composée de quatre parties, un petit rectangle appelé +Début+, une ligne appelée +1er partie+, une ligne appelée +2eme partie+ et un dernier rectangle appelé +Fin+. +
-Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[] en haut à droite du popover permet d'effacer la ligne SVG. Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. Le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de Jeedom. +
+Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:../images/trash.png[] en haut à droite du popover permet d'effacer la ligne SVG. Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. Le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de *_Jeedom_*(TM). +
 
 [icon="../images/tip.png"]
 [TIP]
@@ -145,10 +145,10 @@ Il suffit de faire la même chose pour les autres pièces. +
 
 '''
 ==== Conclusion
-Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil Jeedom pour y accéder directement. Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implémenter l'affichage automatique de la page 'Home'. Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
+Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil *_Jeedom_*(TM) pour y accéder directement. Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implémenter l'affichage automatique de la page 'Home'. Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
 
 [icon="../images/tip.png"]
 [TIP]
-Il est possible de créer des profils 'invité', il suffit au niveau du profil Jeedom de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires.
+Il est possible de créer des profils 'invité', il suffit au niveau du profil *_Jeedom_*(TM) de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires.
 
 {nbsp} +
