@@ -175,7 +175,7 @@ Les IDs des plan sont en mode read-only par défaut, passer en <<mode_expert,mod
 ==== Popover de Style
 
 image::../images/stylepopover1.png[]
-La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond si elle est cocher sinon les couleurs du profil Jeedom seront utilisées. +
+La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond si elle est cocher sinon les couleurs du profil *_Jeedom_*(TM) seront utilisées. +
 {nbsp} +
 
 image::../images/stylepopover2.png[]
