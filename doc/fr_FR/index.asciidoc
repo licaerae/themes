@@ -20,7 +20,13 @@ Le Plugin est orienté pour être pris en main le plus simplement possible, il n
 
 [icon="../images/important.png"]
 [IMPORTANT]
-le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvable sur le forum officiel de Jeedom qui peuvent donner une idée des possibilité du mode Design
+le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvable sur le forum officiel de *_Jeedom_*(TM) qui peuvent donner une idée des possibilité du mode Design
+
+==== Version de *_Jeedom_*(TM)
+Les besoins du plugin ont demandé des modifications au niveau du core de *_Jeedom_*(TM), comme le précise le plugin il nécéssite une version 1.150 de *_Jeedom_*(TM) pour fonctionner mais certaines fonctionnalités sont restreintes
+
+* entre 1.150 et 1.169 : Nombre de pages et ligne SVG limitées, Graph non fonctionnel
+* 1.170 : Graph non Fonctionnel
 
 '''
 === Création d'un thème Facile
