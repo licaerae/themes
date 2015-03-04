@@ -1,0 +1,49 @@
+:icons:
+:imagesdir: ../images
+
+== Thèmes
+Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
+
+=== Description
+
+*_Jeedom_*(TM) nous offre un mode Design qui permet de creer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principale ou sera afficher la "pièce" demandé, une barre d'état optionnelle +
+Au fur et à mesure du développement sont venu ce gréffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complétement indépendantes pour d'autres plugin ou fonctionnalité de *_Jeedom_*(TM)
+
+. Le gestionnaires d'images
+. Les boutons Personnalisés
+
+D'autres modules pourront être implémenter selon les besoins de la communauté
+
+[icon="../images/tip.png"]
+[TIP]
+Le Plugin est orienté pour être pris en main le plus simplement possible, il n'y a aucun besoin de connaître toutes les options pour l'utiliser, la configuration par défaut suffit pour une utilisation sur tablette. Il suffit de créer un thème de rajouter des boutons pour qu'il soit tout de suite utilisable.
+
+[icon="../images/important.png"]
+[IMPORTANT]
+le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvable sur le forum officiel de *_Jeedom_*(TM) qui peuvent donner une idée des possibilité du mode Design
+
+==== Version de *_Jeedom_*(TM)
+Les besoins du plugin ont demandé des modifications au niveau du core de *_Jeedom_*(TM), comme le précise le plugin il nécéssite une version 1.150 de *_Jeedom_*(TM) pour fonctionner mais certaines fonctionnalités sont restreintes
+
+* entre 1.150 et 1.169 : Nombre de pages et ligne SVG limitées, Graph non fonctionnel
+* 1.170 : Graph non Fonctionnel
+
+'''
+=== Création d'un thème Facile
+include::partie_1.asciidoc[Création d'un thème Facile]
+
+'''
+=== Options avancées
+include::partie_2.asciidoc[Options avancées]
+
+'''
+=== Modules additionnels
+include::partie_3.asciidoc[Modules additionnels]
+
+'''
+=== FAQ
+include::faq.asciidoc[]
+
+'''
+=== Changelog
+include::changelog.asciidoc[]
