@@ -1,0 +1,3 @@
+[qanda]
+I don't understand the use of this plugin::
+    Read the documentation.

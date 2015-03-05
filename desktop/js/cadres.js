@@ -8,6 +8,7 @@ $('#bsDuplicatePage').on('click', function () {
     var source = $('#bsPageSelect').val();
     var destination = $('#bsOtherPages').val();
     var pageSelect = secondaryPages.search(source);
+    secondaryPages.resetCadres(destination);
     var tempCadre = [];
     if (pageSelect) {
         for (var index in pageSelect.cadres) {
@@ -19,8 +20,8 @@ $('#bsDuplicatePage').on('click', function () {
         for (var index in pageSelect.svg) {
             var newCadre;
             for (var nbCadre = 0; nbCadre < tempCadre.length; nbCadre++) {
-                if (tempCadre[index].old === pageSelect.svg[index].cadre)
-                    newCadre = tempCadre[index].new;
+                if (tempCadre[nbCadre].old === pageSelect.svg[index].cadre)
+                    newCadre = tempCadre[nbCadre].new;
             }
             secondaryPages.svg(destination, newCadre, pageSelect.svg[index].svg);
         }
@@ -69,7 +70,7 @@ $('#bsSecondaireView').on('shown.bs.popover', "svg[name*='mySvgWindow']", functi
     var svg = $(this).data('svg');
     var page = $('#bsPageSelect').val();
     //var cadre = $(this).data('cadre');
-    $("strong[name='bsSvgDetails" + svg + "'").text('Ligne SVG N°' + svg);
+    $("strong[name='bsSvgDetails" + svg + "']").text('Ligne SVG N°' + svg);
     var svgSelect = secondaryPages.searchSvg(page, svg);
     var color = Snap.color(svgSelect.svg[0].attr('fill'));
     var options = '';
@@ -129,7 +130,7 @@ function svgPopover(id, cadre) {
                 '</select>' +
                 '</div></div>',
         placement: 'right',
-        viewport: "#myCadreWindow"
+        viewport: "div[name='myCadre" + cadre + "']"
     });
     //$('#mySvgWindow' + id).draggable({
     //    snap: "#myCadreWindow"
@@ -626,16 +627,19 @@ function cadrePopover(index) {
                 '<div class="col-sm-4"><button class="btn btn-sm btn-success  bsButtonTitleColor" name="bsButtonTitleColor' + index + '" data-cadre="' + index + '" type="button" title="Couleur du Titre">Couleur</button></div>' +
                 '<div class="col-sm-8"><input type="color" value="" class="form-control myCadreTitleColor" disabled name="myCadreTitleColor' + index + '" data-cadre="' + index + '"/></div>' +
                 '</div>' +
-                '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<select class="form-control bsCadreFont" name="bsCadreFont' + index + '" data-cadre="' + index + '">' +
+                '<div class="form-group form-group-sm">' +
+                '<label class="col-sm-4 control-label" for="bsCadreFont' + index + '">Font</label>' +
+                '<div class="col-sm-8"><select class="form-control bsCadreFont" name="bsCadreFont' + index + '" data-cadre="' + index + '">' +
                 '</select>' +
                 '</div></div>' +
-                '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<select class="form-control bsCadrePicture" id="bsCadrePicture' + index + '" data-cadre="' + index + '">' +
+                '<div class="form-group form-group-sm">' +
+                '<label class="col-sm-4 control-label" for="bsCadrePicture' + index + '">Image</label>' +
+                '<div class="col-sm-8"><select class="form-control bsCadrePicture" id="bsCadrePicture' + index + '" data-cadre="' + index + '">' +
                 '</select>' +
                 '</div></div>' +
-                '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<select class="form-control bsCadreLevel" data-cadre="' + index + '">' +
+                '<div class="form-group form-group-sm">' +
+                '<label class="col-sm-4 control-label">Niveau</label>' +
+                '<div class="col-sm-8"><select class="form-control bsCadreLevel" data-cadre="' + index + '">' +
                 '<option value="99">Niveau -1</option>' +
                 '<option value="1000">Niveau 1</option>' +
                 '<option value="1001">Niveau 2</option>' +
@@ -687,6 +691,9 @@ $('#bsSecondaireView').on('click', '.myCadreLock', function () {
         $("div[name='myCadre" + cadre + "']").draggable({
             cursor: "move",
             containment: "#myCadreWindow",
+            snap: "#myCadreWindow",
+            snapMode: "inner",
+            distance: 5,
             stack: "div[name='myCadre" + cadre + "']",
             stop: function (event, ui) {
                 $("div[name='myCadre" + idCadre + "']").popover('show');

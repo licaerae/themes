@@ -302,20 +302,41 @@ var secondaryPages = {
         return false;
     },
     json: function () {
-        for (var nbObj in this.objects) {
-            for (var nbSvg in this.objects[nbObj].svg) {
+        var objJson = $.extend(true, {}, this.objects);
+        for (var nbObj in objJson) {
+            for (var nbCadre in objJson[nbObj].cadres) {
+                objJson[nbObj].cadres[nbCadre].cadre = encodeURI(objJson[nbObj].cadres[nbCadre].cadre);
+            }
+             for (var nbSvg in objJson[nbObj].svg) {
                 var temp = [];
                 for (var nbGroup = 0; nbGroup < 5; nbGroup++) {
-                    temp.push(this.objects[nbObj].svg[nbSvg].svg[nbGroup].toString());
+                    temp.push(encodeURI(objJson[nbObj].svg[nbSvg].svg[nbGroup].toString()));
                 }
-                this.objects[nbObj].svg[nbSvg].svg = temp;
+                objJson[nbObj].svg[nbSvg].svg = temp;
             }
         }
-        return JSON.stringify(this.objects);
+        return JSON.stringify(objJson);
     },
     parse: function (data) {
         if (isset(data)) {
             this.objects = JSON.parse(data);
+            for (var nbObj in this.objects) {
+                for (var nbCadre in this.objects[nbObj].cadres) {
+                    try {
+                        this.objects[nbObj].cadres[nbCadre].cadre = decodeURI(this.objects[nbObj].cadres[nbCadre].cadre);
+                    }
+                    catch (e) {
+                        this.objects[nbObj].cadres[nbCadre].cadre = this.objects[nbObj].cadres[nbCadre].cadre;
+                    }
+                }
+                for (var nbSvg in this.objects[nbObj].svg) {
+                    var temp = [];
+                    for (var nbGroup = 0; nbGroup < 5; nbGroup++) {
+                        temp.push(decodeURI(this.objects[nbObj].svg[nbSvg].svg[nbGroup]));
+                    }
+                    this.objects[nbObj].svg[nbSvg].svg = temp;
+                }
+            }
         }
         else
             this.objects = [];
