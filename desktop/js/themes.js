@@ -116,7 +116,7 @@ function printEqLogic(_data) {
     _data.configuration.bsWidthWindow = init(_data.configuration.bsWidthWindow, 1024);
     _data.configuration.bsHeightWindow = init(_data.configuration.bsHeightWindow, 593);
     _data.configuration.bsHeightMainMenu = init(_data.configuration.bsHeightMainMenu, 110);
-    _data.configuration.bsMainMenuText = init(_data.configuration.bsMainMenuText, "Menu");
+    _data.configuration.bsMainMenuText = init(_data.configuration.bsMainMenuText, "{{Menu}}");
     _data.configuration.bsBgColorWindow = init(_data.configuration.bsBgColorWindow, "#e8e8e8");
     _data.configuration.bsColorWindow = init(_data.configuration.bsColorWindow, "#333");
     _data.configuration.bsWidthButton = init(_data.configuration.bsWidthButton, "");
@@ -247,7 +247,7 @@ $('.eqLogicAction[data-action=themeRemove]').on('click', function () {
             }
         });
     } else {
-        $('#div_alert').showAlert({message: '{{Veuillez d\'abord sélectionner un}} ' + eqType, level: 'danger'});
+        $('#div_alert').showAlert({message: "{{Veuillez d'abord sélectionner un}} " + eqType, level: 'danger'});
     }
 });
 
@@ -260,7 +260,7 @@ $('#bsBootStrapButton').on('click', function () {
 });
 
 $('#bsDesignButton').on('click', function () {
-    notify('Création des Pages', 'Sauvegarder immédiatement après création des pages, pour ne pas perdre les identifiants des pages', 'warning');
+    notify('{{Création des Pages}}', '{{Sauvegarder immédiatement après création des pages, pour ne pas perdre les identifiants des pages}}', 'warning');
     if (myTheme.myCadre === "")
         createPlanThemes(-1, -1, 'home', $('#bsWidthMainWindow').val(), $('#bsHeightMainWindow').val());
     else
@@ -350,7 +350,7 @@ $('#bsMenuThemesApercuView').on('click', "button#bsPopReadOnlyYes", function () 
 $('#bsMenuThemesApercuView').on('click', "button#bsPopReadOnlyNo", function () {
     if ($('#bsPopReadOnlyNo').hasClass('btn-success'))
         return;
-    bootbox.confirm("Etes-vous sur de vouloir supprimer la protection sur votre page principale empéchant toute mauvaise manipulation, attention ce paramètre n'est pas sauvegardé", function (result) {
+    bootbox.confirm("{{Etes-vous sur de vouloir supprimer la protection sur votre page principale empéchant toute mauvaise manipulation, attention ce paramètre n'est pas sauvegardé}}", function (result) {
         if (result) {
             $('#bsPopReadOnlyYes').removeClass('btn-success');
             $('#bsPopReadOnlyNo').addClass('btn-success');
@@ -428,63 +428,63 @@ function menuPopover() {
     var bsStyleCadreNo = $('input[name="bsStyleCadreYes"]').val() === "0" ? 'btn-success"' : '';
     $("#bsPopoverMenu").popover({
         html: true,
-        title: '<strong class="control-label" name="bsMenuDetails">Menu - L:' + $("#myBootstrapMenu").css('width') + ' - H:' + $("#myBootstrapMenu").css('height') + '</strong>' +
+        title: '<strong class="control-label" name="bsMenuDetails">{{Menu}} - {{L:}}' + $("#myBootstrapMenu").css('width') + ' - {{H:}}' + $("#myBootstrapMenu").css('height') + '</strong>' +
                 '',
         content:
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopMainMenu">Position</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopMainMenu">{{Position}}</label>' +
                 '<div class="col-sm-8">' +
-                '<select class="form-control" value="' + $('#bsMainMenu').val() + '" id="bsPopMainMenu" placeholder="Plan..">' +
-                '<option value="0">Haut</option>' +
-                '<option value="1">Bas</option>' +
-                '<option value="2">Gauche</option>' +
-                '<option value="3">Droite</option>' +
+                '<select class="form-control" value="' + $('#bsMainMenu').val() + '" id="bsPopMainMenu" placeholder="{{Plan}}..">' +
+                '<option value="0">{{Haut}}</option>' +
+                '<option value="1">{{Bas}}</option>' +
+                '<option value="2">{{Gauche}}</option>' +
+                '<option value="3">{{Droite}}</option>' +
                 '</select>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopHeightMainMenu">Dimension</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopHeightMainMenu">{{Taille}}</label>' +
                 '<div class="col-sm-8">' +
-                '<input type="number" class="form-control" value="' + $('#bsHeightMainMenu').val() + '" id="bsPopHeightMainMenu" placeholder="Hauteur.."/>' +
+                '<input type="number" class="form-control" value="' + $('#bsHeightMainMenu').val() + '" id="bsPopHeightMainMenu" placeholder="{{Hauteur}}.."/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<div class="col-sm-4"><button class="btn btn-sm btn-success " id="bsPopMenuButton" type="button" title="Voir/Cacher le Titre">Texte</button></div>' +
-                '<div class="col-sm-8"><input type="text" value="' + $('#bsMainMenuText').val() + '" class="form-control" id="bsPopMainMenuText" name="bsPopMainMenuText" placeholder="Texte.."/></div>' +
+                '<div class="col-sm-4"><button class="btn btn-sm btn-success " id="bsPopMenuButton" type="button" title="{{Voir/Cacher le Titre}}">{{Texte}}</button></div>' +
+                '<div class="col-sm-8"><input type="text" value="' + $('#bsMainMenuText').val() + '" class="form-control" id="bsPopMainMenuText" name="bsPopMainMenuText" placeholder="{{Texte}}.."/></div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-6 control-label" for="bsPopStateYes">Barre d\'état</label>' +
+                "<label class='col-sm-6 control-label' for='bsPopStateYes'>{{Barre d'état}}</label>" +
                 '<div class="col-sm-6">' +
                 '<div class="btn-group" data-toggle="buttons">' +
-                '<button class="btn btn-xs ' + bsStateYes + '" type="button" id="bsPopStateYes" autocomplete="off">Oui</button>' +
-                '<button class="btn btn-xs ' + bsStateNo + '" type="button" id="bsPopStateNo" autocomplete="off">Non</button>' +
+                '<button class="btn btn-xs ' + bsStateYes + '" type="button" id="bsPopStateYes" autocomplete="off">{{Oui}}</button>' +
+                '<button class="btn btn-xs ' + bsStateNo + '" type="button" id="bsPopStateNo" autocomplete="off">{{Non}}</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-6 control-label" for="bsPopStyleCadreYes">Cadre Unique</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopStyleCadreYes">{{Cadre Unique}}</label>' +
                 '<div class="col-sm-6">' +
                 '<div class="btn-group" data-toggle="buttons">' +
-                '<button class="btn btn-xs ' + bsStyleCadreYes + '" type="button" id="bsPopStyleCadreYes" autocomplete="off">Oui</button>' +
-                '<button class="btn btn-xs ' + bsStyleCadreNo + '" type="button" id="bsPopStyleCadreNo" autocomplete="off">Non</button>' +
+                '<button class="btn btn-xs ' + bsStyleCadreYes + '" type="button" id="bsPopStyleCadreYes" autocomplete="off">{{Oui}}</button>' +
+                '<button class="btn btn-xs ' + bsStyleCadreNo + '" type="button" id="bsPopStyleCadreNo" autocomplete="off">{{Non}}</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<button type="button" class="btn btn-block btn-info " id="bsPopDim" title="Configuration de la Fenêtre Principale"><i class="fa fa-arrows"></i> Dimensions</button>' +
+                '<button type="button" class="btn btn-block btn-info " id="bsPopDim" title="{{Configuration de la Fenêtre Principale}}"><i class="fa fa-arrows"></i> {{Dimensions}}</button>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<button type="button" class="btn btn-block btn-info " id="bsPopButton" title="Configuration des Boutons/Menus/Onglets"><i class="fa fa-pencil"></i> Boutons</button>' +
+                '<button type="button" class="btn btn-block btn-info " id="bsPopButton" title="Configuration des Boutons/Menus/Onglets"><i class="fa fa-pencil"></i> {{Boutons}}</button>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<button type="button" class="btn btn-block btn-info " id="bsPopStyle" title="Configuration des Couleurs, Bordures et Ombres"><i class="fa fa-star-o"></i> Style</button>' +
+                '<button type="button" class="btn btn-block btn-info " id="bsPopStyle" title="Configuration des Couleurs, Bordures et Ombres"><i class="fa fa-star-o"></i> {{Style}}</button>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm" id="bsPopReadOnlyView" style="display:none">' +
-                '<label class="col-sm-6 control-label" for="bsPopReadOnlyYes">Read Only</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopReadOnlyYes">{{Lecture Seule}}</label>' +
                 '<div class="col-sm-6">' +
                 '<div class="btn-group" data-toggle="buttons">' +
-                '<button class="btn btn-xs btn-success" type="button" id="bsPopReadOnlyYes" autocomplete="off">Oui</button>' +
-                '<button class="btn btn-xs" type="button" id="bsPopReadOnlyNo" autocomplete="off">Non</button>' +
+                '<button class="btn btn-xs btn-success" type="button" id="bsPopReadOnlyYes" autocomplete="off">{{Oui}}</button>' +
+                '<button class="btn btn-xs" type="button" id="bsPopReadOnlyNo" autocomplete="off">{{Non}}</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -749,27 +749,27 @@ function buttonPopover() {
     }
     $("#div_frameMenu").popover({
         html: true,
-        title: '<strong class="control-label" name="bsMenuViewDetails">Boutons</strong>' +
+        title: '<strong class="control-label" name="bsMenuViewDetails">{{Boutons}}</strong>' +
                 '',
         content:
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopStyleButton">Type</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopStyleButton">{{Type}}</label>' +
                 '<div class="col-sm-8">' +
                 '<select class="form-control" value="' + $('#bsStyleButton').val() + '" id="bsPopStyleButton">' +
-                '<option value="0">Boutons</option>' +
-                '<option value="1" id="isNavTabs">Onglets</option>' +
-                '<option value="2">Menus</option>' +
+                '<option value="0">{{Boutons}}</option>' +
+                '<option value="1" id="isNavTabs">{{Onglets}}</option>' +
+                '<option value="2">{{Menus}}</option>' +
                 '</select>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopWidthButton">Taille</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopWidthButton">{{Taille}}</label>' +
                 '<div class="col-sm-8">' +
                 '<select class="form-control"  value="' + $('#bsWidthButton').val() + '" id="bsPopWidthButton">' +
-                '<option value="btn-sm">Petit</option>' +
-                '<option value="btn-xs">Très petit</option>' +
-                '<option value="">Normal</option>' +
-                '<option value="btn-lg">Grand</option>' +
+                '<option value="btn-sm">{{Petit}}</option>' +
+                '<option value="btn-xs">{{Très Petit}}</option>' +
+                '<option value="">{{Normal}}</option>' +
+                '<option value="btn-lg">{{Grand}}</option>' +
                 '</select>' +
                 '</div>' +
                 '</div>' +
@@ -787,43 +787,43 @@ function buttonPopover() {
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm" style="display:none">' +
-                '<label class="col-sm-4 control-label" for="bsPopJustifiedYes">Justifié</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopJustifiedYes">{{Justifié}}</label>' +
                 '<div class="col-sm-8">' +
                 '<div class="btn-group" data-toggle="buttons">' +
-                '<button class="btn btn-xs ' + bsJustifiedYes + '" type="button" id="bsPopJustifiedYes" autocomplete="off">Oui</button>' +
-                '<button class="btn btn-xs ' + bsJustifiedNo + '" type="button" id="bsPopJustifiedNo" autocomplete="off">Non</button>' +
+                '<button class="btn btn-xs ' + bsJustifiedYes + '" type="button" id="bsPopJustifiedYes" autocomplete="off">{{Oui}}</button>' +
+                '<button class="btn btn-xs ' + bsJustifiedNo + '" type="button" id="bsPopJustifiedNo" autocomplete="off">{{Non}}</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopGroupYes">Groupés</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopGroupYes">{{Groupés}}</label>' +
                 '<div class="col-sm-8">' +
                 '<div class="btn-group" data-toggle="buttons">' +
-                '<button class="btn btn-xs ' + bsGroupYes + '" type="button" id="bsPopGroupYes" autocomplete="off">Oui</button>' +
-                '<button class="btn btn-xs ' + bsGroupNo + '" type="button" id="bsPopGroupNo" autocomplete="off">Non</button>' +
+                '<button class="btn btn-xs ' + bsGroupYes + '" type="button" id="bsPopGroupYes" autocomplete="off">{{Oui}}</button>' +
+                '<button class="btn btn-xs ' + bsGroupNo + '" type="button" id="bsPopGroupNo" autocomplete="off">{{Non}}</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopOffsetButton">Décalage</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopOffsetButton">{{Décalage}}</label>' +
                 '<div class="col-sm-8">' +
                 '<input type="number" class="form-control" id="bsPopOffset" value="' + offset + '" data-min="0" data-max="0"/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
                 '<div class="col-sm-5">' +
-                '<button type="button" class="btn btn-sm btn-success " id="bsPopAddButton" title="Ajouter un bouton"><i class="fa fa-plus-circle"></i></button>' +
-                '<button type="button" class="btn btn-sm btn-info " id="bsPopButtonId" ' + disabled + ' title="Editer le bouton"><i class="fa fa-pencil"></i></button>' +
+                '<button type="button" class="btn btn-sm btn-success " id="bsPopAddButton" title="{{Ajouter un bouton}}"><i class="fa fa-plus-circle"></i></button>' +
+                '<button type="button" class="btn btn-sm btn-info " id="bsPopButtonId" ' + disabled + ' title="{{Editer le bouton}}"><i class="fa fa-pencil"></i></button>' +
                 '</div>' +
                 '<div class="col-sm-7">' +
                 '<select class="form-control" value="' + value + '" id="bsPopButtonIdSelect" ' + disabled + '>' + options +
                 '</select>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<button type="button" class="btn btn-block btn-info " id="bsPopSortbsMenu" title="Ré-ordonner les Boutons/Menus/Onglets"><i class="fa fa-magnet"></i> Classer</button>' +
+                '<button type="button" class="btn btn-block btn-info " id="bsPopSortbsMenu" title="{{Ré-ordonner les Boutons/Menus/Onglets}}"><i class="fa fa-magnet"></i> {{Classer}}</button>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
-                '<button type="button" class="btn btn-block btn-success " id="bsPopExitbsMenu" title="Retour au Popover précédent"><i class="fa fa-check"></i> Valider</button>' +
+                '<button type="button" class="btn btn-block btn-success " id="bsPopExitbsMenu" title="{{Retour au Popover précédent}}"><i class="fa fa-check"></i> {{Valider}}</button>' +
                 '</div></div>' +
                 '',
         placement: 'left',
@@ -907,7 +907,7 @@ function initStylePopover() {
         $('#bsPopColorWindow').prop("disabled", true);
         $('#bsPopBgColorWindow').prop("disabled", true);
     }
-    $('#bsCadreStyleDetails').text('Cadre Principal - L:' + $("#bsWidthWindow").css('width') + ' - H:' + $("#bsWidthWindow").css('height'));
+    $('#bsCadreStyleDetails').text('{{Cadre Principal}} - {{L:}}' + $("#bsWidthWindow").css('width') + ' - {{H:}}' + $("#bsWidthWindow").css('height'));
     $('#bsPopBgColorWindow').val($('#bsBgColorWindow').val());
     $('#bsPopColorWindow').val($('#bsColorWindow').val());
     $('#bsPopBorderWindow').val($('#bsBorderWindow').val());
@@ -925,39 +925,39 @@ function stylePopover() {
     whichView = "stylePopover";
     $("#div_frameMenu").popover({
         html: true,
-        title: '<strong class="control-label" name="bsStyleDetails">Styles' +
+        title: '<strong class="control-label" name="bsStyleDetails">{{Style}}' +
                 '<div class="pull-right col-sm-1">' +
                 '<input type="checkbox" class="" id="bsPopIsStyle"/>' +
                 '</div></strong>' +
                 '',
         content:
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopBgColorWindow">Fond</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopBgColorWindow">{{Fond}}</label>' +
                 '<div class="col-sm-8">' +
-                '<input class="form-control" id="bsPopBgColorWindow" type="color" value="#e8e8e8" placeholder="Couleur"/>' +
+                '<input class="form-control" id="bsPopBgColorWindow" type="color" value="#e8e8e8" placeholder="{{Couleur}}"/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopColorWindow">Texte</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopColorWindow">{{Texte}}</label>' +
                 '<div class="col-sm-8">' +
-                '<input class="form-control" id="bsPopColorWindow" type="color" value="#333" placeholder="Couleur"/>' +
+                '<input class="form-control" id="bsPopColorWindow" type="color" value="#333" placeholder="{{Couleur}}"/>' +
                 '</div>' +
                 '</div>' +
-                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">Bordure</strong>' +
+                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">{{Bordure}}</strong>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopBorderWindow">Taille</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopBorderWindow">{{Taille}}</label>' +
                 '<div class="col-sm-8">' +
                 '<input class="form-control" id="bsPopBorderWindow" type="number"/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopBorderRadius">Rayon</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopBorderRadius">{{Rayon}}</label>' +
                 '<div class="col-sm-8">' +
                 '<input class="form-control" id="bsPopBorderRadius" type="number"/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopBorderBold">Style</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopBorderBold">{{Style}}</label>' +
                 '<div class="col-sm-8">' +
                 '<select class="form-control" id="bsPopBorderBold"">' +
                 '<option value="none">none</option>' +
@@ -973,14 +973,14 @@ function stylePopover() {
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopBorderColor">Couleur</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopBorderColor">{{Couleur}}</label>' +
                 '<div class="col-sm-8">' +
-                '<input class="form-control" id="bsPopBorderColor" type="color" placeholder="Couleur"/>' +
+                '<input class="form-control" id="bsPopBorderColor" type="color" placeholder="{{Couleur}}"/>' +
                 '</div>' +
                 '</div>' +
-                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">Ombre</strong>' +
+                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">{{Ombre}}</strong>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopBorderShadow1">Taille</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopBorderShadow1">{{Taille}}</label>' +
                 '<div class="col-sm-8">' +
                 '<div class="control-group">' +
                 '<input class="col-sm-12" name="bsPopBorderShadow1" type="number"/>' +
@@ -990,14 +990,14 @@ function stylePopover() {
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopBorderShadowColor">Couleur</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopBorderShadowColor">{{Couleur}}</label>' +
                 '<div class="col-sm-8">' +
-                '<input class="form-control" id="bsPopBorderShadowColor" name="bsPopBorderShadowColor" type="color" placeholder="Couleur"/>' +
+                '<input class="form-control" id="bsPopBorderShadowColor" name="bsPopBorderShadowColor" type="color" placeholder="{{Couleur}}"/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
                 '<div class="col-sm-12">' +
-                '<button type="button" class="btn btn-block btn-success " id="bsPopExitbsStyle" title="Retour au Popover précédent"><i class="fa fa-check"></i> Valider</button>' +
+                '<button type="button" class="btn btn-block btn-success " id="bsPopExitbsStyle" title="{{Retour au Popover précédent}}"><i class="fa fa-check"></i> {{Valider}}</button>' +
                 '</div></div>' +
                 '',
         placement: 'left',
@@ -1039,7 +1039,7 @@ $('#bsMenuThemesApercuView').on('change', 'input#bsPopMyGeneral', function () {
 });
 $('#bsMenuThemesApercuView').on('click', 'button#bsPopDelFont', function () {
     var delFont = $('#bsListFonts').val();
-    bootbox.confirm("Etes-vous sur de vouloir effacer cette Font", function (result) {
+    bootbox.confirm("{{Etes-vous sur de vouloir effacer cette Font}}", function (result) {
         if (result) {
             removeFont({
                 font: delFont,
@@ -1049,7 +1049,7 @@ $('#bsMenuThemesApercuView').on('click', 'button#bsPopDelFont', function () {
                 success: function (data) {
                     $('#bsListFonts').val('0');
                     updateListFonts($('#bsListFonts').val());
-                    notify('Suppression d\'une Font', 'Font supprimée avec succès', 'success');
+                    notify("{{Suppression d'une Font}}", "{{Font supprimée avec succès}}", 'success');
                 }
             });
         }
@@ -1081,7 +1081,7 @@ function initDimPopover() {
             }
             $('#div_frameMenu').popover('hide');
             updateListFonts($('#bsListFonts').val());
-            notify('Ajout d\'une Font', 'Font ajoutée avec succès', 'success');
+            notify("{{Ajout d'une Font}}", '{{Font ajoutée avec succès}}', 'success');
         }
     });
     $('#bsDimDetails').text('C. Principal - L:' + $("#bsWidthWindow").val() + 'px - H:' + $("#bsHeightWindow").val() + 'px');
@@ -1122,46 +1122,46 @@ function dimPopover() {
     $("#div_frameMenu").popover({
         html: true,
         title:
-                '<strong class="control-label" id="bsDimDetails" style="font-size:0.90em">Dimensions</strong>' +
+                '<strong class="control-label" id="bsDimDetails" style="font-size:0.90em">{{Dimensions}}</strong>' +
                 '',
         content:
-                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">Fenêtre Principale</strong>' +
+                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">{{Fenêtre Principale}}</strong>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-6 control-label" for="bsPopWidthMainWindow">Largeur</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopWidthMainWindow">{{Largeur}}</label>' +
                 '<div class="col-sm-6">' +
-                '<input type="number" class="form-control" id="bsPopWidthMainWindow" value="1024" placeholder="Largeur.."/>' +
+                '<input type="number" class="form-control" id="bsPopWidthMainWindow" value="1024" placeholder="{{Largeur}}.."/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-6 control-label" for="bsPopHeightMainWindow">Hauteur</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopHeightMainWindow">{{Hauteur}}</label>' +
                 '<div class="col-sm-6">' +
-                '<input type="number" class="form-control" id="bsPopHeightMainWindow" value="768" placeholder="Hauteur.."/>' +
+                '<input type="number" class="form-control" id="bsPopHeightMainWindow" value="768" placeholder="{{Hauteur}}.."/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-6 control-label" for="bsPopImageMainWindow">Image</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopImageMainWindow">{{Image}}</label>' +
                 '<div class="col-sm-6">' +
                 '<select class="form-control" id="bsPopImageMainWindow">' +
                 '</select>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm" id="bsPopMyCadreView">' +
-                '<label class="col-sm-6 control-label" for="bsPopMyCadre">Id du Plan</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopMyCadre">{{Id du Plan}}</label>' +
                 '<div class="col-sm-6">' +
-                '<input type="number" class="form-control" id="bsPopMyCadre" placeholder="Plan.."/>' +
+                '<input type="number" class="form-control" id="bsPopMyCadre" placeholder="{{Plan}}.."/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm" id="bsPopMyGeneralView">' +
-                '<label class="col-sm-6 control-label" for="bsPopMyGeneral">Id du Cadre</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopMyGeneral">{{Id du Cadre}}</label>' +
                 '<div class="col-sm-6">' +
-                '<input type="number" class="form-control" id="bsPopMyGeneral" placeholder="General.."/>' +
+                '<input type="number" class="form-control" id="bsPopMyGeneral" placeholder="{{Général}}.."/>' +
                 '</div>' +
                 '</div>' +
-                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">Font(s)</strong>' +
+                '<strong class="col-sm-12 noPaddingLeft noPaddingRight" style="border-bottom: 1px groove; margin-bottom: 8px;">{{Font(s)}}</strong>' +
                 '<div class="form-group form-group-sm">' +
                 '<div class="col-sm-6">' +
-                '<button type="button" class="form-control btn btn-sm btn-danger" id="bsPopDelFont" title="Supprimer la Font">' +
-                '<i class="fa fa-trash-o"></i> Selection' +
+                '<button type="button" class="form-control btn btn-sm btn-danger" id="bsPopDelFont" title="{{Supprimer la Font}}">' +
+                '<i class="fa fa-trash-o"></i> {{Sélection}}' +
                 '</button>' +
                 '</div>' +
                 '<div class="col-sm-6">' +
@@ -1170,18 +1170,18 @@ function dimPopover() {
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-6 control-label" for="bsPopMyFont">Ajouter</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopMyFont">{{Ajouter}}</label>' +
                 '<div class="col-sm-6">' +
                 '<span class="form-control btn btn-sm btn-info fileinput-button">' +
                 '<i class="glyphicon glyphicon-plus"></i>' +
-                '<span>Font(s)...</span>' +
+                '<span>{{Font(s)}}...</span>' +
                 '<input class="form-control" type="file" id="bsPopMyFont" name="fonts" data-url="plugins/themes/core/ajax/themes.ajax.php?action=fontUpload"/>' +
                 '</span>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
                 '<div class="col-sm-12">' +
-                '<button type="button" class="btn btn-block btn-success " id="bsPopExisDim" title="Retour au Popover précédent"><i class="fa fa-check"></i> Valider</button>' +
+                '<button type="button" class="btn btn-block btn-success " id="bsPopExisDim" title="{{Retour au Popover précédent}}"><i class="fa fa-check"></i> {{Valider}}</button>' +
                 '</div></div>' +
                 '',
         placement: 'left',
@@ -1306,15 +1306,15 @@ function sortButton() {
     });
     $('#myBootstrapMenu').popover({
         html: true,
-        title: '<strong class="control-label" name="bsButtonDetails">Classer</strong>' +
+        title: '<strong class="control-label" name="bsButtonDetails">{{Classer}}</strong>' +
                 '',
         content:
                 '<div class="col-sm-12">' +
                 '<div class="form-group">' +
-                '<button type="button" class="btn btn-block btn-danger" id="bsPopExitSortButton"><i class="fa fa-times"></i> Annuler</button>' +
+                '<button type="button" class="btn btn-block btn-danger" id="bsPopExitSortButton"><i class="fa fa-times"></i> {{Annuler}}</button>' +
                 '</div>' +
                 '<div class="form-group">' +
-                '<button type="button" class="btn btn-block btn-success" id="bsPopValidSortButton"><i class="fa fa-check"></i> Valider</button>' +
+                '<button type="button" class="btn btn-block btn-success" id="bsPopValidSortButton"><i class="fa fa-check"></i> {{Valider}}</button>' +
                 '</div></div>' +
                 '',
         placement: place[$('#bsMainMenu').val()],
@@ -1349,14 +1349,14 @@ $('#bsMenuThemesApercuView').on('click', 'button#bsPopDelButton', function () {
                 isNotEmpty = true;
         }
         if (isNotEmpty) {
-            notify('Suppression d\'un Sous-menu', 'Eléments(s) du sous-menu lié a un plan\nSuppression Annulée', 'warning');
+            notify("{{Suppression d'un Sous-menu}}", '{{Eléments(s) du sous-menu lié a un plan, Suppression Annulée}}', 'warning');
             return;
         }
         myTheme.globalPlanId[idButton] = "";
 
     }
     if (myTheme.globalPlanId[idButton] !== "") {
-        bootbox.confirm("Un plan est lié à ce bouton, le plan va être lui aussi supprimé", function (result) {
+        bootbox.confirm("{{Un plan est lié à ce bouton, le plan va être lui aussi supprimé}}", function (result) {
             if (result) {
                 deletePlanThemes(idButton, -1);
                 removeButton(idButton);
@@ -1379,7 +1379,7 @@ $('#bsMenuThemesApercuView').on('click', '.bsPopListDel', function () {
     var bsListDel = $(this).data('bspoplistdel');
     var idButton = $('#bsPopDelButton').data('index');
     if (isset(myTheme.globalPlanId[idButton][bsListDel]) && (myTheme.globalPlanId[idButton][bsListDel] !== "")) {
-        bootbox.confirm("Un plan est lié à cette entrée, le plan va être lui aussi supprimé", function (result) {
+        bootbox.confirm("{{Un plan est lié à cette entrée, le plan va être lui aussi supprimé}}", function (result) {
             if (result) {
                 deletePlanThemes(idButton, bsListDel);
                 $('#addPopTextDropdown').children().eq(bsListDel).remove();
@@ -1460,7 +1460,7 @@ $('#bsMenuThemesApercuView').on('shown.bs.popover', '#myBootstrapMenu', function
 });
 function initButtonBarView() {
     var index = $('#bsPopButtonName').data('index');
-    $("strong[name='bsButtonDetails']").text('Edition de: ' + myTheme.myButtons[index]);
+    $("strong[name='bsButtonDetails']").text('{{Edition de}}: ' + myTheme.myButtons[index]);
     if ($('#bsExpert').hasClass('btn-success'))
         $('#bsPopButtonIdPlan').prop('readonly', false);
     else
@@ -1512,9 +1512,9 @@ function addPopTextDrop(textDrop, planId) {
     var readonly = 'readonly';
     if ($('#bsExpert').hasClass('btn-success'))
         readonly = "";
-    var addTextDrop = '<input type="text" class="form-control" id="bsPopListDropdown' + $('#addPopTextDropdown').children().length + '" value= "' + textDrop + '" placeholder="Nom..."/>';
-    var addPlanId = '<input type="number" class="form-control" ' + readonly + ' id="bsPopListPlanId' + $('#addPopTextPlanId').children().length + '" value= "' + init(planId) + '" placeholder="Plan..."/>';
-    var addDel = '<button type="button" class="form-control btn btn-sm btn-danger  bsPopListDel" data-bspoplistdel="' + $('#addPopTextPlanId').children().length + '" title="Supprimer l\'éntrée"><i class="fa fa-trash-o"></i></button>';
+    var addTextDrop = '<input type="text" class="form-control" id="bsPopListDropdown' + $('#addPopTextDropdown').children().length + '" value= "' + textDrop + '" placeholder="{{Nom}}..."/>';
+    var addPlanId = '<input type="number" class="form-control" ' + readonly + ' id="bsPopListPlanId' + $('#addPopTextPlanId').children().length + '" value= "' + init(planId) + '" placeholder="{{Plan}}..."/>';
+    var addDel = "<button type='button' class='form-control btn btn-sm btn-danger bsPopListDel' data-bspoplistdel='" + $('#addPopTextPlanId').children().length + "' title=\"{{Supprimer l'éntrée}}\"><i class='fa fa-trash-o'></i></button>";
     $('#addPopTextDropdown').append(addTextDrop);
     $('#addPopTextPlanId').append(addPlanId);
     $('#addPopTextDel').append(addDel);
@@ -1550,19 +1550,19 @@ function buttonBar(index) {
     }
     $('#myBootstrapMenu').popover({
         html: true,
-        title: '<strong class="control-label" name="bsButtonDetails">Bouton</strong>' +
-                '<button type="button" class="pull-right btn btn-xs btn-danger " id="bsPopDelButton" data-index="' + index + '" title="Supprimer le bouton">' +
+        title: '<strong class="control-label" name="bsButtonDetails">{{Bouton}}</strong>' +
+                '<button type="button" class="pull-right btn btn-xs btn-danger " id="bsPopDelButton" data-index="' + index + '" title="{{Supprimer le bouton}}">' +
                 '<i class="fa fa-trash-o"></i></button>' +
                 '',
         content:
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopButtonName">Nom</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopButtonName">{{Nom}}</label>' +
                 '<div class="col-sm-8">' +
-                '<input type="text" class="form-control" value="' + buttonName + '" id="bsPopButtonName" data-index="' + index + '" placeholder="Nom..."/>' +
+                '<input type="text" class="form-control" value="' + buttonName + '" id="bsPopButtonName" data-index="' + index + '" placeholder="{{Nom}}..."/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopColorButton">Couleur</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopColorButton">{{Couleur}}</label>' +
                 '<div class="col-sm-8">' +
                 '<select class="form-control" value="' + buttonColor + '" id="bsPopColorButton">' +
                 '<option class="btn-primary" value="btn-primary">Primary</option>' +
@@ -1575,18 +1575,18 @@ function buttonBar(index) {
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsPopDropdown">Sous-menu</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopDropdown">{{Sous-menu}}</label>' +
                 '<div class="col-sm-8 control-group">' +
                 '<div class="pull-left btn-group form-button" data-toggle="buttons">' +
-                '<button class="btn btn-xs ' + dropView + '" type="button" id="bsPopDropdown" autocomplete="off">Oui</button>' +
+                '<button class="btn btn-xs ' + dropView + '" type="button" id="bsPopDropdown" autocomplete="off">{{Oui}}</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm" id="bsPopListDropdown" style="display: none;" >' +
-                '<label class="col-sm-2 control-label" for="bsLisPoptDropdown0">Textes</label>' +
+                '<label class="col-sm-2 control-label" for="bsLisPoptDropdown0">{{Textes}}</label>' +
                 '<div class="col-sm-10">' +
                 '<div class="col-sm-2">' +
-                '<button type="button" id="bsPopAddList" class="btn btn-sm btn-success " title="Ajouter un Sous Menu"><i class="fa fa-plus-circle"></i></button>' +
+                '<button type="button" id="bsPopAddList" class="btn btn-sm btn-success " title="{{Ajouter un Sous Menu}}"><i class="fa fa-plus-circle"></i></button>' +
                 '</div>' +
                 '<div class="col-sm-10 noPaddingRight" id="addPopTextDropdown">' +
                 '</div>' +
@@ -1597,16 +1597,16 @@ function buttonBar(index) {
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm" id="bsPopIdPlanDisplay" style="display: none;" >' +
-                '<label class="col-sm-4 control-label" for="bsPopButtonIdPlan">Id du Plan</label>' +
+                '<label class="col-sm-4 control-label" for="bsPopButtonIdPlan">{{Id du Plan}}</label>' +
                 '<div class="col-sm-8">' +
-                '<input type="text" class="form-control" id="bsPopButtonIdPlan" placeholder="Plan..."/>' +
+                '<input type="text" class="form-control" id="bsPopButtonIdPlan" placeholder="{{Plan}}..."/>' +
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-6">' +
-                '<button type="button" class="btn btn-block btn-danger" id="bsPopExitMenuBar"><i class="fa fa-times"></i> Annuler</button>' +
+                '<button type="button" class="btn btn-block btn-danger" id="bsPopExitMenuBar"><i class="fa fa-times"></i> {{Annuler}}</button>' +
                 '</div>' +
                 '<div class="col-sm-6">' +
-                '<button type="button" class="btn btn-block btn-success" id="bsPopValidMenuBar"><i class="fa fa-check"></i> Valider</button>' +
+                '<button type="button" class="btn btn-block btn-success" id="bsPopValidMenuBar"><i class="fa fa-check"></i> {{Valider}}</button>' +
                 '</div></div>' +
                 '',
         placement: place[$('#bsMainMenu').val()],
@@ -1648,7 +1648,7 @@ $('#addTextDel').on('click', '.bsListDel', function () {
     var idButton = $('#bsIdButton').val();
     if (isset(myTheme.globalPlanId[idButton][bsListDel]) && (myTheme.globalPlanId[idButton][bsListDel] !== "")) {
         //tester si c'est un dropdown et supprimer tout les plans
-        bootbox.confirm("Un plan est lié à cette entrée, le plan va être lui aussi supprimé", function (result) {
+        bootbox.confirm("{{Un plan est lié à cette entrée, le plan va être lui aussi supprimé}}", function (result) {
             if (result) {
                 deletePlanThemes(idButton, bsListDel);
                 $('#addTextDropdown').children().eq(bsListDel).remove();
@@ -1682,9 +1682,9 @@ function AddTextDrop(textDrop, planId) {
     var readonly = 'readonly';
     if ($('#bsExpert').hasClass('btn-success'))
         readonly = "";
-    var addTextDrop = '<input type="text" class="form-control" id="bsListDropdown" value= "' + textDrop + '" placeholder="Nom..."/>';
-    var addPlanId = '<input type="number" class="form-control" ' + readonly + ' id="bsListPlanId" value= "' + init(planId) + '" placeholder="Plan..."/>';
-    var addDel = '<button type="button" class="form-control btn btn-sm btn-danger  bsListDel" data-bslistdel="' + $('#addTextPlanId').children().length + '" title="Supprimer l\'éntrée"><i class="fa fa-trash-o"></i></button>';
+    var addTextDrop = '<input type="text" class="form-control" id="bsListDropdown" value= "' + textDrop + '" placeholder="{{Nom}}..."/>';
+    var addPlanId = '<input type="number" class="form-control" ' + readonly + ' id="bsListPlanId" value= "' + init(planId) + '" placeholder="{{Plan}}..."/>';
+    var addDel = '<button type="button" class="form-control btn btn-sm btn-danger  bsListDel" data-bslistdel="' + $('#addTextPlanId').children().length + "\" title=\"{{Supprimer l'éntrée}}\"><i class='fa fa-trash-o'></i></button>";
     addTextDrop = addTextDrop.replace('bsListDropdown', 'bsListDropdown' + ($('#addTextDropdown').children().length));
     addPlanId = addPlanId.replace('bsListPlanId', 'bsListPlanId' + ($('#addTextPlanId').children().length));
     $('#addTextDropdown').append(addTextDrop);
@@ -1774,7 +1774,7 @@ $('#bsImagesView').on('click', '.bsLinkDefaultImage', function () {
 
 $('#bsImagesView').on('click', '.bsDelDefaultImage', function () {
     var image = $(this).data('image');
-    bootbox.confirm("Etes-vous sur de vouloir effacer cette image", function (result) {
+    bootbox.confirm("{{Etes-vous sur de vouloir effacer cette image}}", function (result) {
         if (result) {
             removeImage({
                 image: image,
@@ -1785,7 +1785,7 @@ $('#bsImagesView').on('click', '.bsDelDefaultImage', function () {
                 success: function (data) {
                     $('#bsImageMainWindow').val('0');
                     updateListImages($('#bsImageMainWindow').val());
-                    notify('Suppression d\'une Image', 'image supprimée avec succès', 'success');
+                    notify("Suppression d'une Image", '{{Image supprimée avec succès}}', 'success');
                 }
             });
         }
@@ -1820,7 +1820,7 @@ function deleteCategory(category) {
                 },
                 success: function (data) {
                     updateListCategories("");
-                    notify('Suppression d\'une Catégorie', 'Catégorie ' + category + ' supprimée avec succès', 'success');
+                    notify("{{Suppression d'une Catégorie}}", '{{Catégorie}} ' + category + ' {{supprimée avec succès}}', 'success');
                 }
             });
         }
@@ -1830,7 +1830,7 @@ function deleteCategory(category) {
 $('body').on('click', 'button.bsDelImage', function () {
     var image = $(this).data('image');
     var category = $(this).data('category');
-    bootbox.confirm("Etes-vous sur de vouloir effacer cette image", function (result) {
+    bootbox.confirm("{{Etes-vous sur de vouloir effacer cette image}}", function (result) {
         if (result) {
             removeImage({
                 image: image,
@@ -1840,7 +1840,7 @@ $('body').on('click', 'button.bsDelImage', function () {
                 },
                 success: function () {
                     updateCategoryImages($('#bsImagesCategory').val());
-                    notify('Suppression d\'une Image', 'image supprimée avec succès', 'success');
+                    notify("{{Suppression d'une Image}}", '{{Image supprimée avec succès}}', 'success');
                 }
             });
         }
@@ -1856,11 +1856,11 @@ $('#bsImagesFileload').fileupload({
         }
         if ($('#bsImagesCategory').val() === "") {
             updateListImages($('#bsImageMainWindow').val());
-            notify('Ajout d\'une Image', 'image ajoutée avec succès', 'success');
+            notify("{{Ajout d'une Image}}", '{{Image ajoutée avec succès}}', 'success');
         }
         else {
             updateCategoryImages($('#bsImagesCategory').val());
-            notify('Ajout d\'une Image', 'image ajoutée dans la catégorie ' + $('#bsImagesCategory').val() + ' avec succès', 'success');            
+            notify("{{Ajout d'une Image}}", '{{Image ajoutée dans la catégorie}} ' + $('#bsImagesCategory').val() + ' {{avec succès}}', 'success');            
         }
     }
 });
@@ -1875,7 +1875,7 @@ $('#bsImagesCategory').on('change', function () {
 });
 
 $('#bsImagesAddCategory').on('click', function () {
-    bootbox.prompt("Nom de la nouvelle catégorie", function (result) {
+    bootbox.prompt("{{Nom de la nouvelle catégorie}}", function (result) {
         if (result) {
             console.log(result);
             addCategory({
@@ -1886,7 +1886,7 @@ $('#bsImagesAddCategory').on('click', function () {
                 success: function (data) {
                     var panels = '<div class="panel panel-primary">' +
                             '<div class="panel-heading"><h6>Catégorie : ' + result + 
-                            '<button type="button" class="pull-right btn btn-xs btn-danger  myCategoryDel" data-category="' + result + '" title="Supprimer la Catégorie"><i class="fa fa-trash-o"></i></button>' +
+                            '<button type="button" class="pull-right btn btn-xs btn-danger myCategoryDel" data-category="' + result + '" title="{{Supprimer la Catégorie}}"><i class="fa fa-trash-o"></i></button>' +
                             '</h6></div>' +
                             '<div class="panel-body">' +
                             '<div class="col-sm-12" name="bsImagesView' + result + '">' +
@@ -1895,7 +1895,7 @@ $('#bsImagesAddCategory').on('click', function () {
                             '</div>';
                     $('#bsImagesCategory').append('<option value="' + result + '">' + result + '</option>');
                     $('#bsCategory').append(panels);
-                    notify('Ajout d\'une Catégorie', 'Catégorie ' + result + ' ajouté avec succès', 'success');
+                    notify("{{Ajout d'une Catégorie}}", '{{Catégorie}} ' + result + ' {{ajouté avec succès}}', 'success');
                 }
             });
         }
@@ -1913,8 +1913,8 @@ function updateCategoryImages(category) {
             for (var i in data) {
                 images += '<div class="media-left col-sm-2" >';
                 images += '<div class="well col-sm-12 noPaddingWell noPaddingLeft noPaddingRight noMarginBottom">';
-                images += '<button type="button" class="pull-left btn btn-xs btn-danger  bsDelImage" data-category="' + category + '" data-image="' + data[i] + '" title="Supprimer l\'image"><i class="fa fa-trash-o"></i></button>';
-                images += '<button type="button" class="pull-right btn btn-xs btn-info  bsLinkImage" data-category="' + category + '" data-image="' + data[i] + '" title="Lien de l\'image"><i class="fa fa-globe"></i></button>';
+                images += '<button type="button" class="pull-left btn btn-xs btn-danger bsDelImage" data-category="' + category + '" data-image="' + data[i] + "\" title=\"{{Supprimer l'image}}\"><i class='fa fa-trash-o'></i></button>";
+                images += '<button type="button" class="pull-right btn btn-xs btn-info bsLinkImage" data-category="' + category + '" data-image="' + data[i] + "\" title=\"Liens de l'image\"><i class='fa fa-globe'></i></button>";
                 images += '</div>';
                 images += '<img class="img-thumbnail center-block" src="plugins/themes/core/uploads/images/' + category + '/' + data[i] + '" alt="' + category + '/' + data[i] + '">';
                 images += '<div class="well col-sm-12 noPaddingWell" id="bsViewImage' + i + '"></div>';
@@ -1934,14 +1934,14 @@ function updateListCategories(value) {
             $('#div_alert').showAlert({message: error.message, level: 'danger'});
         },
         success: function (data) {
-            var options = '<option value="">Thèmes</option>';
+            var options = '<option value="">{{Thèmes}}</option>';
             var panels = '';
             for (var i in data) {
                 var temp = data[i].replace('/', '');
                 options += '<option value="' + temp + '">' + temp + '</option>';
                 panels = '<div class="panel panel-primary">' +
-                            '<div class="panel-heading"><h6>Catégorie : ' + temp + 
-                            '<button type="button" class="pull-right btn btn-xs btn-danger  myCategoryDel" data-category="' + temp + '" title="Supprimer la Catégorie"><i class="fa fa-trash-o"></i></button>' +
+                            '<div class="panel-heading"><h6>{{Catégorie}} : ' + temp + 
+                            '<button type="button" class="pull-right btn btn-xs btn-danger myCategoryDel" data-category="' + temp + '" title="{{Supprimer la Catégorie}}"><i class="fa fa-trash-o"></i></button>' +
                             '</h6></div>' +
                         '<div class="panel-body">' +
                         '<div class="col-sm-12" name="bsImagesView' + temp + '">' +
@@ -2046,8 +2046,8 @@ function updateListImages(select) {
             for (var i in data) {
                 images += '<div class="media-left col-sm-2" >';
                 images += '<div class="well col-sm-12 noPaddingWell noPaddingLeft noPaddingRight noMarginBottom">';
-                images += '<button type="button" class="pull-left btn btn-xs btn-danger  bsDelDefaultImage" data-category="" data-image="' + data[i] + '" title="Supprimer l\'image"><i class="fa fa-trash-o"></i></button>';
-                images += '<button type="button" class="pull-right btn btn-xs btn-info  bsLinkDefaultImage" data-category="" data-image="' + data[i] + '" title="Lien de l\'image"><i class="fa fa-globe"></i></button>';
+                images += '<button type="button" class="pull-left btn btn-xs btn-danger bsDelDefaultImage" data-category="" data-image="' + data[i] + "\" title=\"{{Supprimer l'image}}\"><i class='fa fa-trash-o'></i></button>";
+                images += '<button type="button" class="pull-right btn btn-xs btn-info bsLinkDefaultImage" data-category="" data-image="' + data[i] + "\" title=\"{{Liens de l'image}}\"><i class='fa fa-globe'></i></button>";
                 images += '</div>';
                 images += '<img class="img-thumbnail center-block" src="plugins/themes/core/uploads/images/' + data[i] + '" alt="' + data[i] + '">';
                 images += '<div class="well col-sm-12 noPaddingWell" id="bsViewImage' + i + '"></div>';
@@ -2130,7 +2130,7 @@ $('#bsMyFont').fileupload({
             return;
         }
         updateListFonts($('#bsListFonts').val());
-        notify('Ajout d\'une Font', 'Font ajoutée avec succès', 'success');
+        notify("{{Ajout d'une Font}}", "{{Font ajoutée avec succès}}", 'success');
     }
 });
 
@@ -2213,7 +2213,7 @@ $('#bsDelFont').on('click', function (event) {
                 success: function (data) {
                     $('#bsListFonts').val('0');
                     updateListFonts($('#bsListFonts').val());
-                    notify('Suppression d\'une Font', 'font supprimée avec succès', 'success');
+                    notify("{{Suppression d'une Font}}", "{{Font supprimée avec succès}}", 'success');
                 }
             });
         }
@@ -2226,7 +2226,7 @@ function updateListFonts(value) {
             $('#div_alert').showAlert({message: error.message, level: 'danger'});
         },
         success: function (data) {
-            var options = '<option value="0">Défaut</option>';
+            var options = '<option value="0">{{Défaut}}</option>';
             for (var i in data) {
                 options += '<option value="' + data[i] + '">' + data[i] + '</option>';
             }

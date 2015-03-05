@@ -13,51 +13,35 @@ Pour appréhender le plugin nous allons développer dans cette partie la créati
 * Mono-cadre (paramètres par défaut).
 * On configura un style avec une bordure et une ombre pour un rendu visuel.
 
-<<<<<<< HEAD
-===== Création du thème
-Nous allons commencer par créer un thème, cliquer sur: image:../images/ajout.png[] +
-Changeons le titre pour un message de bienvenue, remplacez dans le premier popover +Menu+ par +Bienvenue dans Notre Espace Domotique+. +
-Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<partie_2.asciidoc#ajoutedition-dun-bouton,boutons>> et le <<partie_2.asciidoc#popover-du-style,style>>. +
-
-===== Création des boutons
-Cliquez sur *Boutons* et appuyez sur image:../images/plus.png[] pour créer un nouveau bouton. +
-Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:../images/plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé. +
-=======
 Nous allons commencer par créer un thème, cliquer sur image:ajout.png[] .Changeons le titre pour un message de bienvenue, remplacez dans le premier popover +Menu+ par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons et pratiquement créer, ils nous restent plus qu'a configurer les <<ajoutedition,boutons>> et le <<popover_de_style,style>>. +
-Cliquez sur *Boutons* et appuyez sur image:plus.png[] pour créer un nouveau bouton. Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé. Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
->>>>>>> origin/master
+{nbsp} +
 
-image::../images/CapturFiles_3.jpg[]
+[role="col-md-3"]
+image:rdcbouton.png[]
+[role="col-md-9"]
+Cliquez sur *Boutons* et appuyez sur image:plus.png[] pour créer un nouveau bouton. Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé.
 
-Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. + (si la fenêtre "Bouton" disparait, cliquer une un des boutons déjà créés pour la faire réapparaitre)
+[role="col-md-3"]
+image:chambrebouton.png[]
+[role="col-md-9"]
+Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
 
-image::../images/CapturFiles_4.jpg[]
-
-===== Application d'un style
-Maintenant que nos boutons sont créés, nous allons appliquer un style pour un meilleur rendu visuel, ici chacun fait ce qu'il veut, pour notre démo j'ai choist les paramètres ainsi : +
-
-Pour faire apparaitre le menu *Style*, cliquer sur *Aperçu* puis *Style* +
-
+[role="col-md-3"]
+image:styledemo.png[]
+[role="col-md-9"]
+Maintenant que nos boutons sont créés, nous allons appliquer un style pour un meilleur rendu visuel, ici chacun fait ce qu'il veut, pour notre démo j'ai choist les paramètres ainsi :
 
 * Bordure : *Taille*: +5+, *Rayon*: +5+, *Style*: +groove+, *Couleur*: +Bleu+
-* Ombre : *Taille*: +10+, +10+, +10+, *Couleur*: +Bleu Clair +
+* Ombre : *Taille*: +10+, +10+, +10+, *Couleur*: +Bleu Clair+
 
-image::../images/CapturFiles_6.jpg[]
-
-Valider le style et sauvegardez votre thème maintenant. +
+Sauvegardez votre thème maintenant. +
 
 Voici le résultat: +
 
 image::démo1.png[]
 {nbsp} +
 
-<<<<<<< HEAD
-A ce stade, aucune page n'est ajoutée, le bouton *Design* est actif, en cliquant dessus, le plugin va creer l'ensemble des pages nécesasires (Le chapitre suivant expose plus en détail le bouton *Design*).+
-Il est nécessaire après création des pages de sauvegarder votre *thème*. Le bouton *Design* se grise et le bouton *BootSrap* s'active.
-Cliquer sur le bouton *BootStap* permet le code dans la page principale (home).
-=======
 '''
->>>>>>> origin/master
 ==== Design et Bootstrap
 Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:bdesign.png[] et image:bbootstrap.png[] +
 
@@ -104,11 +88,7 @@ Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliq
 '''
 ==== Gestion des Pages Secondaires
 Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
-<<<<<<< HEAD
-Les images qui serviront aux pages secondaires seront rajoutées avec le Gestionnaire d'images, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
-=======
-Les images qui serviront aux pages secondaires seront rajoutées avec le <<gestionnaire_d_8217_images,Gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] +
->>>>>>> origin/master
+Les images qui serviront aux pages secondaires seront rajoutées avec le <<gestionnaire_d_8217_images,Gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
 
 image::secondaires.png[]
 {nbsp} +

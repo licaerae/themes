@@ -115,7 +115,7 @@ $eqLogics = eqLogic::byType('themes');
         <legend>{{Mes Themes}}</legend>
         <?php
         if (count($eqLogics) == 0) {
-            echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de thèmes, cliquez sur Ajouter un équipement pour commencer}}</span></center>";
+            echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de thèmes, cliquez sur Ajouter un thème pour commencer}}</span></center>";
         } else {
             ?>
             <div class="eqLogicThumbnailContainer">
@@ -142,14 +142,14 @@ $eqLogics = eqLogic::byType('themes');
                         <div class="col-sm-12">
                         <div class="well form-group form-group-sm">
                             <div class="col-sm-12">
-                                <button type="button" class="btn btn-sm btn-block btn-primary " id="bsButtonsAdd" title="Ajouter un Bouton Personnalisé"><i class="fa fa-plus-circle"></i> Ajouter</button>
+                                <button type="button" class="btn btn-sm btn-block btn-primary " id="bsButtonsAdd" title="{{Ajouter un Bouton Personnalisé}}"><i class="fa fa-plus-circle"></i> Ajouter</button>
                             </div>
                         </div>
                         </div>
                     </div>                
                     <div class="well col-sm-10">
                         <div class="panel panel-default" id="bsButtonsDefault">
-                            <div class="panel-heading"><h6>Boutons Personnalisés</h6></div>
+                            <div class="panel-heading"><h6>{{Boutons Personnalisés}}</h6></div>
                             <div class="panel-body">
                                 <div class="col-sm-12" id="bsButtonsView">
                                 </div> 
@@ -171,14 +171,14 @@ $eqLogics = eqLogic::byType('themes');
                             <div class="col-sm-12">
                             <span class="form-control btn-sm btn-info fileinput-button">
                                 <i class="glyphicon glyphicon-plus"></i>
-                                <span>Image(s)...</span>
+                                <span> {{Image(s)...}}</span>
                                 <input class="form-control" type="file" id="bsImagesFileload" name="images" data-url="plugins/themes/core/ajax/themes.ajax.php?action=imageUpload"/>
                             </span>
                             </div>    
                         </div>
                         <div class="form-group form-group-sm">
                             <div class="col-sm-2">
-                                <button type="button" class="btn btn-sm btn-primary " id="bsImagesAddCategory" title="Ajouter une catégorie"><i class="fa fa-folder"></i></button>
+                                <button type="button" class="btn btn-sm btn-primary " id="bsImagesAddCategory" title="{{Ajouter une catégorie}}"><i class="fa fa-folder"></i></button>
                             </div>
                             <div class="col-sm-10">
                                 <select class="form-control" value="" id="bsImagesCategory" >
@@ -190,7 +190,7 @@ $eqLogics = eqLogic::byType('themes');
                     </div>                
                     <div class="well col-sm-10" id="bsCategory">
                         <div class="panel panel-default" id="bsCategoryDefault">
-                            <div class="panel-heading"><h6>Catégorie : Théme<small><em><bold> - utilisée pour tout les thèmes</bold></em></small></h6></div>
+                            <div class="panel-heading"><h6>{{Catégorie : Théme}}<small><em><bold> - {{utilisée pour tout les thèmes}}</bold></em></small></h6></div>
                             <div class="panel-body">
                                 <div class="col-sm-12" id="bsImagesView">
                                 </div> 
@@ -223,11 +223,11 @@ $eqLogics = eqLogic::byType('themes');
                         <div class="col-sm-5">
                             <div class="panel panel-primary">
                                 <!-- Default panel contents -->
-                                <div class="panel-heading"><h6>Gestions des Pages Secondaires</h6></div>
+                                <div class="panel-heading"><h6>{{Gestions des Pages Secondaires}}</h6></div>
                                 <div class="panel-body">
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label" for="bsPageSelect">Pages</label>
+                                            <label class="col-sm-3 control-label" for="bsPageSelect">{{Pages}}</label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" id="bsPageSelect">
                                                 </select>               
@@ -236,10 +236,10 @@ $eqLogics = eqLogic::byType('themes');
                                         <div class="form-group" id="bsDuplicateView" style="display: none">
                                             <div class="col-sm-3">
                                                 <a class="btn btn-default pull-right" id="bsDuplicatePage">
-                                                    <i class="fa fa-files-o"></i> Dupliquer
+                                                    <i class="fa fa-files-o"></i> {{Dupliquer}}
                                                 </a>
                                             </div>
-                                            <label class="col-sm-2 control-label" for="bsOtherPages"> Vers: </label>
+                                            <label class="col-sm-2 control-label" for="bsOtherPages"> {{Vers}}: </label>
                                             <div class="col-sm-7">
                                                 <select class="form-control" id="bsOtherPages">
                                                 </select>               
@@ -249,16 +249,15 @@ $eqLogics = eqLogic::byType('themes');
                                     <div class="col-sm-7">
                                         <fieldset class="bsCadreFields" id="bsCadreFields1">
                                             <div class="panel panel-info">
-                                                <!-- Default panel contents -->
-                                                <div class="panel-heading"><h6>Profondeur</h6></div>
+                                                <div class="panel-heading"><h6>{{Profondeur}}</h6></div>
                                                 <div class="panel-body">
                                                     <div class="form-group">
                                                         <div class="col-sm-12">
                                                             <select class="form-control" id="bsPageLevel">
-                                                                <option value="99">Niveau -1</option>
-                                                                <option value="1000">Niveau 1</option>
-                                                                <option value="1001">Niveau 2</option>
-                                                                <option value="1002">Niveau 3</option>
+                                                                <option value="99">{{Niveau}} -1</option>
+                                                                <option value="1000">{{Niveau}} 1</option>
+                                                                <option value="1001">{{Niveau}} 2</option>
+                                                                <option value="1002">{{Niveau}} 3</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -269,7 +268,7 @@ $eqLogics = eqLogic::byType('themes');
                                     <div class="col-sm-5">
                                         <fieldset class="bsCadreFields">
                                             <div class="panel panel-info">
-                                                <div class="panel-heading"><h6>Cadres</h6></div>
+                                                <div class="panel-heading"><h6>{{Cadres}}</h6></div>
                                                 <div class="panel-body">
                                                     <div class="form-group">
                                                         <div class="col-sm-12">
@@ -286,13 +285,13 @@ $eqLogics = eqLogic::byType('themes');
                         <div class="col-sm-5">
                             <div class="panel panel-primary">
                                 <!-- Default panel contents -->
-                                <div class="panel-heading"><h6>Description du Thème</h6></div>
+                                <div class="panel-heading"><h6>{{Description du Thème}}</h6></div>
                                 <div class="panel-body">
                                     <div class="form-group">
-                                        <label class="col-sm-4 control-label">{{Nom du thème}}</label>
+                                        <label class="col-sm-4 control-label">{{Nom}}</label>
                                         <div class="col-sm-8">
                                             <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
-                                            <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom du thème}}"/>
+                                            <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom}}"/>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -312,30 +311,30 @@ $eqLogics = eqLogic::byType('themes');
                                         <label class="col-sm-2 control-label" for="bsIsEnableYes">{{Activer}}</label>
                                         <div class="col-sm-4">
                                             <div class="btn-group" data-toggle="buttons">
-                                                <button class="btn btn-sm btn-success" type="button" id="bsIsEnableYes" autocomplete="off">Oui</button>
-                                                <button class="btn btn-sm" type="button" id="bsIsEnableNo" autocomplete="off">Non</button>
+                                                <button class="btn btn-sm btn-success" type="button" id="bsIsEnableYes" autocomplete="off">{{Oui}}</button>
+                                                <button class="btn btn-sm" type="button" id="bsIsEnableNo" autocomplete="off">{{Non}}</button>
                                             </div>
                                             <input type="checkbox" hidden class="eqLogicAttr" data-l1key="isEnable" size="16" checked/>
                                         </div>
                                         <label class="col-sm-2 control-label" for="bsIsVisibleYes">{{Visible}}</label>
                                         <div class="col-sm-4">
                                             <div class="btn-group" data-toggle="buttons">
-                                                <button class="btn btn-sm btn-success" type="button" id="bsIsVisibleYes" autocomplete="off">Oui</button>
-                                                <button class="btn btn-sm" type="button" id="bsIsVisibleNo" autocomplete="off">Non</button>
+                                                <button class="btn btn-sm btn-success" type="button" id="bsIsVisibleYes" autocomplete="off">{{Oui}}</button>
+                                                <button class="btn btn-sm" type="button" id="bsIsVisibleNo" autocomplete="off">{{Non}}</button>
                                             </div>
                                             <input type="checkbox" hidden class="eqLogicAttr" data-l1key="isVisible" checked/>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-2 control-label" for="bsExpert">Expert</label>
+                                        <label class="col-sm-2 control-label" for="bsExpert">{{Expert}}</label>
                                         <div class="col-sm-4">
                                             <div class="btn-group" data-toggle="buttons">
-                                                <button class="btn btn-sm" type="button" id="bsExpert" autocomplete="off">Oui</button>
+                                                <button class="btn btn-sm" type="button" id="bsExpert" autocomplete="off">{{Oui}}</button>
                                             </div>
                                         </div>
                                         <div id="bsHardSaveView" style="display:none">
                                             <div class="col-sm-6">
-                                                <button class="col-sm-12 btn btn-sm btn-danger" type="button" id="bsHardSaveYes" autocomplete="off">RaZ de Page</button>
+                                                <button class="col-sm-12 btn btn-sm btn-danger" type="button" id="bsHardSaveYes" autocomplete="off">{{RaZ de Page}}</button>
                                             </div> 
                                     </div>
                                 </div> 
@@ -413,7 +412,7 @@ $eqLogics = eqLogic::byType('themes');
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#bsAccordion" href="#bsCollapseOne" aria-expanded="true" aria-controls="bsCollapseOne">
-                                        Informations
+                                        {{Informations}}
                                     </a>
                                 </h4>
                             </div>
@@ -421,37 +420,37 @@ $eqLogics = eqLogic::byType('themes');
                                 <div class="panel-body">
                                     <div class="col-sm-4">
                                         <div class="panel panel-primary">
-                                            <div class="panel-heading"><h6>Détail de la Fenêtre principale</h6></div>
+                                            <div class="panel-heading"><h6>{{Détail de la Fenêtre principale}}</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsWidthMainWindow">Largeur</label>
+                                                    <label class="col-sm-6 control-label" for="bsWidthMainWindow">{{Largeur}}</label>
                                                     <div class="col-sm-6">
-                                                        <input type="number" class="form-control eqLogicAttr" id="bsWidthMainWindow" value="1024" placeholder="Largeur.." data-l1key="configuration" data-l2key="bsWidthMainWindow"/>
+                                                        <input type="number" class="form-control eqLogicAttr" id="bsWidthMainWindow" value="1024" placeholder="{{Largeur}}.." data-l1key="configuration" data-l2key="bsWidthMainWindow"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsHeightMainWindow">Hauteur</label>
+                                                    <label class="col-sm-6 control-label" for="bsHeightMainWindow">{{Hauteur}}</label>
                                                     <div class="col-sm-6">
-                                                        <input type="number" class="form-control eqLogicAttr" id="bsHeightMainWindow" value="768" placeholder="Hauteur.." data-l1key="configuration" data-l2key="bsHeightMainWindow"/>
+                                                        <input type="number" class="form-control eqLogicAttr" id="bsHeightMainWindow" value="768" placeholder="{{Hauteur}}.." data-l1key="configuration" data-l2key="bsHeightMainWindow"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group form-group-sm">
-                                                    <label class="col-sm-6 control-label" for="bsImageMainWindow">Image</label>
+                                                    <label class="col-sm-6 control-label" for="bsImageMainWindow">{{Image}}</label>
                                                     <div class="col-sm-6">
                                                         <select class="form-control eqLogicAttr" id="bsImageMainWindow" data-l1key="configuration" data-l2key="bsImageMainWindow">
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group" id="bsMyCadreView">
-                                                    <label class="col-sm-6 control-label" for="bsMyCadre">Id du Plan</label>
+                                                    <label class="col-sm-6 control-label" for="bsMyCadre">{{Id du Plan}}</label>
                                                     <div class="col-sm-6">
-                                                        <input type="number" class="form-control eqLogicAttr" readonly id="bsMyCadre" placeholder="Plan.." data-l1key="configuration" data-l2key="bsMyCadre"/>
+                                                        <input type="number" class="form-control eqLogicAttr" readonly id="bsMyCadre" placeholder="{{Plan}}.." data-l1key="configuration" data-l2key="bsMyCadre"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="col-sm-6">
-                                                        <button class="form-control btn btn-sm btn-danger " type="button" id="bsDelFont" title="Supprimer la Font">
-                                                            <i class="fa fa-trash-o"></i> Selection
+                                                        <button class="form-control btn btn-sm btn-danger " type="button" id="bsDelFont" title="{{Supprimer la Font}}">
+                                                            <i class="fa fa-trash-o"></i> {{Sélection}}
                                                         </button>
                                                     </div>
                                                     <div class="col-sm-6">
@@ -460,17 +459,17 @@ $eqLogics = eqLogic::byType('themes');
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsMyFont">Ajouter une Font</label>
+                                                    <label class="col-sm-6 control-label" for="bsMyFont">{{Ajouter une Font}}</label>
                                                     <div class="col-sm-6">
                                                         <input class="form-control" type="file" id="bsMyFont" name="fonts" data-url="plugins/themes/core/ajax/themes.ajax.php?action=fontUpload"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group" id="bsReadOnlyView" style="display:none">
-                                                    <label class="col-sm-6 control-label" for="bsReadOnlyYes">Read Only</label>
+                                                    <label class="col-sm-6 control-label" for="bsReadOnlyYes">{{Lecture Seule}}</label>
                                                     <div class="col-sm-6">
                                                             <div class="btn-group form-button" data-toggle="buttons">
-                                                                <button class="btn btn-xs btn-success" type="button" id="bsReadOnlyYes" autocomplete="off">Oui</button>
-                                                                <button class="btn btn-xs" type="button" id="bsReadOnlyNo" autocomplete="off">Non</button>
+                                                                <button class="btn btn-xs btn-success" type="button" id="bsReadOnlyYes" autocomplete="off">{{Oui}}</button>
+                                                                <button class="btn btn-xs" type="button" id="bsReadOnlyNo" autocomplete="off">{{Non}}</button>
                                                             </div>
                                                             <input name="bsReadOnlyYes" hidden value="1"/>
                                                     </div>
@@ -478,36 +477,36 @@ $eqLogics = eqLogic::byType('themes');
                                             </div> 
                                         </div>
                                         <div class="panel panel-primary">
-                                            <div class="panel-heading"><h6>Détails du Cadre principal</h6></div>
+                                            <div class="panel-heading"><h6>{{Détails du Cadre principal}}</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsStyleCadreYes">Cadre unique</label>
+                                                    <label class="col-sm-6 control-label" for="bsStyleCadreYes">{{Cadre unique}}</label>
                                                     <div class="col-sm-6 control-group">
                                                         <div class="control-group">
                                                             <div class="pull-right btn-group form-button" data-toggle="buttons">
-                                                                <button class="btn btn-xs btn-success" type="button" id="bsStyleCadreYes" autocomplete="off">Oui</button>
-                                                                <button class="btn btn-xs" type="button" id="bsStyleCadreNo" autocomplete="off">Non</button>
+                                                                <button class="btn btn-xs btn-success" type="button" id="bsStyleCadreYes" autocomplete="off">{{Oui}}</button>
+                                                                <button class="btn btn-xs" type="button" id="bsStyleCadreNo" autocomplete="off">{{Non}}</button>
                                                             </div>
                                                             <input class="eqLogicAttr" name="bsStyleCadreYes" hidden data-l1key="configuration" data-l2key="bsStyleCadreYes"/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsWidthWindow">Largeur</label>
+                                                    <label class="col-sm-6 control-label" for="bsWidthWindow">{{Largeur}}</label>
                                                     <div class="col-sm-6">
                                                         <input type="number" class="form-control readonly eqLogicAttr" readonly id="bsWidthWindow" value="1024" data-l1key="configuration" data-l2key="bsWidthWindow"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsHeightWindow">Hauteur</label>
+                                                    <label class="col-sm-6 control-label" for="bsHeightWindow">{{Hauteur}}</label>
                                                     <div class="col-sm-6">
                                                         <input type="number" class="form-control readonly eqLogicAttr" readonly id="bsHeightWindow" value="573" data-l1key="configuration" data-l2key="bsHeightWindow"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group" id="bsMyGeneralView">
-                                                    <label class="col-sm-6 control-label" for="bsMyGeneral">Id du Cadre</label>
+                                                    <label class="col-sm-6 control-label" for="bsMyGeneral">{{Id du Cadre}}</label>
                                                     <div class="col-sm-6">
-                                                        <input type="number" class="form-control" readonly id="bsMyGeneral" placeholder="General.."/>
+                                                        <input type="number" class="form-control" readonly id="bsMyGeneral" placeholder="{{Général}}.."/>
                                                     </div>
                                                 </div>
                                             </div> 
@@ -515,95 +514,95 @@ $eqLogics = eqLogic::byType('themes');
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="panel panel-info">
-                                            <div class="panel-heading"><h6>Options d'affichage du Menu</h6></div>
+                                            <div class="panel-heading"><h6>{{Options d'affichage du Menu}}</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsMainMenu">Menu</label>
+                                                    <label class="col-sm-6 control-label" for="bsMainMenu">{{Menu}}</label>
                                                     <div class="col-sm-6">
                                                         <select class="form-control eqLogicAttr" id="bsMainMenu" placeholder="Plan.." data-l1key="configuration" data-l2key="bsMainMenu">
-                                                            <option value="0">Haut</option>
-                                                            <option value="1">Bas</option>
-                                                            <option value="2">Gauche</option>
-                                                            <option value="3">Droite</option>
+                                                            <option value="0">{{Haut}}</option>
+                                                            <option value="1">{{Bas}}</option>
+                                                            <option value="2">{{Gauche}}</option>
+                                                            <option value="3">{{Droite}}</option>
                                                         </select>               
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsHeightMainMenu">Hauteur/Largeur</label>
+                                                    <label class="col-sm-6 control-label" for="bsHeightMainMenu">{{Hauteur}}/{{Largeur}}</label>
                                                     <div class="col-sm-6">
-                                                        <input type="number" class="form-control eqLogicAttr" id="bsHeightMainMenu" value="90" placeholder="Hauteur.." data-l1key="configuration" data-l2key="bsHeightMainMenu"/>
+                                                        <input type="number" class="form-control eqLogicAttr" id="bsHeightMainMenu" value="90" placeholder="{{Hauteur}}/{{Largeur}}.." data-l1key="configuration" data-l2key="bsHeightMainMenu"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsMainMenuText">Texte</label>
+                                                    <label class="col-sm-6 control-label" for="bsMainMenuText">{{Texte}}</label>
                                                     <div class="col-sm-6">
-                                                        <input type="text" class="form-control eqLogicAttr" id="bsMainMenuText" value="Menu" placeholder="Texte.." data-l1key="configuration" data-l2key="bsMainMenuText"/>
+                                                        <input type="text" class="form-control eqLogicAttr" id="bsMainMenuText" value="Menu" placeholder="{{Texte}}.." data-l1key="configuration" data-l2key="bsMainMenuText"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsViewMenuYes">Visible</label>
+                                                    <label class="col-sm-6 control-label" for="bsViewMenuYes">{{Visible}}</label>
                                                     <div class="col-sm-6 control-group">
                                                         <div class="control-group">
                                                             <div class="pull-right btn-group form-button" data-toggle="buttons">
-                                                                <button class="btn btn-xs btn-success" type="button" id="bsViewMenuYes" autocomplete="off">Oui</button>
-                                                                <button class="btn btn-xs" type="button" id="bsViewMenuNo" autocomplete="off">Non</button>
+                                                                <button class="btn btn-xs btn-success" type="button" id="bsViewMenuYes" autocomplete="off">{{Oui}}}</button>
+                                                                <button class="btn btn-xs" type="button" id="bsViewMenuNo" autocomplete="off">{{Non}}</button>
                                                             </div>
                                                             <input class="eqLogicAttr" name="bsViewMenuYes" hidden data-l1key="configuration" data-l2key="bsViewMenuYes"/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsStateBar">Barre d'état</label>
+                                                    <label class="col-sm-6 control-label" for="bsStateBar">{{Barre d'état}}</label>
                                                     <div class="col-sm-6 control-group">
                                                         <div class="control-group">
                                                             <div class="pull-right btn-group form-button" data-toggle="buttons">
-                                                                <button class="btn btn-xs btn-success" type="button" id="bsStateYes" autocomplete="off">Oui</button>
-                                                                <button class="btn btn-xs" type="button" id="bsStateNo" autocomplete="off">Non</button>
+                                                                <button class="btn btn-xs btn-success" type="button" id="bsStateYes" autocomplete="off">{{Oui}}</button>
+                                                                <button class="btn btn-xs" type="button" id="bsStateNo" autocomplete="off">{{Non}}</button>
                                                             </div>
                                                             <input class="eqLogicAttr" name="bsStateYes" hidden data-l1key="configuration" data-l2key="bsStateYes"/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsStyleButton">Type Menu</label>
+                                                    <label class="col-sm-6 control-label" for="bsStyleButton">{{Type Menu}}</label>
                                                     <div class="col-sm-6">
                                                         <select class="form-control eqLogicAttr" id="bsStyleButton" data-l1key="configuration" data-l2key="bsStyleButton">
-                                                            <option value="0">Boutons</option>
-                                                            <option value="1">Nav Tabs</option>
-                                                            <option value="2">Nav Pills</option>
+                                                            <option value="0">{{Boutons}}</option>
+                                                            <option value="1">{{Onglets}}</option>
+                                                            <option value="2">{{Menus}}</option>
                                                         </select>               
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsStateBar">Barre justifié</label>
+                                                <!--div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="bsStateBar">{{Justifié}}</label>
                                                     <div class="col-sm-6 control-group">
                                                         <div class="control-group">
                                                             <div class="pull-right btn-group form-button" data-toggle="buttons">
-                                                                <button class="btn btn-xs" type="button" id="bsJustifiedYes" autocomplete="off">Oui</button>
-                                                                <button class="btn btn-xs btn-success" type="button" id="bsJustifiedNo" autocomplete="off">Non</button>
+                                                                <button class="btn btn-xs" type="button" id="bsJustifiedYes" autocomplete="off">{{Oui}}</button>
+                                                                <button class="btn btn-xs btn-success" type="button" id="bsJustifiedNo" autocomplete="off">{{Non}}</button>
                                                             </div>
                                                             <input class="eqLogicAttr" name="bsJustifiedYes" hidden data-l1key="configuration" data-l2key="bsJustifiedYes"/>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div-->
                                             </div> 
                                         </div>
                                         <div class="panel panel-info">
-                                            <div class="panel-heading"><h6>Options d'affichage des Boutons</h6></div>
+                                            <div class="panel-heading"><h6>{{Options d'affichage des Boutons}}</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsWidthButton">Taille Bouton</label>
+                                                    <label class="col-sm-6 control-label" for="bsWidthButton">{{Taille Bouton}}</label>
                                                     <div class="col-sm-6">
                                                         <select class="form-control eqLogicAttr" id="bsWidthButton" data-l1key="configuration" data-l2key="bsWidthButton">
-                                                            <option value="btn-sm">Petit</option>
-                                                            <option value="btn-xs">Très petit</option>
-                                                            <option value="">Normal</option>
-                                                            <option value="btn-lg">Grand</option>
+                                                            <option value="btn-sm">{{Petit}}</option>
+                                                            <option value="btn-xs">{{Très Petit}}</option>
+                                                            <option value="">{{Normal}}</option>
+                                                            <option value="btn-lg">{{Grand}}</option>
                                                         </select>               
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsColorHome">Couleur "home"</label>
+                                                    <label class="col-sm-6 control-label" for="bsColorHome">{{Couleur 'home'}}</label>
                                                     <div class="col-sm-6">
                                                         <select class="form-control eqLogicAttr" id="bsColorHome"  style="" data-l1key="configuration" data-l2key="bsColorHome">
                                                             <option class="btn-primary" value="btn-primary">Primary</option>
@@ -616,19 +615,19 @@ $eqLogics = eqLogic::byType('themes');
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsStateBar">Boutons Groupés</label>
+                                                    <label class="col-sm-6 control-label" for="bsStateBar">{{Boutons Groupés}}</label>
                                                     <div class="col-sm-6 control-group">
                                                         <div class="control-group">
                                                             <div class="pull-right btn-group form-button" data-toggle="buttons">
-                                                                <button class="btn btn-xs" type="button" id="bsGroupYes" autocomplete="off">Oui</button>
-                                                                <button class="btn btn-xs btn-success" type="button" id="bsGroupNo" autocomplete="off">Non</button>
+                                                                <button class="btn btn-xs" type="button" id="bsGroupYes" autocomplete="off">{{Oui}}</button>
+                                                                <button class="btn btn-xs btn-success" type="button" id="bsGroupNo" autocomplete="off">{{Non}}</button>
                                                             </div>
                                                             <input class="eqLogicAttr" name="bsGroupYes" hidden data-l1key="configuration" data-l2key="bsGroupYes"/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsOffsetButton">Décalage</label>
+                                                    <label class="col-sm-6 control-label" for="bsOffsetButton">{{Décalage}}</label>
                                                     <div class="col-sm-offset-1 col-sm-4">
                                                         <input id="bsOffsetButton" data-slider-id='bsOffsetButtonSlider' type="text" data-slider-min="0" data-slider-max="8" data-slider-step="1" data-slider-value="0"/>
                                                         <input id="bsOffset" class="eqLogicAttr" hidden data-l1key="configuration" data-l2key="bsOffsetButton"/>
@@ -648,30 +647,30 @@ $eqLogics = eqLogic::byType('themes');
                                             </div>
                                             <div class="panel-body" id="bsStyleView">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsBgColorWindow">Fond</label>
+                                                    <label class="col-sm-6 control-label" for="bsBgColorWindow">{{Fond}}</label>
                                                     <div class="col-sm-6">
-                                                        <input class="form-control eqLogicAttr" id="bsBgColorWindow" type="color" value="#e8e8e8" placeholder="Couleur" data-l1key="configuration" data-l2key="bsBgColorWindow"/>
+                                                        <input class="form-control eqLogicAttr" id="bsBgColorWindow" type="color" value="#e8e8e8" placeholder="{{Couleur}}" data-l1key="configuration" data-l2key="bsBgColorWindow"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsColorWindow">Texte</label>
+                                                    <label class="col-sm-6 control-label" for="bsColorWindow">{{Texte}}</label>
                                                     <div class="col-sm-6">
-                                                        <input class="form-control eqLogicAttr" id="bsColorWindow" type="color" value="#333" placeholder="Couleur" data-l1key="configuration" data-l2key="bsColorWindow"/>
+                                                        <input class="form-control eqLogicAttr" id="bsColorWindow" type="color" value="#333" placeholder="{{Couleur}}" data-l1key="configuration" data-l2key="bsColorWindow"/>
                                                     </div>
                                                 </div>
                                             </div> 
                                         </div>
                                         <div class="panel panel-success">
-                                            <div class="panel-heading"><h6>Bordure</h6></div>
+                                            <div class="panel-heading"><h6>{{Bordure}}</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsBorderWindow">Taille</label>
+                                                    <label class="col-sm-6 control-label" for="bsBorderWindow">{{Taille}}</label>
                                                     <div class="col-sm-6">
                                                         <input class="form-control eqLogicAttr" id="bsBorderWindow" type="number" data-l1key="configuration" data-l2key="bsBorderWindow"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsBorderRadius">Rayon</label>
+                                                    <label class="col-sm-6 control-label" for="bsBorderRadius">{{Rayon}}</label>
                                                     <div class="col-sm-6">
                                                         <input class="form-control eqLogicAttr" id="bsBorderRadius" type="number" data-l1key="configuration" data-l2key="bsBorderRadius"/>
                                                     </div>
@@ -693,18 +692,18 @@ $eqLogics = eqLogic::byType('themes');
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsBorderColor">Couleur</label>
+                                                    <label class="col-sm-6 control-label" for="bsBorderColor">{{Couleur}}</label>
                                                     <div class="col-sm-6">
-                                                        <input class="form-control eqLogicAttr" id="bsBorderColor" type="color" placeholder="Couleur" data-l1key="configuration" data-l2key="bsBorderColor"/>
+                                                        <input class="form-control eqLogicAttr" id="bsBorderColor" type="color" placeholder="{{Couleur}}" data-l1key="configuration" data-l2key="bsBorderColor"/>
                                                     </div>
                                                 </div>
                                             </div> 
                                         </div>
                                         <div class="panel panel-success">
-                                            <div class="panel-heading"><h6>Ombre</h6></div>
+                                            <div class="panel-heading"><h6>{{Ombre}}</h6></div>
                                             <div class="panel-body">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsBorderShadow1">Taille</label>
+                                                    <label class="col-sm-6 control-label" for="bsBorderShadow1">{{Taille}}</label>
                                                     <div class="col-sm-6">
                                                         <div class="control-group">
                                                             <input class="col-sm-12 eqLogicAttr" name="bsBorderShadow1" type="number" data-l1key="configuration" data-l2key="bsBorderShadow1"/>
@@ -714,9 +713,9 @@ $eqLogics = eqLogic::byType('themes');
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label" for="bsBorderShadowColor">Couleur</label>
+                                                    <label class="col-sm-6 control-label" for="bsBorderShadowColor">{{Couleur}}</label>
                                                     <div class="col-sm-6">
-                                                        <input class="form-control eqLogicAttr" id="bsBorderShadowColor" name="bsBorderShadowColor" type="color" placeholder="Couleur" data-l1key="configuration" data-l2key="bsBorderShadowColor"/>
+                                                        <input class="form-control eqLogicAttr" id="bsBorderShadowColor" name="bsBorderShadowColor" type="color" placeholder="{{Couleur}}" data-l1key="configuration" data-l2key="bsBorderShadowColor"/>
                                                     </div>
                                                 </div>
                                             </div> 
@@ -819,17 +818,17 @@ $eqLogics = eqLogic::byType('themes');
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Création d'un Bouton</h4>
+                <h4 class="modal-title">{{Création d'un Bouton}}</h4>
             </div>
             <div class="modal-body form-horizontal">
                 <div class="form-group form-group-sm">
-                    <label class="col-sm-4 control-label" for="bsButtonName">Nom</label>
+                    <label class="col-sm-4 control-label" for="bsButtonName">{{Nom}}</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="bsButtonName" placeholder="Nom..."/>
+                        <input type="text" class="form-control" id="bsButtonName" placeholder="{{Nom}}..."/>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <label class="col-sm-4 control-label" for="bsColorButton">Couleur</label>
+                    <label class="col-sm-4 control-label" for="bsColorButton">{{Couleur}}</label>
                     <div class="col-sm-8">
                         <select class="form-control" id="bsColorButton">
                             <option class="btn-primary" value="btn-primary">Primary</option>
@@ -842,18 +841,18 @@ $eqLogics = eqLogic::byType('themes');
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <label class="col-sm-4 control-label" for="bsDropdown">Sous-menu</label>
+                    <label class="col-sm-4 control-label" for="bsDropdown">{{Sous-menu}}</label>
                     <div class="col-sm-8 control-group">
                         <div class="pull-left btn-group form-button" data-toggle="buttons">
-                            <button class="btn btn-xs" type="button" id="bsDropdown" autocomplete="off">Oui</button>
+                            <button class="btn btn-xs" type="button" id="bsDropdown" autocomplete="off">{{Oui}}</button>
                         </div>
                     </div>
                 </div>
                 <div class="form-group form-group-sm noPaddingLeft noPaddingRight" id="bsListDropdown" style="display: none;" >
-                    <label class="col-sm-2 control-label" for="bsListDropdown0">Textes</label>
+                    <label class="col-sm-2 control-label" for="bsListDropdown0">{{Textes}}</label>
                     <div class="col-sm-10">
                         <div class="col-sm-2">
-                            <button type="button" id="bsAddList" class="btn btn-sm btn-success " title="Ajouter un Sous Menu"><i class="fa fa-plus-circle"></i></button>
+                            <button type="button" id="bsAddList" class="btn btn-sm btn-success " title="{{Ajouter un Sous Menu}}"><i class="fa fa-plus-circle"></i></button>
                         </div>
                         <div class="col-sm-10 noPaddingRight" id="addTextDropdown">
                         </div>
@@ -864,22 +863,22 @@ $eqLogics = eqLogic::byType('themes');
                     </div>
                 </div>
                 <div class="form-group form-group-sm" id="bsIdPlanDisplay" style="display: none;" >
-                    <label class="col-sm-4 control-label" for="bsButtonIdPlan">Id du Plan</label>
+                    <label class="col-sm-4 control-label" for="bsButtonIdPlan">{{Id du Plan}}</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="bsButtonIdPlan" placeholder="Plan..."/>
+                        <input type="text" class="form-control" id="bsButtonIdPlan" placeholder="{{Plan}}..."/>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
                 <input id="bsIdButton" hidden value=""/>
                 <input id="bsIdDropdownLength" hidden value=""/>
-                <button type="button" class="btn btn-danger" id="modalCancel">Annuler</button>
-                <button type="button" class="btn btn-success" id="modalSave">Sauvegarder</button>
+                <button type="button" class="btn btn-danger" id="modalCancel">{{Annuler}}</button>
+                <button type="button" class="btn btn-success" id="modalSave">{{Sauvegarder}}</button>
             </div>
         </div>
     </div>
 </div>
-<div class="modal fade" id="modalDeleteButton" tabindex="-1" role="dialog" aria-labelledby="modalDeleteButton" aria-hidden="true">
+<!--div class="modal fade" id="modalDeleteButton" tabindex="-1" role="dialog" aria-labelledby="modalDeleteButton" aria-hidden="true">
     <div class="modal-dialog" style="width:350px">
         <div class="modal-content">
             <div class="modal-header">
@@ -913,13 +912,13 @@ $eqLogics = eqLogic::byType('themes');
             </div>
         </div>
     </div>
-</div>
+</div-->
 <div class="modal fade" id="modalInfoButton" tabindex="-1" role="dialog" aria-labelledby="modalInfoButton" aria-hidden="true">
     <div class="modal-dialog" style="width:650px">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Lien de l'images</h4>
+                <h4 class="modal-title">{{Liens de l'image}}</h4>
             </div>
             <div class="modal-body">
                 <div class="well col-sm-12">
@@ -953,7 +952,7 @@ $eqLogics = eqLogic::byType('themes');
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Lien de l'images</h4>
+                <h4 class="modal-title">Import</h4>
             </div>
             <div class="modal-body">
                 <div class="well col-sm-12">
@@ -966,8 +965,8 @@ $eqLogics = eqLogic::byType('themes');
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" id="modalImportCancel">Annuler</button>
-                <button type="button" class="btn btn-success" id="modalImportSave">Valider</button>
+                <button type="button" class="btn btn-danger" id="modalImportCancel">{{Annuler}}</button>
+                <button type="button" class="btn btn-success" id="modalImportSave">{{Valider}}</button>
             </div>
         </div>
     </div>
