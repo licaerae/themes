@@ -71,12 +71,16 @@ Le but du plugin étant la création d'une structure pour le mode Design, nous a
 {nbsp} +
 
 '''
+<<<<<<< HEAD
 ===== Design
 
 [role="col-md-4"]
 image:planoknook.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
 --
+=======
+===== Design[role="col-md-12"]
+>>>>>>> origin/master
 Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous charger un thème le plugin vérifié que les pages sont créer, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement il suffit de modifier la taille de la fenêtre principale. Le bouton est dégrisé aussi dés qu'on rajoute un bouton.
 --
 
