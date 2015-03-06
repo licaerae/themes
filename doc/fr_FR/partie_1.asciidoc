@@ -46,7 +46,7 @@ image::démo1.png[]
 Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin: image:bdesign.png[] et image:bbootstrap.png[] +
 
 '''
-===== Design
+===== Design[role="col-md-12"]
 Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous charger un thème le plugin vérifié que les pages sont créer, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement il suffit de modifier la taille de la fenêtre principale. Le bouton est dégrisé aussi dés qu'on rajoute un bouton.
 
 image::planok.png[]
