@@ -144,9 +144,9 @@ Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bo
 Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un rôle à part. +
 Pour la suite du projet, nous allons établir les différents modules dans chaque pièce :
 
-* Salon: 1 capteur de présence, 1 lumière, 1 thermostat, Surveillance réseau
-* cuisine: 1 capteur de présence, 1 lumière
-* Chambre: 1 capteur de présence, 1 lumière, 1 thermostat
+* *Salon*: 1 capteur de présence, 1 lumière, 1 thermostat, Surveillance réseau
+* *Cuisine*: 1 capteur de présence, 1 lumière
+* *Chambre*: 1 capteur de présence, 1 lumière, 1 thermostat
 --
 
 [role="row"]
@@ -160,7 +160,7 @@ image:popovercadre.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
 --
 Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
-Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaît: +
+Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaît. +
  +
 Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le sélecteur *Image*.Pour le fonctionnement complet de ce popover voir <<popover_des_cadres,Popover des Cadres>>
 Il suffit de sauvegarder, et d'utiliser le bouton image:bbootstrap.png[role="img-thumbnail"] pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. Répetons ces étapes pour les deux autres pièces. +
@@ -207,6 +207,7 @@ image::generaldemo.png[role="img-thumbnail"]
 
 '''
 ===== Les lignes SVG
+
 [role="col-md-12 text-justify"]
 --
 Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. A partir du <<popover_des_cadres,Popover des Cadres>>, cliquez sur image:plusb.png[role="img-thumbnail"] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
@@ -246,6 +247,7 @@ Il suffit de faire la même chose pour les autres pièces. +
 
 '''
 ==== Conclusion
+
 [role="col-md-12 text-justify"]
 --
 Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil *_Jeedom_*(TM) pour y accéder directement. Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implémenter l'affichage automatique de la page 'Home'. Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
