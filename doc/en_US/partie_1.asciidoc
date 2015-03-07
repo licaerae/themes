@@ -98,7 +98,7 @@ image:designok.png[role="img-thumbnail"]
 --
 The result of the theme that we are developing: +
 You can see that the plugin creates an additional page, call +General+ corresponds to the secondary page button *home* that is the layout of your page design mode. +
-[label label-danger]#Important# * Remember to save your project.* +
+[label label-danger]#Important# *Remember to save your project.* +
 --
 
 [role="row"]
