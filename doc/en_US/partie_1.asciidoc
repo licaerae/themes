@@ -22,7 +22,7 @@ Click image:popovemenu8.png[role="img-thumbnail"] and press image:plus.png[role=
 [role="col-md-4"]
 image:rdcbouton.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
-Our first button is a submenu, enter +Ground floor+ in the field Name and click submenu to display the sub-entries, click image:plus.png[role="img-thumbnail"] to add another sub-entry, fill each entry with *Living room* and *Kitchen* and validate our first button is created.
+Our first button is a submenu, enter +Ground floor+ in the field Name and click submenu to display the sub-entries, click image:plus.png[role="img-thumbnail"] to add another sub-entry, fill each entry with +Living room+ and +Kitchen+ and validate our first button is created.
 
 [role="row"]
 {nbsp} +
@@ -30,7 +30,7 @@ Our first button is a submenu, enter +Ground floor+ in the field Name and click 
 [role="col-md-4"]
 image:chambrebouton.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
-The second button is simpler enter *Bedroom* in the field name and click OK. +
+The second button is simpler enter +Bedroom+ in the field name and click OK. +
  
 [role="row"]
 {nbsp} +
