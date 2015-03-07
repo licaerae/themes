@@ -120,7 +120,7 @@ Arrivez à cette étape toutes les pages doivent être créées, ce bouton va pe
 {nbsp} +
 [icon="../images/tip.png"]
 [TIP]
-Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton *Design* pour palier ce problème.
+Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton image:bdesign.png[role="img-thumbnail"] pour palier ce problème.
 --
 
 [role="row"]
