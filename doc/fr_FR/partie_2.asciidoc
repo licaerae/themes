@@ -84,7 +84,7 @@ Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages s
 [role="row"]
 {nbsp} +
 
-role="col-md-4"]
+[role="col-md-4"]
 image:popovemenu7.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
 --
