@@ -24,7 +24,6 @@ image:rdcbouton.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
 Our first button is a submenu, enter +Ground floor+ in the field Name and click submenu to display the sub-entries, click image:plus.png[role="img-thumbnail"] to add another sub-entry, fill each entry with *Living room* and *Kitchen* and validate our first button is created.
 
-
 [role="row"]
 {nbsp} +
 
@@ -53,6 +52,7 @@ Save your theme now. +
 You can see the result: +
 
 image::démo1.png[role="img-thumbnail"]
+--
 
 [role="row"]
 {nbsp} +
