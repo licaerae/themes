@@ -342,7 +342,7 @@ image:editbouton.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
 --
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
-Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:plus.png[role="img-thumbnail"] pour en rajouter une, le bouton image:trash.png[role="img-thumbnail"] permet d’effacer l'entrée. +
+Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:plus.png[role="img-thumbnail"] pour en rajouter une, le bouton image:trash.png[role="img-thumbnail"] permet d’effacer l'entrée. le bouton image:trash.png[role="img-thumbnail"] en haut à droite en édition permet d'éffacer le bouton. +
 --
 
 [role="col-md-12 text-justify"]
