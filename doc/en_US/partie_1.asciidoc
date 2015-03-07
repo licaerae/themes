@@ -30,7 +30,7 @@ Our first button is a submenu, enter +Ground floor+ in the field Name and click 
 [role="col-md-4"]
 image:chambrebouton.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
-The second button is simpler enter +Bedroom+ in the field name and click OK. +
+The second button is simpler, enter +Bedroom+ in the field name and validate. +
  
 [role="row"]
 {nbsp} +
@@ -134,87 +134,136 @@ image:secondaires.png[role="img-thumbnail"]
 [role="col-md-8 text-justify"]
 --
 The plugin was to stop the creation of the main page, other pages and the injection of bootstrap code on the main page, but it appeared important to manage secondary pages from the plugin also able to control operation. +
-Les images qui serviront aux pages secondaires seront rajoutées avec le <<gestionnaire_d_8217_images,Gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] +
+The images to be used for secondary pages will be added to the <<gestionnaire_d_8217_images,Image Manager>> for our theme will be the format of our main framework will be created using the software link:http://www.sweethome3d.com/fr/[SweetHome 3D] or other software of your choice. +
 {nbsp} +
 --
 
 [role="col-md-12 text-justify"]
 --
-Ce chapitre à pour but de montrer comment configurer une page secondaire, Le bouton image:bajouter.png[role="img-thumbnail"] est grisé puisque nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identique sauf que vous pouvez créer autant de cadre que vous voulez. +
-Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un rôle à part. +
-Pour la suite du projet, nous allons établir les différents modules dans chaque pièce :
 
-* Salon: 1 capteur de présence, 1 lumière, 1 thermostat, Surveillance réseau
-* cuisine: 1 capteur de présence, 1 lumière
-* Chambre: 1 capteur de présence, 1 lumière, 1 thermostat
+This chapter aims to show how to set up a secondary page, the button image:bajouter.png[role="img-thumbnail"] is disable because we are in +single-frame+ configuration +multi-frame+ is identical except you can create as many frame as you want. +
+We take care of all the parts, we will discuss the page *General* later since it occupies a special role. +
+For the rest of the project, we will establish the various modules in each room:
+
+* *Living room*: 1 presence sensor, 1 light, 1 thermostat, Network Monitoring
+* *Kitchen*: 1 presence sensor, 1 light
+* *Bedroom*: 1 presence sensor, 1 light, 1 thermostat
 --
 
 [role="row"]
 {nbsp} +
 
 '''
-===== Les pièces
+===== Rooms
+
+[role="col-md-4"]
+image:popovercadre.png[role="img-thumbnail"]
+[role="col-md-8 text-justify"]
+--
+Start by selecting +Living room+ in the selector *Pages* +
+If you click on the frame, a popover to the frame configuration appears:
 Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
-Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaît: +
+Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaît. +
+ +
+Change +Title+ by +Living room+, and select the downloaded image with the selector *Image*. For the full operation of the popover view <<popover_des_cadres,Popover Frames>>
+Simply save, and use the button image:bbootstrap.png[role="img-thumbnail"] to update the secondary page _Salon_ in Design mode, the last step is to place the widgets in the Design View . Repeat these steps for the other two room. +
+--
 
-image::popovercadre.png[role="img-thumbnail"]
+[role="col-md-12 text-justify"]
+--
 {nbsp} +
-
-Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le sélecteur *Image*.Pour le fonctionnement complet de ce popover voir <<popover_des_cadres,Popover des Cadres>>
-Il suffit de sauvegarder, et d'utiliser le bouton *Bootstrap* pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. Répetons ces étapes pour les deux autres pièces. +
-
 [icon="../images/tip.png"]
 [TIP]
-Vous pouvez très bien injecter le code avec le bouton *Bootstrap* sans sauvegarder, pour faire des test ou autre.
+You may well inject code with the button image:bbootstrap.png[role="img-thumbnail"] without saving, to test or otherwise.
+--
 
+[role="col-md-12 text-justify"]
+--
 {nbsp} +
 
-Voici le résultat final: +
+The final result: +
 
-image::salondemo.jpg[]
-image::cuisinedemo.jpg[]
-image::chambredemo.jpg[]
+image::salondemo.jpg[role="img-thumbnail"]
+image::cuisinedemo.jpg[role="img-thumbnail"]
+image::chambredemo.jpg[role="img-thumbnail"]
 {nbsp} +
 
-A ce stade comme va vous le montrer la vidéo suivante votre Design est fonctionnel:
+At this stage as you will show the following video your Design is functional:
 link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
+--
+
+[role="row"]
+{nbsp} +
 
 '''
-===== Page Home
-Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement afficher une image de votre maison en 3D, elle reste libre à votre imagination. Dans notre cas nous allons mettre divers informations :
+===== Home Page
+
+[role="col-md-12 text-justify"]
+--
+This page will serve as a home page for our design mode, it will be to centralize information or simply show a picture of your house in 3D, it remains free to your imagination. In our case we are going to various informations :
 
 image::generaldemo.png[role="img-thumbnail"]
+--
+
+[role="row"]
 {nbsp} +
+
 
 '''
-===== Les lignes SVG
-Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce ou est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. A partir du <<popover_des_cadres,Popover des Cadres>>, cliquez sur image:plusb.png[role="img-thumbnail"] une nouvelle *ligne SVG* va apparaître en haut à droite de votre cadre et un nouveau popover est disponible.
+===== SVG lines
 
-image::popoversvg.png[role="img-thumbnail"]
+[role="col-md-12 text-justify"]
+--
+
+Although at this stage your design is functional, it seemed interesting to me to provide a system that would locate in the room where is your widget (or virtual, etc ...), and it is natural that i've implemented the *lines SVG*. From <<popover_des_cadres,Popover  Frames>>, click Image:plusb.png[role="img-thumbnail"] anew *SVG line* will appear at the top right of your frame and a new popover is available. +
 {nbsp} +
+--
 
-Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composée de quatre parties, un petit rectangle appelé +Début+, une ligne appelée +1er partie+, une ligne appelée +2eme partie+ et un dernier rectangle appelé +Fin+. +
-Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:trash.png[role="img-thumbnail"] en haut à droite du popover permet d'effacer la ligne SVG. Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. Le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de *_Jeedom_*(TM). +
+[role="col-md-4"]
+image:popoversvg.png[role="img-thumbnail"]
+[role="col-md-8 text-justify"]
+--
 
+This popover will serve you to move the *SVG line* to the desired location, *line SVG* is composed of four parts, a small rectangle called +Start+, a line called +First Part+, a line called + Second Part+ and last rectangle called +End+. +
+The D-Pad is used to move the line, the middle button to validate, Image:trash.png[role="img-thumbnail"] at the top right of the popover remove the SVG line. Just select the parts of the SVG line you want to move and use the D-Pad. The last switch is used to change the color of the line SVG, they correspond to different categories of *_Jeedom_*(TM). +
+--
+
+[role="col-md-12 text-justify"]
+--
+{nbsp} +
 [icon="tip.png"]
 [TIP]
-Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
+Press Shift +shift+ simultaneously multiplies the displacement by 10. +
+--
 
+[role="col-md-12"]
+--
 {nbsp} +
 
-Voici ce que la donne dans la +Cuisine+
+This is what gives the +Kitchen+
 
-image::cuisinesvg.jpg[]
+image::cuisinesvg.jpg[role="img-thumbnail"]
 {nbsp} +
 
-Il suffit de faire la même chose pour les autres pièces. +
+Just do the same thing for the other rooms. +
+--
+
+[role="row"]
+{nbsp} +
 
 '''
 ==== Conclusion
-Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil *_Jeedom_*(TM) pour y accéder directement. Les dernières modifications ont permis de rendre la page principale en lecture seule, et de pouvoir implémenter l'affichage automatique de la page 'Home'. Le plugin offre d'autres possibilités, le chapitre suivant va vous permettre de toutes les explorer. +
 
+[role="col-md-12 text-justify"]
+--
+Your theme and your design are finalized. You may very well add it to your profile *_Jeedom _*(TM) for direct access. The latest changes have helped make the main page read-only, and can implement the automatic display of the 'Home'. The plugin offers other possibilities, the following chapter will help you to explore all. +
+--
+
+[role="col-md-12 text-justify"]
+--
 [icon="tip.png"]
 [TIP]
-Il est possible de créer des profils 'invité', il suffit au niveau du profil *_Jeedom_*(TM) de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et de ce faites au autres pages secondaires.
+It is possible to create profiles 'guest', simply for the profile *_Jeedom _*(TM) to point to the desired room instead of the main page, which will allow the guest to access all functions of the room without access to the menu bar and other secondary pages. +
 
 {nbsp} +
+--
