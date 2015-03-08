@@ -462,7 +462,7 @@ function menuPopover() {
                 '</div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-6 control-label" for="bsPopStyleCadreYes">{{Cadre Unique}}</label>' +
+                '<label class="col-sm-6 control-label" for="bsPopStyleCadreYes">{{Cadre unique}}</label>' +
                 '<div class="col-sm-6">' +
                 '<div class="btn-group" data-toggle="buttons">' +
                 '<button class="btn btn-xs ' + bsStyleCadreYes + '" type="button" id="bsPopStyleCadreYes" autocomplete="off">{{Oui}}</button>' +
@@ -2042,7 +2042,7 @@ function updateListImages(select) {
         },
         success: function (data) {
             var images = '';
-            var options = '<option value="0">Aucune</option>';
+            var options = '<option value="0">{{Aucune}}</option>';
             for (var i in data) {
                 images += '<div class="media-left col-sm-2" >';
                 images += '<div class="well col-sm-12 noPaddingWell noPaddingLeft noPaddingRight noMarginBottom">';

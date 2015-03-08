@@ -204,7 +204,7 @@ function createPlanThemes(id, idDrop, name, sizeX, sizeY) {
             else {
                 myTheme.globalPlanId[id][idDrop] = data.id;
             }
-            notify('<Création d\'un Plan', 'Plan N°' + data.id + ' créer avec succès', 'success');
+            notify("{{Création d'un Plan}}", '{{Plan}} N°' + data.id + ' {{créé avec succès}}', 'success');
         }
     });
 }
@@ -247,7 +247,7 @@ function updatePlanThemes(id, idDrop, name, sizeX, sizeY) {
                 planId = myTheme.globalPlanId[id];
             else
                 planId = myTheme.globalPlanId[id][idDrop];
-            notify('Mise à Jour d\'un Plan', 'Plan N°' + planId + ' mis à jour avec succès', 'success');
+            notify("{{Mise à Jour d'un Plan}}", '{{Plan}} N°' + planId + ' {{mis à jour avec succès}}', 'success');
         }
     });
 }
@@ -259,7 +259,7 @@ function isPlanThemes() {
         },
         success: function (data) {
             $('#bsDesignButton').prop('disabled', true);
-            var options = '<option value="0">Aucune</option>';
+            var options = '<option value="0">{{Aucune}}</option>';
             if (data.length !== 0) {
                 var ids = new Array();
                 for (var nbHeader = 0; nbHeader < data.length; nbHeader++) {
@@ -268,7 +268,7 @@ function isPlanThemes() {
                 if(isNaN(parseInt(myTheme.myCadre)))
                     myTheme.myCadre = '';
                 if (ids.indexOf(myTheme.myCadre) === -1) {
-                    notify('Check-Up des Plans', 'Plan de la fenêtre principale manquant', 'error');
+                    notify('{{Check-Up des Plans}}', '{{Plan de la fenêtre principale manquant}}', 'error');
                     myTheme.myCadre = "";
                     $('#bsDesignButton').prop('disabled', false);
                     $('#bsMyCadre').val(myTheme.myCadre);
@@ -279,7 +279,7 @@ function isPlanThemes() {
                             if(isNaN(parseInt(myTheme.globalPlanId[nbPlan][drops])))
                                 myTheme.globalPlanId[nbPlan][drops] = '';
                             if (ids.indexOf(myTheme.globalPlanId[nbPlan][drops]) === -1) {
-                                notify('Check-Up des Plans', 'Plan ' + myTheme.myDropdowns[nbPlan][drops] + ' du sous menu ' + myTheme.myButtons[nbPlan] + ' manquant', 'error');
+                                notify('{{Check-Up des Plans}}', '{{Plan}} ' + myTheme.myDropdowns[nbPlan][drops] + ' {{du sous menu}} ' + myTheme.myButtons[nbPlan] + ' {{manquant}}', 'error');
                                 myTheme.globalPlanId[nbPlan][drops] = "";
                                 $('#bsDesignButton').prop('disabled', false);
                             }
@@ -293,7 +293,7 @@ function isPlanThemes() {
                         if (isNaN(parseInt(myTheme.globalPlanId[nbPlan])))
                             myTheme.globalPlanId[nbPlan] = '';
                         if (ids.indexOf(myTheme.globalPlanId[nbPlan]) === -1) {
-                            notify('Check-Up des Plans', 'Plan ' + myTheme.myButtons[nbPlan] + ' manquant', 'error');
+                            notify('{{Check-Up des Plans}}', '{{Plan}} ' + myTheme.myButtons[nbPlan] + ' {{manquant}}', 'error');
                             myTheme.globalPlanId[nbPlan] = "";
                             $('#bsDesignButton').prop('disabled', false);
                         }
@@ -304,7 +304,7 @@ function isPlanThemes() {
                     }
                 }
                 if ($('#bsDesignButton').prop('disabled'))
-                    notify('Check-up des Plans', 'Check-Up complet, Tous les plans ont été trouvé', 'success');
+                    notify('{{Check-Up des Plans}}', '{{Check-Up complet, Tous les plans ont été trouvé}}', 'success');
             }
             else {
                 myTheme.globalPlanId = '[]';
@@ -401,7 +401,7 @@ function createFirstPlan() {
                     $('#div_alert').showAlert({message: error.message, level: 'danger'});
                 },
                 success: function () {
-                    notify('Création Boostrap', 'insertion du code Bootstrap dans la page principale N° ' + myTheme.myCadre, 'success');
+                    notify('{{Création Boostrap}}', '{{insertion du code Bootstrap dans la page principale}} N° ' + myTheme.myCadre, 'success');
                     setTimeout("bsMenuThemesApercu()", 1000);
                 }
             });
@@ -460,7 +460,7 @@ function createPagePlan(id) {
                     $('#div_alert').showAlert({message: error.message, level: 'danger'});
                 },
                 success: function () {
-                    notify('Création Boostrap', 'insertion du code Bootstrap dans la page secondaire  N° ' + id, 'success');
+                    notify('{{Création Boostrap}}', '{{insertion du code Bootstrap dans la page secondaire}} N° ' + id, 'success');
                     setTimeout("bsMenuThemesApercu()",1000);
                 }
             });
@@ -495,7 +495,7 @@ function deletePlanThemes(id, idDrop) {
                 planId = myTheme.globalPlanId[id][idDrop];
                 myTheme.globalPlanId[id][idDrop] = '';
             }
-            notify('Suppression d\'un Plan', 'Plan N°' + planId + ' supprimé avec succès', 'success');
+            notify("{{Suppression d'un Plan}}", '{{Plan}} N°' + planId + ' {{supprimé avec succès}}', 'success');
         }
     });
 }
@@ -1166,14 +1166,14 @@ $('#bsPageSelect').on('change', function () {
             if (pageSelect) {
                 if (pageSelect.cadres.length > 1) {
                     secondaryPages.resetCadres(page);
-                    notify('Pages Secondaires', 'Cadres Multiples éffacés, remplacé par un cadre unique', 'warning');
+                    notify('{{Pages Secondaires}}', '{{Cadres Multiples éffacés, remplacé par un cadre unique}}', 'warning');
                 }
                 else if (pageSelect.cadres.length === 1) {
                     var height = $('<div>').html(pageSelect.cadres[0].cadre).children().eq(0).height();
                     var width = $('<div>').html(pageSelect.cadres[0].cadre).children().eq(0).width();
                     if (height !== $('#myCadreWindow').innerHeight() || width !== $('#myCadreWindow').innerWidth()) {
                         secondaryPages.resetCadres(page);
-                        notify('Pages Secondaires', 'Cadre unique erroné, correction effectué', 'warning');
+                        notify('{{Pages Secondaires}}', '{{Cadre unique erroné, correction effectué}}', 'warning');
                     }
                     else {
                         $('#myCadreWindow').prepend(pageSelect.cadres[0].cadre);
@@ -1219,7 +1219,7 @@ $('#bsMenuThemesExport').on('click', function () {
         a.click();
     }
     else {
-        bootbox.alert("En Cours de Développement, selectionnez la page principale", function () {
+        bootbox.alert("{{En Cours de Développement, selectionnez la page principale}}", function () {
         });
     }
 });
@@ -1273,7 +1273,7 @@ $('#bsMenuThemesImport').fileupload({
             bsBorderShadow();
             $('#bsMenuThemesDetails').hide();
             createMenuBar();
-            notify('Import d\'un Thème', 'Thème importé avec succès', 'success');
+            notify("{{Import d'un Thème}}", '{{Thème importé avec succès}}', 'success');
         }
     }
 });

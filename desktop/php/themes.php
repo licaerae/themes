@@ -142,7 +142,7 @@ $eqLogics = eqLogic::byType('themes');
                         <div class="col-sm-12">
                         <div class="well form-group form-group-sm">
                             <div class="col-sm-12">
-                                <button type="button" class="btn btn-sm btn-block btn-primary " id="bsButtonsAdd" title="{{Ajouter un Bouton Personnalisé}}"><i class="fa fa-plus-circle"></i> Ajouter</button>
+                                <button type="button" class="btn btn-sm btn-block btn-primary " id="bsButtonsAdd" title="{{Ajouter un Bouton Personnalisé}}"><i class="fa fa-plus-circle"></i> {{Ajouter}}</button>
                             </div>
                         </div>
                         </div>
@@ -210,10 +210,10 @@ $eqLogics = eqLogic::byType('themes');
                         <div class="well col-sm-2">
                              <span class="btn btn-block btn-warning" id="bsMenuImportButton" style="display :none" >
                                 <i class="fa fa-download"></i>
-                                <span> {{Importer...}}</span>
+                                <span> {{Importer}}...</span>
                                 <input class="form-control" type="file" id="bsMenuThemesImport" style="cursor : pointer; opacity: 0; position: absolute; top: 20px; right: 0;" name="themes" data-url="plugins/themes/core/ajax/themes.ajax.php?action=themeImport"/>
                             </span>
-                            <button type="button" class="btn btn-block btn-warning" style="display :none" id="bsMenuThemesExport"><i class="fa fa-upload"></i> {{Exporter...}}</button>
+                            <button type="button" class="btn btn-block btn-warning" style="display :none" id="bsMenuThemesExport"><i class="fa fa-upload"></i> {{Exporter}}...</button>
                             <button type="button" class="btn btn-block btn-primary" style="display :none" id="bsMenuThemesDetails"><i class="fa fa-search"></i> {{Détails}}</button>
                             <button type="button" class="btn btn-block btn-primary" id="bsMenuThemesApercu"><i class="fa fa-refresh"></i> {{Aperçu}}</button>
                             <button type="button" class="btn btn-block btn-info" disabled id="bsStepByStepButton"><i class="fa fa-smile-o"></i> {{Pas à Pas}}</button>

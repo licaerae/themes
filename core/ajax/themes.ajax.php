@@ -30,7 +30,7 @@ try {
             mkdir($uploaddir);
         }
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Répertoire d\'upload de fonts non trouvé : ', __FILE__) . $uploaddir);
+            throw new Exception(__("{{Répertoire d'upload de fonts non trouvé}} : ", __FILE__) . $uploaddir);
         }
         ajax::success(themes::listFonts());
     }
@@ -41,7 +41,7 @@ try {
             mkdir($uploaddir);
         }
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Répertoire d\'upload d\'images non trouvé : ', __FILE__) . $uploaddir);
+            throw new Exception(__("{{Répertoire d'upload d'images non trouvé}} : ", __FILE__) . $uploaddir);
         }
         ajax::success(themes::listImages());
     }
@@ -49,7 +49,7 @@ try {
     if (init('action') == 'listCategory') {
         $uploaddir = dirname(__FILE__) . '/../uploads/images/' . init('category');
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Répertoire d\'upload d\'images non trouvé : ', __FILE__) . $uploaddir);
+            throw new Exception(__("{{Répertoire d'upload d'images non trouvé}} : ", __FILE__) . $uploaddir);
         }
         ajax::success(themes::listImages(init('category')));
     }
@@ -57,7 +57,7 @@ try {
     if (init('action') == 'listCategories') {
         $uploaddir = dirname(__FILE__) . '/../uploads/images';
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Répertoire d\'upload d\'images non trouvé : ', __FILE__) . $uploaddir);
+            throw new Exception(__("{{Répertoire d'upload d'images non trouvé}} : ", __FILE__) . $uploaddir);
         }
         ajax::success(themes::listCategories());
     }
@@ -72,7 +72,7 @@ try {
             mkdir($uploaddir);
         }
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Impossible de créer la catégorie : ', __FILE__) . $dir);
+            throw new Exception(__('{{Impossible de créer la catégorie}} : ', __FILE__) . $dir);
         }
         ajax::success();
     }
@@ -80,18 +80,18 @@ try {
     if (init('action') == 'removeCategory') {
         $dir = init('category');
         if( $dir == "") {
-                throw new Exception(__('Nom de catégorie vide', __FILE__));
+                throw new Exception(__('{{Nom de catégorie vide}}', __FILE__));
         }
         $uploaddir = dirname(__FILE__) . '/../uploads/images/' . $dir;
         $list = themes::listImages($dir);
         if(count($list) > 0) {
-                throw new Exception(__('Cette catégorie contient encore des images ', __FILE__) . json_encode($list));
+                throw new Exception(__('{{Cette catégorie contient encore des images}} ', __FILE__) . json_encode($list));
         }
         if (file_exists($uploaddir)) {
             rmdir($uploaddir);
         }
         if (file_exists($uploaddir)) {
-            throw new Exception(__('Impossible d\'éffacer la catégorie : ', __FILE__) . init('category'));
+            throw new Exception(__("{{Impossible d'éffacer la catégorie}} : ", __FILE__) . init('category'));
         }
         ajax::success();
     }
@@ -99,21 +99,21 @@ try {
     if (init('action') == 'getCategory') {
         $uploaddir = dirname(__FILE__) . '/../uploads/images/' . init('category');
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Répertoire d\'upload d\'images non trouvé : ', __FILE__) . $uploaddir);
+            throw new Exception(__("{{Répertoire d'upload d'images non trouvé}} : ", __FILE__) . $uploaddir);
         }
         ajax::success(themes::listImages(init('category')));
     }
 
     if (init('action') == 'removeImage') {
         if (!themes::removeImage(init('image'), init('category'))) {
-            throw new Exception(__('Impossible d\'éffacer l\'image : ', __FILE__) . init('image'));
+            throw new Exception(__("{{Impossible d'éffacer l'image}} : ", __FILE__) . init('image'));
         }
         ajax::success();
     }
 
     if (init('action') == 'removeFont') {
         if (!themes::removeFont(init('font'))) {
-            throw new Exception(__('Impossible d\'éffacer la Font : ', __FILE__) . init('font'));
+            throw new Exception(__("{{Impossible d'éffacer la Font}} : ", __FILE__) . init('font'));
         }
         ajax::success();
     }
@@ -130,23 +130,23 @@ try {
             mkdir($uploaddir);
         }
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Répertoire d\'upload non trouvé : ', __FILE__) . $uploaddir);
+            throw new Exception(__("{{Répertoire d'upload non trouvé}} : ", __FILE__) . $uploaddir);
         }
         if (!isset($_FILES['images'])) {
-            throw new Exception(__('Aucun fichier trouvé. Vérifié parametre PHP (post size limit)', __FILE__));
+            throw new Exception(__('{{Aucun fichier trouvé. Vérifié parametre PHP (post size limit}}', __FILE__));
         }
         $extension = strtolower(strrchr($_FILES['images']['name'], '.'));
         if (!in_array($extension, array('.png','.jpg'))) {
-            throw new Exception('Seul les images sont accepté (autorisé .jpg .png) : ' . $extension);
+            throw new Exception('{{Seul les images sont accepté (autorisé .jpg .png)}} : ' . $extension);
         }
         if (filesize($_FILES['images']['tmp_name']) > 8000000) {
-            throw new Exception(__('Le fichier est trop gros (maximum 8mo)', __FILE__));
+            throw new Exception(__('{{Le fichier est trop gros}} (maximum 8mo)', __FILE__));
         }
         if (!move_uploaded_file($_FILES['images']['tmp_name'], $uploaddir . '/' . $_FILES['images']['name'])) {
-            throw new Exception(__('Impossible de déplacer le fichier temporaire', __FILE__));
+            throw new Exception(__('{{Impossible de déplacer le fichier temporaire}}', __FILE__));
         }
         if (!file_exists($uploaddir . '/' . $_FILES['images']['name'])) {
-            throw new Exception(__('Impossible d\'uploader le fichier (limite du serveur web ?)', __FILE__));
+            throw new Exception(__("{{Impossible d'uploader le fichier (limite du serveur web ?)}}", __FILE__));
         }
         ajax::success();
     }
@@ -157,37 +157,37 @@ try {
             $result = mkdir($uploaddir);
         }
         if (!file_exists($uploaddir)) {
-            throw new Exception(__('Répertoire d\'upload non trouvé : ', __FILE__) . ' ' . $result);
+            throw new Exception(__("{{Répertoire d'upload non trouvé}} : ", __FILE__) . ' ' . $result);
         }
         if (!isset($_FILES['fonts'])) {
-            throw new Exception(__('Aucun fichier trouvé. Vérifié parametre PHP (post size limit)', __FILE__));
+            throw new Exception(__('{{Aucun fichier trouvé. Vérifié parametre PHP (post size limit}}', __FILE__));
         }
         $extension = strtolower(strrchr($_FILES['fonts']['name'], '.'));
         if (!in_array($extension, array('.ttf','.woff'))) {
-            throw new Exception('Seul les fonts True Type et Web Open Font Format sont accepté (autorisé .ttf,.woff) : ' . $extension);
+            throw new Exception('{{Seul les fonts True Type et Web Open Font Format sont accepté (autorisé .ttf,.woff)}} : ' . $extension);
         }
         if (filesize($_FILES['fonts']['tmp_name']) > 1000000) {
-            throw new Exception(__('Le fichier est trop gros (maximum 1mo)', __FILE__));
+            throw new Exception(__('{{Le fichier est trop gros}} (maximum 1mo)', __FILE__));
         }
         if (!move_uploaded_file($_FILES['fonts']['tmp_name'], $uploaddir . '/' . $_FILES['fonts']['name'])) {
-            throw new Exception(__('Impossible de déplacer le fichier temporaire', __FILE__) . json_encode($_FILES));
+            throw new Exception(__('{{Impossible de déplacer le fichier temporaire}}', __FILE__) . json_encode($_FILES));
         }
         if (!file_exists($uploaddir . '/' . $_FILES['fonts']['name'])) {
-            throw new Exception(__('Impossible d\'uploader le fichier (limite du serveur web ?)', __FILE__));
+            throw new Exception(__("{{Aucun fichier trouvé. Vérifié parametre PHP (post size limit}}", __FILE__));
         }
         ajax::success();
     }
 
     if (init('action') == 'themeImport') {
        if (!isset($_FILES['themes'])) {
-            throw new Exception(__('Aucun fichier trouvé. Vérifié parametre PHP (post size limit)', __FILE__));
+            throw new Exception(__('{{Aucun fichier trouvé. Vérifié parametre PHP (post size limit}}', __FILE__));
         }
         $extension = strtolower(strrchr($_FILES['themes']['name'], '.'));
         if (!in_array($extension, array('.thm'))) {
-            throw new Exception('Seul les fichiers thèmes sont accepté (autorisé .thm) : ' . $extension);
+            throw new Exception('{{Seul les fichiers Thèmes sont accepté (autorisé .thm)}} : ' . $extension);
         }
         if (filesize($_FILES['themes']['tmp_name']) > 500000) {
-            throw new Exception(__('Le fichier est trop gros (maximum 500Ko)', __FILE__));
+            throw new Exception(__('{{Le fichier est trop gros}} (maximum 500Ko)', __FILE__));
         }
         ajax::success(file_get_contents($_FILES['themes']['tmp_name']));
     }

@@ -19,24 +19,39 @@ Nous allons commencer par créer un thème, cliquer sur image:ajout.png[role="im
 Cliquez sur image:popovemenu8.png[role="img-thumbnail"] et appuyez sur image:plus.png[role="img-thumbnail"] pour créer un nouveau bouton. +
 --
 
+[role="row"]
+{nbsp} +
+[role="row"]
+{nbsp} +
+
 [role="col-md-4"]
+--
 image:rdcbouton.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
+--
 Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:plus.png[role="img-thumbnail"] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé.
+--
 
 [role="row"]
 {nbsp} +
 
 [role="col-md-4"]
+--
 image:chambrebouton.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
+--
 Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
+--
 
 [role="row"]
 {nbsp} +
 
 [role="col-md-4"]
+--
 image:styledemo.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
 --
 Maintenant que nos boutons sont créés, nous allons appliquer un style pour un meilleur rendu visuel, ici chacun fait ce qu'il veut, pour notre démo j'ai choisi les paramètres suivant : +
@@ -49,6 +64,7 @@ Sauvegardez votre thème maintenant. +
 
 [role="col-md-12"]
 --
+{nbsp} +
 Voici le résultat: +
 
 image::démo1.png[role="img-thumbnail"]
@@ -61,7 +77,9 @@ image::démo1.png[role="img-thumbnail"]
 ==== Design et Bootstrap
 
 [role="col-md-4"]
+--
 image:designboot.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
 --
 Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin. A cette étape de notre thème aucune page n'a encore été créée, le bouton image:bbootstrap.png[role="img-thumbnail"] est grisé, ce chapite va vous montrer comment les créer et comment injecter le code de la page principale. +
@@ -74,15 +92,18 @@ Le but du plugin étant la création d'une structure pour le mode Design, nous a
 ===== Design
 
 [role="col-md-4"]
+--
 image:planoknook.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
 --
 Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous charger un thème le plugin vérifié que les pages sont créer, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement il suffit de modifier la taille de la fenêtre principale. Le bouton est dégrisé aussi dés qu'on rajoute un bouton.
 --
 
-[role="col-md-12 text-justify"]
---
 {nbsp} +
+
+[role="col-md-8 text-justify"]
+--
 [icon="../images/important.png"]
 [IMPORTANT]
 Lors de la première utilisation, le plugin récupère les IDs des pages pour mettre à jour le thème, il faut absolument sauvegarder pour ne pas perdre les données.
@@ -93,7 +114,9 @@ Si le bouton est dégrisé c'est que des modifications ont été apportées au t
 --
 
 [role="col-md-4"]
+--
 image:designok.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
 --
 Voici le résultat du thème que nous développons: +
@@ -108,16 +131,18 @@ Vous pouvez constatez que le plugin crée une page supplémentaire, appelez +Gé
 ===== Bootstrap
 
 [role="col-md-4"]
+--
 image:bootstrapok.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
 --
 Arrivez à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecté le code dans la page principale pour pouvoir gérer tout votre Design, après toutes modifications il suffira de cliquez sur ce bouton pour mettre à jour la fenêtre principale. +
 --
 
-[role="col-md-12"]
-[role="text-justify"]
---
 {nbsp} +
+
+[role="col-md-8 text-justify"]
+--
 [icon="../images/tip.png"]
 [TIP]
 Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliquez sur le bouton image:bdesign.png[role="img-thumbnail"] pour palier ce problème.
@@ -130,13 +155,16 @@ Si la page de la fenêtre principale n'existe pas le bouton restera grisé, cliq
 ==== Gestion des Pages Secondaires
 
 [role="col-md-4"]
+--
 image:secondaires.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
 --
 Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
 Les images qui serviront aux pages secondaires seront rajoutées avec le <<gestionnaire_d_8217_images,Gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
-{nbsp} +
 --
+
+{nbsp} +
 
 [role="col-md-12 text-justify"]
 --
@@ -166,9 +194,10 @@ Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le 
 Il suffit de sauvegarder, et d'utiliser le bouton image:bbootstrap.png[role="img-thumbnail"] pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. Répetons ces étapes pour les deux autres pièces. +
 --
 
-[role="col-md-12 text-justify"]
---
 {nbsp} +
+
+[role="col-md-8 text-justify"]
+--
 [icon="../images/tip.png"]
 [TIP]
 Vous pouvez très bien injecter le code avec le bouton image:bbootstrap.png[role="img-thumbnail"] sans sauvegarder, pour faire des test ou autre.
@@ -215,16 +244,19 @@ Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéress
 --
 
 [role="col-md-4"]
+--
 image:popoversvg.png[role="img-thumbnail"]
+--
 [role="col-md-8 text-justify"]
 --
 Ce dernier popover va vous servir à déplacer la *ligne SVG* à l'endroit désiré, une ligne SVG est composée de quatre parties, un petit rectangle appelé +Début+, une ligne appelée +1er partie+, une ligne appelée +2eme partie+ et un dernier rectangle appelé +Fin+. +
 Le D-Pad va servir à déplacer la ligne, le bouton central à valider, image:trash.png[role="img-thumbnail"] en haut à droite du popover permet d'effacer la ligne SVG. Il suffit de sélectionner les parties de la ligne SVG que l'on veut déplacer et d'utiliser le D-Pad. Le dernier sélecteur sert à changer la couleur de la ligne SVG, elles correspondent aux différentes catégories de *_Jeedom_*(TM). +
 --
 
-[role="col-md-12 text-justify"]
---
 {nbsp} +
+
+[role="col-md-8 text-justify"]
+--
 [icon="../images/tip.png"]
 [TIP]
 Appuyez sur touche +Shift+ en même temps multiplie le déplacement par 10.
@@ -258,6 +290,6 @@ Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le r
 [icon="../images/tip.png"]
 [TIP]
 Il est possible de créer des profils 'invité', il suffit au niveau du profil *_Jeedom_*(TM) de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et aux autres pages secondaires.
+--
 
 {nbsp} +
---

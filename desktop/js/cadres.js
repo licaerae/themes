@@ -25,7 +25,7 @@ $('#bsDuplicatePage').on('click', function () {
             }
             secondaryPages.svg(destination, newCadre, pageSelect.svg[index].svg);
         }
-        notify('Pages Secondaires', 'Plan ' + source + ' coorectement dupliqué vers ' + destination + '', 'success');
+        notify('{{Pages Secondaires}}', '{{Plan}} ' + source + ' {{coorectement dupliqué vers}} ' + destination + '', 'success');
     }
 });
 
@@ -70,7 +70,7 @@ $('#bsSecondaireView').on('shown.bs.popover', "svg[name*='mySvgWindow']", functi
     var svg = $(this).data('svg');
     var page = $('#bsPageSelect').val();
     //var cadre = $(this).data('cadre');
-    $("strong[name='bsSvgDetails" + svg + "']").text('Ligne SVG N°' + svg);
+    $("strong[name='bsSvgDetails" + svg + "']").text('{{Ligne SVG}} N°' + svg);
     var svgSelect = secondaryPages.searchSvg(page, svg);
     var color = Snap.color(svgSelect.svg[0].attr('fill'));
     var options = '';
@@ -89,40 +89,40 @@ $('#bsSecondaireView').on('shown.bs.popover', "svg[name*='mySvgWindow']", functi
 function svgPopover(id, cadre) {
     $('#mySvgWindow' + id).popover({
         html: true,
-        title: '<strong class="control-label" name="bsSvgDetails' + id + '">Ligne SVG</strong>' +
-                '<button type="button" class="pull-right btn btn-xs btn-danger  mySvgDel" data-svg="' + id + '" title="Supprimer la ligne SVG">' +
+        title: '<strong class="control-label" name="bsSvgDetails' + id + '">{{Ligne SVG}}</strong>' +
+                '<button type="button" class="pull-right btn btn-xs btn-danger  mySvgDel" data-svg="' + id + '" title="{{Supprimer la ligne SVG}}">' +
                 '<i class="fa fa-trash-o"></i></button>',
         content:
                 '<div class="container-fluid well noPaddingRight noPaddingLeft" style="width:200px;">' +
                 '<div style="position:relative;left:78px">' +
-                '<button type="button" class="btn btn-primary  mySvgUp" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="Haut">' +
+                '<button type="button" class="btn btn-primary  mySvgUp" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="{{Haut}}">' +
                 '<i class="fa fa-arrow-up"></i></button>' +
                 '</div>' +
                 '<div style="position:relative;left:40px">' +
-                '<button type="button" class="btn btn-primary  mySvgLeft" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="Gauche">' +
+                '<button type="button" class="btn btn-primary  mySvgLeft" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="{{Gauche}}">' +
                 '<i class="fa fa-arrow-left"></i></button>' +
-                '<button type="button" class="btn btn-success  mySvgOk" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-cadre="' + cadre + '" data-svg="' + id + '" title="Valider">' +
+                '<button type="button" class="btn btn-success  mySvgOk" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-cadre="' + cadre + '" data-svg="' + id + '" title="{{Valider}}">' +
                 '<i class="fa fa-check-circle"></i></button>' +
-                '<button type="button" class="btn btn-primary  mySvgRight" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="Droite">' +
+                '<button type="button" class="btn btn-primary  mySvgRight" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="{{Droite}}">' +
                 '<i class="fa fa-arrow-right"></i></button>' +
                 '</div>' +
                 '<div style="position:relative;left:78px">' +
-                '<button type="button" class="btn btn-primary  mySvgDown" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="Bas">' +
+                '<button type="button" class="btn btn-primary  mySvgDown" style="width: 38px;height: 38px;padding: 0;font-size: 1.3em;" data-svg="' + id + '" title="{{Bas}}">' +
                 '<i class="fa fa-arrow-down"></i></button>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
                 '<div class="btn-group" data-toggle="buttons">' +
                 '<label class="btn btn-sm btn-block btn-primary">' +
-                '<input type="checkbox" id="bsSvgBegin' + id + '" autocomplete="off"/>Début' +
+                '<input type="checkbox" id="bsSvgBegin' + id + '" autocomplete="off"/>{{Début}}' +
                 '</label>' +
                 '<label class="btn btn-sm btn-block btn-primary">' +
-                '<input type="checkbox" id="bsSvgFirst' + id + '" autocomplete="off"/>1er Point' +
+                '<input type="checkbox" id="bsSvgFirst' + id + '" autocomplete="off"/>{{1er Point}}' +
                 '</label>' +
                 '<label class="btn btn-sm btn-block btn-primary">' +
-                '<input type="checkbox" id="bsSvgSecond' + id + '" autocomplete="off"/>2eme Point' +
+                '<input type="checkbox" id="bsSvgSecond' + id + '" autocomplete="off"/>{{2eme Point}}' +
                 '</label>' +
                 '<label class="btn btn-sm btn-block btn-primary">' +
-                '<input type="checkbox" id="bsSvgEnd' + id + '" autocomplete="off"/>Fin' +
+                '<input type="checkbox" id="bsSvgEnd' + id + '" autocomplete="off"/>{{Fin}}' +
                 '</label>' +
                 '</div></div></div>' +
                 '<div class="form-group form-group-sm"><div class="col-sm-12">' +
@@ -132,9 +132,6 @@ function svgPopover(id, cadre) {
         placement: 'right',
         viewport: "div[name='myCadre" + cadre + "']"
     });
-    //$('#mySvgWindow' + id).draggable({
-    //    snap: "#myCadreWindow"
-    //});
     $('#mySvgWindow' + id).popover('show');
     if (cadre !== -1) {
         showAnimSvg = false;
@@ -540,7 +537,7 @@ $('#bsSecondaireView').on('shown.bs.popover', "div[name*='myCadre']", function (
     var page = $('#bsPageSelect').val();
     var width = $("div[name='myCadre" + cadre + "']").css('width');
     var height = $("div[name='myCadre" + cadre + "']").css('height');
-    var text = 'Cadre N°' + cadre + ' - L:' + width.replace('px', '') + ' - H:' + height.replace('px', '');
+    var text = '{{Cadre}} N°' + cadre + ' - {{L:}}' + width.replace('px', '') + ' - {{H:}}' + height.replace('px', '');
     var colorMenuH4 = rgb2hex($("#myBootstrapMenu").children('h4').css('color'));
     var colorCadreH4 = rgb2hex($("div[name='myCadre" + cadre + "']").children('h4').css('color'));
     if (colorMenuH4 === colorCadreH4) {
@@ -583,7 +580,7 @@ $('#bsSecondaireView').on('shown.bs.popover', "div[name*='myCadre']", function (
     var options = '';
     for (var index in pageSelect.svg) {
         if (pageSelect.svg[index].cadre === parseInt(cadre))
-            options += '<option value="' + pageSelect.svg[index].id + '">Ligne N°' + pageSelect.svg[index].id + '</option>';
+            options += '<option value="' + pageSelect.svg[index].id + '">{{Ligne}} N°' + pageSelect.svg[index].id + '</option>';
     }
     $("select[name='bsSvgIdSelect" + cadre + "']").append(options);
     if (options !== '') {
@@ -600,13 +597,13 @@ $('#bsSecondaireView').on('shown.bs.popover', "div[name*='myCadre']", function (
     }
     var locked = $("div[name='myCadre" + cadre + "']").attr('data-locked');
     if(locked !== '1') {
-        $("button[name='myCadreLock" + cadre + "']").attr('title', "Verrouillez le Cadre");
+        $("button[name='myCadreLock" + cadre + "']").attr('title', "{{Verrouillez le Cadre}}");
         $("button[name='myCadreLock" + cadre + "']").removeClass('btn-success').addClass('btn-warning');
         $("button[name='myCadreLock" + cadre + "']").html('<i class="fa fa-unlock-alt"></i>');
     }
     else {
         $("button[name='myCadreLock" + cadre + "']").removeClass('btn-warning').addClass('btn-success');
-        $("button[name='myCadreLock" + cadre + "']").attr('title', "Déverrouillez le Cadre");
+        $("button[name='myCadreLock" + cadre + "']").attr('title', "{{Déverrouillez le Cadre}}");
         $("button[name='myCadreLock" + cadre + "']").html('<i class="fa fa-lock"></i>');
     }
 });
@@ -615,16 +612,16 @@ function cadrePopover(index) {
     $("div[name='myCadre" + index + "']").popover({
         html: true,
         title: 
-                '<button type="button" class="pull-left btn btn-xs btn-success myCadreLock" name="myCadreLock' + index + '" data-cadre="' + index + '" title="Verrouillez le Cadre"><i class="fa fa-lock"></i></button>' +
+                '<button type="button" class="pull-left btn btn-xs btn-success myCadreLock" name="myCadreLock' + index + '" data-cadre="' + index + '" title="{{Verrouillez le Cadre}}"><i class="fa fa-lock"></i></button>' +
                 '<strong class="control-label" id="bsCadreDetails' + index + '">Cadre</strong>' +
-                '<button type="button" class="pull-right btn btn-xs btn-danger myCadreDel" data-cadre="' + index + '" title="Supprimer le Cadre">' +
+                '<button type="button" class="pull-right btn btn-xs btn-danger myCadreDel" data-cadre="' + index + '" title="{{Supprimer le Cadre}}">' +
                 '<i class="fa fa-trash-o"></i></button>',
         content: '<div class="form-group form-group-sm">' +
-                '<div class="col-sm-4"><button class="btn btn-sm btn-success  myCadreViewTitle" data-cadre="' + index + '" type="button" title="Voir/Cacher le Titre">Titre</button></div>' +
+                '<div class="col-sm-4"><button class="btn btn-sm btn-success  myCadreViewTitle" data-cadre="' + index + '" type="button" title="{{Voir/Cacher le Titre}}">{{Titre}}</button></div>' +
                 '<div class="col-sm-8"><input type="text" class="form-control myCadreTitle" name="myCadreTitle' + index + '" data-cadre="' + index + '" value="' + $("div[name='myCadre" + index + "']").children('h4').text() + '"/></div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
-                '<div class="col-sm-4"><button class="btn btn-sm btn-success  bsButtonTitleColor" name="bsButtonTitleColor' + index + '" data-cadre="' + index + '" type="button" title="Couleur du Titre">Couleur</button></div>' +
+                '<div class="col-sm-4"><button class="btn btn-sm btn-success  bsButtonTitleColor" name="bsButtonTitleColor' + index + '" data-cadre="' + index + '" type="button" title="{{Couleur du Titre}}">{{Couleur}}</button></div>' +
                 '<div class="col-sm-8"><input type="color" value="" class="form-control myCadreTitleColor" disabled name="myCadreTitleColor' + index + '" data-cadre="' + index + '"/></div>' +
                 '</div>' +
                 '<div class="form-group form-group-sm">' +
@@ -633,23 +630,23 @@ function cadrePopover(index) {
                 '</select>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label" for="bsCadrePicture' + index + '">Image</label>' +
+                '<label class="col-sm-4 control-label" for="bsCadrePicture' + index + '">{{Image}}</label>' +
                 '<div class="col-sm-8"><select class="form-control bsCadrePicture" id="bsCadrePicture' + index + '" data-cadre="' + index + '">' +
                 '</select>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm">' +
-                '<label class="col-sm-4 control-label">Niveau</label>' +
+                '<label class="col-sm-4 control-label">{{Niveau}}</label>' +
                 '<div class="col-sm-8"><select class="form-control bsCadreLevel" data-cadre="' + index + '">' +
-                '<option value="99">Niveau -1</option>' +
-                '<option value="1000">Niveau 1</option>' +
-                '<option value="1001">Niveau 2</option>' +
-                '<option value="1002">Niveau 3</option>' +
+                '<option value="99">{{Niveau}} -1</option>' +
+                '<option value="1000">{{Niveau}} 1</option>' +
+                '<option value="1001">{{Niveau}} 2</option>' +
+                '<option value="1002">{{Niveau}} 3</option>' +
                 '</select>' +
                 '</div></div>' +
                 '<div class="form-group form-group-sm">' +
                 '<div class="col-sm-5">' +
-                '<button type="button" class="btn btn-sm btn-info  bsCadreSvg" data-cadre="' + index + '" title="Ajouter une ligne SVG"><i class="fa fa-plus-circle"></i></button>' +
-                '<button type="button" class="btn btn-sm btn-info  bsSvgId" name="bsSvgId' + index + '" disabled data-cadre="' + index + '" title="Editer la ligne SVG"><i class="fa fa-pencil"></i></button>' +
+                '<button type="button" class="btn btn-sm btn-info  bsCadreSvg" data-cadre="' + index + '" title="{{Ajouter une ligne SVG}}"><i class="fa fa-plus-circle"></i></button>' +
+                '<button type="button" class="btn btn-sm btn-info  bsSvgId" name="bsSvgId' + index + '" disabled data-cadre="' + index + '" title="{{Editer la ligne SVG}}"><i class="fa fa-pencil"></i></button>' +
                 '</div>' +
                 '<div class="col-sm-7">' +
                 '<select class="form-control bsSvgIdSelect" name="bsSvgIdSelect' + index + '" disabled data-cadre="' + index + '">' +
