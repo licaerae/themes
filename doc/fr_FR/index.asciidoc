@@ -1,6 +1,7 @@
 :icons:
 :imagesdir: ../images
 
+
 == Thèmes
 
 [role="text-justify"]
@@ -22,14 +23,22 @@ Au fur et à mesure du développement sont venu ce gréffer plusieurs autres mod
 . Le gestionnaires d'images
 . Les boutons Personnalisés
 
-D'autres modules pourront être implémenter selon les besoins de la communauté.
+Depuis la 1.0.2 une barre de progression permettra de savoir ou vous en etes de votre thème +
+
+image:stepprogress.png[role="img-thumbnail"]
+
+D'autres modules pourront être implémenter selon les besoins de la communauté. +
+Un tutoriel vidéo est aussi disponible, merci à *SBO* +
+
+https://www.youtube.com/watch?v=alpuGohpuXE&feature=youtu.be
+
 --
 
 [role="col-md-12 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
-Le Plugin est orienté pour être pris en main le plus simplement possible, il n'y a aucun besoin de connaître toutes les options pour l'utiliser, la configuration par défaut suffit pour une utilisation sur tablette. Il suffit de créer un thème de rajouter des boutons pour qu'il soit tout de suite utilisable.
+Le Plugin est orienté pour être pris en main le plus simplement possible, il n'y a aucun besoin de connaître toutes les options pour l'utiliser, la configuration par défaut suffit pour une utilisation sur tablette. Il suffit de créer un thème de rajouter des boutons pour qu'il soit tout de suite utilisable. +
 
 [icon="../images/important.png"]
 [IMPORTANT]

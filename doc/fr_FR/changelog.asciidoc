@@ -1,3 +1,20 @@
+.*V1.1.0
+Modificitaion de l'interface pour être plus simple
+Correction de la timeline
+Possibilité de copier la taille d'un widget sur les autres
+
+.*V1.0.2
+Ajout d'une Timeline pour suivre la progression du thème +
+Système de grille pour aligner les objets contenu dans la page +
+Opacité configurable sur les cadres des pages secondaires +
+Optimisation du code pour éliminer les données perdues +
+
+.*V1.0.1
+_onTouch_ intégré, Tactile sur tablette, mouseover autrement +
+Taille de police sur la fenêtre principale et sur les cadres +
+Widget fonctionnel dashboard et mobile +
+Nom de la page principale composé comme suis : nom du thème + home +
+
 .*V1.0.0
 Version Stable +
 Langages disponible: Français, Anglais +
