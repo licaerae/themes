@@ -1,37 +1,26 @@
 :icons:
 :imagesdir: ../images
 
-
-== Thèmes
+[role="h1"]
+Thèmes - Version 1.8.3
 
 [role="text-justify"]
 --
-Plugin servant à creer des thèmes pour le mode Design à partir de la librairie Bootstrap
+Plugin servant à créer des thèmes pour le mode Design à partir de la librairie Bootstrap
 --
 
-[role="row"]
+[role="col-md-12"]
 {nbsp} +
 
-
-=== Description
+== Description
 
 [role="col-md-12 text-justify"]
 --
-*_Jeedom_*(TM) nous offre un mode Design qui permet de creer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure compléte de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principale ou sera afficher la "pièce" demandé, une barre d'état optionnelle +
-Au fur et à mesure du développement sont venu ce gréffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complétement indépendantes pour d'autres plugin ou fonctionnalité de *_Jeedom_*(TM)
+*_Jeedom_*(TM) nous offre un mode Design qui permet de créer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure complète de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principale ou sera afficher la "pièce" demandé, une barre d'état optionnelle +
+Au fur et à mesure du développement sont venu ce greffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complètement indépendantes pour d'autres plugin ou fonctionnalité de *_Jeedom_*(TM)
 
 . Le gestionnaires d'images
 . Les boutons Personnalisés
-
-Depuis la 1.0.2 une barre de progression permettra de savoir ou vous en etes de votre thème +
-
-image:stepprogress.png[role="img-thumbnail"]
-
-D'autres modules pourront être implémenter selon les besoins de la communauté. +
-Un tutoriel vidéo est aussi disponible, merci à *SBO* +
-
-https://www.youtube.com/watch?v=alpuGohpuXE&feature=youtu.be
-
 --
 
 [role="col-md-12 text-justify"]
@@ -45,38 +34,20 @@ Le Plugin est orienté pour être pris en main le plus simplement possible, il n
 le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvable sur le forum officiel de *_Jeedom_*(TM) qui peuvent donner une idée des possibilité du mode Design
 --
 
-[role="row"]
+[role="col-md-12"]
 {nbsp} +
 
-==== Version de *_Jeedom_*(TM)
+=== Vidéo(s)
 
-[role="col-md-12 text-justify"]
---
-Les besoins du plugin ont demandé des modifications au niveau du core de *_Jeedom_*(TM), comme le précise le plugin il nécéssite une version 1.150 de *_Jeedom_*(TM) pour fonctionner mais certaines fonctionnalités sont restreintes
+Un tutoriel vidéo est aussi disponible, merci à *SBO* +
+https://www.youtube.com/watch?v=alpuGohpuXE&feature=youtu.be
 
-* entre 1.150 et 1.169 : Nombre de pages et ligne SVG limitées, Graph non fonctionnel
-* 1.170 : Graph non Fonctionnel
---
-
-[role="row"]
-{nbsp} +
-
-'''
-=== Création d'un thème Facile
 include::partie_1.asciidoc[Création d'un thème Facile]
 
 '''
-=== Options avancées
-include::partie_2.asciidoc[Options avancées]
-
-'''
-=== Modules additionnels
-include::partie_3.asciidoc[Modules additionnels]
-
-'''
-=== FAQ
+== FAQ
 include::faq.asciidoc[]
 
 '''
-=== Changelog
+== Changelog
 include::changelog.asciidoc[]

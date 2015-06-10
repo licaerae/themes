@@ -11,11 +11,11 @@ Dans cette partie nous allons entrer dans les détails, découpé chaque popover
 '''
 ==== Popover du Menu
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu1.png[role="img-thumbnail"]
+image::popovemenu1.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Le titre de ce popover indique les dimensions de la *barre de menu*. +
 --
@@ -25,11 +25,11 @@ Le titre de ce popover indique les dimensions de la *barre de menu*. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu2.png[role="img-thumbnail"]
+image::popovemenu2.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Ce sélecteur va permettre de définir de quel coté va être disposé la *barre de menu*, quatre choix possible : 'Haut','Bas','Gauche','Droite'. +
 --
@@ -39,16 +39,16 @@ Ce sélecteur va permettre de définir de quel coté va être disposé la *barre
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu3.png[role="img-thumbnail"]
+image::popovemenu3.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Ce sélecteur va permettre de définir la taille de la *barre de menu*.
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -61,11 +61,11 @@ en mode 'Gauche' et 'Droite' cela correspond à la Largeur. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu4.png[role="img-thumbnail"]
+image::popovemenu4.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Nous avons ici un bouton et une entrée texte qui correspond au titre de la *barre de menu*, le bouton permet de faire apparaître/disparaître le texte configuré. +
 --
@@ -75,16 +75,16 @@ Nous avons ici un bouton et une entrée texte qui correspond au titre de la *bar
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu5.png[role="img-thumbnail"]
+image::popovemenu5.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Valider ou non l'affichage de la barre d'état. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -96,11 +96,11 @@ La barre d'état ne fournit qu'un link:http://getbootstrap.com/components/#bread
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu6.png[role="img-thumbnail"]
+image::popovemenu6.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages secondaires n'auront q'un cadre unique, en mode Multi-Cadres, vous pourrez en créer autant que vous voulez sur les pages secondaires. +
 --
@@ -110,11 +110,11 @@ Permet de valider l'option Mono-Cadre ou Multi-Cadres, en Mono-Cadre les pages s
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu7.png[role="img-thumbnail"]
+image::popovemenu7.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Configuration des paramètres de Dimensions, Fonts et image de fond voir <<popover_de_dimensions, Popover de Dimensions>>. +
 --
@@ -124,11 +124,11 @@ Configuration des paramètres de Dimensions, Fonts et image de fond voir <<popov
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu8.png[role="img-thumbnail"]
+image::popovemenu8.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<popover_de_boutons,Popover de Boutons>>. +
 --
@@ -138,11 +138,11 @@ Configuration des paramètres des Boutons, des Menus ou des Ongles voir <<popove
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:popovemenu9.png[role="img-thumbnail"]
+image::popovemenu9.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Configuration du style CSS voir <<popover_de_style,Popover de Style>>. +
 --
@@ -155,11 +155,11 @@ Configuration du style CSS voir <<popover_de_style,Popover de Style>>. +
 '''
 ==== Popover de Dimensions
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:dimpopover1.png[role="img-thumbnail"]
+image::dimpopover1.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Le titre de ce popover fournit les dimensions du cadre principal. +
 --
@@ -169,16 +169,16 @@ Le titre de ce popover fournit les dimensions du cadre principal. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:dimpopover2.png[role="img-thumbnail"]
+image::dimpopover2.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de définir les dimensions de la page principale. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -191,11 +191,11 @@ Les valeurs par défaut correspond à une tablette horizontale. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:dimpopover3.png[role="img-thumbnail"]
+image::dimpopover3.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de définir l'image de fond, les images proviennent de la catégorie par défaut du <<gestionnaire_d_8217_images,Gestionnaire d'images>>. +
 --
@@ -205,16 +205,16 @@ Permet de définir l'image de fond, les images proviennent de la catégorie par 
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:dimpopover4.png[role="img-thumbnail"]
+image::dimpopover4.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 L'id du plan de la page principale du mode Design. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -226,16 +226,16 @@ En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le mod
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:dimpopover5.png[role="img-thumbnail"]
+image::dimpopover5.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 L'id du plan du cadre principal du mode Design. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -247,16 +247,16 @@ En mode read-only par défaut, passer en <<mode_expert,mode expert>> pour le mod
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:dimpopover6.png[role="img-thumbnail"]
+image::dimpopover6.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Gestionnaires des Fonts, appuyez sur le bouton *Font(s)...* pour en ajouter une, appuyer sur le bouton *Sélection* pour en effacer une, le sélecteur défini celle qui sera appliqué à la page principale. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -268,11 +268,11 @@ Seul les Fonts du type *TrueType*(.ttf) et *Web Open Font*(.woff) sont acceptée
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:dimpopover7.png[role="img-thumbnail"]
+image::dimpopover7.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 --
@@ -285,11 +285,11 @@ Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 '''
 ==== Popover de Boutons
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover1.png[role="img-thumbnail"]
+image::boutonpopover1.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de choisir le type d'affichage +
 
@@ -303,16 +303,16 @@ Permet de choisir le type d'affichage +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover2.png[role="img-thumbnail"]
+image::boutonpopover2.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 La taille des boutons. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/warning.png"]
 [WARNING]
@@ -324,11 +324,11 @@ Ne s'applique pas aux Onglets ou Menus.
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover3.png[role="img-thumbnail"]
+image::boutonpopover3.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 La couleur du bouton Home. +
 --
@@ -338,11 +338,11 @@ La couleur du bouton Home. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover4.png[role="img-thumbnail"]
+image::boutonpopover4.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Passe en mode justifié^(1)(2)^ pour les Onglets et Menus. +
 ~(1) les boutons prendrons toute la taille de la *barre de menu*.~ +
@@ -354,17 +354,17 @@ Passe en mode justifié^(1)(2)^ pour les Onglets et Menus. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover5.png[role="img-thumbnail"]
-image:menugroupé.png[role="img-thumbnail"] 
+image::boutonpopover5.png[]
+image::menugroupé.png[] 
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet d'utiliser le format groupé pour les boutons. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/warning.png"]
 [WARNING]
@@ -376,11 +376,11 @@ Ne s'applique pas aux Onglets ou Menus. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover6.png[role="img-thumbnail"]
+image::boutonpopover6.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de décaler les boutons sur la *barre de menu*. +
 --
@@ -390,11 +390,11 @@ Permet de décaler les boutons sur la *barre de menu*. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover7.png[role="img-thumbnail"]
+image::boutonpopover7.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Le premier bouton permet d'<<ajoutedition,ajouter un bouton>>, le suivant d'éditer le bouton indiquer par le sélecteur. +
 --
@@ -404,11 +404,11 @@ Le premier bouton permet d'<<ajoutedition,ajouter un bouton>>, le suivant d'édi
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover8.png[role="img-thumbnail"]
+image::boutonpopover8.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 permet de reclasser les boutons dans l'ordre que l'on veut. Il suffit de cliquer et glisser le bouton à l'emplacement désirer, cliquez sur *Valider* pour valider les modifications. +
 --
@@ -418,11 +418,11 @@ permet de reclasser les boutons dans l'ordre que l'on veut. Il suffit de cliquer
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:boutonpopover9.png[role="img-thumbnail"]
+image::boutonpopover9.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 --
@@ -437,18 +437,18 @@ anchor:ajoutedition[]
 '''
 ===== Ajout/Edition d'un Bouton
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:creabouton.png[role="img-thumbnail"] 
-image:editbouton.png[role="img-thumbnail"]
+image::creabouton.png[] 
+image::editbouton.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Indiqué le *Nom* du bouton, choisissez sa *Couleur* +
-Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:plus.png[role="img-thumbnail"] pour en rajouter une, le bouton image:trash.png[role="img-thumbnail"] permet d’effacer l'entrée. le bouton image:trash.png[role="img-thumbnail"] en haut à droite en édition permet d'éffacer le bouton. +
+Le bouton *Sous-menu* permet d'afficher les entrées de sous-menu, Cliquez sur le bouton image:plus.png[] pour en rajouter une, le bouton image:trash.png[role="img-thumbnail"'entrée. le bouton image:trash.png[role="img-thumbnail"] en haut à droite effacer le bouton. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -463,11 +463,11 @@ Les IDs des plan sont en mode read-only par défaut, passer en <<mode_expert,mod
 '''
 ==== Popover de Style
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:stylepopover1.png[role="img-thumbnail"]
+image::stylepopover1.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond si elle est cocher sinon les couleurs du profil *_Jeedom_*(TM) seront utilisées. +
 --
@@ -477,11 +477,11 @@ La case à cocher sert à utiliser ces propres couleurs pour le texte et le fond
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:stylepopover2.png[role="img-thumbnail"]
+image::stylepopover2.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Définit la configuration des bordures pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires. +
 --
@@ -491,11 +491,11 @@ Définit la configuration des bordures pour la *barre de menu* le cadre principa
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:stylepopover3.png[role="img-thumbnail"]
+image::stylepopover3.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Définit la configuration de l'ombre pour la *barre de menu* le cadre principale, la barre d'état et les pages secondaires. +
 --
@@ -505,11 +505,11 @@ Définit la configuration de l'ombre pour la *barre de menu* le cadre principale
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:stylepopover4.png[role="img-thumbnail"]
+image::stylepopover4.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 --
@@ -521,15 +521,15 @@ Valider permet de revenir au <<popover_du_menu,popover Menu>>. +
 '''
 ==== Popover des Cadres
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:cadrepopover1.png[role="img-thumbnail"]
+image::cadrepopover1.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Titre du cadre donnant les dimmensions du cadre. +
-image:cadrelock.png[role="img-thumbnail"] permet de vérouiller/dévérouiller le cadre. +
-image:cadretrash.png[role="img-thumbnail"] Permet de supprimer le cadre. +
+image:cadrelock.png[] permet de vérouiller/dévérouiller le cadre. +
+image:cadretrash.png[] Permet de supprimer le cadre. +
 --
 
 [role="row"]
@@ -537,11 +537,11 @@ image:cadretrash.png[role="img-thumbnail"] Permet de supprimer le cadre. +
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:cadrepopover2.png[role="img-thumbnail"]
+image::cadrepopover2.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Nous avons ici un bouton et une entrée texte qui correspond au titre du cadre, le bouton permet de faire apparaître/disparaître le texte configuré. +
 --
@@ -551,11 +551,11 @@ Nous avons ici un bouton et une entrée texte qui correspond au titre du cadre, 
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:cadrepopover3.png[role="img-thumbnail"]
+image::cadrepopover3.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de définir la couleur utiliser pour le cadre, par défaut le selecteur est grisé, la couleur de la fenêtre principale est utilisée. +
 --
@@ -565,11 +565,11 @@ Permet de définir la couleur utiliser pour le cadre, par défaut le selecteur e
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:cadrepopover4.png[role="img-thumbnail"]
+image::cadrepopover4.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de choisir une des Fonts disponible. Voir <<popover_de_dimensions,Dimensions>>. +
 --
@@ -579,11 +579,11 @@ Permet de choisir une des Fonts disponible. Voir <<popover_de_dimensions,Dimensi
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:cadrepopover5.png[role="img-thumbnail"]
+image::cadrepopover5.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de choisir une image de fond. Voir <<gestionnaire_d_8217_images,Gestionnaire d'images>>. +
 --
@@ -593,16 +593,16 @@ Permet de choisir une image de fond. Voir <<gestionnaire_d_8217_images,Gestionna
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:cadrepopover6.png[role="img-thumbnail"]
+image::cadrepopover6.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Permet de définir le niveau de profondeur du cadre celons les niveaux du mode Design +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -614,16 +614,16 @@ En théorie il doit rester à -1, implémenter pour des options avancées future
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:cadrepopover7.png[role="img-thumbnail"]
+image::cadrepopover7.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Le premier bouton permet d'ajouter un ligne SVG, le deuxième permet d'éditer la ligne SVG sélectionner dans le sélecteur.
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
@@ -648,11 +648,11 @@ Pour éviter de nombreuse fausse manipulation, certain paramètres sont en lectu
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:importer.png[role="img-thumbnail"]
+image::importer.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Ces deux boutons comme leur nom l'indique permettent d'importer/exporter des thèmes. Pour l'instant cela ne fonctionne que pour la page principale, l'exportation des pages secondaires sera implémentée dans une version ultérieure,  Vous remarquerez l'extension _thm_, elle correspond à une page principale. +
 --
@@ -662,16 +662,16 @@ Ces deux boutons comme leur nom l'indique permettent d'importer/exporter des th�
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:raz.png[role="img-thumbnail"]
+image::raz.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Ce bouton est à utiliser avec précaution, il va vider la page sélectionnée de tout contenu. Il est utile dans certain cas de pouvoir réinitialiser une page. +
 --
 
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 [icon="../images/important.png"]
 [IMPORTANT]

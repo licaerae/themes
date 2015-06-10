@@ -1,3 +1,6 @@
 [qanda]
-Je ne comprends pas l'utilité de ce plugin::
-    Lisez la documentation.
+Peut-on tout faire à partir du plugin::
+    Non, il faut utiliser le mode Design pour insérer un objet.
+
+J'ai des widgets de ma barre d'état qui disparaîssent::
+    Votre widget est mal codé, il utilise un +id+ au lieu d'une +class+. 

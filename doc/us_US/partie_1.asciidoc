@@ -15,29 +15,29 @@ To understand the plugin we will develop in this part a theme as simple as possi
 * Single frame (default settings).
 * We configure style with a border and a shadow for rendering.
 
-We will start by creating a theme, click on image:ajout.png[role="img-thumbnail"]. Change the title to a welcome message, replace in the first popover +menu+ by +Welcome to Our Home automation space+. The theme that we want to create and practically, they we remain more than to configure <<ajoutedition,buttons>> and <<popover_de_style,style>>. +
-Click image:popovemenu8.png[role="img-thumbnail"] and press image:plus.png[role="img-thumbnail"] to create a new button. +
+We will start by creating a theme, click on image:ajout.png[]. Change the title to a welcome message, replace in the first popover +menu+ by +Welcome to Our Home automation space+. The theme that we want to create and practically, they we remain more than to configure <<ajoutedition,buttons>> and <<popover_de_style,style>>. +
+Click image:popovemenu8.png[] and press image:plus.png[] to create a new button. +
 --
 
-[role="col-md-4"]
-image:rdcbouton.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
-Our first button is a submenu, enter +Ground floor+ in the field Name and click submenu to display the sub-entries, click image:plus.png[role="img-thumbnail"] to add another sub-entry, fill each entry with +Living room+ and +Kitchen+ and validate our first button is created.
+[role="col-md-5"]
+image:rdcbouton.png[]
+[role="col-md-7 text-justify"]
+Our first button is a submenu, enter +Ground floor+ in the field Name and click submenu to display the sub-entries, click image:plus.png[] to add another sub-entry, fill each entry with +Living room+ and +Kitchen+ and validate our first button is created.
 
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
-image:chambrebouton.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::chambrebouton.png[]
+[role="col-md-7 text-justify"]
 The second button is simpler, enter +Bedroom+ in the field name and validate. +
  
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
-image:styledemo.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::styledemo.png[]
+[role="col-md-7 text-justify"]
 --
 Now that our buttons are created , we will apply a style for a better visual , here everyone does what he wants, for our demo I chose the following parameters :
 
@@ -51,7 +51,7 @@ Save your theme now. +
 --
 You can see the result: +
 
-image::démo1.png[role="img-thumbnail"]
+image::démo1.png[]
 --
 
 [role="row"]
@@ -60,11 +60,11 @@ image::démo1.png[role="img-thumbnail"]
 '''
 ==== Design and Bootstrap
 
-[role="col-md-4"]
-image:designboot.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::designboot.png[]
+[role="col-md-7 text-justify"]
 --
-The purpose of the plugin is the creation of a structure for the Design mode, we will discuss here the two most important buttons of the plugin. At this stage of our theme no pages have been created yet, the button image:bbootstrap.png[role="img-thumbnail"] is disable, this chapter at will show you how to create and how to inject the code of the main page. +
+The purpose of the plugin is the creation of a structure for the Design mode, we will discuss here the two most important buttons of the plugin. At this stage of our theme no pages have been created yet, the button image:bbootstrap.png[] is disable, this chapter at will show you how to create and how to inject the code of the main page. +
 --
 
 [role="row"]
@@ -73,9 +73,9 @@ The purpose of the plugin is the creation of a structure for the Design mode, we
 '''
 ===== Design
 
-[role="col-md-4"]
-image:planoknook.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::planoknook.png[]
+[role="col-md-7 text-justify"]
 --
 This button will create the Design mode pages , the main page to the theme format and subpages to the main frame format. Each time you load a theme, plugin verified that the pages are created, if all pages are available the button will be disable. He can enable the button easily just change the size of the main window. The button is enable as soon as one adds a button.
 --
@@ -92,9 +92,9 @@ On first use, the plugin retrieves the IDs of pages to update the theme, it is e
 If the button is enable, changes were made to the theme that requires updating pages.
 --
 
-[role="col-md-4"]
-image:designok.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::designok.png[]
+[role="col-md-7 text-justify"]
 --
 The result of the theme that we are developing: +
 You can see that the plugin creates an additional page, call +General+ corresponds to the secondary page button *home* that is the layout of your page design mode. +
@@ -107,9 +107,9 @@ You can see that the plugin creates an additional page, call +General+ correspon
 '''
 ===== Bootstrap
 
-[role="col-md-4"]
-image:bootstrapok.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::bootstrapok.png[]
+[role="col-md-7 text-justify"]
 --
 Get to that stage all pages must be created, this button will allow injected code on the main page to manage all your design after all modifications, click on this button to update the main window. +
 --
@@ -120,7 +120,7 @@ Get to that stage all pages must be created, this button will allow injected cod
 {nbsp} +
 [icon="../images/tip.png"]
 [TIP]
-If the page in the main window is no button is disable, click on the image:bdesign.png[role="img-thumbnail"] button to overcome this problem.
+If the page in the main window is no button is disable, click on the image:bdesign.png[] button to overcome this problem.
 --
 
 [role="row"]
@@ -129,9 +129,9 @@ If the page in the main window is no button is disable, click on the image:bdesi
 '''
 ==== Secondaries Pages management
 
-[role="col-md-4"]
-image:secondaires.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::secondaires.png[]
+[role="col-md-7 text-justify"]
 --
 The plugin was to stop the creation of the main page, other pages and the injection of bootstrap code on the main page, but it appeared important to manage secondary pages from the plugin also able to control operation. +
 The images to be used for secondary pages will be added to the <<gestionnaire_d_8217_images,Image Manager>> for our theme will be the format of our main framework will be created using the software link:http://www.sweethome3d.com/fr/[SweetHome 3D] or other software of your choice. +
@@ -141,7 +141,7 @@ The images to be used for secondary pages will be added to the <<gestionnaire_d_
 [role="col-md-12 text-justify"]
 --
 
-This chapter aims to show how to set up a secondary page, the button image:bajouter.png[role="img-thumbnail"] is disable because we are in +single-frame+ configuration +multi-frame+ is identical except you can create as many frame as you want. +
+This chapter aims to show how to set up a secondary page, the button image:bajouter.png[] is disable because we are in +single-frame+ configuration +multi-frame+ is identical except you can create as many frame as you want. +
 We take care of all the parts, we will discuss the page *General* later since it occupies a special role. +
 For the rest of the project, we will establish the various modules in each room:
 
@@ -156,9 +156,9 @@ For the rest of the project, we will establish the various modules in each room:
 '''
 ===== Rooms
 
-[role="col-md-4"]
-image:popovercadre.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::popovercadre.png[]
+[role="col-md-7 text-justify"]
 --
 Start by selecting +Living room+ in the selector *Pages* +
 If you click on the frame, a popover to the frame configuration appears:
@@ -166,7 +166,7 @@ Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
 Si vous cliquez sur le cadre, un popover pour la configuration du cadre apparaît. +
  +
 Change +Title+ by +Living room+, and select the downloaded image with the selector *Image*. For the full operation of the popover view <<popover_des_cadres,Popover Frames>>
-Simply save, and use the button image:bbootstrap.png[role="img-thumbnail"] to update the secondary page _Salon_ in Design mode, the last step is to place the widgets in the Design View . Repeat these steps for the other two room. +
+Simply save, and use the button image:bbootstrap.png[] to update the secondary page _Salon_ in Design mode, the last step is to place the widgets in the Design View . Repeat these steps for the other two room. +
 --
 
 [role="col-md-12 text-justify"]
@@ -174,7 +174,7 @@ Simply save, and use the button image:bbootstrap.png[role="img-thumbnail"] to up
 {nbsp} +
 [icon="../images/tip.png"]
 [TIP]
-You may well inject code with the button image:bbootstrap.png[role="img-thumbnail"] without saving, to test or otherwise.
+You may well inject code with the button image:bbootstrap.png[] without saving, to test or otherwise.
 --
 
 [role="col-md-12 text-justify"]
@@ -183,9 +183,9 @@ You may well inject code with the button image:bbootstrap.png[role="img-thumbnai
 
 The final result: +
 
-image::salondemo.jpg[role="img-thumbnail"]
-image::cuisinedemo.jpg[role="img-thumbnail"]
-image::chambredemo.jpg[role="img-thumbnail"]
+image::salondemo.jpg[]
+image::cuisinedemo.jpg[]
+image::chambredemo.jpg[]
 {nbsp} +
 
 At this stage as you will show the following video your Design is functional:
@@ -202,7 +202,7 @@ link:https://www.youtube.com/watch?v=6T9feK6wF1A&feature=youtu.be[Démo vidéo]
 --
 This page will serve as a home page for our design mode, it will be to centralize information or simply show a picture of your house in 3D, it remains free to your imagination. In our case we are going to various informations :
 
-image::generaldemo.png[role="img-thumbnail"]
+image::generaldemo.png[]
 --
 
 [role="row"]
@@ -215,17 +215,17 @@ image::generaldemo.png[role="img-thumbnail"]
 [role="col-md-12 text-justify"]
 --
 
-Although at this stage your design is functional, it seemed interesting to me to provide a system that would locate in the room where is your widget (or virtual, etc ...), and it is natural that i've implemented the *lines SVG*. From <<popover_des_cadres,Popover  Frames>>, click Image:plusb.png[role="img-thumbnail"] anew *SVG line* will appear at the top right of your frame and a new popover is available. +
+Although at this stage your design is functional, it seemed interesting to me to provide a system that would locate in the room where is your widget (or virtual, etc ...), and it is natural that i've implemented the *lines SVG*. From <<popover_des_cadres,Popover  Frames>>, click Image:plusb.png[] anew *SVG line* will appear at the top right of your frame and a new popover is available. +
 {nbsp} +
 --
 
-[role="col-md-4"]
-image:popoversvg.png[role="img-thumbnail"]
-[role="col-md-8 text-justify"]
+[role="col-md-5"]
+image::popoversvg.png[]
+[role="col-md-7 text-justify"]
 --
 
 This popover will serve you to move the *SVG line* to the desired location, *line SVG* is composed of four parts, a small rectangle called +Start+, a line called +First Part+, a line called + Second Part+ and last rectangle called +End+. +
-The D-Pad is used to move the line, the middle button to validate, Image:trash.png[role="img-thumbnail"] at the top right of the popover remove the SVG line. Just select the parts of the SVG line you want to move and use the D-Pad. The last switch is used to change the color of the line SVG, they correspond to different categories of *_Jeedom_*(TM). +
+The D-Pad is used to move the line, the middle button to validate, Image:trash.png[] at the top right of the popover remove the SVG line. Just select the parts of the SVG line you want to move and use the D-Pad. The last switch is used to change the color of the line SVG, they correspond to different categories of *_Jeedom_*(TM). +
 --
 
 [role="col-md-12 text-justify"]
@@ -242,7 +242,7 @@ Press Shift +shift+ simultaneously multiplies the displacement by 10. +
 
 This is what gives the +Kitchen+
 
-image::cuisinesvg.jpg[role="img-thumbnail"]
+image::cuisinesvg.jpg[]
 {nbsp} +
 
 Just do the same thing for the other rooms. +

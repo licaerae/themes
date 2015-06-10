@@ -1,7 +1,7 @@
 :imagesdir: ../images
 
 '''
-==== Gestionnaire d'Images
+=== Gestionnaire d'Images
 
 [role="col-md-12 text-justify"]
 --
@@ -11,11 +11,11 @@ Lors de nos pérégrinations sur le mode Design, l'astuce utilisé pour manipule
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:gestionnaire.png[role="img-thumbnail"]
+image::gestionnaire.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
 Cliquez sur le bouton pour accéder au gestionnaires d'images.
 --
@@ -23,26 +23,26 @@ Cliquez sur le bouton pour accéder au gestionnaires d'images.
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image:gestionnaire2.png[role="img-thumbnail"]
+image::gestionnaire2.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
-Le gestionnaire permet de gérer des catégories, *_Thèmes_* est la catégorie par défaut utilisé par le plugin, seul les images importées dans cette catégorie seront accessible dans les thèmes. Pour créer une nouvelle catégorie cliquez sur image:gestionnaire3.png[role="img-thumbnail"]. +
-Pour importer une image cliquez sur image:gestionnaire4.png[role="img-thumbnail"], elle sera importé dans la catégorie sélectionné. +
+Le gestionnaire permet de gérer des catégories, *_Thèmes_* est la catégorie par défaut utilisé par le plugin, seul les images importées dans cette catégorie seront accessible dans les thèmes. Pour créer une nouvelle catégorie cliquez sur image:gestionnaire3.png[]. +
+Pour importer une image cliquez sur image:gestionnaire4.png[], elle sera importé dans la catégorie sélectionné. +
 --
 
 [role="row"]
 {nbsp} +
 
-[role="col-md-4"]
+[role="col-md-5"]
 --
-image::gestionnaire5.png[role="img-thumbnail"]
+image::gestionnaire5.png[]
 --
-[role="col-md-8 text-justify"]
+[role="col-md-7 text-justify"]
 --
-Une fois l'image importé, image:cadretrash.png[role="img-thumbnail"] permet de la supprimer, image:gestionnaire6.png[role="img-thumbnail"] ouvrira une boite dialogue donnant les infos suivantes :
+Une fois l'image importé, image:cadretrash.png[] permet de la supprimer, image:gestionnaire6.png[role="img-thumbnail"dialogue donnant les infos suivantes :
 
 * *URL*: Construit pour être utiliser comme lien locale *_Jeedom_*(TM) à utilise dans une balise directement par exemple un balise +<img>+.
 * *CSS* : construit pour être copier coller dans une classe +CSS+ ou un attribut style, pour mettre au choix dans un widget, un design voir sur le +custom.css+.
@@ -55,6 +55,6 @@ D'autres fonctionnalités seront rajoutées, la première qui sera implémentée
 {nbsp} +
 
 '''
-==== Boutons Personnalisées
+=== Boutons Personnalisées
 
 En cours de développement
