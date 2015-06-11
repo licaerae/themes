@@ -52,13 +52,14 @@ Les barres d'outils possèdent tous un onglet qui permet de cacher/voir la barre
 [role="col-md-12 text-justify"]
 --
 image:barrepage.png[] - En mode Normal. +
-image:barrepageexpert.png[] - En mode Expert *+LINK+*. +
+image:barrepageexpert.png[] - En <<informations,mode Expert>>. +
 Le bouton *Général*, est l’équivalent classique aux autres plugins qui permet de revenir sur la page de choix d'un thème, les deux boutons qui suivent le bouton *Général* sont visibles uniquement si le mode Expert de *_Jeedom_*(TM) est activé. +
 --
 
 [role="col-md-12"]
 {nbsp} +
 
+anchor:infomations[]
 [role="col-md-4"]
 --
 image::infomations.png[]
@@ -68,8 +69,17 @@ image::infomations.png[]
 --
 image::info.png[]
 Permet d'accéder aux informations du thème lié à *_Jeedom_*(TM), en dehors du nom du thème, les autres paramètres sont optionnels, elles permettent juste d'avoir une tuile dédiée dans le dashboard. +
-C'est de cette fenêtre que vous pourrez activer le mode Expert *+LINK+* du plugin. +
+C'est de cette fenêtre que vous pourrez activer le mode Expert du plugin. +
 --
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+===== Mode expert
+Le mode expert vous permettra d'accéder à plusieurs fonctions : Sauvegarde sans injection, Import, Export, Remise à zéro d'une page, lecture seule de la page principale. +
 
 [role="row"]
 {nbsp} +
@@ -101,7 +111,7 @@ La quatrième barre indique la progression de l'injection du code dans les pages
 [role="col-md-4 text-justify"]
 --
 image::cadres.png[]
-Permet d'accéder à la gestion des pages secondaires qui sera traitée dans le chapitre suivant *+LINK+*. Grisé si aucune page n'a été créée. +
+Permet d'accéder à la gestion des pages secondaires qui sera traitée dans le <<Pages_Secondaires,chapitre suivant>>. Grisé si aucune page n'a été créée. +
 --
 
 [role="col-md-4 text-justify"]
@@ -130,13 +140,13 @@ Visible seulement si le mode Expert de *_Jeedom_*(TM) est activé, Configuration
 [role="col-md-4 text-justify"]
 --
 image::save.png[]
-Sauvegarde du thème sans injection du code - visible en mode Expert *+LINK+*. +
+Sauvegarde du thème sans injection du code - visible en <<informations,mode Expert>>. +
 --
 
 [role="col-md-4 text-justify"]
 --
 image::export.png[]
-Exportation du thème - visible en mode Expert *+LINK+*. +
+Exportation du thème - visible en <<informations,mode Expert>>. +
 Version 1.8.3, exporte l'intégralité du thème pages secondaires comprises sauf les images et les boutons personnalisés. +
 --
 
@@ -148,13 +158,13 @@ Version 1.8.3, exporte l'intégralité du thème pages secondaires comprises sau
 [role="col-md-4 text-justify"]
 --
 image::import.png[]
-Importer un thème - visible en mode Expert *+LINK+*. +
+Importer un thème - visible en <<informations,mode Expert>>. +
 --
 
 [role="col-md-4 text-justify"]
 --
 image::raz.png[]
-Efface le contenu de la page du mode Design de la page sélectionnée - visible en mode Expert *+LINK+*. +
+Efface le contenu de la page du mode Design de la page sélectionnée - visible en <<informations,mode Expert>>. +
 --
 
 [role="row"]
@@ -208,9 +218,9 @@ image::tools.png[]
 Fenêtre permettant de configurer la page principale. L'entête de la fenêtre indique les dimensions du cadre principal. +
 *Largeur*: Largeur de la page principale. +
 *Hauteur*: Hauteur de la page principale. +
-*Image*: Image de fond de la page principale - les images sont à 'uploader' à partir du gestionnaire d'images. *+LINK+* +
-*Id du Plan*: ID de la page principale dans le mode Design - readonly - activer le mode Expert *+LINK+* pour le modifier. +
-*Id du Cadre*: ID de la page secondaire 'Général' dans le mode Design - readonly - activer le mode Expert *+LINK+* pour le modifier. +
+*Image*: Image de fond de la page principale - les images sont à 'uploader' à partir du <<Gestionnaire_D_images,gestionnaire d'images>>. +
+*Id du Plan*: ID de la page principale dans le mode Design - readonly - activer le <<informations,mode Expert>> pour le modifier. +
+*Id du Cadre*: ID de la page secondaire 'Général' dans le mode Design - readonly - activer le <<informations,mode Expert>> pour le modifier. +
 *Sélection*: Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
 *Taille*: Taille du texte de la barre de menu. +
 --
@@ -248,6 +258,7 @@ image:classerbouton.png[]: permet de ré-ordonner les +Boutons+, +Menu+ ou +Ongl
 {nbsp} +
 
 '''
+anchor:fenetrestyle[]
 [role="col-md-6"]
 --
 image::fenetrestyle.png[]
@@ -298,7 +309,7 @@ Servez vous des flèches du carrousel pour naviguer dans les widgets, image:acce
 [role="col-md-6 text-justify"]
 --
 image::design.png[]
-Permet de créer les plans du Mode Design. Grisé lorsque toutes les pages sont créées, il suffit de modifier la taille de la page principale ou de passer en mode Expert *+LINK+* pour le dégriser. +
+Permet de créer les plans du Mode Design. Grisé lorsque toutes les pages sont créées, il suffit de modifier la taille de la page principale ou de passer en <<informations,mode Expert>> pour le dégriser. +
 --
 
 [role="col-md-6 text-justify"]
@@ -312,6 +323,7 @@ Permet de sauvegarder le thème et d'injecter le code de la page principale dans
 [role="col-md-12"]
 {nbsp} +
 
+anchor:Pages_Secondaires[]
 '''
 === Pages Secondaires
 
@@ -409,7 +421,7 @@ Fenêtre pour configurer le cadre sélectionné. +
 *Couleur*: Couleur utilisée pour le cadre - grisé par défaut pour utiliser la couleur par défaut de la page principale, cliquer sur le bouton pour la modifier. +
 *Font*: Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
 *Taille*: Taille de la Font du cadre. +
-*Image*: Image de fond du cadre - les images sont à 'uploader' à partir du gestionnaire d'images. *+LINK+* +
+*Image*: Image de fond du cadre - les images sont à 'uploader' à partir du <<Gestionnaire_D_images,gestionnaire d'images>>. +
 *Opacité*: Opacité du cadre. +
 *IFrame*: Inclut à partir de la 1.4.0, permet d'afficher le contenu d'un lien dans un cadre, le champ de droite pour le lien du contenu à afficher, le bouton permet de d'afficher/cacher l'IFrame. +
 --
@@ -550,8 +562,10 @@ Sélectionner la Font et cliquer sur image:barrefont.png[] pour appliquer la fon
 [role="col-md-12"]
 {nbsp} +
 
+anchor:les_fenêtres_boutons[]
+
 '''
-=== les Fenêtres boutons
+=== Les fenêtres boutons
 
 ==== Création/Édition des boutons
 
@@ -636,6 +650,8 @@ cliquer image:classerbouton.png[] pour accéder à cette fenêtre, ré-ordonner 
 [role="col-md-12"]
 {nbsp} +
 
+anchor:Gestionnaire_D_images[]
+
 '''
 === Gestionnaire D'images
 
@@ -686,6 +702,8 @@ Une fois l'image importée, image:cadretrash.png[] permet de la supprimer, image
 [role="col-md-12"]
 {nbsp} +
 
+anchor:Boutons_personnalisés[]
+
 '''
 === Boutons personnalisés
 
@@ -718,7 +736,7 @@ image::fenetrepersonnalisesajouter.png[]
 
 [role="col-md-8 text-justify"]
 --
-Le but des boutons personnalisés était de fournir la possibilité de créer des boutons autres que ceux fournis par défaut par la librairie Bootstrap *+LINK+*. Deux méthodes sont fournies pour créer un bouton, par une *image*, ou par *CSS3*, cliquez sur le type de bouton que vous voulez créer. +
+Le but des boutons personnalisés était de fournir la possibilité de créer des boutons autres que ceux fournis par défaut par la librairie link:http://getbootstrap.com/[Bootstrap]. Deux méthodes sont fournies pour créer un bouton, par une *image*, ou par *CSS3*, cliquez sur le type de bouton que vous voulez créer. +
 *Nom*: Nom du bouton, les noms ne sont pas uniques, mais il sera plus simple de nommer différemment chaque bouton. +
 *Font*: Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
 
@@ -744,7 +762,7 @@ image::fenetrepersonnalisesimage.png[]
 --
 *Hover*: L'image contient l'état 'hover', qui correspond au passage de la souris sur le bouton. +
 *Active*: L'image contient l'état 'active', qui correspond au clic gauche de la souris sur le bouton. +
-*Image*: Sélectionnez l'image du bouton - importez avec le gestionnaire d'image *+LINK+* du plugin. +
+*Image*: Sélectionnez l'image du bouton - importez avec le <<Gestionnaire_D_images,gestionnaire d'images>> du plugin. +
 *Texte*: Affichage du texte du bouton ou non. +
 *Taille*: Taille du texte. +
 *Couleur*: Couleur du texte. +
@@ -795,7 +813,7 @@ Pour appréhender le plugin nous allons développer dans cette partie la créati
 * Mono-cadre (paramètres par défaut).
 * On configura un style avec une bordure et une ombre pour un rendu visuel.
 
-Nous allons commencer par créer un thème, cliquer sur image:ajout.png[] .Changeons le titre pour un message de bienvenue, cliquez sur image:cogmini.png[] puis changez le titre par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons est pratiquement créé, il ne nous reste plus qu'à configurer les boutons *+LINK+* et le style *+LINK+*. +
+Nous allons commencer par créer un thème, cliquer sur image:ajout.png[] .Changeons le titre pour un message de bienvenue, cliquez sur image:cogmini.png[] puis changez le titre par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons est pratiquement créé, il ne nous reste plus qu'à configurer les <<les_fenêtres_boutons, boutons>> et le <<fenetrestyle, style>>. +
 Cliquez sur image:boutonsmini.png[] et appuyez sur image:plus.png[] pour créer un nouveau bouton. +
 --
 
@@ -907,7 +925,7 @@ image::planok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous chargez un thème le plugin vérifie que les pages sont créées, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement, il suffit de modifier la taille de la fenêtre principale ou de passer en mode Expert *+LINK+*. Le bouton est dégrisé aussi dès qu'on rajoute un bouton. +
+Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous chargez un thème le plugin vérifie que les pages sont créées, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement, il suffit de modifier la taille de la fenêtre principale ou de passer en <<informations,mode Expert>>. Le bouton est dégrisé aussi dès qu'on rajoute un bouton. +
 Vous pouvez constatez que le plugin crée une page supplémentaire, appelée +Général+, elle correspond à la page secondaire du bouton *home* qui est la page de présentation de votre mode Design. +
 
 [icon="../images/tip.png"]
@@ -954,7 +972,7 @@ Si le plan de la page principale n'existe pas le bouton restera grisé, cliquez 
 [role="col-md-12 text-justify"]
 --
 Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
-Les images qui serviront aux pages secondaires seront rajoutées avec le Gestionnaire d'images *+LINK+*, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
+Les images qui serviront aux pages secondaires seront rajoutées avec le <<Gestionnaire_D_images,gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
 --
 
 [role="col-md-12"]
