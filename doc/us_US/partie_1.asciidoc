@@ -379,7 +379,7 @@ Visible only if the Expert mode *_Jeedom_*(TM) is enabled, link to the plan asso
 {nbsp} +
 
 '''
-==== Barre Actions
+==== Actions Bar
 
 [role="col-md-12 text-justify"]
 --
@@ -419,10 +419,10 @@ Window to configure the selected frame. +
 *Title*: Title of the frame, the right field to change, the button to hide / view the title. +
 *Color*: The color used for the frame - disabled by default to use the default color of the page main, click the button to change it. +
 *Font*: Select a Font available - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
-*Taille*: Taille de la Font du cadre. +
-*Image*: Image de fond du cadre - les images sont à 'uploader' à partir du <<Gestionnaire_D_images,gestionnaire d'images>>. +
-*Opacité*: Opacité du cadre. +
-*IFrame*: Inclut à partir de la 1.4.0, permet d'afficher le contenu d'un lien dans un cadre, le champ de droite pour le lien du contenu à afficher, le bouton permet de d'afficher/cacher l'IFrame. +
+*Size*: Font Size of the frame. +
+*Picture*: Background image of the frame - the pictures are to upload from the <<Gestionnaire_D_images,manager of pictures>>. + d'images>>. +
+*Opacity*: Opacity of the frame. +
+*IFrame*: Includes from 1.4.0, displays the contents of a link in the frame, the right field for the content link to display the button to display / hide the IFrame. +
 --
 
 [role="row"]
@@ -439,23 +439,23 @@ image::fenetresvg.png[]
 [role="col-md-8 text-justify"]
 --
 image::svg.png[]
-Fenêtres de gestion des lignes SVG. +
-image:addmini.png[]: pour rajouter une ligne SVG, la ligne est créée sur le coin gauche en haut. +
-image:deletemini.png[]: efface la ligne SVG sélectionnée. +
+SVG Line management windows. +
+image:addmini.png[]: To add a SVG line, the line is created on the top left corner. +
+image:deletemini.png[]: delete the selected SVG line. +
 --
 
 [role="col-md-12 text-justify"]
 --
-*[underline]#Rappel#*: A la base j'étais parti pour des plans 3D où on plaçait les objets, mais un Jeedomien nous a présenté son Design avec une vue 3D et les objets placés tout autour avec des lignes les reliant à leur position dans la pièce, très vite ce modèle m'a plu, permettant d'avoir une vue plus claire, partant de ce constat j'ai voulu intégrer cette possibilité à mon plugin. +
-Une fois créée la ligne se divise en 5 parties, les deux carrés d'extrémité, les lignes accrochées aux carrés, la ligne centrale, il suffit de cliquer sur chaque partie pour la déplacer. +
-Pour déplacer une ligne il faut qu'elle soit sélectionnée, le dernier sélecteur permet de coloriser la ligne, les couleurs sont liées aux catégories de *_Jeedom_*(TM), ce qui permet d'avoir des lignes de la même couleur que son widget. +
+*[underline]#Reminder#*: Basically I was gone for 3D plans where they placed objects, but a Jeedomien presented his design with a 3D view and objects placed around with lines connecting them to their position in the room, I liked this model quickly, allowing for a clearer view, starting from this observation I wanted to include this possibility in my plugin. +
+Once created the line is divided into 5 parts, the two end squares, the two lines hanging on the square, the center line, just click on each part to move it. +
+To move a line it must be selected, the last selector allows colorizing the line, the colors are related to the categories of *_Jeedom_*(TM), which allows to have the same color lines as its widget. +
 
 [role="col-md-12"]
 {nbsp} +
 
 [icon="../images/tip.png"]
 [TIP]
-[label label-warning]#Zoom#, un zoom automatique a été rajouté pour faciliter le Drag & Move,  il sera bientôt remplacé par une version manuelle, à venir. +
+[label label-warning]#Zoom#, auto zoom has been added to facilitate the Drag & Move, it will soon be replaced by a manual version as soon as possible. +
 --
 
 [role="col-md-12"]
@@ -470,12 +470,12 @@ image::fenetredupliquer.png[]
 [role="col-md-8 text-justify"]
 --
 image::duplicate.png[]
-Fenêtre de duplication de page secondaire. +
-permet de copier la page sélectionnée dans la fenêtre vers la page courante. +
+Secondary page duplication window. +
+to copy the selected page in the window to the current page. +
 
 [icon="../images/warning.png"]
 [WARNING]
-[label label-error]#Attention#, par rapport aux anciennes versions cela à changé, on est passé de *[underline]#la page courante vers une autre page#* à *[underline]#une autre page vers la page courante#*. +
+[label label-danger]#Attention#, compared to older versions it has changed, we have moved from *[underline]#the current page to another page#* to *[underline]#another page to the current page#*. +
 --
 
 [role="row"]
@@ -484,11 +484,11 @@ permet de copier la page sélectionnée dans la fenêtre vers la page courante. 
 {nbsp} +
 
 '''
-==== Barre Actions - Partie réservé aux objets
+==== Actions Bar - Part reserved for objects
 
 [role="col-md-12 text-justify"]
 --
-Pour des raisons de conception il est apparu qu'il était impossible de gérer une grille à partir du mode Design, à la demande de la communauté j'ai rajouté la possibilité de redimensionner les objets de même type, et de modifier la Font d'un objet. +
+For design reasons it appeared that it was impossible to manage a grid from Design mode, at the request of the community I added the ability to resize the objects of the same type, and change the Font of an object. +
 --
 
 [role="col-md-12"]
@@ -497,7 +497,7 @@ Pour des raisons de conception il est apparu qu'il était impossible de gérer u
 [role="col-md-12 text-justify"]
 --
 image::objets.png[]
-Permet de charger tout les objets de la page, une fois chargés la barre d'action est modifiée, touts les objets peuvent être déplacés, le plugin utilise une grille avec un pas constant qui permet d'aligner les objets. +
+Allows you to load all the objects on the page, once loaded the action bar changes, all objects can be moved, the plugin uses a grid with a constant step for aligning objects. +
 --
 
 [role="col-md-12"]
@@ -506,7 +506,7 @@ Permet de charger tout les objets de la page, une fois chargés la barre d'actio
 [role="col-md-12 text-justify"]
 --
 image::objetssave.png[]
-Permet de sauvegarder les modifications apportées aux objets. +
+Saves the changes to objects. +
 --
 
 [role="col-md-12"]
@@ -515,7 +515,7 @@ Permet de sauvegarder les modifications apportées aux objets. +
 [role="col-md-12 text-justify"]
 --
 image::delete.png[]
-Annule les modifications et le chargement des objets. +
+Cancels changes and loading objects. +
 --
 
 [role="col-md-12"]
@@ -523,7 +523,7 @@ Annule les modifications et le chargement des objets. +
 
 [role="col-md-12 text-justify"]
 --
-Une nouvelle barre va apparaître au dessus de chaque widget: image:barrewidget.png[], image:barreciseau.png[] copie les dimensions, image:barretrombone.png[] colle les dimensions. le plugin est capable de faire le distingo entre les types d'objets,[underline]#par exemple: on ne pourra pas copier les dimensions d'un widget sur un scénario#. +
+A new bar will appear above each widget: image:barrewidget.png[], image:barreciseau.png[] copy size, image:barretrombone.png[] paste size. the plugin is able to do distingo between object types,[underline]# for example: we can not copy the dimensions of a widget on a script#. +
 --
 
 [role="col-md-12"]
@@ -532,14 +532,14 @@ Une nouvelle barre va apparaître au dessus de chaque widget: image:barrewidget.
 [role="col-md-12 text-justify"]
 --
 image::mr.png[]
-Le principe du copier coller marche comme le bouton +MR+ d'une calculatrice, à partir du moment ou on a mémorisé une dimension, elle est gardée en mémoire, il suffit d'appuyer sur ce bouton pour annuler toutes les dimensions mémorisées. +
+The principle of copy paste works like the calculator button +MR+, or from the time you stored a dimension, it is kept in memory, just press this button to clear all the stored dimensions. +
 --
 
 [role="col-md-12 text-justify"]
 --
 [icon="../images/warning.png"]
 [WARNING]
-[label label-danger]#Attention#, parfois les objets peuvent apparaître en noir, c'est un bug récurrent que je n'arrive pas à corriger mais qui n'a aucun impact, vous pouvez modifier le widget, les couleurs d'origine ne sont pas modifiées par le plugin. +
+[label label-danger]#Attention#, objects can sometimes appear black, it is a recurring bug that I can not fix but has no impact, you can edit the widget, the original colors are not changed by the plugin. +
 --
 
 [role="col-md-12"]
@@ -553,7 +553,7 @@ image::fenetrefonts.png[]
 [role="col-md-8 text-justify"]
 --
 image::font.png[]
-Sélectionner la Font et cliquer sur image:barrefont.png[] pour appliquer la font à l'objet - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
+Select the Font and click image:barrefont.png[] to apply on the object  - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
 --
 
 [role="row"]
@@ -564,9 +564,9 @@ Sélectionner la Font et cliquer sur image:barrefont.png[] pour appliquer la fon
 anchor:les_fenêtres_boutons[]
 
 '''
-=== Les fenêtres boutons
+=== The buttons window
 
-==== Création/Édition des boutons
+==== Create / Edit buttons
 
 [role="col-md-4"]
 --
@@ -575,12 +575,12 @@ image::fenetrebouton.png[]
 
 [role="col-md-8 text-justify"]
 --
-Pour ajouter un bouton il suffit de rentrer le texte, choisir sa couleur et de valider. +
-image:trash.png[] permet d'effacer le bouton, si un plan est lié à ce bouton il sera effacé. +
+To add a button simply enter text, choose color and validate. +
+image:trash.png[] deletes the button, if a plan is bounded to that button, it will be erased. +
 
 [icon="../images/tip.png"]
 [TIP]
-[label label-danger]#Attention#, vous ne pourrez pas effacer un bouton si des entrées de sous-menu sont liées à un plan. +
+[label label-danger]#Attention#, you can not delete a button if dropdown entries are bounded to a plan. +
 --
 
 [role="row"]
@@ -589,7 +589,7 @@ image:trash.png[] permet d'effacer le bouton, si un plan est lié à ce bouton i
 {nbsp} +
 
 '''
-==== Sous-menu
+==== Dropdwon
 
 [role="col-md-4"]
 --
@@ -598,11 +598,11 @@ image::fenetredropdown.png[]
 
 [role="col-md-8 text-justify"]
 --
-Si vous avez cliqué sur oui pour les sous-menus cette fenêtre va vous permettre de gérer les entrées, cliquez sur image:plus.png[] pour rajouter une sous-entrée, cliquez sur image:trash.png[] pour effacer une entrée, si une sous-entrée est liée à un plan il sera effacé. +
+If you click Yes for Dropdown this window will allow you to manage the entries, click image:plus.png[] to add a entry, click image:trash.png[] to delete an entry, if a entry is bounded to a plan it will be erased. +
 
 [icon="../images/tip.png"]
 [TIP]
-Si vous effacez toutes les sous entrées, après sauvegarde le sous-menu sera transformé en bouton. +
+If you delete all entries, after saving the Dropdown will be transformed into button. +
 --
 
 [role="row"]
@@ -611,7 +611,7 @@ Si vous effacez toutes les sous entrées, après sauvegarde le sous-menu sera tr
 {nbsp} +
 
 '''
-==== Boutons personnalisés
+==== Customized Buttons
 [role="col-md-4"]
 --
 image::fenetreboutonperso.png[]
@@ -619,11 +619,11 @@ image::fenetreboutonperso.png[]
 
 [role="col-md-8 text-justify"]
 --
-Une fois cliqué sur oui vous aurez accès aux boutons personnalisés, il suffit de sélectionner le bouton dans la liste, la barre d'offset sert pour les boutons avec une forme spéciale, vous pourrez définir un décalage pour améliorer le rendu. +
+Once clicked on yes you will have access to customized buttons, just select the button in the list, the offet slider is used to the buttons with a special shape, you can define an offset to improve the rendering. +
 
 [icon="../images/tip.png"]
 [TIP]
-Vous pouvez très bien avoir un bouton personnalisé et un sous-menu. +
+You may well have a custom button and a dropdown. +
 --
 
 [role="row"]
@@ -632,7 +632,7 @@ Vous pouvez très bien avoir un bouton personnalisé et un sous-menu. +
 {nbsp} +
 
 '''
-==== Classer les boutons
+==== Sort buttons
 
 [role="col-md-4"]
 --
@@ -641,7 +641,7 @@ image::fenetreclasser.png[]
 
 [role="col-md-8 text-justify"]
 --
-cliquer image:classerbouton.png[] pour accéder à cette fenêtre, ré-ordonner les boutons à votre convenance, et valider. +
+click image:classerbouton.png[] to access this window, re-order the buttons to your liking, and confirm. +
 --
 
 [role="row"]
@@ -652,9 +652,9 @@ cliquer image:classerbouton.png[] pour accéder à cette fenêtre, ré-ordonner 
 anchor:Gestionnaire_D_images[]
 
 '''
-=== Gestionnaire D'images
+=== Pictures Manager
 
-==== Fenêtre principale
+==== Main window
 
 [role="col-md-4"]
 --
@@ -663,14 +663,15 @@ image::fenetreimages.png[]
 
 [role="col-md-8 text-justify"]
 --
-image:gestionnaire.png[] Cliquez sur le bouton pour accéder au gestionnaires d'images. +
-Lors de nos pérégrinations sur le mode Design, l'astuce utilisée pour manipuler des images est de créer un widget vide et de s'en servir pour déposer les images utilisées. Pour ce plugin, il fallait un moyen pour importer des images. Plutôt que de gérer les images thème par thème, j'ai opté pour implémenter un gestionnaire d'images que l'on pourra utiliser avec tous les plugins de *_Jeedom_*(TM).+
-Le gestionnaire permet de gérer des catégories, *_Thèmes_* est la catégorie par défaut utilisé par le plugin, seules les images importées dans cette catégorie seront accessibles dans les thèmes. Pour créer une nouvelle catégorie cliquez sur image:gestionnaire3.png[]. +
-Pour importer une image cliquez sur image:gestionnaire4.png[], elle sera importée dans la catégorie sélectionnée. +
+image:gestionnaire.png[] Click the button to access the pictures managers. +
+During our wanderings on the Design mode, the trick used to manipulate images is to create a empty widget to use to deposit pictures used. For this plugin, you had a way to import pictures. Rather than manage pictures topic by topic, I opted to implement an pictures manager that can be used with any *_Jeedom_*(TM) plugins.+
+The manager can manage categories, *_Thèmes_* is the default category used by the plugin, only the images imported into this category will be available in the themes. +
+To create a new category click image:gestionnaire3.png[]. +
+To upload an image click image:gestionnaire4.png[], it will be uploaded in the selected category. +
 
 [icon="../images/important.png"]
 [IMPORTANT]
-Avec la nouvelle interface graphique, les catégories fonctionnent mais je n'affiche que la liste par défaut. Dans une prochaine version les catégories seront amenées à disparaître, les images ne servant pas au plugin peuvent être gérées du plugin widget maintenant. +
+With the new GUI, categories work but I only displays the default list. In a future release categories will become remove, the picture are not used for the plugin can be managed from the widget plugin now. +
 --
 
 [role="row"]
@@ -688,12 +689,12 @@ image::fenetreimageslist.png[]
 
 [role="col-md-8 text-justify"]
 --
-Liste de toutes les images servant au plugin que ce soit pour un thème ou pour un bouton personnalisé. +
-Une fois l'image importée, image:cadretrash.png[] permet de la supprimer, image:gestionnaire6.png[] ouvre une boite de dialogue donnant les infos suivantes : +
+List of all images used in plugin for a theme or a customized button. +
+Once the uploaded image, image:trash.png[] allows to remove it, image:gestionnaire6.png[] opens a dialog providing the following information : +
 
-* *URL*: Construit pour être utilisé comme lien local *_Jeedom_*(TM) à utiliser dans une balise directement par exemple une balise +<img>+. +
-* *CSS* : construit pour être copié collé dans une classe +CSS+ ou un attribut style, pour mettre au choix dans un widget, un design, voir sur le +custom.css+. +
-* *HTTP* ; pour utilisation sur un site externe, par exemple un site déporté ou autre, c'est le moins utile, s'il porte à confusion je le supprimerai, par contre dans ce cas pour les installations *DYI* et *Docker* le *+/jeedom+* doit être rajouté manuellement. +
+* *URL*:  Built for use as a local link *_Jeedom_*(TM) to be used in a tag by such a tag +<img>+. +
+* *CSS* : built to be copied pasted into a class +CSS+ or a style attribute, to turn choice into a widget,a design, or in  +custom.css+. +
+* *HTTP* ; for use on an external site, such as a remote site or another, the less useful it confusing I will delete, n this case for installations *DYI* and *Docker* the *+/jeedom+* must be added manually. +
 --
 
 [role="row"]
@@ -704,9 +705,9 @@ Une fois l'image importée, image:cadretrash.png[] permet de la supprimer, image
 anchor:Boutons_personnalisés[]
 
 '''
-=== Boutons personnalisés
+=== Customized Buttons
 
-==== Listes des boutons
+==== List of buttons
 [role="col-md-4"]
 --
 image::fenetrepersonnalises.png[]
@@ -714,10 +715,10 @@ image::fenetrepersonnalises.png[]
 
 [role="col-md-8 text-justify"]
 --
-cliquez sur le bouton image:ajouterperso.png[] pour créer un nouveau bouton personnalisé. +
-Sous ce bouton vous trouverez la liste des boutons personnalisés créés. +
-image:trash.png[] permet d'effacer le bouton personnalisé. +
-image:editperso.png[] permet d'éditer le bouton personnalisé. +
+click the button image:ajouterperso.png[] to create a new custom button. +
+Under this button you will find the list of customized buttons. +
+image:trash.png[] deletes the customized button. +
+image:editperso.png[] allows to edit the customized button. +
 --
 
 [role="row"]
@@ -726,7 +727,7 @@ image:editperso.png[] permet d'éditer le bouton personnalisé. +
 {nbsp} +
 
 '''
-==== Ajouter
+==== Add
 
 [role="col-md-4"]
 --
@@ -735,13 +736,13 @@ image::fenetrepersonnalisesajouter.png[]
 
 [role="col-md-8 text-justify"]
 --
-Le but des boutons personnalisés était de fournir la possibilité de créer des boutons autres que ceux fournis par défaut par la librairie link:http://getbootstrap.com/[Bootstrap]. Deux méthodes sont fournies pour créer un bouton, par une *image*, ou par *CSS3*, cliquez sur le type de bouton que vous voulez créer. +
-*Nom*: Nom du bouton, les noms ne sont pas uniques, mais il sera plus simple de nommer différemment chaque bouton. +
+The purpose custom buttons was to provide the ability to create buttons other than those provided by default by the library link:http://getbootstrap.com/[Bootstrap]. Two methods are provided to create a button with a *image*, or *CSS3*,  click the type of button you want to create it. +
+*Nom*:Name of the button, the name are not unique, but it will be easier to name differently every button. +
 *Font*: Select a Font available - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
 
 [icon="../images/tip.png"]
 [TIP]
-Tant que vous n'avez pas appuyé sur le bouton +Annuler+, les données restent mémorisées. +
+As long as you have not pressed the button +Cancel+, the data remain stored. +
 --
 
 [role="row"]
@@ -750,7 +751,7 @@ Tant que vous n'avez pas appuyé sur le bouton +Annuler+, les données restent m
 {nbsp} +
 
 '''
-==== Boutons à partir d'une image
+==== Buttons from a picture
 
 [role="col-md-4"]
 --
@@ -759,16 +760,16 @@ image::fenetrepersonnalisesimage.png[]
 
 [role="col-md-8 text-justify"]
 --
-*Hover*: L'image contient l'état 'hover', qui correspond au passage de la souris sur le bouton. +
-*Active*: L'image contient l'état 'active', qui correspond au clic gauche de la souris sur le bouton. +
-*Image*: Sélectionnez l'image du bouton - importez avec le <<Gestionnaire_D_images,gestionnaire d'images>> du plugin. +
-*Texte*: Affichage du texte du bouton ou non. +
-*Taille*: Taille du texte. +
-*Couleur*: Couleur du texte. +
+*Hover*: The image contains the state 'hover' , which is the mouse-over the button. +
+*Active*: The image contains the status 'active', which is the left mouse button click. +
+*Picture*: Select the image button - uploded from <<Gestionnaire_D_images,pictures manager>> of plugin. +
+*Text*: Text View button or not. +
+*Size*: Text size. +
+*Color*: Text color. +
 *Font*: Select a Font available - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
-Les boutons à base d'une image sont construits de telle manière que tous les états du bouton sont présents dans l'image, les différents états doivent être empilés dans l'ordre suivant: +Normal+, +Hover+, +Active+. +
-*Hauteur de l'image* = *Hauteur de l'état Normal* * *Nombre d'état*+
-L'exemple fourni possède les trois états, il montre bien comment l'image à été créée avec chaque état en dessous des autres. +
+The base buttons of an image are constructed so that all button states are present in the image, the different states must be stacked in the following order: +Normal+, +Hover+, +Active+. +
+*Picture height* = *Normal State Height* * *status number*+
+The example has three states, it shows how the image was created with each state below the other. +
 --
 
 [role="row"]
@@ -777,7 +778,7 @@ L'exemple fourni possède les trois états, il montre bien comment l'image à é
 {nbsp} +
 
 '''
-==== Boutons customisés en CSS
+==== Customized Buttons in CSS
 
 [role="col-md-4"]
 --
@@ -786,8 +787,8 @@ image::fenetrepersonnalisescustom.png[]
 
 [role="col-md-8 text-justify"]
 --
-La deuxième méthode pour créer un bouton est d'utiliser tout ce que nous offre le *CSS3*. +
-Je me suis inspiré de http://css3buttongenerator.com/, je ne vais pas donner le détail complet ici, mais toutes les options du *CSS3* sont disponibles, à vous de vous amuser. +
+The second method is to create a button to use everything we offer the *CSS3*. +
+I was inspired to http://css3buttongenerator.com/, I will not give full details here, but all options *CSS3* are available for you to enjoy yourself. +
 --
 
 [role="row"]
@@ -796,24 +797,25 @@ Je me suis inspiré de http://css3buttongenerator.com/, je ne vais pas donner le
 {nbsp} +
 
 '''
-== Création d'un thème facile
+== Creating an easy theme
 
-=== Création
+=== Creation
 
 [role="col-md-12 text-justify"]
 --
-Pour appréhender le plugin nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. Pour commencer, nous allons définir la nature de notre projet :
+To understand the plugin we will develop in this part of the creation of a theme as simple as possible, using the least possible options. To begin, let's define the nature of our project :
 
-* Nous adopterons le format Tablette horizontale (paramètres par défaut).
-* La barre de menu sera située en 'Haut' (paramètres par défaut).
-* Barre d'état apparente (paramètres par défaut).
-* Les entrées de la barre de menu seront des Boutons (paramètres par défaut).
-* Le design comportera 3 Pièces composées comme suit: RdC (Salon, Cuisine), Chambre.
-* Mono-cadre (paramètres par défaut).
-* On configura un style avec une bordure et une ombre pour un rendu visuel.
+* We will adopt the horizontal tablet format (default settings).
+*The menu bar will be located in 'Top' (default settings).
+* Status bar apparent (default settings).
+* The entries in the menu bar will be Buttons (default settings).
+* The design will have 3 parts composed as follows: +Ground floor+ (+Living room+, +Kitchen+), +Bedroom+.
+* single frame (default settings).
+* We will configure style with a border and a shadow for visual rendering.
 
-Nous allons commencer par créer un thème, cliquer sur image:ajout.png[] .Changeons le titre pour un message de bienvenue, cliquez sur image:cogmini.png[] puis changez le titre par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons est pratiquement créé, il ne nous reste plus qu'à configurer les <<les_fenêtres_boutons, boutons>> et le <<fenetrestyle, style>>. +
-Cliquez sur image:boutonsmini.png[] et appuyez sur image:plus.png[] pour créer un nouveau bouton. +
+We will start by creating a theme, click on image:ajout.png[] .Changethe title to welcome message, click on image:cogmini.png[] and change the title to +Welcome to Our Home automation space+.
+The theme that we desire is practically finished, it remains for us to configure the <<les_fenêtres_boutons, buttons>> and <<fenetrestyle, style>>. +
+Click image:boutonsmini.png[] and press image:plus.png[] to create a new button. +
 --
 
 [role="col-md-12"]
@@ -826,7 +828,7 @@ image::rdcbouton.png[]
 
 [role="col-md-7 text-justify"]
 --
-Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé.
+Our first button is a dropdown, Enter +Ground Floor+ in the field *Name* and click *Dropdown* to display the entriess, click on image:plus.png[] to add another entry, complete each entry with +Living room+ et +Kitchen+ and confirm, our first button is created. +
 --
 
 [role="row"]
@@ -841,7 +843,7 @@ image::chambrebouton.png[]
 
 [role="col-md-7 text-justify"]
 --
-Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
+The second button is simpler type +Bedroom+ in the field *Nom* and confirm
 --
 
 [role="row"]
@@ -851,7 +853,7 @@ Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et vali
 
 [role="col-md-12 text-justify"]
 --
-Maintenant que nos boutons sont créés, nous allons appliquer un style pour un meilleur rendu visuel, cliquez sur image:starmini.png[] pour configurer le style. +
+Now that our buttons are created, we will apply a style for best visual, click image:starmini.png[] to configure the style. +
 --
 
 [role="col-md-12"]
@@ -864,10 +866,10 @@ image::styledemo.png[]
 
 [role="col-md-7 text-justify"]
 --
-Ici chacun fait ce qu'il veut, pour notre démo j'ai choisi les paramètres suivant : +
+Here everyone does what he wants, for our demo I chose the following parameters : +
 
-* Bordure : *Taille*: +5+, *Rayon*: +5+, *Style*: +groove+, *Couleur*: +Bleu+
-* Ombre : *Taille*: +10+, +10+, +10+, *Couleur*: +Bleu Clair+
+* border : *Size*: +5+, *radius*: +5+, *Style*: +groove+, *Color*: +Bleu+
+* Shadow : *Size*: +10+, +10+, +10+, *Color*: +Bleu Clair+
 --
 
 [role="row"]
@@ -877,7 +879,7 @@ Ici chacun fait ce qu'il veut, pour notre démo j'ai choisi les paramètres suiv
 
 [role="col-md-12"]
 --
-Voici le résultat: +
+The result: +
 
 image::demo1.png[]
 --
@@ -896,7 +898,7 @@ image::bootstrap.png[]
 
 [role="col-md-7 text-justify"]
 --
-Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin. A cette étape de notre thème aucune page n'a encore été créée, le bouton image:bootstrapmini.png[] est grisé, ce chapitre va vous montrer comment les créer et comment injecter le code de la page principale. +
+The purpose of the plugin is the creation of a structure for the Design mode, we will discuss here the two most important buttons of the plugin. At this stage of our theme no page has been created yet, the button is image:bootstrapmini.png[] disabled, this chapter will show you how to create and how to inject the code of the main page. +
 --
 
 [role="row"]
@@ -908,7 +910,7 @@ Le but du plugin étant la création d'une structure pour le mode Design, nous a
 --
 [icon="../images/tip.png"]
 [TIP]
-Depuis la 1.2.0, la sauvegarde est automatique, l'appui sur l'un des deux boutons provoque une sauvegarde en fin de traitement. +
+Since 1.2.0, save is automatic, pressing one of two buttons causes a save after treatment. +
 --
 
 [role="col-md-12"]
@@ -924,12 +926,12 @@ image::planok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous chargez un thème le plugin vérifie que les pages sont créées, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement, il suffit de modifier la taille de la fenêtre principale ou de passer en <<informations,mode Expert>>. Le bouton est dégrisé aussi dès qu'on rajoute un bouton. +
-Vous pouvez constatez que le plugin crée une page supplémentaire, appelée +Général+, elle correspond à la page secondaire du bouton *home* qui est la page de présentation de votre mode Design. +
+This button will create the pageof Design mode, the main page of the theme format and secondaries pages in the main frame format. Whenever you load a theme plugin checks that the pages are created, if all pages are available the button is disabled. We can enable up the button easily, simply change the size of the main page or switch to <<informations,Expert mode>>. The button is also enabled soon as you add a button. +
+You can see that the plugin creates an additional page, called +General+ , it is the secondary page button 'home' who is the presentation of your Design mode. +
 
 [icon="../images/tip.png"]
 [TIP]
-Si le bouton est dégrisé c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages. +
+If the button is enable is that changes were made to the theme that request to update the pages. +
 --
 
 [role="row"]
@@ -947,7 +949,7 @@ image::bootstrapok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Arrivé à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecter le code dans la page principale pour pouvoir gérer tout votre Design, après toute modification il suffira de cliquer sur ce bouton pour mettre à jour la fenêtre principale. +
+Arrived at this stage all pages must be created, this button will allow to inject the code in the main page to manage all your design, after any modification simply click this button to update the main page. +
 --
 
 [role="row"]
@@ -959,19 +961,19 @@ Arrivé à cette étape toutes les pages doivent être créées, ce bouton va pe
 --
 [icon="../images/tip.png"]
 [TIP]
-Si le plan de la page principale n'existe pas le bouton restera grisé, cliquez sur le bouton image:designmini.png[] pour palier à ce problème.
+If the plan of the main page is not available the button is disabled, click the button image:designmini.png[] bearing for this problem. +
 --
 
 [role="col-md-12"]
 {nbsp} +
 
 '''
-=== Les Pages Secondaires
+=== Secondaries Pages
 
 [role="col-md-12 text-justify"]
 --
-Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
-Les images qui serviront aux pages secondaires seront rajoutées avec le <<Gestionnaire_D_images,gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
+The plugin was to stop the creation of the main page, secondaries pages and  of the injection of bootstrap code on the main page, but it seemed important to be able to manage secondaries pages from the plugin also able to control operation. +
+The pictures to be used for secondary pages will be added with the <<Gestionnaire_D_images,pictures manager>>, our theme will be the format of our main framework will be created using the software link:http://www.sweethome3d.com/fr/[SweetHome 3D] or other software you want. +
 --
 
 [role="col-md-12"]
@@ -979,20 +981,20 @@ Les images qui serviront aux pages secondaires seront rajoutées avec le <<Gesti
 
 [role="col-md-12 text-justify"]
 --
-Ce chapitre à pour but de montrer comment configurer une page secondaire, nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identique sauf que vous pouvez créer autant de cadres que vous voulez. +
-Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un rôle à part. +
-Pour la suite du projet, nous allons établir les différents modules dans chaque pièce :
+This chapter aims to show how to set up a secondary page, we are configuring +singl frame+ , configuring +multi-frames+ is identical except you can create as many frames as you want. +
+We will first take care of the parts, we talk of the page *General* subsequently since it occupies a special role. +
+For the rest of the project, we will establish the various modules in each room :
 
-* *Salon*: 1 capteur de présence, 1 lumière, 1 thermostat, Surveillance réseau
-* *Cuisine*: 1 capteur de présence, 1 lumière
-* *Chambre*: 1 capteur de présence, 1 lumière, 1 thermostat
+* *Living Room*: 1 presence sensor, 1 light, 1 thermostat, Network Monitoring
+* *Kitchen*: 1 presence sensor, 1 light
+* *Bedrool*: 1 presence sensor, 1 light, 1 thermostat
 --
 
 [role="col-md-12"]
 {nbsp} +
 
 '''
-==== Les pièces
+==== Rooms
 
 [role="col-md-5"]
 --
@@ -1001,22 +1003,22 @@ image::plansecondok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
-Cliquez sur image:cogmini.png[]. +
-Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le sélecteur *Image*. +
-Il suffit d'utiliser le bouton image:bootstrapmini.png[] pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. Répétons ces étapes pour les deux autres pièces. +
+Start by selecting +Living Room+ in the selector *Pages* +
+Click on image:cogmini.png[]. +
+Change +Title+ by +Living Room+, and select the downloaded image with the selector *Picture*. +
+Just use the button image:bootstrapmini.png[] to update the secondary page _Living Room_ in the Design mode, the last step being to place widgets in the Design mode. Repeat these steps for the other two rooms. +
 --
 
 [role="col-md-12 text-justify"]
 --
-Voici le résultat final: +
+the final results: +
 
 image::salondemo.jpg[]
 image::cuisinedemo.jpg[]
 image::chambredemo.jpg[]
 {nbsp} +
 
-A ce stade votre Design est fonctionnel. +
+At this stage your design is functional. +
 --
 
 [role="col-md-12"]
@@ -1027,7 +1029,7 @@ A ce stade votre Design est fonctionnel. +
 
 [role="col-md-12 text-justify"]
 --
-Cette page va servir de page d'accueil pour notre mode Design, elle permettra soit de centraliser des informations soit tout simplement d'afficher une image de votre maison en 3D, selon votre imagination. Dans notre cas nous allons mettre diverses informations :
+This page will serve as a 'home' page for our design mode, it will be to centralize information or simply to display a picture of your house in 3D, depending on your imagination. In our case we will put various information :
 
 image::generaldemo.png[]
 --
@@ -1040,7 +1042,7 @@ image::generaldemo.png[]
 
 [role="col-md-12 text-justify"]
 --
-Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce où est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. Utilisez la fenêtre des lignes SVG pour ajouter une ligne. +
+Although at this stage your design is functional, it seemed interesting to me to provide a system that would locate in the room where your widget (or virtual, etc ...), and it is natural that I implemented the *SVG lines* . Use the windows SVG lines to add a line. +
 --
 
 [role="col-md-12"]
@@ -1048,7 +1050,7 @@ Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéress
 
 [role="col-md-12"]
 --
-Voici ce que cela donne dans la +Cuisine+
+Here rhe result on the +Kitchen+
 
 image::cuisinesvg.jpg[]
 {nbsp} +
@@ -1064,12 +1066,12 @@ Il suffit de faire la même chose pour les autres pièces. +
 
 [role="col-md-12 text-justify"]
 --
-Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil *_Jeedom_*(TM) pour y accéder directement. +
+Your theme and your design are finalized. You can very well add in your profile *_Jeedom_*(TM) for direct access. +
 --
 
 [role="col-md-12 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
-Il est possible de créer des profils 'invité', il suffit au niveau du profil *_Jeedom_*(TM) de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et aux autres pages secondaires. +
+It is possible to create guest profiles , simply at the profile level *_Jeedom_*(TM) to point to the desired room instead of the main page, which will allow the guest to access all the functions of the room without having access in the menu bar and other secondary pages. +
 --
