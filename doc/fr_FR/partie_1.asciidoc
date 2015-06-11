@@ -59,7 +59,8 @@ Le bouton *Général*, est l’équivalent classique aux autres plugins qui perm
 [role="col-md-12"]
 {nbsp} +
 
-anchor:infomations[]
+anchor:informations[]
+
 [role="col-md-4"]
 --
 image::infomations.png[]
@@ -147,7 +148,6 @@ Sauvegarde du thème sans injection du code - visible en <<informations,mode Exp
 --
 image::export.png[]
 Exportation du thème - visible en <<informations,mode Expert>>. +
-Version 1.8.3, exporte l'intégralité du thème pages secondaires comprises sauf les images et les boutons personnalisés. +
 --
 
 [role="row"]
@@ -164,7 +164,7 @@ Importer un thème - visible en <<informations,mode Expert>>. +
 [role="col-md-4 text-justify"]
 --
 image::raz.png[]
-Efface le contenu de la page du mode Design de la page sélectionnée - visible en <<informations,mode Expert>>. +
+Efface le contenu du plan du mode Design de la page sélectionnée - visible en <<informations,mode Expert>>. +
 --
 
 [role="row"]
@@ -240,16 +240,16 @@ image::fenetreboutons.png[]
 --
 image::boutons.png[]
 Fenêtre de gestion des boutons. +
-*Type*: Type de barre de menu: +Boutons+, +Menu+, +Onglet+. +
+*Type*: Type de barre de menu: +Boutons+, +Menus+, +Onglets+. +
 *Taille*: Taille du bouton Home et des boutons: +Très Petit+, +Petit+, +Normal+, +Grand+ - non applicable pour +Menu+ et +Onglet+. +
-*\"home\"*: Couleur du bouton "home" - non applicable pour +Menu+ et +Onglet+. +
+*"home"*: Couleur du bouton "home" - non applicable pour +Menus+ et +Onglets+. +
 *Visible*: Cacher/voir le bouton "home". +
-*Justifié*: Occupe toute la barre de menu - uniquement avec +Menu+ ou +Onglet+ en position +Haut+ ou +Bas+, ne pas utiliser si les flèches de scrolling sont visibles. +
-*Groupé*: Groupe les boutons - non applicable pour +Menu+ et +Onglet+. +
+*Justifié*: Occupe toute la barre de menu - uniquement avec +Menus+ ou +Onglets+ en position +Haut+ ou +Bas+, ne pas utiliser si les flèches de scrolling sont visibles. +
+*Groupé*: Groupe les boutons - non applicable pour +Menus+ et +Onglets+. +
 *Décalage*: Décale les +Boutons+, +Menu+ ou +Onglet+ sur la droite pour donner la possibilité de centrer. + 
 image:ajoutbouton.png[]: Ajouter un nouveau bouton. +
 image:editbouton.png[]: Éditer le bouton sélectionné dans le sélecteur de droite. +
-image:classerbouton.png[]: permet de ré-ordonner les +Boutons+, +Menu+ ou +Onglet+. +
+image:classerbouton.png[]: permet de ré-ordonner les +Boutons+, +Menus+ ou +Onglets+. +
 --
 
 [role="row"]
@@ -258,7 +258,9 @@ image:classerbouton.png[]: permet de ré-ordonner les +Boutons+, +Menu+ ou +Ongl
 {nbsp} +
 
 '''
+
 anchor:fenetrestyle[]
+
 [role="col-md-6"]
 --
 image::fenetrestyle.png[]
@@ -324,6 +326,7 @@ Permet de sauvegarder le thème et d'injecter le code de la page principale dans
 {nbsp} +
 
 anchor:Pages_Secondaires[]
+
 '''
 === Pages Secondaires
 
@@ -476,7 +479,7 @@ permet de copier la page sélectionnée dans la fenêtre vers la page courante. 
 
 [icon="../images/warning.png"]
 [WARNING]
-[label label-error]#Attention#, par rapport aux anciennes versions cela à changé, on est passé de *[underline]#la page courante vers une autre page#* à *[underline]#une autre page vers la page courante#*. +
+[label label-danger]#Attention#, par rapport aux anciennes versions cela à changé, on est passé de *[underline]#la page courante vers une autre page#* à *[underline]#une autre page vers la page courante#*. +
 --
 
 [role="row"]
@@ -498,7 +501,7 @@ Pour des raisons de conception il est apparu qu'il était impossible de gérer u
 [role="col-md-12 text-justify"]
 --
 image::objets.png[]
-Permet de charger tout les objets de la page, une fois chargés la barre d'action est modifiée, touts les objets peuvent être déplacés, le plugin utilise une grille avec un pas constant qui permet d'aligner les objets. +
+Permet de charger tout les objets de la page, une fois chargés la barre d'action est modifiée, tout les objets peuvent être déplacés, le plugin utilise une grille avec un pas constant qui permet d'aligner les objets. +
 --
 
 [role="col-md-12"]
@@ -599,11 +602,11 @@ image::fenetredropdown.png[]
 
 [role="col-md-8 text-justify"]
 --
-Si vous avez cliqué sur oui pour les sous-menus cette fenêtre va vous permettre de gérer les entrées, cliquez sur image:plus.png[] pour rajouter une sous-entrée, cliquez sur image:trash.png[] pour effacer une entrée, si une sous-entrée est liée à un plan il sera effacé. +
+Si vous avez cliqué sur oui pour les sous-menus cette fenêtre va vous permettre de gérer les entrées, cliquez sur image:plus.png[] pour rajouter une entrée, cliquez sur image:trash.png[] pour effacer une entrée, si une entrée est liée à un plan il sera effacé. +
 
 [icon="../images/tip.png"]
 [TIP]
-Si vous effacez toutes les sous entrées, après sauvegarde le sous-menu sera transformé en bouton. +
+Si vous effacez toutes les entrées, après sauvegarde le sous-menu sera transformé en bouton. +
 --
 
 [role="row"]
@@ -666,7 +669,8 @@ image::fenetreimages.png[]
 --
 image:gestionnaire.png[] Cliquez sur le bouton pour accéder au gestionnaires d'images. +
 Lors de nos pérégrinations sur le mode Design, l'astuce utilisée pour manipuler des images est de créer un widget vide et de s'en servir pour déposer les images utilisées. Pour ce plugin, il fallait un moyen pour importer des images. Plutôt que de gérer les images thème par thème, j'ai opté pour implémenter un gestionnaire d'images que l'on pourra utiliser avec tous les plugins de *_Jeedom_*(TM).+
-Le gestionnaire permet de gérer des catégories, *_Thèmes_* est la catégorie par défaut utilisé par le plugin, seules les images importées dans cette catégorie seront accessibles dans les thèmes. Pour créer une nouvelle catégorie cliquez sur image:gestionnaire3.png[]. +
+Le gestionnaire permet de gérer des catégories, *_Thèmes_* est la catégorie par défaut utilisé par le plugin, seules les images importées dans cette catégorie seront accessibles dans les thèmes. +
+Pour créer une nouvelle catégorie cliquez sur image:gestionnaire3.png[]. +
 Pour importer une image cliquez sur image:gestionnaire4.png[], elle sera importée dans la catégorie sélectionnée. +
 
 [icon="../images/important.png"]
@@ -690,7 +694,7 @@ image::fenetreimageslist.png[]
 [role="col-md-8 text-justify"]
 --
 Liste de toutes les images servant au plugin que ce soit pour un thème ou pour un bouton personnalisé. +
-Une fois l'image importée, image:cadretrash.png[] permet de la supprimer, image:gestionnaire6.png[] ouvre une boite de dialogue donnant les infos suivantes : +
+Une fois l'image importée, image:trash.png[] permet de la supprimer, image:gestionnaire6.png[] ouvre une boite de dialogue donnant les infos suivantes : +
 
 * *URL*: Construit pour être utilisé comme lien local *_Jeedom_*(TM) à utiliser dans une balise directement par exemple une balise +<img>+. +
 * *CSS* : construit pour être copié collé dans une classe +CSS+ ou un attribut style, pour mettre au choix dans un widget, un design, voir sur le +custom.css+. +
@@ -810,7 +814,7 @@ Pour appréhender le plugin nous allons développer dans cette partie la créati
 * Barre d'état apparente (paramètres par défaut).
 * Les entrées de la barre de menu seront des Boutons (paramètres par défaut).
 * Le design comportera 3 Pièces composées comme suit: RdC (Salon, Cuisine), Chambre.
-* Mono-cadre (paramètres par défaut).
+* Cadre unique (paramètres par défaut).
 * On configura un style avec une bordure et une ombre pour un rendu visuel.
 
 Nous allons commencer par créer un thème, cliquer sur image:ajout.png[] .Changeons le titre pour un message de bienvenue, cliquez sur image:cogmini.png[] puis changez le titre par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons est pratiquement créé, il ne nous reste plus qu'à configurer les <<les_fenêtres_boutons, boutons>> et le <<fenetrestyle, style>>. +
@@ -827,7 +831,7 @@ image::rdcbouton.png[]
 
 [role="col-md-7 text-justify"]
 --
-Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé.
+Notre premier bouton est un sous-menu, entrez +RdC+ dans le champ *Nom* et cliquez sur *Sous-menu* pour affichez les sous-entrées, cliquez sur image:plus.png[] pour ajouter une autre sous-entrée, remplissez chaque entrée par +Salon+ et +Cuisine+ puis validez, notre premier bouton est créé. +
 --
 
 [role="row"]
@@ -948,7 +952,7 @@ image::bootstrapok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Arrivé à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecter le code dans la page principale pour pouvoir gérer tout votre Design, après toute modification il suffira de cliquer sur ce bouton pour mettre à jour la fenêtre principale. +
+Arrivé à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecter le code dans la page principale pour pouvoir gérer tout votre Design, après toute modification il suffira de cliquer sur ce bouton pour mettre à jour la page principale. +
 --
 
 [role="row"]
@@ -960,7 +964,7 @@ Arrivé à cette étape toutes les pages doivent être créées, ce bouton va pe
 --
 [icon="../images/tip.png"]
 [TIP]
-Si le plan de la page principale n'existe pas le bouton restera grisé, cliquez sur le bouton image:designmini.png[] pour palier à ce problème.
+Si le plan de la page principale n'existe pas le bouton restera grisé, cliquez sur le bouton image:designmini.png[] pour palier à ce problème. +
 --
 
 [role="col-md-12"]
@@ -980,7 +984,7 @@ Les images qui serviront aux pages secondaires seront rajoutées avec le <<Gesti
 
 [role="col-md-12 text-justify"]
 --
-Ce chapitre à pour but de montrer comment configurer une page secondaire, nous sommes en configuration +mono-cadre+, la configuration +multi-cadres+ est identique sauf que vous pouvez créer autant de cadres que vous voulez. +
+Ce chapitre à pour but de montrer comment configurer une page secondaire, nous sommes en configuration +cadre unique+, la configuration +multi-cadres+ est identique sauf que vous pouvez créer autant de cadres que vous voulez. +
 Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un rôle à part. +
 Pour la suite du projet, nous allons établir les différents modules dans chaque pièce :
 
