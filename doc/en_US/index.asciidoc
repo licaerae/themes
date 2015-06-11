@@ -1,0 +1,37 @@
+:icons:
+:imagesdir: ../images
+
+== Thèmes
+Plugin for creating themes for the Design mode from the library Bootstrap
+
+=== Description
+
+*_Jeedom_*(TM) offers a Design mode that lets you create a very free mode of view, but is not affordable for anyone. The purpose of this plugin is to create the complete structure of your Design mode, so that the only actions to make in Design mode are the placement of widgets. The structure includes a menu bar for selecting the "room" that we want to see, a main frame will be displayed or the "room" required, an optional status bar. +
+As with the development have been grafted several other modules that complement the plugin, but that can be used completely independently for other plugins or features *_Jeedom_*(TM).
+
+. Images Manager
+. Custom Buttons
+
+Other modules may be implemented according to the needs of the community.
+
+[icon="../images/tip.png"]
+[TIP]
+The plugin is oriented to be taken in hand as simply as possible, there is no need to know all the options for using it, the default configuration is sufficient for tablet use. Just create a theme and add buttons to make it usable right away.
+
+[icon="../images/important.png"]
+[IMPORTANT]
+the plugin will not create it alone design mode, you have before you start to get an idea of what you want to do, various examples are findable on the official forum of *_Jeedom_*(TM) that can give an idea of the possibilities Design Mode. +
+
+[role="col-md-12"]
+{nbsp} +
+
+=== Vidéo(s)
+
+A video tutorial is also available , thank you *SBO* +
+https://www.youtube.com/watch?v=alpuGohpuXE&feature=youtu.be
+
+include::partie_1.asciidoc[]
+
+'''
+== FAQ
+include::faq.asciidoc[]

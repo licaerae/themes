@@ -1,0 +1,1077 @@
+:imagesdir: ../images
+
+'''
+== GUI
+
+[role="col-md-12 text-justify"]
+--
+Since 1.6, a new GUI appeared, along the left column disappeared to make way for a main window that will provide access to all functionality, while continuing to work on his theme. +
+Meets *_Jeedom_*(TM), the giant plus to add a theme emerged, below you can see the new interface. +
+
+image::presentation.png[]
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+=== Windows
+
+[role="col-md-12 text-justify"]
+--
+All windows are movable, their position is saved, it can have several possible actions from their header. +
+image:close.png[]: The window can be closed - resets the position of the window. +
+image:accordeon.png[]: Window can be reduced to just its header. +
+image:dock.png[]: the window can be docked. Dock window is to move the window to the left or top edge, it disappears, and an icon appears on the left or top edge of the screen. Just click on the icon to make the window reappear. +
+Some windows have no option, they are modal windows that are fully supported by the window to which they are linked. +
+The main window has a special unique icon image:profil.png[], it configures the environment plugin, two default profiles exist, and you can create your own. If demand is strong I will see to integrate the themes profile's to Design mode for the time profile is only used on my plugin. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+=== Toolbars
+
+[role="col-md-12 text-justify"]
+--
+Once you have created or selected topic, you can work directly on it, either from the main page or subpage, the principle remains the same, the top bar is used to manage, the left side of the bar is used configuration. +
+The toolbars all have a tab that allows you to hide / view the bar, just click on it to view / hide the toolbar. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+=== Main Page
+
+'''
+==== Barre Home
+
+[role="col-md-12 text-justify"]
+--
+image:barrepage.png[] - Normal mode. +
+image:barrepageexpert.png[] - En <<informations,Expert mode>>. +
+The button *General*, is the classical equivalent to other plugins which allows to return to the choice of a theme page, the two buttons below the button *General* are visible only if the Expert mode *_Jeedom_*(TM) is enabled. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+anchor:infomations[]
+[role="col-md-4"]
+--
+image::infomations.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::info.png[]
+Provides access to information related to the theme *_Jeedom_*(TM), outside the theme name, the other parameters are optional, they allow just had a tile dedicated to the dashboard. +
+In this window you can activate the Expert mode plugin. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+===== Mode expert
+Expert mode gives you access to several functions: Save without injection, Import, Export, reset a page, read only the main page. +
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+[role="col-md-4"]
+--
+image::progression.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::progress.png[]
+Functionality added since 1.0.2, it helps to know where we are creating a design. +
+The first bar shows whether you have created the pages in the Design mode. +
+The second bar if you have injected the code in the main page. +
+The third indicates whether the code was injected into all secondary pages. +
+The fourth bar shows the progress of the injection of code in secondary pages. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+[role="col-md-4 text-justify"]
+--
+image::cadres.png[]
+Provides access to the management of secondary pages that will be addressed in the <<Pages_Secondaires,next chapter>>. Disabled if no page has been created. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::delete.png[]
+Deletes the theme, careful all pages created in the design mode will also be erased. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::linkpages.png[]
+Visible only if the Expert mode *_Jeedom_*(TM) is enabled, link to the plan associated with the Design mode. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-4 text-justify"]
+--
+image::configure.png[]
+Visible only if the Expert mode *_Jeedom_*(TM) is enabled, the widget configuration. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::save.png[]
+Save the theme without code injection - visible in <<informations,Expert mode>>. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::export.png[]
+Export the theme - visible in <<informations,Expert mode>>. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-4 text-justify"]
+--
+image::import.png[]
+Import the theme - visible in <<informations,Expert mode>>. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::raz.png[]
+Clears the contents of the Design mode plan of the selected page - visible in <<informations,Expert mode>>. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Menu Bar
+
+[role="col-md-12 text-justify"]
+--
+image:barremenu.png[] +
+For reasons of arrangement in the image documentation is in horizontal mode, but it is indeed a vertical toolbar. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-4"]
+--
+image::fenetremenu.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::cog.png[]
+Window for setting the theme of the menu bar. The header of the window provides menu dimensions. +
+*Position*:  Menu Position +Top+, +Bottom+, +Left+, +Righ+. +
+*Size*: Size of the menu, height in position +Top+ et +Bottom+, Width in position +Left+ et +Right+. +
+*Text*: The field right to the desired text, the button to hide / view the text. +
+*Single Frame*: Secondaries pages in single frame or multi-frame. +
+*Visible*: Show / hide the status bar. +
+*Size*: Three choices for size of status bar +Small+, +Medium+, +Large+. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+[role="col-md-4"]
+--
+image::fenetreprincipale.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::tools.png[]
+Window for setting the main page. The header of the window shows the dimensions of the main frame. +
+*Width*: Width of main page. +
+*Height *: Height  of main page. +
+*Picture*: Background picture of the main page - the pictures are to upload from the <<Gestionnaire_D_images,manager of pictures>>. +
+*Plan ID*: main page ID in the Design mode - readonly - activate the <<informations,Expert mode>> to edit. +
+*Frame ID*: ID of the secondary page 'General' in the Design mode - readonly - activate the <<informations,Expert mode>> to edit. +
+*Selection*: Select a Font available - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
+*Size*: Text Size of the menu bar. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+[role="col-md-4"]
+--
+image::fenetreboutons.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::boutons.png[]
+Button Manager window. +
+*Type*: Menu bar type: +Buttons+, +Menus+, +Tabs+. +
+*Size*: Size Home button and others buttons: +Very Small+, +Small+, +Normal+, +Large+ - not applicable for +Menus+ and +Tabs+. +
+*"home"*: Color "home" button - not applicable for +Menus+ and +Tabs+. +
+*Visible*: Hide / see the "home" button. +
+*Justified*: Occupies the entire menu bar - only with +Menus+ ou +Tabs+ in position +Top+ or +Bottom+, do not use if the scrolling arrows are visible. +
+*Grouped*: Group buttons - not applicable for +Menus+ and +Tabs+. +
+*Shift*: Shifts +Buttons+, +Menus+ ou +Tabs+ on the right to give the possibility to center. + 
+image:ajoutbouton.png[]: Add New button. +
+image:editbouton.png[]: Edit button selected in the right selector. +
+image:classerbouton.png[]: to order +Buttons+, +Menus+ or +Tabs+. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+anchor:fenetrestyle[]
+[role="col-md-6"]
+--
+image::fenetrestyle.png[]
+--
+
+[role="col-md-6 text-justify"]
+--
+image::star.png[]
+The style management window. +
+*Color*: The first column lets you choose the background color and text color, by default they are disabled to use colors *_Jeedom_*(TM), check the box to edit them. +
+*Border*: The second column to configure the border frames. +
+*Shadow*: The third column allows you to configure the shadow of the frames. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+[role="col-md-6"]
+--
+image::fenetreetat.png[]
+--
+
+[role="col-md-6 text-justify"]
+--
+image::trail.png[]
+The status bar management window. +
+First the status bar used to display the breadcrumb, to optimize its use, I gave the opportunity to add widgets to supervise certain items, from n ' any page since the status bar is visible on all pages. +
+To the left you have a selector of all your parts (called  +Objects+ in *_Jeedom_*(TM)), simply select your room for in the right appear the carousel widget type +Binary+. +
+Serve you carousel arrows to navigate through the widgets, image:acceptmini.png[] to validate, image:deletemini.png[] to cancel. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+[icon="../images/important.png"]
+[IMPORTANT]
+[label label-danger]#Attention#, widgets used in the status bar should use a +class+ instead of +id+ in their definition. +
+--
+
+'''
+[role="col-md-6 text-justify"]
+--
+image::design.png[]
+Used to create the plans of Design mode. Disabled when all pages are created, simply change the size of the main page or switch to <<informations,Expert mode>> for enable up. +
+--
+
+[role="col-md-6 text-justify"]
+--
+image::bootstrap.png[]
+Saves the theme and inject the code of the main page in the associated plan of Design mode. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+anchor:Pages_Secondaires[]
+
+'''
+=== Secondaries Pages
+
+'''
+==== Pages Bar
+
+[role="col-md-12 text-justify"]
+--
+image:barresecondaire.png[] +
+The first selector selects the secondary page, the second selector selects the frame of the current page. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-4 text-justify"]
+--
+image::return.png[]
+Returns to main page. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::bootstrap.png[]
+Saves the theme and inject the code of the current secondary page in plan associated in Design mode. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::cadresadd.png[]
+Adds a frame to the current page - disabled in +Single Frame+. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-4 text-justify"]
+--
+image::delete.png[]
+Delete the selected frame - disabled in +Single Frame+. +
+--
+
+[role="col-md-4 text-justify"]
+--
+image::linkpages.png[]
+Visible only if the Expert mode *_Jeedom_*(TM) is enabled, link to the plan associated with the Design mode. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Actions Bar
+
+[role="col-md-12 text-justify"]
+--
+image::barreactions.png[]
+For reasons of arrangement in the image documentation is in horizontal mode, but it is indeed a vertical toolbar. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-6 text-justify"]
+--
+image::deverouiller.png[]
+Frame selected is unlocked, you can resize the selected frame - disabled in +Single Frame+. +
+--
+
+[role="col-md-6 text-justify"]
+--
+image::verouiller.png[]
+Frame selected is locked, you can no-resize the selected frame - disabled in +Single Frame+. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-4"]
+--
+image::fenetrecadres.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::cog.png[]
+Window to configure the selected frame. +
+*Title*: Title of the frame, the right field to change, the button to hide / view the title. +
+*Color*: The color used for the frame - disabled by default to use the default color of the page main, click the button to change it. +
+*Font*: Select a Font available - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
+*Size*: Font Size of the frame. +
+*Picture*: Background image of the frame - the pictures are to upload from the <<Gestionnaire_D_images,manager of pictures>>. + d'images>>. +
+*Opacity*: Opacity of the frame. +
+*IFrame*: Includes from 1.4.0, displays the contents of a link in the frame, the right field for the content link to display the button to display / hide the IFrame. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+[role="col-md-4"]
+--
+image::fenetresvg.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::svg.png[]
+SVG Line management windows. +
+image:addmini.png[]: To add a SVG line, the line is created on the top left corner. +
+image:deletemini.png[]: delete the selected SVG line. +
+--
+
+[role="col-md-12 text-justify"]
+--
+*[underline]#Reminder#*: Basically I was gone for 3D plans where they placed objects, but a Jeedomien presented his design with a 3D view and objects placed around with lines connecting them to their position in the room, I liked this model quickly, allowing for a clearer view, starting from this observation I wanted to include this possibility in my plugin. +
+Once created the line is divided into 5 parts, the two end squares, the two lines hanging on the square, the center line, just click on each part to move it. +
+To move a line it must be selected, the last selector allows colorizing the line, the colors are related to the categories of *_Jeedom_*(TM), which allows to have the same color lines as its widget. +
+
+[role="col-md-12"]
+{nbsp} +
+
+[icon="../images/tip.png"]
+[TIP]
+[label label-warning]#Zoom#, auto zoom has been added to facilitate the Drag & Move, it will soon be replaced by a manual version as soon as possible. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+[role="col-md-4"]
+--
+image::fenetredupliquer.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::duplicate.png[]
+Secondary page duplication window. +
+to copy the selected page in the window to the current page. +
+
+[icon="../images/warning.png"]
+[WARNING]
+[label label-danger]#Attention#, compared to older versions it has changed, we have moved from *[underline]#the current page to another page#* to *[underline]#another page to the current page#*. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Actions Bar - Part reserved for objects
+
+[role="col-md-12 text-justify"]
+--
+For design reasons it appeared that it was impossible to manage a grid from Design mode, at the request of the community I added the ability to resize the objects of the same type, and change the Font of an object. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+image::objets.png[]
+Allows you to load all the objects on the page, once loaded the action bar changes, all objects can be moved, the plugin uses a grid with a constant step for aligning objects. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+image::objetssave.png[]
+Saves the changes to objects. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+image::delete.png[]
+Cancels changes and loading objects. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+A new bar will appear above each widget: image:barrewidget.png[], image:barreciseau.png[] copy size, image:barretrombone.png[] paste size. the plugin is able to do distingo between object types,[underline]# for example: we can not copy the dimensions of a widget on a script#. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+image::mr.png[]
+The principle of copy paste works like the calculator button +MR+, or from the time you stored a dimension, it is kept in memory, just press this button to clear all the stored dimensions. +
+--
+
+[role="col-md-12 text-justify"]
+--
+[icon="../images/warning.png"]
+[WARNING]
+[label label-danger]#Attention#, objects can sometimes appear black, it is a recurring bug that I can not fix but has no impact, you can edit the widget, the original colors are not changed by the plugin. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-4"]
+--
+image::fenetrefonts.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image::font.png[]
+Select the Font and click image:barrefont.png[] to apply on the object  - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+anchor:les_fenêtres_boutons[]
+
+'''
+=== The buttons window
+
+==== Create / Edit buttons
+
+[role="col-md-4"]
+--
+image::fenetrebouton.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+To add a button simply enter text, choose color and validate. +
+image:trash.png[] deletes the button, if a plan is bounded to that button, it will be erased. +
+
+[icon="../images/tip.png"]
+[TIP]
+[label label-danger]#Attention#, you can not delete a button if dropdown entries are bounded to a plan. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Dropdwon
+
+[role="col-md-4"]
+--
+image::fenetredropdown.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+If you click Yes for Dropdown this window will allow you to manage the entries, click image:plus.png[] to add a entry, click image:trash.png[] to delete an entry, if a entry is bounded to a plan it will be erased. +
+
+[icon="../images/tip.png"]
+[TIP]
+If you delete all entries, after saving the Dropdown will be transformed into button. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Customized Buttons
+[role="col-md-4"]
+--
+image::fenetreboutonperso.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+Once clicked on yes you will have access to customized buttons, just select the button in the list, the offet slider is used to the buttons with a special shape, you can define an offset to improve the rendering. +
+
+[icon="../images/tip.png"]
+[TIP]
+You may well have a custom button and a dropdown. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Sort buttons
+
+[role="col-md-4"]
+--
+image::fenetreclasser.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+click image:classerbouton.png[] to access this window, re-order the buttons to your liking, and confirm. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+anchor:Gestionnaire_D_images[]
+
+'''
+=== Pictures Manager
+
+==== Main window
+
+[role="col-md-4"]
+--
+image::fenetreimages.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+image:gestionnaire.png[] Click the button to access the pictures managers. +
+During our wanderings on the Design mode, the trick used to manipulate images is to create a empty widget to use to deposit pictures used. For this plugin, you had a way to import pictures. Rather than manage pictures topic by topic, I opted to implement an pictures manager that can be used with any *_Jeedom_*(TM) plugins.+
+The manager can manage categories, *_Thèmes_* is the default category used by the plugin, only the images imported into this category will be available in the themes. +
+To create a new category click image:gestionnaire3.png[]. +
+To upload an image click image:gestionnaire4.png[], it will be uploaded in the selected category. +
+
+[icon="../images/important.png"]
+[IMPORTANT]
+With the new GUI, categories work but I only displays the default list. In a future release categories will become remove, the picture are not used for the plugin can be managed from the widget plugin now. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Liste des images
+
+[role="col-md-4"]
+--
+image::fenetreimageslist.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+List of all images used in plugin for a theme or a customized button. +
+Once the uploaded image, image:trash.png[] allows to remove it, image:gestionnaire6.png[] opens a dialog providing the following information : +
+
+* *URL*:  Built for use as a local link *_Jeedom_*(TM) to be used in a tag by such a tag +<img>+. +
+* *CSS* : built to be copied pasted into a class +CSS+ or a style attribute, to turn choice into a widget,a design, or in  +custom.css+. +
+* *HTTP* ; for use on an external site, such as a remote site or another, the less useful it confusing I will delete, n this case for installations *DYI* and *Docker* the *+/jeedom+* must be added manually. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+anchor:Boutons_personnalisés[]
+
+'''
+=== Customized Buttons
+
+==== List of buttons
+[role="col-md-4"]
+--
+image::fenetrepersonnalises.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+click the button image:ajouterperso.png[] to create a new custom button. +
+Under this button you will find the list of customized buttons. +
+image:trash.png[] deletes the customized button. +
+image:editperso.png[] allows to edit the customized button. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Add
+
+[role="col-md-4"]
+--
+image::fenetrepersonnalisesajouter.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+The purpose custom buttons was to provide the ability to create buttons other than those provided by default by the library link:http://getbootstrap.com/[Bootstrap]. Two methods are provided to create a button with a *image*, or *CSS3*,  click the type of button you want to create it. +
+*Nom*:Name of the button, the name are not unique, but it will be easier to name differently every button. +
+*Font*: Select a Font available - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
+
+[icon="../images/tip.png"]
+[TIP]
+As long as you have not pressed the button +Cancel+, the data remain stored. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Buttons from a picture
+
+[role="col-md-4"]
+--
+image::fenetrepersonnalisesimage.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+*Hover*: The image contains the state 'hover' , which is the mouse-over the button. +
+*Active*: The image contains the status 'active', which is the left mouse button click. +
+*Picture*: Select the image button - uploded from <<Gestionnaire_D_images,pictures manager>> of plugin. +
+*Text*: Text View button or not. +
+*Size*: Text size. +
+*Color*: Text color. +
+*Font*: Select a Font available - since 1.6.0 the fonts are not managed from the plugin, use the Fonts Manager widget plugin. +
+The base buttons of an image are constructed so that all button states are present in the image, the different states must be stacked in the following order: +Normal+, +Hover+, +Active+. +
+*Picture height* = *Normal State Height* * *status number*+
+The example has three states, it shows how the image was created with each state below the other. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Customized Buttons in CSS
+
+[role="col-md-4"]
+--
+image::fenetrepersonnalisescustom.png[]
+--
+
+[role="col-md-8 text-justify"]
+--
+The second method is to create a button to use everything we offer the *CSS3*. +
+I was inspired to http://css3buttongenerator.com/, I will not give full details here, but all options *CSS3* are available for you to enjoy yourself. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+== Creating an easy theme
+
+=== Creation
+
+[role="col-md-12 text-justify"]
+--
+To understand the plugin we will develop in this part of the creation of a theme as simple as possible, using the least possible options. To begin, let's define the nature of our project :
+
+* We will adopt the horizontal tablet format (default settings).
+*The menu bar will be located in 'Top' (default settings).
+* Status bar apparent (default settings).
+* The entries in the menu bar will be Buttons (default settings).
+* The design will have 3 parts composed as follows: +Ground floor+ (+Living room+, +Kitchen+), +Bedroom+.
+* single frame (default settings).
+* We will configure style with a border and a shadow for visual rendering.
+
+We will start by creating a theme, click on image:ajout.png[] .Changethe title to welcome message, click on image:cogmini.png[] and change the title to +Welcome to Our Home automation space+.
+The theme that we desire is practically finished, it remains for us to configure the <<les_fenêtres_boutons, buttons>> and <<fenetrestyle, style>>. +
+Click image:boutonsmini.png[] and press image:plus.png[] to create a new button. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-5"]
+--
+image::rdcbouton.png[]
+--
+
+[role="col-md-7 text-justify"]
+--
+Our first button is a dropdown, Enter +Ground Floor+ in the field *Name* and click *Dropdown* to display the entriess, click on image:plus.png[] to add another entry, complete each entry with +Living room+ et +Kitchen+ and confirm, our first button is created. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-5"]
+--
+image::chambrebouton.png[]
+--
+
+[role="col-md-7 text-justify"]
+--
+The second button is simpler type +Bedroom+ in the field *Nom* and confirm
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+Now that our buttons are created, we will apply a style for best visual, click image:starmini.png[] to configure the style. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-5"]
+--
+image::styledemo.png[]
+--
+
+[role="col-md-7 text-justify"]
+--
+Here everyone does what he wants, for our demo I chose the following parameters : +
+
+* border : *Size*: +5+, *radius*: +5+, *Style*: +groove+, *Color*: +Bleu+
+* Shadow : *Size*: +10+, +10+, +10+, *Color*: +Bleu Clair+
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12"]
+--
+The result: +
+
+image::demo1.png[]
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+=== Design et Bootstrap
+
+[role="col-md-5"]
+--
+image::design.png[]
+image::bootstrap.png[]
+--
+
+[role="col-md-7 text-justify"]
+--
+The purpose of the plugin is the creation of a structure for the Design mode, we will discuss here the two most important buttons of the plugin. At this stage of our theme no page has been created yet, the button is image:bootstrapmini.png[] disabled, this chapter will show you how to create and how to inject the code of the main page. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+[icon="../images/tip.png"]
+[TIP]
+Since 1.2.0, save is automatic, pressing one of two buttons causes a save after treatment. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== image:design.png[] - Design
+
+[role="col-md-5"]
+--
+image::planok.png[]
+--
+
+[role="col-md-7 text-justify"]
+--
+This button will create the pageof Design mode, the main page of the theme format and secondaries pages in the main frame format. Whenever you load a theme plugin checks that the pages are created, if all pages are available the button is disabled. We can enable up the button easily, simply change the size of the main page or switch to <<informations,Expert mode>>. The button is also enabled soon as you add a button. +
+You can see that the plugin creates an additional page, called +General+ , it is the secondary page button 'home' who is the presentation of your Design mode. +
+
+[icon="../images/tip.png"]
+[TIP]
+If the button is enable is that changes were made to the theme that request to update the pages. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== image:bootstrap.png[] - Bootstrap
+
+[role="col-md-5"]
+--
+image::bootstrapok.png[]
+--
+
+[role="col-md-7 text-justify"]
+--
+Arrived at this stage all pages must be created, this button will allow to inject the code in the main page to manage all your design, after any modification simply click this button to update the main page. +
+--
+
+[role="row"]
+{nbsp} +
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+[icon="../images/tip.png"]
+[TIP]
+If the plan of the main page is not available the button is disabled, click the button image:designmini.png[] bearing for this problem. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+=== Secondaries Pages
+
+[role="col-md-12 text-justify"]
+--
+The plugin was to stop the creation of the main page, secondaries pages and  of the injection of bootstrap code on the main page, but it seemed important to be able to manage secondaries pages from the plugin also able to control operation. +
+The pictures to be used for secondary pages will be added with the <<Gestionnaire_D_images,pictures manager>>, our theme will be the format of our main framework will be created using the software link:http://www.sweethome3d.com/fr/[SweetHome 3D] or other software you want. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12 text-justify"]
+--
+This chapter aims to show how to set up a secondary page, we are configuring +singl frame+ , configuring +multi-frames+ is identical except you can create as many frames as you want. +
+We will first take care of the parts, we talk of the page *General* subsequently since it occupies a special role. +
+For the rest of the project, we will establish the various modules in each room :
+
+* *Living Room*: 1 presence sensor, 1 light, 1 thermostat, Network Monitoring
+* *Kitchen*: 1 presence sensor, 1 light
+* *Bedrool*: 1 presence sensor, 1 light, 1 thermostat
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Rooms
+
+[role="col-md-5"]
+--
+image::plansecondok.png[]
+--
+
+[role="col-md-7 text-justify"]
+--
+Start by selecting +Living Room+ in the selector *Pages* +
+Click on image:cogmini.png[]. +
+Change +Title+ by +Living Room+, and select the downloaded image with the selector *Picture*. +
+Just use the button image:bootstrapmini.png[] to update the secondary page _Living Room_ in the Design mode, the last step being to place widgets in the Design mode. Repeat these steps for the other two rooms. +
+--
+
+[role="col-md-12 text-justify"]
+--
+the final results: +
+
+image::salondemo.jpg[]
+image::cuisinedemo.jpg[]
+image::chambredemo.jpg[]
+{nbsp} +
+
+At this stage your design is functional. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Page Home
+
+[role="col-md-12 text-justify"]
+--
+This page will serve as a 'home' page for our design mode, it will be to centralize information or simply to display a picture of your house in 3D, depending on your imagination. In our case we will put various information :
+
+image::generaldemo.png[]
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+==== Les lignes SVG
+
+[role="col-md-12 text-justify"]
+--
+Although at this stage your design is functional, it seemed interesting to me to provide a system that would locate in the room where your widget (or virtual, etc ...), and it is natural that I implemented the *SVG lines* . Use the windows SVG lines to add a line. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+[role="col-md-12"]
+--
+Here rhe result on the +Kitchen+
+
+image::cuisinesvg.jpg[]
+{nbsp} +
+
+Il suffit de faire la même chose pour les autres pièces. +
+--
+
+[role="col-md-12"]
+{nbsp} +
+
+'''
+=== Conclusion
+
+[role="col-md-12 text-justify"]
+--
+Your theme and your design are finalized. You can very well add in your profile *_Jeedom_*(TM) for direct access. +
+--
+
+[role="col-md-12 text-justify"]
+--
+[icon="../images/tip.png"]
+[TIP]
+It is possible to create guest profiles , simply at the profile level *_Jeedom_*(TM) to point to the desired room instead of the main page, which will allow the guest to access all the functions of the room without having access in the menu bar and other secondary pages. +
+--

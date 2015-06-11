@@ -16,22 +16,22 @@ Plugin servant à créer des thèmes pour le mode Design à partir de la librair
 
 [role="col-md-12 text-justify"]
 --
-*_Jeedom_*(TM) nous offre un mode Design qui permet de créer un mode de vue très libre, mais n'est pas abordable pour n'importe qui, le but de se plugin est de créer la structure complète de votre mode Design, pour que les seuls actions à faire en mode Design soit le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principale ou sera afficher la "pièce" demandé, une barre d'état optionnelle +
-Au fur et à mesure du développement sont venu ce greffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complètement indépendantes pour d'autres plugin ou fonctionnalité de *_Jeedom_*(TM)
+*_Jeedom_*(TM) nous offre un mode Design qui permet de créer un mode de vue très libre, mais n'est pas abordable pour n'importe qui. Le but de ce plugin est de créer la structure complète de votre mode Design, pour que les seules actions à faire en mode Design soient le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principal ou sera affiché la "pièce" demandée, une barre d'état optionnelle. +
+Au fur et à mesure du développement sont venus se greffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complètement indépendante pour d'autres plugins ou fonctionnalités de *_Jeedom_*(TM).
 
-. Le gestionnaires d'images
-. Les boutons Personnalisés
+. Le gestionnaire d'images
+. Les boutons personnalisés
 --
 
 [role="col-md-12 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
-Le Plugin est orienté pour être pris en main le plus simplement possible, il n'y a aucun besoin de connaître toutes les options pour l'utiliser, la configuration par défaut suffit pour une utilisation sur tablette. Il suffit de créer un thème de rajouter des boutons pour qu'il soit tout de suite utilisable. +
+Le plugin est orienté pour être pris en main le plus simplement possible, il n'y a aucun besoin de connaître toutes les options pour l'utiliser, la configuration par défaut suffit pour une utilisation sur tablette. Il suffit de créer un thème et de rajouter des boutons pour qu'il soit tout de suite utilisable. +
 
 [icon="../images/important.png"]
 [IMPORTANT]
-le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvable sur le forum officiel de *_Jeedom_*(TM) qui peuvent donner une idée des possibilité du mode Design
+le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvables sur le forum officiel de *_Jeedom_*(TM) qui peuvent donner une idée des possibilités du mode Design.
 --
 
 [role="col-md-12"]
@@ -42,12 +42,8 @@ le plugin ne va pas créer le mode design tout seul, il faut avant de commencer 
 Un tutoriel vidéo est aussi disponible, merci à *SBO* +
 https://www.youtube.com/watch?v=alpuGohpuXE&feature=youtu.be
 
-include::partie_1.asciidoc[Création d'un thème Facile]
+include::partie_1.asciidoc[]
 
 '''
 == FAQ
 include::faq.asciidoc[]
-
-'''
-== Changelog
-include::changelog.asciidoc[]

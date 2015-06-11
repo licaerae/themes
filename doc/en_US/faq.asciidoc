@@ -1,0 +1,6 @@
+[qanda]
+Can do everythonk from this plugin::
+    No, you need to use Design mode for add objects.
+
+J'ai des widgets de ma barre d'état qui disparaîssent I,ve widgets in my status bar that disappear::
+    Your widget is miscoded , it uses a +id+ instae a +class+. 
