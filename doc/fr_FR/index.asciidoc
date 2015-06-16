@@ -6,7 +6,7 @@ Thèmes - Version 1.8.3
 
 [role="text-justify"]
 --
-Plugin servant à créer des thèmes pour le mode Design à partir de la librairie Bootstrap
+Plugin pour créer des thèmes pour le mode Design à partir de la bibliothèque Bootstrap.
 --
 
 [role="col-md-12"]
@@ -16,7 +16,8 @@ Plugin servant à créer des thèmes pour le mode Design à partir de la librair
 
 [role="col-md-12 text-justify"]
 --
-*_Jeedom_*(TM) nous offre un mode Design qui permet de créer un mode de vue très libre, mais n'est pas abordable pour n'importe qui. Le but de ce plugin est de créer la structure complète de votre mode Design, pour que les seules actions à faire en mode Design soient le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser, un cadre principal ou sera affiché la "pièce" demandée, une barre d'état optionnelle. +
+*_Jeedom_*(TM) nous offre un mode Design qui permet de créer un mode de vue très libre, mais n'est pas abordable pour n'importe qui. Le but de ce plugin est de créer la structure complète de votre mode Design, pour que les seules actions à faire en mode Design soient le placement des widgets. La structure comprend une barre de menu permettant de sélectionner la "pièce" que l'on veut visualiser,
+un cadre principal ou sera affiché la "pièce" demandée et une barre d'état optionnelle. +
 Au fur et à mesure du développement sont venus se greffer plusieurs autres modules qui viennent en complément du plugin, mais qui pourront servir de manière complètement indépendante pour d'autres plugins ou fonctionnalités de *_Jeedom_*(TM).
 
 . Le gestionnaire d'images
@@ -31,7 +32,7 @@ Le plugin est orienté pour être pris en main le plus simplement possible, il n
 
 [icon="../images/important.png"]
 [IMPORTANT]
-le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont trouvables sur le forum officiel de *_Jeedom_*(TM) qui peuvent donner une idée des possibilités du mode Design.
+Le plugin ne va pas créer le mode design tout seul, il faut avant de commencer avoir une idée de ce que l'on veut faire, divers exemples sont disponibles sur le forum officiel de *_Jeedom_*(TM) qui peuvent donner une idée des possibilités du mode Design.
 --
 
 [role="col-md-12"]

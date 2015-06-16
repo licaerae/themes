@@ -2,10 +2,10 @@
 Sauvegarde des profils. +
 
 .*V1.7.4*
-Ajout de la possibilité de docker les fenêtres Modifications du fonctionnement des barres d'outils. +
+Ajout de la possibilité de docker les fenêtres. Modifications du fonctionnement des barres d'outils. +
 
 .*V1.7.3*
-Ajout de profil pour choisir ces couleurs(Beta) +
+Ajout de profil pour choisir ses couleurs (Bêta) +
 
 .*V1.7.2*
 Corrections de bugs +
@@ -21,10 +21,10 @@ Interface graphique d'ajout d'un widget sur la barre d'état
 Correction de bugs Sauvegarde asynchrone +
 
 .*V1.6.2*
-Suppression complète des popovers, interface graphique finalisé +
+Suppression complète des popovers, interface graphique finalisée +
 
 .*V1.6.0*
-nouvelle interface graphique +
+Nouvelle interface graphique +
 
 .*V1.5.0*
 Mise en place à titre expérimental de la nouvelle interface graphique +
@@ -35,19 +35,19 @@ Mise en place des formats smartphone +
 .*V1.4.0*
 Mise en place des fonts par le gestionnaire de fonts des widgets +
 Optimisation du code +
-Ajout de 3 formats pour la barre d'état: Petite, Moyenne, Grande +
-Ajout de la gestion de contenu extérieur par IFrame +
-amélioration de l'interface +
+Ajout de 3 formats pour la barre d'état : Petite, Moyenne, Grande +
+Ajout de la gestion de contenus extérieurs par IFrame +
+Amélioration de l'interface +
 Ajout d'une toolbar sur les objets pour modification des dimensions ou de font +
 
 
 .*V1.3.0*
 Refonte du code pour le calcul de la taille de barre de menu +
 Allègement du code +
-Rajout la possibilité de rendre invisible le bouton "home" +
+Rajout la possibilité de rendre invisible le bouton "Home" +
 bouton en bas à droite sur toute les pages secondaires pour un retour à la page d'accueil +
 Stabilisation du code des Boutons Personnalisés +
-Correction des bugs lié à Firefox +
+Correction des bugs liés à Firefox +
 
 .*V1.2.2*
 Plusieurs corrections du fonctionnement des boutons personnalisés +
@@ -58,13 +58,13 @@ Sous-menu possible sur les boutons personnalisés +
 Plusieurs corrections du fonctionnement des boutons personnalisés +
 
 .*V1.2.0*
-Lors de l'appui sur Design, le plugin créer les pages, injecte le code et sauvegarde le thème maintenant +
-Gestiionnaire de Boutons personnalisés en Beta +
-Modification Ajout/Edition des Boutons pour pouvoir utiliser les boutons personnalisés +
-Modifications de l'UI +
+Lors de l'appui sur Design, le plugin crée les pages, injecte le code et sauvegarde le thème maintenant +
+Gestionnaire de Boutons personnalisés en Bêta +
+Modification Ajout/Édition des Boutons pour pouvoir utiliser les boutons personnalisés +
+Modifications de l'interface +
 
 .*V1.1.2*
-Ajout de la librairie Bootstrap Colorpicker pour la gestion des couleurs +
+Ajout de la bibliothèque Bootstrap Colorpicker pour la gestion des couleurs +
 Gestion de la barre d'état +
 
 .*V1.1.1*
@@ -73,7 +73,7 @@ Suppression du D-Pad par du drag & drop sur les lignes SVG directement +
 Numérotation des ligne SVG +
 
 .*V1.1.0*
-Modificitaion de l'interface pour être plus simple
+Modification de l'interface pour être plus simple
 Correction de la timeline
 Possibilité de copier la taille d'un widget sur les autres
 
@@ -91,7 +91,7 @@ Nom de la page principale composé comme suis : nom du thème + home +
 
 .*V1.0.0*
 Version Stable +
-Langages disponible: Français, Anglais +
+Langues disponibles : Français, Anglais +
 
 .*V0.9.10.5*
 Remise à Zéro d'une page en mode Expert +
@@ -103,29 +103,29 @@ Mise à jour de la Doc +
 
 .*V0.9.10.3*
 Fenêtre principale en readonly +
-read/write en mode expert +
-corrections mineures +
+Read/write en mode expert +
+Corrections mineures +
 
 .*V0.9.10.2*
 Corrections mineures +
 Doc en cours +
 
 .*V0.9.10.1*
-Mise à zéro du scroll sur appuie de home +
-Modification du choix des boutons ( boutons, onglets, menus) +
+Mise à zéro du scroll sur appui de home +
+Modification du choix des boutons (boutons, onglets, menus) +
 Mise en forme du format onglet pour être réaliste +
 Correction de bugs +
 
 .*V0.9.10.0*
-Modifications de la gestions des données +
-Check de l’intégrité des données +
+Modifications de la gestion des données +
+Vérification de l'intégrité des données +
 Import/export de thèmes +
 
 .*V0.9921*
 Mise à jour de la documentation +
 
 .*V0.992*
-Placement du bouton home pour être toujours apparent +
+Placement du bouton "Home" pour être toujours apparent +
 
 .*V0.991*
 Corrections de divers bugs +
@@ -135,7 +135,7 @@ Ajout du verrouillage des cadres +
 Disparition des boutons dans la partie des Détails +
 Refonte du code pour la gestion de la barre de menu +
 Gestion de l'overflow sur la barre de menu +
-Corrections mineurs +
+Corrections mineures +
 
 .*V0.981*
 Couleur sur le titre des cadres +
@@ -151,16 +151,16 @@ Correction du mono-cadre Stylisé est devenu cadre Unique +
 Possibilité de dupliquer une page secondaire +
 
 .*V0.97*
-Correction de nombreux bug +
+Correction de nombreux bugs +
 Le bouton Bootstrap est complètement opérationnel plus de décalage +
 Stabilisation du code +
 Amélioration de l'interface +
 
 .*V0.962*
-Crrections de bugs +
+Correction de bugs +
 
 .*V0.961*
-Correction de bugs mineures +
+Correction de bugs mineurs +
 
 .*V0.96*
 Configuration de la page principale à partir de l'aperçu +
@@ -177,19 +177,19 @@ Placement des boutons +
 Correction de bugs sur les boutons +
 
 .*V0.923*
-Font utilisé visible dans l'aperçu +
+Font utilisée visible dans l'aperçu +
 
 .*V0.921*
-Correction de bugs mineur +
+Correction de bugs mineurs +
 
 .*V0.92*
 Correction de bugs +
-Implémentation des Fonts et des liens d'image(beta) +
+Implémentation des Fonts et des liens d'image (Bêta) +
 
 .*V0.91*
 Correction de bug mineur +
 
 .*V0.9*
-Version Bêta, +
-Attention en cours de test, Tout les modules ne sont pas validé, +
-plusieurs pages de design peuvent être crées Bien suivre le forum pour se tenir au courant de la progression du plugin +
+Version Bêta +
+Attention en cours de test, Tous les modules ne sont pas validés, +
+plusieurs pages de design peuvent être créées. Bien suivre le forum pour se tenir au courant de la progression du plugin +
