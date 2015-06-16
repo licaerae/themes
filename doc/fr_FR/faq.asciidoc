@@ -2,5 +2,5 @@
 Peut-on tout faire à partir du plugin::
     Non, il faut utiliser le mode Design pour insérer un objet.
 
-J'ai des widgets de ma barre d'état qui disparaîssent::
+Des widgets de ma barre d'état disparaîssent::
     Votre widget est mal codé, il utilise un +id+ au lieu d'une +class+. 

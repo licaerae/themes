@@ -5,8 +5,8 @@
 
 [role="col-md-12 text-justify"]
 --
-Depuis la 1.6, une nouvelle interface graphique est apparue, de même que la colonne de gauche a disparu pour faire place à une fenêtre principale qui permettra d'accéder à toutes les fonctionnalités, tout en continuant à travailler sur son thème. +
-Conforme à *_Jeedom_*(TM), le plus géant pour ajouter un thème est apparu, en dessous vous pouvez voir la nouvelle interface. +
+Depuis la 1.6, une nouvelle interface graphique est apparue : la colonne de gauche a disparu pour faire place à une fenêtre principale qui permettra d'accéder à toutes les fonctionnalités, tout en continuant à travailler sur son thème. +
+Conforme à *_Jeedom_*(TM), le bouton "plus" géant pour ajouter un thème est apparu, en dessous vous pouvez voir la nouvelle interface. +
 
 image::presentation.png[]
 --
@@ -20,11 +20,11 @@ image::presentation.png[]
 [role="col-md-12 text-justify"]
 --
 Toutes les fenêtres sont déplaçables, leur position est sauvegardée, elle peuvent avoir plusieurs actions possibles à partir de leur entête. +
-image:close.png[]: la fenêtre peut être fermée - réinitialise la position de la fenêtre. +
-image:accordeon.png[]: la fenêtre peut être réduite juste à son entête. +
-image:dock.png[]: la fenêtre peut être dockée. Docker une fenêtre consiste à déplacer la fenêtre sur le bord gauche ou haut, cette dernière disparaît, et une icône apparaît sur le bord gauche ou haut de l'écran. Il suffit de cliquer sur l'icône pour faire réapparaître la fenêtre. +
+image:close.png[] : la fenêtre peut être fermée - réinitialise la position de la fenêtre. +
+image:accordeon.png[] : la fenêtre peut être réduite juste à son entête. +
+image:dock.png[] : la fenêtre peut être dockée. « Docker une fenêtre » consiste à déplacer la fenêtre sur le bord gauche ou haut, cette dernière disparaît et une icône apparaît sur le bord gauche ou haut de l'écran. Il suffit de cliquer sur l'icône pour faire réapparaître la fenêtre. +
 Certaines fenêtres n'ont aucune option, ce sont des fenêtres modales qui sont entièrement gérées par la fenêtre à laquelle elles sont liées. +
-La fenêtre principale possède une icône unique spéciale image:profil.png[], elle permet de configurer l'environnement du plugin, deux profils existent par défaut, et vous pouvez créer le votre. +
+La fenêtre principale possède une icône unique spéciale image:profil.png[], elle permet de configurer l'environnement du plugin, deux profils existent par défaut et vous pouvez créer le vôtre. +
 Si la demande est forte je verrai à intégrer le profil aux thèmes en mode Design, pour l'instant le profil ne sert que sur mon plugin. +
 --
 
@@ -36,8 +36,8 @@ Si la demande est forte je verrai à intégrer le profil aux thèmes en mode Des
 
 [role="col-md-12 text-justify"]
 --
-Une fois votre thème créé ou sélectionné, vous avez pouvoir travailler directement dessus, que ce soit de la page principale ou d'une page secondaire, le principe reste le même, la barre du haut sert à la gestion, la barre du coté gauche sert à la configuration. +
-Les barres d'outils possèdent tous un onglet qui permet de cacher/voir la barre, il suffit de cliquer sur ce dernier pour voir/cacher la barre d'outils. +
+Une fois votre thème créé ou sélectionné, vous avez pouvoir travailler directement dessus. Que ce soit de la page principale ou d'une page secondaire, le principe reste le même : la barre du haut sert à la gestion, la barre du coté gauche sert à la configuration. +
+Les barres d'outils possèdent toutes un onglet qui permet de cacher/voir la barre, il suffit de cliquer sur ce dernier pour voir/cacher la barre d'outils. +
 --
 
 [role="col-md-12"]
@@ -53,7 +53,7 @@ Les barres d'outils possèdent tous un onglet qui permet de cacher/voir la barre
 --
 image:barrepage.png[] - En mode Normal. +
 image:barrepageexpert.png[] - En <<informations,mode Expert>>. +
-Le bouton *Général*, est l’équivalent classique aux autres plugins qui permet de revenir sur la page de choix d'un thème, les deux boutons qui suivent le bouton *Général* sont visibles uniquement si le mode Expert de *_Jeedom_*(TM) est activé. +
+Le bouton *Général*, est l'équivalent classique aux autres plugins qui permet de revenir sur la page de choix d'un thème, les deux boutons qui suivent le bouton *Général* sont visibles uniquement si le mode Expert de *_Jeedom_*(TM) est activé. +
 --
 
 [role="col-md-12"]
@@ -97,9 +97,9 @@ image::progression.png[]
 --
 image::progress.png[]
 Fonctionnalité rajoutée depuis la 1.0.2, elle permet de savoir où on en est de la création de son Design. +
-La première barre indique si vous avez créé les pages dans le mode Design. +
-La deuxième barre si vous avez injecté le code dans la page principale. +
-la troisième indique si le code a été injecté dans toutes les pages secondaires. +
+La première barre indique que vous avez créé les pages dans le mode Design. +
+La deuxième barre indique que vous avez injecté le code dans la page principale. +
+la troisième barre indique que le code a été injecté dans toutes les pages secondaires. +
 La quatrième barre indique la progression de l'injection du code dans les pages secondaires. +
 --
 
@@ -193,12 +193,12 @@ image::fenetremenu.png[]
 --
 image::cog.png[]
 Fenêtre permettant de configurer la barre du menu du thème. L'entête de la fenêtre fournit les dimensions du menu. +
-*Position*: Position du menu +Haut+, +Bas+, +Gauche+, +Droite+. +
-*Taille*: Dimension du menu, hauteur en position +Haut+ et +Bas+, Largeur en position +Gauche+ et +Droite+. +
-*Texte*: Le champ à droite pour le texte voulu, le bouton pour cacher/voir le texte. +
-*Cadre Unique*: Fonctionnement des pages secondaires en cadre unique ou multi-cadre. +
-*Visible*: Voir/cacher la barre d'état. +
-*Taille*: Trois choix possibles pour la taille de la barre d'état +Petite+, +Moyenne+, +Grande+. +
+*Position* : Position du menu +Haut+, +Bas+, +Gauche+, +Droite+. +
+*Taille* : Dimension du menu, hauteur en position +Haut+ et +Bas+, Largeur en position +Gauche+ et +Droite+. +
+*Texte* : Le champ à droite pour le texte voulu, le bouton pour cacher/voir le texte. +
+*Cadre unique* : Fonctionnement des pages secondaires en cadre unique ou multi-cadre. +
+*Visible* : Voir/cacher la barre d'état. +
+*Taille* : Trois choix possibles pour la taille de la barre d'état +Petite+, +Moyenne+, +Grande+. +
 --
 
 [role="row"]
@@ -216,13 +216,13 @@ image::fenetreprincipale.png[]
 --
 image::tools.png[]
 Fenêtre permettant de configurer la page principale. L'entête de la fenêtre indique les dimensions du cadre principal. +
-*Largeur*: Largeur de la page principale. +
-*Hauteur*: Hauteur de la page principale. +
-*Image*: Image de fond de la page principale - les images sont à 'uploader' à partir du <<Gestionnaire_D_images,gestionnaire d'images>>. +
-*Id du Plan*: ID de la page principale dans le mode Design - readonly - activer le <<informations,mode Expert>> pour le modifier. +
-*Id du Cadre*: ID de la page secondaire 'Général' dans le mode Design - readonly - activer le <<informations,mode Expert>> pour le modifier. +
-*Sélection*: Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
-*Taille*: Taille du texte de la barre de menu. +
+*Largeur* : Largeur de la page principale. +
+*Hauteur* : Hauteur de la page principale. +
+*Image* : Image de fond de la page principale - les images sont à 'uploader' à partir du <<Gestionnaire_D_images,gestionnaire d'images>>. +
+*Id du Plan* : ID de la page principale dans le mode Design - readonly - activer le <<informations,mode Expert>> pour le modifier. +
+*Id du Cadre* : ID de la page secondaire 'Général' dans le mode Design - readonly - activer le <<informations,mode Expert>> pour le modifier. +
+*Sélection* : Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
+*Taille* : Taille du texte de la barre de menu. +
 --
 
 [role="row"]
@@ -240,16 +240,16 @@ image::fenetreboutons.png[]
 --
 image::boutons.png[]
 Fenêtre de gestion des boutons. +
-*Type*: Type de barre de menu: +Boutons+, +Menus+, +Onglets+. +
-*Taille*: Taille du bouton Home et des boutons: +Très Petit+, +Petit+, +Normal+, +Grand+ - non applicable pour +Menu+ et +Onglet+. +
-*"home"*: Couleur du bouton "home" - non applicable pour +Menus+ et +Onglets+. +
-*Visible*: Cacher/voir le bouton "home". +
-*Justifié*: Occupe toute la barre de menu - uniquement avec +Menus+ ou +Onglets+ en position +Haut+ ou +Bas+, ne pas utiliser si les flèches de scrolling sont visibles. +
-*Groupé*: Groupe les boutons - non applicable pour +Menus+ et +Onglets+. +
-*Décalage*: Décale les +Boutons+, +Menu+ ou +Onglet+ sur la droite pour donner la possibilité de centrer. + 
-image:ajoutbouton.png[]: Ajouter un nouveau bouton. +
-image:editbouton.png[]: Éditer le bouton sélectionné dans le sélecteur de droite. +
-image:classerbouton.png[]: permet de ré-ordonner les +Boutons+, +Menus+ ou +Onglets+. +
+*Type* : Type de barre de menu: +Boutons+, +Menus+, +Onglets+. +
+*Taille* : Taille du bouton Home et des boutons: +Très Petit+, +Petit+, +Normal+, +Grand+ - non applicable pour +Menu+ et +Onglet+. +
+*"Home"* : Couleur du bouton "Home" - non applicable pour +Menus+ et +Onglets+. +
+*Visible* : Cacher/voir le bouton "Home". +
+*Justifié* : Occupe toute la barre de menu - uniquement avec +Menus+ ou +Onglets+ en position +Haut+ ou +Bas+, ne pas utiliser si les flèches de scrolling sont visibles. +
+*Groupé* : Groupe les boutons - non applicable pour +Menus+ et +Onglets+. +
+*Décalage* : Décale les +Boutons+, +Menu+ ou +Onglet+ sur la droite pour donner la possibilité de centrer. + 
+image:ajoutbouton.png[] : Ajouter un nouveau bouton. +
+image:editbouton.png[] : Éditer le bouton sélectionné dans le sélecteur de droite. +
+image:classerbouton.png[] : Permet de ré-ordonner les +Boutons+, +Menus+ ou +Onglets+. +
 --
 
 [role="row"]
@@ -270,9 +270,9 @@ image::fenetrestyle.png[]
 --
 image::star.png[]
 Fenêtre de gestion du style des cadres. +
-*Couleur*: La première colonne permet de choisir la couleur de fond et la couleur du texte, par défaut elles sont grisées pour utiliser les couleurs de *_Jeedom_*(TM), cocher la case pour les modifier. +
-*Bordure*: La deuxième colonne permet de configurer la bordure des cadres. +
-*Ombre*: La troisième colonne permet de configurer l'ombre des cadres. +
+*Couleur* : La première colonne permet de choisir la couleur de fond et la couleur du texte, par défaut elles sont grisées pour utiliser les couleurs de *_Jeedom_*(TM), cocher la case pour les modifier. +
+*Bordure* : La deuxième colonne permet de configurer la bordure des cadres. +
+*Ombre* : La troisième colonne permet de configurer l'ombre des cadres. +
 --
 
 [role="row"]
@@ -291,7 +291,7 @@ image::fenetreetat.png[]
 image::trail.png[]
 Fenêtre de gestion de la barre d'état. +
 En premier lieu la barre d'état servait à afficher le breadcrumb, pour optimiser son utilisation, j'ai donné la possibilité d'y rajouter des widgets permettant de superviser certains objets, depuis n'importe quelle page puisque la barre d'état est visible de toutes les pages. +
-A gauche vous avez un sélecteur de toutes vos pièces(appelé +Objets+ dans *_Jeedom_*(TM)), il suffit de sélectionner votre pièce pour que dans le carrousel de droite apparaissent les widget de type +Binary+. +
+À gauche vous avez un sélecteur de toutes vos pièces (appelées +Objets+ dans *_Jeedom_*(TM)), il suffit de sélectionner votre pièce pour que dans le carrousel de droite apparaissent les widget de type +Binary+. +
 Servez vous des flèches du carrousel pour naviguer dans les widgets, image:acceptmini.png[] pour valider, image:deletemini.png[] pour annuler. +
 --
 
@@ -397,13 +397,13 @@ Pour des raisons de disposition dans la documentation l'image est en mode horizo
 [role="col-md-6 text-justify"]
 --
 image::deverouiller.png[]
-Le cadre sélectionner est déverrouillé, vous pouvez redimensionner le cadre sélectionné - grisé en mode +Cadre Unique+. +
+Le cadre sélectionné est déverrouillé, vous pouvez redimensionner le cadre sélectionné - grisé en mode +Cadre Unique+. +
 --
 
 [role="col-md-6 text-justify"]
 --
 image::verouiller.png[]
-Le cadre sélectionner est verrouillé, vous ne pouvez plus redimensionner le cadre sélectionné - grisé en mode +Cadre Unique+. +
+Le cadre sélectionné est verrouillé, vous ne pouvez plus redimensionner le cadre sélectionné - grisé en mode +Cadre Unique+. +
 --
 
 [role="row"]
@@ -420,13 +420,13 @@ image::fenetrecadres.png[]
 --
 image::cog.png[]
 Fenêtre pour configurer le cadre sélectionné. +
-*Titre*: Titre du cadre, le champ de droite pour le modifier, le bouton pour cacher/voir le titre. +
-*Couleur*: Couleur utilisée pour le cadre - grisé par défaut pour utiliser la couleur par défaut de la page principale, cliquer sur le bouton pour la modifier. +
-*Font*: Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
-*Taille*: Taille de la Font du cadre. +
-*Image*: Image de fond du cadre - les images sont à 'uploader' à partir du <<Gestionnaire_D_images,gestionnaire d'images>>. +
-*Opacité*: Opacité du cadre. +
-*IFrame*: Inclut à partir de la 1.4.0, permet d'afficher le contenu d'un lien dans un cadre, le champ de droite pour le lien du contenu à afficher, le bouton permet de d'afficher/cacher l'IFrame. +
+*Titre* : Titre du cadre, le champ de droite pour le modifier, le bouton pour cacher/voir le titre. +
+*Couleur* : Couleur utilisée pour le cadre - grisé par défaut pour utiliser la couleur par défaut de la page principale, cliquer sur le bouton pour la modifier. +
+*Font* : Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
+*Taille* : Taille de la Font du cadre. +
+*Image* : Image de fond du cadre - les images sont à 'uploader' à partir du <<Gestionnaire_D_images,gestionnaire d'images>>. +
+*Opacité* : Opacité du cadre. +
+*IFrame* : Inclus à partir de la 1.4.0, permet d'afficher le contenu d'un lien dans un cadre, le champ de droite pour le lien du contenu à afficher, le bouton permet de d'afficher/cacher l'IFrame. +
 --
 
 [role="row"]
@@ -444,22 +444,22 @@ image::fenetresvg.png[]
 --
 image::svg.png[]
 Fenêtres de gestion des lignes SVG. +
-image:addmini.png[]: pour rajouter une ligne SVG, la ligne est créée sur le coin gauche en haut. +
-image:deletemini.png[]: efface la ligne SVG sélectionnée. +
+image:addmini.png[] : pour rajouter une ligne SVG, la ligne est créée sur le coin gauche en haut. +
+image:deletemini.png[] : efface la ligne SVG sélectionnée. +
 --
 
 [role="col-md-12 text-justify"]
 --
-*[underline]#Rappel#*: A la base j'étais parti pour des plans 3D où on plaçait les objets, mais un Jeedomien nous a présenté son Design avec une vue 3D et les objets placés tout autour avec des lignes les reliant à leur position dans la pièce, très vite ce modèle m'a plu, permettant d'avoir une vue plus claire, partant de ce constat j'ai voulu intégrer cette possibilité à mon plugin. +
-Une fois créée la ligne se divise en 5 parties, les deux carrés d'extrémité, les lignes accrochées aux carrés, la ligne centrale, il suffit de cliquer sur chaque partie pour la déplacer. +
-Pour déplacer une ligne il faut qu'elle soit sélectionnée, le dernier sélecteur permet de coloriser la ligne, les couleurs sont liées aux catégories de *_Jeedom_*(TM), ce qui permet d'avoir des lignes de la même couleur que son widget. +
+*[underline]#Rappel#* : À la base j'étais parti pour des plans 3D où on plaçait les objets, mais un Jeedomien nous a présenté son Design avec une vue 3D et les objets placés tout autour avec des lignes les reliant à leur position dans la pièce, très vite ce modèle m'a plu, permettant d'avoir une vue plus claire, partant de ce constat j'ai voulu intégrer cette possibilité à mon plugin. +
+Une fois créée, la ligne se divise en 5 parties, les deux carrés d'extrémité, les lignes accrochées aux carrés, la ligne centrale, il suffit de cliquer sur chaque partie pour la déplacer. +
+Pour déplacer une ligne, il faut qu'elle soit sélectionnée, le dernier sélecteur permet de coloriser la ligne, les couleurs sont liées aux catégories de *_Jeedom_*(TM), ce qui permet d'avoir des lignes de la même couleur que son widget. +
 
 [role="col-md-12"]
 {nbsp} +
 
 [icon="../images/tip.png"]
 [TIP]
-[label label-warning]#Zoom#, un zoom automatique a été rajouté pour faciliter le Drag & Move,  il sera bientôt remplacé par une version manuelle, à venir. +
+[label label-warning]#Zoom#, un zoom automatique a été rajouté pour faciliter le Drag & Move, il sera bientôt remplacé par une version manuelle, à venir. +
 --
 
 [role="col-md-12"]
@@ -475,7 +475,7 @@ image::fenetredupliquer.png[]
 --
 image::duplicate.png[]
 Fenêtre de duplication de page secondaire. +
-permet de copier la page sélectionnée dans la fenêtre vers la page courante. +
+Permet de copier la page sélectionnée dans la fenêtre vers la page courante. +
 
 [icon="../images/warning.png"]
 [WARNING]
@@ -488,11 +488,11 @@ permet de copier la page sélectionnée dans la fenêtre vers la page courante. 
 {nbsp} +
 
 '''
-==== Barre Actions - Partie réservé aux objets
+==== Barre Actions - Partie réservée aux objets
 
 [role="col-md-12 text-justify"]
 --
-Pour des raisons de conception il est apparu qu'il était impossible de gérer une grille à partir du mode Design, à la demande de la communauté j'ai rajouté la possibilité de redimensionner les objets de même type, et de modifier la Font d'un objet. +
+Pour des raisons de conception, il est apparu qu'il était impossible de gérer une grille à partir du mode Design, à la demande de la communauté j'ai rajouté la possibilité de redimensionner les objets de même type, et de modifier la Font d'un objet. +
 --
 
 [role="col-md-12"]
@@ -501,7 +501,7 @@ Pour des raisons de conception il est apparu qu'il était impossible de gérer u
 [role="col-md-12 text-justify"]
 --
 image::objets.png[]
-Permet de charger tout les objets de la page, une fois chargés la barre d'action est modifiée, tout les objets peuvent être déplacés, le plugin utilise une grille avec un pas constant qui permet d'aligner les objets. +
+Permet de charger tous les objets de la page, une fois chargés la barre d'action est modifiée, tous les objets peuvent être déplacés, le plugin utilise une grille avec un pas constant qui permet d'aligner les objets. +
 --
 
 [role="col-md-12"]
@@ -527,7 +527,7 @@ Annule les modifications et le chargement des objets. +
 
 [role="col-md-12 text-justify"]
 --
-Une nouvelle barre va apparaître au dessus de chaque widget: image:barrewidget.png[], image:barreciseau.png[] copie les dimensions, image:barretrombone.png[] colle les dimensions. le plugin est capable de faire le distingo entre les types d'objets,[underline]#par exemple: on ne pourra pas copier les dimensions d'un widget sur un scénario#. +
+Une nouvelle barre va apparaître au dessus de chaque widget : image:barrewidget.png[], image:barreciseau.png[] copie les dimensions, image:barretrombone.png[] colle les dimensions. Le plugin est capable de faire le distingo entre les types d'objets, [underline]#par exemple : on ne pourra pas copier les dimensions d'un widget sur un scénario#. +
 --
 
 [role="col-md-12"]
@@ -536,7 +536,7 @@ Une nouvelle barre va apparaître au dessus de chaque widget: image:barrewidget.
 [role="col-md-12 text-justify"]
 --
 image::mr.png[]
-Le principe du copier coller marche comme le bouton +MR+ d'une calculatrice, à partir du moment ou on a mémorisé une dimension, elle est gardée en mémoire, il suffit d'appuyer sur ce bouton pour annuler toutes les dimensions mémorisées. +
+Le principe du copier-coller marche comme le bouton +MR+ d'une calculatrice, à partir du moment où on a mémorisé une dimension, elle est gardée en mémoire. Il suffit d'appuyer sur ce bouton pour oublier toutes les dimensions mémorisées. +
 --
 
 [role="col-md-12 text-justify"]
@@ -579,7 +579,7 @@ image::fenetrebouton.png[]
 
 [role="col-md-8 text-justify"]
 --
-Pour ajouter un bouton il suffit de rentrer le texte, choisir sa couleur et de valider. +
+Pour ajouter un bouton, il suffit de rentrer le texte, choisir sa couleur et de valider. +
 image:trash.png[] permet d'effacer le bouton, si un plan est lié à ce bouton il sera effacé. +
 
 [icon="../images/tip.png"]
@@ -602,11 +602,11 @@ image::fenetredropdown.png[]
 
 [role="col-md-8 text-justify"]
 --
-Si vous avez cliqué sur oui pour les sous-menus cette fenêtre va vous permettre de gérer les entrées, cliquez sur image:plus.png[] pour rajouter une entrée, cliquez sur image:trash.png[] pour effacer une entrée, si une entrée est liée à un plan il sera effacé. +
+Si vous avez cliqué sur oui pour les sous-menus, cette fenêtre va vous permettre de gérer les entrées : cliquez sur image:plus.png[] pour rajouter une entrée, cliquez sur image:trash.png[] pour effacer une entrée, si une entrée est liée à un plan, il sera effacé. +
 
 [icon="../images/tip.png"]
 [TIP]
-Si vous effacez toutes les entrées, après sauvegarde le sous-menu sera transformé en bouton. +
+Si vous effacez toutes les entrées, après sauvegarde, le sous-menu sera transformé en bouton. +
 --
 
 [role="row"]
@@ -645,7 +645,7 @@ image::fenetreclasser.png[]
 
 [role="col-md-8 text-justify"]
 --
-cliquer image:classerbouton.png[] pour accéder à cette fenêtre, ré-ordonner les boutons à votre convenance, et valider. +
+Cliquer image:classerbouton.png[] pour accéder à cette fenêtre, ré-ordonner les boutons à votre convenance et valider. +
 --
 
 [role="row"]
@@ -667,15 +667,15 @@ image::fenetreimages.png[]
 
 [role="col-md-8 text-justify"]
 --
-image:gestionnaire.png[] Cliquez sur le bouton pour accéder au gestionnaires d'images. +
+image:gestionnaire.png[] Cliquez sur le bouton pour accéder au gestionnaire d'images. +
 Lors de nos pérégrinations sur le mode Design, l'astuce utilisée pour manipuler des images est de créer un widget vide et de s'en servir pour déposer les images utilisées. Pour ce plugin, il fallait un moyen pour importer des images. Plutôt que de gérer les images thème par thème, j'ai opté pour implémenter un gestionnaire d'images que l'on pourra utiliser avec tous les plugins de *_Jeedom_*(TM).+
 Le gestionnaire permet de gérer des catégories, *_Thèmes_* est la catégorie par défaut utilisé par le plugin, seules les images importées dans cette catégorie seront accessibles dans les thèmes. +
-Pour créer une nouvelle catégorie cliquez sur image:gestionnaire3.png[]. +
-Pour importer une image cliquez sur image:gestionnaire4.png[], elle sera importée dans la catégorie sélectionnée. +
+Pour créer une nouvelle catégorie, cliquez sur image:gestionnaire3.png[]. +
+Pour importer une image, cliquez sur image:gestionnaire4.png[], elle sera importée dans la catégorie sélectionnée. +
 
 [icon="../images/important.png"]
 [IMPORTANT]
-Avec la nouvelle interface graphique, les catégories fonctionnent mais je n'affiche que la liste par défaut. Dans une prochaine version les catégories seront amenées à disparaître, les images ne servant pas au plugin peuvent être gérées du plugin widget maintenant. +
+Avec la nouvelle interface graphique, les catégories fonctionnent mais je n'affiche que la liste par défaut. Dans une prochaine version, les catégories seront amenées à disparaître, les images ne servant pas au plugin peuvent être gérées du plugin widget maintenant. +
 --
 
 [role="row"]
@@ -696,9 +696,9 @@ image::fenetreimageslist.png[]
 Liste de toutes les images servant au plugin que ce soit pour un thème ou pour un bouton personnalisé. +
 Une fois l'image importée, image:trash.png[] permet de la supprimer, image:gestionnaire6.png[] ouvre une boite de dialogue donnant les infos suivantes : +
 
-* *URL*: Construit pour être utilisé comme lien local *_Jeedom_*(TM) à utiliser dans une balise directement par exemple une balise +<img>+. +
+* *URL* : construit pour être utilisé comme lien local *_Jeedom_*(TM) à utiliser dans une balise directement par exemple une balise +<img>+. +
 * *CSS* : construit pour être copié collé dans une classe +CSS+ ou un attribut style, pour mettre au choix dans un widget, un design, voir sur le +custom.css+. +
-* *HTTP* ; pour utilisation sur un site externe, par exemple un site déporté ou autre, c'est le moins utile, s'il porte à confusion je le supprimerai, par contre dans ce cas pour les installations *DYI* et *Docker* le *+/jeedom+* doit être rajouté manuellement. +
+* *HTTP* : pour utilisation sur un site externe, par exemple un site déporté ou autre, c'est le moins utile, s'il porte à confusion je le supprimerai, par contre dans ce cas pour les installations *DYI* et *Docker* le *+/jeedom+* doit être rajouté manuellement. +
 --
 
 [role="row"]
@@ -719,8 +719,8 @@ image::fenetrepersonnalises.png[]
 
 [role="col-md-8 text-justify"]
 --
-cliquez sur le bouton image:ajouterperso.png[] pour créer un nouveau bouton personnalisé. +
-Sous ce bouton vous trouverez la liste des boutons personnalisés créés. +
+Cliquez sur le bouton image:ajouterperso.png[] pour créer un nouveau bouton personnalisé. +
+Sous ce bouton, vous trouverez la liste des boutons personnalisés créés. +
 image:trash.png[] permet d'effacer le bouton personnalisé. +
 image:editperso.png[] permet d'éditer le bouton personnalisé. +
 --
@@ -740,9 +740,9 @@ image::fenetrepersonnalisesajouter.png[]
 
 [role="col-md-8 text-justify"]
 --
-Le but des boutons personnalisés était de fournir la possibilité de créer des boutons autres que ceux fournis par défaut par la librairie link:http://getbootstrap.com/[Bootstrap]. Deux méthodes sont fournies pour créer un bouton, par une *image*, ou par *CSS3*, cliquez sur le type de bouton que vous voulez créer. +
-*Nom*: Nom du bouton, les noms ne sont pas uniques, mais il sera plus simple de nommer différemment chaque bouton. +
-*Font*: Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
+Le but des boutons personnalisés était de fournir la possibilité de créer des boutons autres que ceux fournis par défaut par la bibliothèque link:http://getbootstrap.com/[Bootstrap]. Deux méthodes sont fournies pour créer un bouton, par une *image*, ou par *CSS3*, cliquez sur le type de bouton que vous voulez créer. +
+*Nom* : Nom du bouton, les noms ne sont pas uniques, mais il sera plus simple de nommer différemment chaque bouton. +
+*Font* : Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
 
 [icon="../images/tip.png"]
 [TIP]
@@ -764,14 +764,14 @@ image::fenetrepersonnalisesimage.png[]
 
 [role="col-md-8 text-justify"]
 --
-*Hover*: L'image contient l'état 'hover', qui correspond au passage de la souris sur le bouton. +
-*Active*: L'image contient l'état 'active', qui correspond au clic gauche de la souris sur le bouton. +
-*Image*: Sélectionnez l'image du bouton - importez avec le <<Gestionnaire_D_images,gestionnaire d'images>> du plugin. +
-*Texte*: Affichage du texte du bouton ou non. +
-*Taille*: Taille du texte. +
-*Couleur*: Couleur du texte. +
-*Font*: Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
-Les boutons à base d'une image sont construits de telle manière que tous les états du bouton sont présents dans l'image, les différents états doivent être empilés dans l'ordre suivant: +Normal+, +Hover+, +Active+. +
+*Hover* : L'image contient l'état 'hover', qui correspond au passage de la souris sur le bouton. +
+*Active* : L'image contient l'état 'active', qui correspond au clic gauche de la souris sur le bouton. +
+*Image* : Sélectionnez l'image du bouton - importez avec le <<Gestionnaire_D_images,gestionnaire d'images>> du plugin. +
+*Texte* : Affichage du texte du bouton ou non. +
+*Taille* : Taille du texte. +
+*Couleur* : Couleur du texte. +
+*Font* : Sélectionner une Font disponible, depuis la 1.6.0 les fonts ne sont plus gérées à partir du plugin, il faut utiliser le gestionnaire de Fonts du plugin widget. +
+Les boutons à base d'une image sont construits de telle manière que tous les états du bouton sont présents dans l'image, les différents états doivent être empilés dans l'ordre suivant : +Normal+, +Hover+, +Active+. +
 *Hauteur de l'image* = *Hauteur de l'état Normal* * *Nombre d'état*+
 L'exemple fourni possède les trois états, il montre bien comment l'image à été créée avec chaque état en dessous des autres. +
 --
@@ -807,17 +807,17 @@ Je me suis inspiré de http://css3buttongenerator.com/, je ne vais pas donner le
 
 [role="col-md-12 text-justify"]
 --
-Pour appréhender le plugin nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possible. Pour commencer, nous allons définir la nature de notre projet :
+Pour appréhender le plugin, nous allons développer dans cette partie la création d'un thème le plus simple possible, en utilisant le moins d'options possibles. Pour commencer, nous allons définir la nature de notre projet :
 
 * Nous adopterons le format Tablette horizontale (paramètres par défaut).
 * La barre de menu sera située en 'Haut' (paramètres par défaut).
 * Barre d'état apparente (paramètres par défaut).
 * Les entrées de la barre de menu seront des Boutons (paramètres par défaut).
-* Le design comportera 3 Pièces composées comme suit: RdC (Salon, Cuisine), Chambre.
+* Le design comportera 3 pièces composées comme suit : RdC (Salon, Cuisine), Chambre.
 * Cadre unique (paramètres par défaut).
-* On configura un style avec une bordure et une ombre pour un rendu visuel.
+* On configurera un style avec une bordure et une ombre pour un rendu visuel.
 
-Nous allons commencer par créer un thème, cliquer sur image:ajout.png[] .Changeons le titre pour un message de bienvenue, cliquez sur image:cogmini.png[] puis changez le titre par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons est pratiquement créé, il ne nous reste plus qu'à configurer les <<les_fenêtres_boutons, boutons>> et le <<fenetrestyle, style>>. +
+Nous allons commencer par créer un thème, cliquer sur image:ajout.png[]. Changeons le titre pour un message de bienvenue, cliquez sur image:cogmini.png[] puis changez le titre par +Bienvenue dans Notre Espace Domotique+. Le thème que nous désirons est pratiquement créé, il ne nous reste plus qu'à configurer les <<les_fenêtres_boutons, boutons>> et le <<fenetrestyle, style>>. +
 Cliquez sur image:boutonsmini.png[] et appuyez sur image:plus.png[] pour créer un nouveau bouton. +
 --
 
@@ -846,7 +846,7 @@ image::chambrebouton.png[]
 
 [role="col-md-7 text-justify"]
 --
-Le deuxième bouton est plus simple entrez +Chambre+ dans le champ *Nom* et validez. +
+Le deuxième bouton est plus simple, entrez +Chambre+ dans le champ *Nom* et validez. +
 --
 
 [role="row"]
@@ -871,8 +871,8 @@ image::styledemo.png[]
 --
 Ici chacun fait ce qu'il veut, pour notre démo j'ai choisi les paramètres suivant : +
 
-* Bordure : *Taille*: +5+, *Rayon*: +5+, *Style*: +groove+, *Couleur*: +Bleu+
-* Ombre : *Taille*: +10+, +10+, +10+, *Couleur*: +Bleu Clair+
+* Bordure : *Taille* : +5+, *Rayon* : +5+, *Style* : +groove+, *Couleur* : +Bleu+
+* Ombre : *Taille* : +10+, +10+, +10+, *Couleur* : +Bleu Clair+
 --
 
 [role="row"]
@@ -882,7 +882,7 @@ Ici chacun fait ce qu'il veut, pour notre démo j'ai choisi les paramètres suiv
 
 [role="col-md-12"]
 --
-Voici le résultat: +
+Voici le résultat : +
 
 image::demo1.png[]
 --
@@ -901,7 +901,7 @@ image::bootstrap.png[]
 
 [role="col-md-7 text-justify"]
 --
-Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin. A cette étape de notre thème aucune page n'a encore été créée, le bouton image:bootstrapmini.png[] est grisé, ce chapitre va vous montrer comment les créer et comment injecter le code de la page principale. +
+Le but du plugin étant la création d'une structure pour le mode Design, nous allons aborder ici les deux boutons les plus importants du plugin. À cette étape de notre thème, aucune page n'a encore été créée, le bouton image:bootstrapmini.png[] est grisé, ce chapitre va vous montrer comment les créer et comment injecter le code de la page principale. +
 --
 
 [role="row"]
@@ -929,12 +929,12 @@ image::planok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. A chaque fois que vous chargez un thème le plugin vérifie que les pages sont créées, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement, il suffit de modifier la taille de la fenêtre principale ou de passer en <<informations,mode Expert>>. Le bouton est dégrisé aussi dès qu'on rajoute un bouton. +
-Vous pouvez constatez que le plugin crée une page supplémentaire, appelée +Général+, elle correspond à la page secondaire du bouton *home* qui est la page de présentation de votre mode Design. +
+Ce bouton va permettre de créer les pages du mode Design, la page principale au format du thème et les pages secondaires au format du cadre principal. À chaque fois que vous chargez un thème, le plugin vérifie que les pages sont créées, si toutes les pages existent le bouton sera grisé. On peut dégriser le bouton facilement : il suffit de modifier la taille de la fenêtre principale ou passer en <<informations,mode Expert>>. Le bouton est dégrisé aussi dès qu'on rajoute un bouton. +
+Vous pouvez constatez que le plugin crée une page supplémentaire, appelée +Général+, elle correspond à la page secondaire du bouton *Home* qui est la page de présentation de votre mode Design. +
 
 [icon="../images/tip.png"]
 [TIP]
-Si le bouton est dégrisé c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages. +
+Si le bouton est dégrisé, c'est que des modifications ont été apportées au thème qui demande de mettre à jour les pages. +
 --
 
 [role="row"]
@@ -952,7 +952,7 @@ image::bootstrapok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Arrivé à cette étape toutes les pages doivent être créées, ce bouton va permettre d'injecter le code dans la page principale pour pouvoir gérer tout votre Design, après toute modification il suffira de cliquer sur ce bouton pour mettre à jour la page principale. +
+À cette étape, toutes les pages doivent être créées, ce bouton va permettre d'injecter le code dans la page principale pour pouvoir gérer tout votre Design. Après toute modification, il suffira de cliquer sur ce bouton pour mettre à jour la page principale. +
 --
 
 [role="row"]
@@ -976,7 +976,7 @@ Si le plan de la page principale n'existe pas le bouton restera grisé, cliquez 
 [role="col-md-12 text-justify"]
 --
 Le plugin devait s'arrêter à la création de la page principale, des pages secondaires et de l'injection du code Bootstrap sur la page principale, mais il est apparu important de pouvoir gérer les pages secondaires à partir du plugin pour pouvoir aussi en contrôler le fonctionnement. +
-Les images qui serviront aux pages secondaires seront rajoutées avec le <<Gestionnaire_D_images,gestionnaire d'images>>, pour notre thème elles seront au format de notre cadre principale et seront créés à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
+Les images qui serviront aux pages secondaires seront rajoutées avec le <<Gestionnaire_D_images,gestionnaire d'images>>. Pour notre thème, elles seront au format de notre cadre principale et seront créées à l'aide du logiciel link:http://www.sweethome3d.com/fr/[SweetHome 3D] ou autres logiciels de votre choix.+
 --
 
 [role="col-md-12"]
@@ -984,13 +984,13 @@ Les images qui serviront aux pages secondaires seront rajoutées avec le <<Gesti
 
 [role="col-md-12 text-justify"]
 --
-Ce chapitre à pour but de montrer comment configurer une page secondaire, nous sommes en configuration +cadre unique+, la configuration +multi-cadres+ est identique sauf que vous pouvez créer autant de cadres que vous voulez. +
+Ce chapitre a pour but de montrer comment configurer une page secondaire. Nous sommes en configuration +cadre unique+, la configuration +multi-cadres+ est identique sauf que vous pouvez créer autant de cadres que vous voulez. +
 Nous nous occuperons d'abord des pièces, nous parlerons de la page *Général* par la suite puisque elle occupe un rôle à part. +
 Pour la suite du projet, nous allons établir les différents modules dans chaque pièce :
 
-* *Salon*: 1 capteur de présence, 1 lumière, 1 thermostat, Surveillance réseau
-* *Cuisine*: 1 capteur de présence, 1 lumière
-* *Chambre*: 1 capteur de présence, 1 lumière, 1 thermostat
+* *Salon* : 1 capteur de présence, 1 lumière, 1 capteur de température, 1 surveillance réseau
+* *Cuisine* : 1 capteur de présence, 1 lumière
+* *Chambre* : 1 capteur de présence, 1 lumière, 1 capteur de température
 --
 
 [role="col-md-12"]
@@ -1006,7 +1006,7 @@ image::plansecondok.png[]
 
 [role="col-md-7 text-justify"]
 --
-Commençons par sélectionner +Salon+ dans le sélecteur *Pages* +
+Commençons par sélectionner +Salon+ dans le sélecteur *Pages*. +
 Cliquez sur image:cogmini.png[]. +
 Changeons +Titre+ par +Salon+, et sélectionnons l'image téléchargée avec le sélecteur *Image*. +
 Il suffit d'utiliser le bouton image:bootstrapmini.png[] pour mettre à jour la page secondaire _Salon_ dans le mode Design, la dernière étape étant de placer les widgets dans le mode Design. Répétons ces étapes pour les deux autres pièces. +
@@ -1014,14 +1014,14 @@ Il suffit d'utiliser le bouton image:bootstrapmini.png[] pour mettre à jour la 
 
 [role="col-md-12 text-justify"]
 --
-Voici le résultat final: +
+Voici le résultat final : +
 
 image::salondemo.jpg[]
 image::cuisinedemo.jpg[]
 image::chambredemo.jpg[]
 {nbsp} +
 
-A ce stade votre Design est fonctionnel. +
+À ce stade, votre Design est fonctionnel. +
 --
 
 [role="col-md-12"]
@@ -1045,7 +1045,7 @@ image::generaldemo.png[]
 
 [role="col-md-12 text-justify"]
 --
-Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce où est votre widget (ou virtuel, etc...), et c'est tout naturellement que j'ai mis en place les *lignes SVG*. Utilisez la fenêtre des lignes SVG pour ajouter une ligne. +
+Bien qu'à cette étape votre Design soit fonctionnel, il m'est apparu intéressant de fournir un système qui permettrait de localiser dans la pièce votre widget (ou virtuel, etc.). C'est tout naturellement que j'ai mis en place les *lignes SVG*. Utilisez la fenêtre des lignes SVG pour ajouter une ligne. +
 --
 
 [role="col-md-12"]
@@ -1069,12 +1069,12 @@ Il suffit de faire la même chose pour les autres pièces. +
 
 [role="col-md-12 text-justify"]
 --
-Voila, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil *_Jeedom_*(TM) pour y accéder directement. +
+Voilà, votre thème et votre Design sont finalisés. Vous pouvez très bien le rajouter dans votre profil *_Jeedom_*(TM) pour y accéder directement. +
 --
 
 [role="col-md-12 text-justify"]
 --
 [icon="../images/tip.png"]
 [TIP]
-Il est possible de créer des profils 'invité', il suffit au niveau du profil *_Jeedom_*(TM) de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et aux autres pages secondaires. +
+Il est possible de créer des profils 'invité' : il suffit au niveau du profil *_Jeedom_*(TM) de pointer vers la pièce désirée au lieu de la page principale, ce qui permettra à l'invité d'accéder à toutes les fonctions de la pièce sans avoir accès à la barre de menu et aux autres pages secondaires. +
 --
